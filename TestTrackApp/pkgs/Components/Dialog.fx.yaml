@@ -232,35 +232,12 @@ Dialog As CanvasComponent:
                     ZIndex: =4
 
                     Button1_1 As Button:
-                        Alignment: ="center"
-                        BorderColor: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, ColorValue(Dialog.Theme.palette.themePrimary), ColorValue(Dialog.Theme.palette.neutralSecondary))
-                        BorderRadius: =Dialog.BorderRadius
-                        BorderStyle: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, BorderStyle.None,BorderStyle.Solid)
-                        BorderThickness: =If(ThisItem.HasBorder, 1, 0)
-                        ButtonType: =ThisItem.ButtonType
-                        DisabledBorderColor: =If(ThisItem.ButtonType = 'Button.ButtonType'.Standard, ColorValue(Dialog.Theme.palette.neutralLighter))
-                        DisabledFillColor: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, ColorValue(Dialog.Theme.palette.neutralLight), ColorValue(Dialog.Theme.palette.neutralLight))
-                        DisabledTextColor: =
+                        BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
-                        FillColor: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, ColorValue(Dialog.Theme.palette.themePrimary), ColorValue(Dialog.Theme.palette.white))
+                        FontColor: =
                         Height: =32
-                        HideFromAssistiveTechnologies: =false
-                        HoverBorderColor: =
-                        HoverFillColor: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, ColorValue(Dialog.Theme.palette.themeDarkAlt), ColorValue(Dialog.Theme.palette.neutralQuaternary))
-                        HoverTextColor: =
-                        Italic: =false
-                        OnChange: =false
                         OnSelect: =Dialog.OnButtonSelect()
-                        PaddingBottom: =0
-                        PaddingTop: =0.00
-                        PressedBorderColor: =
-                        PressedFillColor: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, ColorValue(Dialog.Theme.palette.themeDark), ColorValue(Dialog.Theme.palette.neutralTertiary))
-                        PressedTextColor: =
-                        Strikethrough: =false
                         Text: =ThisItem.Label
-                        TextColor: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, ColorValue(Dialog.Theme.palette.white), ColorValue(Dialog.Theme.palette.black))
-                        Underline: =false
-                        VerticalAlignment: ="middle"
                         Width: =96.00
                         X: =0.00
                         Y: =8
