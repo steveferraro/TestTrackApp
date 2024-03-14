@@ -1481,8 +1481,8 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Visible: =EntryForm_JobFormEntry.Unsaved
         Width: =40
-        X: =1052
-        Y: =25
+        X: =1012
+        Y: =21
         ZIndex: =5
 
     "'EntryWarningLabel_ JobFormEntry' As label":

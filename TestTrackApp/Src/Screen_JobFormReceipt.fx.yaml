@@ -1517,8 +1517,8 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Visible: =EntryForm_JobFormReceipt.Unsaved
         Width: =40
-        X: =1052
-        Y: =20
+        X: =1012
+        Y: =22
         ZIndex: =4
 
     "'ReceiptWarningLabel_ JobFormReceipt' As label":

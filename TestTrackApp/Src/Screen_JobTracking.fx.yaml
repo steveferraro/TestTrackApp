@@ -1886,7 +1886,7 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Visible: =EntryForm_JobTracking.Unsaved
         Width: =40
-        X: =1052
+        X: =1012
         Y: =21
         ZIndex: =4
 

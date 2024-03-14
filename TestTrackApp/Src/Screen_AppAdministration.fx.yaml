@@ -2122,7 +2122,7 @@
         Visible: ='WarningLabel_ AppAdministration'.Visible
         Width: =40
         X: =1052
-        Y: =25
+        Y: =21
         ZIndex: =4
 
     "'WarningLabel_ AppAdministration' As label":
