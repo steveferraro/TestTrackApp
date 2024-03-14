@@ -284,6 +284,7 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     Default: =varSelectedJob_JobFormEntry
                     DelayItemLoading: =true
+                    DisplayMode: =If(EntryForm_JobFormEntry.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
                     Height: =(Parent.Height - SearchBox_JobFormEntry.Height)/1.8
@@ -517,6 +518,7 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     Default: =varSelectedEntry_JobFormEntry
                     DelayItemLoading: =true
+                    DisplayMode: =If(EntryForm_JobFormEntry.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
                     Height: =(Parent.Height - SearchBox_JobFormEntry.Height)/2.57

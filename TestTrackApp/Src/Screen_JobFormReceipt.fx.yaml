@@ -305,6 +305,7 @@
                     AlignInContainer: =AlignInContainer.SetByContainer
                     Default: =varSelectedJob_JobFormReceipt
                     DelayItemLoading: =true
+                    DisplayMode: =If(EntryForm_JobFormReceipt.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
                     Height: =Parent.Height/1.9
@@ -534,6 +535,7 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     Default: =varSelectedReceipt_JobFormReceipt
                     DelayItemLoading: =true
+                    DisplayMode: =If(EntryForm_JobFormReceipt.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
                     Height: =Parent.Height/2.8

@@ -305,6 +305,7 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     Default: =varSelectedJob_JobTracking
                     DelayItemLoading: =true
+                    DisplayMode: =If(EntryForm_JobTracking.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =Parent.Height - SearchBox_JobTracking.Height - RectangleSpace_JobTracking.Height
                     Items: |-
