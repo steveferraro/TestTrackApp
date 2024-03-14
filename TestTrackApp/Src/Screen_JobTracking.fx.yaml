@@ -1902,7 +1902,7 @@
         Text: ="You have unsaved data."
         Visible: =EntryForm_JobTracking.Unsaved
         Width: =235
-        X: =1092
+        X: =1052
         Y: =21
         ZIndex: =5
 
@@ -1931,7 +1931,7 @@
         Y: =82
         ZIndex: =7
 
-    Icon6 As icon.Cancel:
+    ExitAppIcon_JobTracking As icon.Cancel:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(202, 80, 16, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)

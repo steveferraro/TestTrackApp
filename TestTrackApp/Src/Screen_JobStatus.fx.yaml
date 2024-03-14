@@ -1918,7 +1918,7 @@
         Y: =25
         ZIndex: =4
 
-    "'WarningLabel_ jobStatus' As label":
+    "'WarningLabel_ JobStatus' As label":
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -1932,7 +1932,29 @@
         Text: ="You have unsaved data."
         Visible: =EntryForm_JobStatus.Unsaved
         Width: =235
-        X: =1092
-        Y: =19
+        X: =1052
+        Y: =14
         ZIndex: =5
+
+    ExitAppIcon_JobStatus As icon.Cancel:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(202, 80, 16, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =39
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Cancel
+        OnSelect: =Exit()
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Exit the application"
+        Width: =25
+        X: =1302
+        Y: =20
+        ZIndex: =6
 
