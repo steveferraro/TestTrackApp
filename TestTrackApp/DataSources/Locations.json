@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rcon_locations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rcon_location",
+    "MaxGetRowsCount": 2000,
+    "Name": "Locations",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rcon_description": "Description",
+      "rcon_jobstracked_Location_rcon_location": "JobsTrackeds",
+      "rcon_location_AsyncOperations": "System Jobs",
+      "rcon_location_BulkDeleteFailures": "Bulk Delete Failures",
+      "rcon_location_DuplicateBaseRecord": "Duplicate Records (rcon_location_DuplicateBaseRecord)",
+      "rcon_location_DuplicateMatchingRecord": "Duplicate Records (rcon_location_DuplicateMatchingRecord)",
+      "rcon_location_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rcon_location_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rcon_location_ProcessSession": "Process Sessions",
+      "rcon_location_SyncErrors": "Sync Errors",
+      "rcon_locationid": "RecordID",
+      "rcon_name": "Location",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Locations",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Locations (Views)",
+    "Name": "_rcon_location_views",
+    "RelatedEntityName": "Locations",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "14719ada-044c-46dc-bf2c-1fabf6416698": "Inactive Locations",
+      "825ecd58-3f2a-44d5-9466-bb8eec5c4d7a": "Location Associated View",
+      "9e93187d-bb5a-43b9-b45c-dda6d16e1c42": "Location Lookup View",
+      "b0f7946c-e244-4bf1-839f-5c62a6f8f217": "Location Advanced Find View",
+      "daa67947-d0dc-4bd7-8aed-319142fc1f75": "Active Locations"
+    }
+  },
+  {
+    "DisplayName": "Status (Locations)",
+    "Name": "rcon_location_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Locations)",
+    "Name": "rcon_location_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  }
+]

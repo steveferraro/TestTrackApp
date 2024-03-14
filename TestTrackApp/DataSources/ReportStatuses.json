@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rcon_reportstatuses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rcon_reportstatus",
+    "MaxGetRowsCount": 2000,
+    "Name": "ReportStatuses",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rcon_description": "Description",
+      "rcon_jobstracked_ReportStatus_rcon_reportstatu": "JobsTrackeds",
+      "rcon_name": "Report Status",
+      "rcon_reportstatus_AsyncOperations": "System Jobs",
+      "rcon_reportstatus_BulkDeleteFailures": "Bulk Delete Failures",
+      "rcon_reportstatus_DuplicateBaseRecord": "Duplicate Records (rcon_reportstatus_DuplicateBaseRecord)",
+      "rcon_reportstatus_DuplicateMatchingRecord": "Duplicate Records (rcon_reportstatus_DuplicateMatchingRecord)",
+      "rcon_reportstatus_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rcon_reportstatus_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rcon_reportstatus_ProcessSession": "Process Sessions",
+      "rcon_reportstatus_SyncErrors": "Sync Errors",
+      "rcon_reportstatusid": "RecordID",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ReportStatuses",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "ReportStatuses (Views)",
+    "Name": "_rcon_reportstatus_views",
+    "RelatedEntityName": "ReportStatuses",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "00167d88-9e41-409d-ae27-0313ded02998": "Active ReportStatuses",
+      "240d9cc8-9b04-4899-aa4c-fecff02d957c": "ReportStatus Associated View",
+      "52a57421-0a2c-413d-94c4-41c55cb34fea": "ReportStatus Lookup View",
+      "5f115ba0-a699-4cf9-b67f-19f33a960f70": "ReportStatus Advanced Find View",
+      "6e728fce-1fe3-4980-843d-4e4b4ffd3bc6": "Inactive ReportStatuses"
+    }
+  },
+  {
+    "DisplayName": "Status (ReportStatuses)",
+    "Name": "rcon_reportstatus_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ReportStatuses"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ReportStatuses",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ReportStatuses)",
+    "Name": "rcon_reportstatus_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ReportStatuses"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ReportStatuses",
+    "Type": "OptionSetInfo"
+  }
+]

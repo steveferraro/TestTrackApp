@@ -1,0 +1,254 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rcon_jobstrackeds",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rcon_jobstracked",
+    "MaxGetRowsCount": 2000,
+    "Name": "JobsTracked",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rcon_billingdate": "Billing Date",
+      "rcon_customername": "Customer Name",
+      "rcon_deficienciesfoundduringtesting": "Deficiencies Found During Testing",
+      "rcon_description": "Description",
+      "rcon_Division": "Division",
+      "rcon_firstfieldworkperformancedate": "First Field Work Performance Date",
+      "rcon_firstfieldworkperformancedate_date": "First Field Work Performance Date (Last Updated On)",
+      "rcon_firstfieldworkperformancedate_state": "First Field Work Performance Date (State)",
+      "rcon_firstformentrydate": "First Form Entry Date",
+      "rcon_firstformentrydate_date": "First Form Entry Date (Last Updated On)",
+      "rcon_firstformentrydate_state": "First Form Entry Date (State)",
+      "rcon_firstformreceiptdate": "First Form Receipt Date",
+      "rcon_firstformreceiptdate_date": "First Form Receipt Date (Last Updated On)",
+      "rcon_firstformreceiptdate_state": "First Form Receipt Date (State)",
+      "rcon_formsaredigitalonly": "Forms are Digital Only",
+      "rcon_formstobeentered": "Forms To Be Entered",
+      "rcon_jobformentry_JobNumber_rcon_jobstracked": "JobsFormEntries",
+      "rcon_jobnumber": "Job Number",
+      "rcon_jobsformreceipt_JobNumber_rcon_jobstracke": "JobsFormReceipts",
+      "rcon_jobstracked_AsyncOperations": "System Jobs",
+      "rcon_jobstracked_BulkDeleteFailures": "Bulk Delete Failures",
+      "rcon_jobstracked_DuplicateBaseRecord": "Duplicate Records (rcon_jobstracked_DuplicateBaseRecord)",
+      "rcon_jobstracked_DuplicateMatchingRecord": "Duplicate Records (rcon_jobstracked_DuplicateMatchingRecord)",
+      "rcon_jobstracked_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rcon_jobstracked_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rcon_jobstracked_ProcessSession": "Process Sessions",
+      "rcon_jobstracked_SyncErrors": "Sync Errors",
+      "rcon_jobstrackedid": "RecordID",
+      "rcon_lastfieldworkperformancedate": "Last Field Work Performance Date",
+      "rcon_lastfieldworkperformancedate_date": "Last Field Work Performance Date (Last Updated On)",
+      "rcon_lastfieldworkperformancedate_state": "Last Field Work Performance Date (State)",
+      "rcon_lastformentrydate": "Last Form Entry Date",
+      "rcon_lastformentrydate_date": "Last Form Entry Date (Last Updated On)",
+      "rcon_lastformentrydate_state": "Last Form Entry Date (State)",
+      "rcon_lastformreceiptdate": "Last Form Receipt Date",
+      "rcon_lastformreceiptdate_date": "Last Form Receipt Date (Last Updated On)",
+      "rcon_lastformreceiptdate_state": "Last Form Receipt Date (State)",
+      "rcon_Location": "Location",
+      "rcon_name": "Name",
+      "rcon_oilsamplesreceivedfromtesting": "Oil Samples Received from Testing",
+      "rcon_oilsamplessentfortesting": "Oil Samples Sent for Testing",
+      "rcon_printforreviewpertimesheets": "Print for Review Per Timesheets",
+      "rcon_ProjectManager": "Project Manager",
+      "rcon_reportcontainsfieldenteredforms": "Report Contains Field Entered Forms",
+      "rcon_reportprintdate": "Report Print Date",
+      "rcon_reportsentfileddate": "Report Sent/Filed Date",
+      "rcon_reportsentfordigitalreview": "Report Sent for Digital Review",
+      "rcon_ReportStatus": "ReportStatus",
+      "rcon_reviewdate": "Review Date",
+      "rcon_reviewers": "Reviewer(s)",
+      "rcon_technicians": "Technician(s)",
+      "rcon_totalformentrytimeminutes": "Total Form Entry Time (minutes)",
+      "rcon_totalformentrytimeminutes_date": "Total Form Entry Time (minutes) (Last Updated On)",
+      "rcon_totalformentrytimeminutes_state": "Total Form Entry Time (minutes) (State)",
+      "rcon_totalformsentered": "Total Forms Entered",
+      "rcon_totalformsentered_date": "Total Forms Entered (Last Updated On)",
+      "rcon_totalformsentered_state": "Total Forms Entered (State)",
+      "rcon_totalformsreceived": "Total Forms Received",
+      "rcon_totalformsreceived_date": "Total Forms Received (Last Updated On)",
+      "rcon_totalformsreceived_state": "Total Forms Received (State)",
+      "rcon_turnaround": "Turnaround",
+      "rcon_worklocation": "Work Location",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "JobsTracked",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "JobsTracked (Views)",
+    "Name": "_rcon_jobstracked_views",
+    "RelatedEntityName": "JobsTracked",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "40869e3b-4cad-408b-8a3f-43da1c2c0a42": "Active JobsTrackeds",
+      "4ab1f698-69aa-4fb5-872b-9acd7278977c": "JobsTracked Associated View",
+      "5dd8ef6d-a4b2-4fb9-8067-c04e7e619898": "JobsTracked Advanced Find View",
+      "ad13afa9-dac6-493a-bbbb-2268400f125c": "JobsTracked Lookup View",
+      "c89000c8-472c-4b5f-99ef-b39b15b08f42": "Inactive JobsTrackeds"
+    }
+  },
+  {
+    "DisplayName": "Forms are Digital Only (JobsTracked)",
+    "Name": "rcon_jobstracked_rcon_formsaredigitalonly",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rcon_formsaredigitalonly",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "rcon_formsaredigitalonly",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Print for Review Per Timesheets (JobsTracked)",
+    "Name": "rcon_jobstracked_rcon_printforreviewpertimesheets",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rcon_printforreviewpertimesheets",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "rcon_printforreviewpertimesheets",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Report Contains Field Entered Forms (JobsTracked)",
+    "Name": "rcon_jobstracked_rcon_reportcontainsfieldenteredforms",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rcon_reportcontainsfieldenteredforms",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "rcon_reportcontainsfieldenteredforms",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Report Sent for Digital Review (JobsTracked)",
+    "Name": "rcon_jobstracked_rcon_reportsentfordigitalreview",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rcon_reportsentfordigitalreview",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "rcon_reportsentfordigitalreview",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (JobsTracked)",
+    "Name": "rcon_jobstracked_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (JobsTracked)",
+    "Name": "rcon_jobstracked_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Technicians",
+    "Name": "rcon_technicians",
+    "OptionSetInfoNameMapping": {
+      "1": "A. Sherwood",
+      "2": "B. Clark",
+      "3": "B. Moody"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rcon_reviewers",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "rcon_technicians",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "rcon_reviewers",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  }
+]

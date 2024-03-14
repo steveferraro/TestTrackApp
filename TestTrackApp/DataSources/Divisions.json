@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rcon_divisions",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rcon_division",
+    "MaxGetRowsCount": 2000,
+    "Name": "Divisions",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rcon_division": "Division",
+      "rcon_division_AsyncOperations": "System Jobs",
+      "rcon_division_BulkDeleteFailures": "Bulk Delete Failures",
+      "rcon_division_DuplicateBaseRecord": "Duplicate Records (rcon_division_DuplicateBaseRecord)",
+      "rcon_division_DuplicateMatchingRecord": "Duplicate Records (rcon_division_DuplicateMatchingRecord)",
+      "rcon_division_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rcon_division_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rcon_division_ProcessSession": "Process Sessions",
+      "rcon_division_SyncErrors": "Sync Errors",
+      "rcon_divisionid": "RecordID",
+      "rcon_divisionnumber": "Division Number",
+      "rcon_jobstracked_Division_rcon_division": "JobsTrackeds",
+      "rcon_name": "Stuff",
+      "rcon_projectmanager_AssignedDivision_rcon_divi": "ProjectManagers (rcon_projectmanager_AssignedDivision_rcon_divi)",
+      "rcon_projectmanager_Division_rcon_division": "ProjectManagers (rcon_projectmanager_Division_rcon_division)",
+      "rcon_recordid": "Name",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Divisions",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Divisions (Views)",
+    "Name": "_rcon_division_views",
+    "RelatedEntityName": "Divisions",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1f505e6e-eea5-464c-b7b8-77d8dbe16659": "Inactive Divisions",
+      "46912f8c-8af8-4c3f-8eb4-93b38eaffd5c": "Division Lookup View",
+      "7018f0cd-e98a-4867-a1f0-adfd931d93eb": "Division Associated View",
+      "c7ca7124-1188-40fa-bec5-d9043ed3f8d4": "Active Divisions",
+      "ddd5e016-1c96-45a3-9b2d-1856b5834a91": "Division Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Divisions)",
+    "Name": "rcon_division_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Divisions"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Divisions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Divisions)",
+    "Name": "rcon_division_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Divisions"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Divisions",
+    "Type": "OptionSetInfo"
+  }
+]

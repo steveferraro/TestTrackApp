@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rcon_jobformentries",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rcon_jobformentry",
+    "MaxGetRowsCount": 2000,
+    "Name": "JobsFormEntries",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rcon_comment": "Comment",
+      "rcon_entrydate": "Entry Date",
+      "rcon_entrydurationminutes": "Entry Duration (minutes)",
+      "rcon_formsentered": "Forms Entered",
+      "rcon_jobformentry_AsyncOperations": "System Jobs",
+      "rcon_jobformentry_BulkDeleteFailures": "Bulk Delete Failures",
+      "rcon_jobformentry_DuplicateBaseRecord": "Duplicate Records (rcon_jobformentry_DuplicateBaseRecord)",
+      "rcon_jobformentry_DuplicateMatchingRecord": "Duplicate Records (rcon_jobformentry_DuplicateMatchingRecord)",
+      "rcon_jobformentry_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rcon_jobformentry_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rcon_jobformentry_ProcessSession": "Process Sessions",
+      "rcon_jobformentry_SyncErrors": "Sync Errors",
+      "rcon_jobformentryid": "RecordID",
+      "rcon_JobNumber": "Job Number",
+      "rcon_name": "Name",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "JobsFormEntries",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "JobsFormEntries (Views)",
+    "Name": "_rcon_jobformentry_views",
+    "RelatedEntityName": "JobsFormEntries",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "28552670-4438-41c1-98b0-a75a3e47042e": "JobFormEntry Lookup View",
+      "317ed103-6e15-4741-a517-a5d82d442d42": "Active JobFormEntries",
+      "3a8d0bf1-aeb8-47dc-8929-674ef4da5795": "Inactive JobFormEntries",
+      "5cc0154c-7f6c-4e5a-ae61-5063c454508a": "JobFormEntry Associated View",
+      "fe09555b-6551-4e9f-883b-74ce7e234045": "JobFormEntry Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (JobsFormEntries)",
+    "Name": "rcon_jobformentry_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "JobsFormEntries"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "JobsFormEntries",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (JobsFormEntries)",
+    "Name": "rcon_jobformentry_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "JobsFormEntries"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "JobsFormEntries",
+    "Type": "OptionSetInfo"
+  }
+]

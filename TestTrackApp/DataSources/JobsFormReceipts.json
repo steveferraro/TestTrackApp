@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rcon_jobsformreceipts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rcon_jobsformreceipt",
+    "MaxGetRowsCount": 2000,
+    "Name": "JobsFormReceipts",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rcon_comment": "Comment",
+      "rcon_fieldworkperformancedate": "Field Work Performance Date",
+      "rcon_formcount": "Form Count",
+      "rcon_JobNumber": "Job Number",
+      "rcon_jobsformreceipt_AsyncOperations": "System Jobs",
+      "rcon_jobsformreceipt_BulkDeleteFailures": "Bulk Delete Failures",
+      "rcon_jobsformreceipt_DuplicateBaseRecord": "Duplicate Records (rcon_jobsformreceipt_DuplicateBaseRecord)",
+      "rcon_jobsformreceipt_DuplicateMatchingRecord": "Duplicate Records (rcon_jobsformreceipt_DuplicateMatchingRecord)",
+      "rcon_jobsformreceipt_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rcon_jobsformreceipt_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rcon_jobsformreceipt_ProcessSession": "Process Sessions",
+      "rcon_jobsformreceipt_SyncErrors": "Sync Errors",
+      "rcon_jobsformreceiptid": "RecordID",
+      "rcon_name": "Name",
+      "rcon_receiptdate": "Receipt Date",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "JobsFormReceipts",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "JobsFormReceipts (Views)",
+    "Name": "_rcon_jobsformreceipt_views",
+    "RelatedEntityName": "JobsFormReceipts",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "73ad6d63-1a0e-447d-bd04-7b534f227a84": "JobsFormReceipt Advanced Find View",
+      "abd212c1-8d21-4a3e-8563-694ef304ab09": "Inactive JobsFormReceipts",
+      "b5984f88-922b-4554-b1f7-cc7573d186ef": "JobsFormReceipt Associated View",
+      "b5ab93df-fee6-4507-8f02-fa244b8a9554": "Active JobsFormReceipts",
+      "df0c0356-7348-4cf4-95c2-e3162f1d4117": "JobsFormReceipt Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (JobsFormReceipts)",
+    "Name": "rcon_jobsformreceipt_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "JobsFormReceipts"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "JobsFormReceipts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (JobsFormReceipts)",
+    "Name": "rcon_jobsformreceipt_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "JobsFormReceipts"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "JobsFormReceipts",
+    "Type": "OptionSetInfo"
+  }
+]

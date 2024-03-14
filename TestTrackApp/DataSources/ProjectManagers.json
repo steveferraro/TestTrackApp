@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rcon_projectmanagers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rcon_projectmanager",
+    "MaxGetRowsCount": 2000,
+    "Name": "ProjectManagers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rcon_AssignedDivision": "Assigned Division",
+      "rcon_Division": "Division",
+      "rcon_firstname": "First Name",
+      "rcon_jobstracked_ProjectManager_rcon_projectma": "JobsTrackeds",
+      "rcon_lastname": "Last Name",
+      "rcon_name": "Name",
+      "rcon_projectmanager_AsyncOperations": "System Jobs",
+      "rcon_projectmanager_BulkDeleteFailures": "Bulk Delete Failures",
+      "rcon_projectmanager_DuplicateBaseRecord": "Duplicate Records (rcon_projectmanager_DuplicateBaseRecord)",
+      "rcon_projectmanager_DuplicateMatchingRecord": "Duplicate Records (rcon_projectmanager_DuplicateMatchingRecord)",
+      "rcon_projectmanager_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rcon_projectmanager_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rcon_projectmanager_ProcessSession": "Process Sessions",
+      "rcon_projectmanager_SyncErrors": "Sync Errors",
+      "rcon_projectmanagerid": "RecordID",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ProjectManagers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "ProjectManagers (Views)",
+    "Name": "_rcon_projectmanager_views",
+    "RelatedEntityName": "ProjectManagers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "247bcb69-a4ca-438c-87d1-7cc2be65108c": "ProjectManager Associated View",
+      "951ca7a4-8d05-409f-a7ee-e3f4761faa0d": "ProjectManager Lookup View",
+      "c4cf0260-d1c0-4678-9bd9-e7949c104412": "Active ProjectManagers",
+      "e4b3356b-b125-47b7-afa9-e75559c89802": "ProjectManager Advanced Find View",
+      "edd57632-b8c8-4501-94a3-bfa8a306423e": "Inactive ProjectManagers"
+    }
+  },
+  {
+    "DisplayName": "Status (ProjectManagers)",
+    "Name": "rcon_projectmanager_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ProjectManagers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ProjectManagers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ProjectManagers)",
+    "Name": "rcon_projectmanager_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ProjectManagers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ProjectManagers",
+    "Type": "OptionSetInfo"
+  }
+]

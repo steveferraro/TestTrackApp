@@ -1,0 +1,395 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =Set(
+            AppTheme,
+            /* START THEME OBJECT */
+            {
+                palette: {
+                    themePrimary: "#ED8032",
+                    themeLighterAlt: "#fefaf6",
+                    themeLighter: "#fceadc",
+                    themeLight: "#fad7be",
+                    themeTertiary: "#f4b180",
+                    themeSecondary: "#ef8e49",
+                    themeDarkAlt: "#d5732d",
+                    themeDark: "#b46126",
+                    themeDarker: "#85481c",
+                    neutralLighterAlt: "#dfdfdf",
+                    neutralLighter: "#dcdcdc",
+                    neutralLight: "#d3d3d3",
+                    neutralQuaternaryAlt: "#c4c4c4",
+                    neutralQuaternary: "#bbbbbb",
+                    neutralTertiaryAlt: "#b4b4b4",
+                    neutralTertiary: "#a19f9d",
+                    neutralSecondary: "#605e5c",
+                    neutralPrimaryAlt: "#3b3a39",
+                    neutralPrimary: "#323130",
+                    neutralDark: "#201f1e",
+                    black: "#000000",
+                    white: "#E6E6E6"
+                }
+            }
+            /* END THEME OBJECT */
+        );
+        Set(
+            AppThemeJson,
+            JSON(
+                AppTheme,
+                JSONFormat.IndentFour
+            )
+        );
+        ClearCollect(
+            colRecordFilter,
+            {RecordFilter: "All Records"},
+            {RecordFilter: "Current User"}
+        );
+        Set(
+            varUser,
+            User().FullName
+        );
+        ClearCollect(
+            colNavigation,
+            Table(
+                {
+                    Title: "Job Tracking",
+                    Screen: Screen_JobTracking,
+                    Image: tracking,
+                    BarColor: Color.Orange
+                },
+                {
+                    Title: "Form Receipts",
+                    Screen: Screen_JobFormReceipt,
+                    Image: receive,
+                    BarColor: Color.Orange
+                },
+                {
+                    Title: "Form Entry",
+                    Screen: Screen_JobFormEntry,
+                    Image: 'data-entry',
+                    BarColor: Color.Orange
+                },
+                {
+                    Title: "Job Status",
+                    Screen: Screen_JobStatus,
+                    Image: status,
+                    BarColor: Color.Orange
+                },
+                {
+                    Title: "Reporting",
+                    Screen: Screen_Reporting,
+                    Image: report,
+                    BarColor: Color.Orange
+                },
+                {
+                    Title: "Admin",
+                    Screen: Screen_AppAdministration,
+                    Image: admin,
+                    BarColor: Color.Orange
+                }
+            )
+        );
+        ClearCollect(
+            colCommands,
+            Table(
+                {
+                    key: "new",
+                    name: "New",
+                    tip: "Create a new tracked job record",
+                    color: Color.Black,
+                    icon: Icon.Add,
+                    show: true
+                },
+                {
+                    key: "edit",
+                    name: "Edit",
+                    tip: "Edit the selected job",
+                    color: Color.Black,
+                    icon: Icon.Edit,
+                    show: true
+                },
+                {
+                    key: "view",
+                    name: "View",
+                    tip: "View job data in read only mode",
+                    color: Color.Black,
+                    icon: Icon.View,
+                    show: true
+                },
+                {
+                    key: "save",
+                    name: "Save",
+                    tip: "Save the job record",
+                    color: Color.Black,
+                    icon: Icon.Save,
+                    show: true
+                },
+                {
+                    key: "delete",
+                    name: "Delete",
+                    tip: "Delete a job record",
+                    color: Color.Black,
+                    icon: Icon.Trash,
+                    show: true
+                },
+                {
+                    key: "reload",
+                    name: "  Reload",
+                    tip: "Refresh the data view",
+                    color: Color.Black,
+                    icon: Icon.Reload,
+                    show: true
+                },
+                {
+                    key: "cancel",
+                    name: "Cancel",
+                    tip: "Cancel modifications to a job record",
+                    color: Color.Black,
+                    icon: Icon.Cancel,
+                    show: true
+                }
+            )
+        );
+        ClearCollect(
+            colCommandsFormEntry,
+            Table(
+                {
+                    key: "new",
+                    name: "New",
+                    tip: "Create a new tracked job record",
+                    color: Color.Black,
+                    icon: Icon.Add,
+                    show: true
+                },
+                {
+                    key: "edit",
+                    name: "Edit",
+                    tip: "Edit the selected job",
+                    color: Color.Black,
+                    icon: Icon.Edit,
+                    show: true
+                },
+                {
+                    key: "view",
+                    name: "View",
+                    tip: "View job data in read only mode",
+                    color: Color.Black,
+                    icon: Icon.View,
+                    show: true
+                },
+                {
+                    key: "save",
+                    name: "Save",
+                    tip: "Save the job record",
+                    color: Color.Black,
+                    icon: Icon.Save,
+                    show: true
+                },
+                {
+                    key: "delete",
+                    name: "Delete",
+                    tip: "Delete a job record",
+                    color: Color.Black,
+                    icon: Icon.Trash,
+                    show: true
+                },
+                {
+                    key: "reload",
+                    name: "  Reload",
+                    tip: "Refresh the data view",
+                    color: Color.Black,
+                    icon: Icon.Reload,
+                    show: true
+                },
+                {
+                    key: "cancel",
+                    name: "Cancel",
+                    tip: "Cancel modifications to a job record",
+                    color: Color.Black,
+                    icon: Icon.Cancel,
+                    show: true
+                },
+                {
+                    key: "start",
+                    name: "Start",
+                    tip: "Start timer",
+                    color: Color.Green,
+                    icon: Icon.Clock,
+                    show: true
+                },
+                {
+                    key: "stop",
+                    name: "Stop",
+                    tip: "Stop timer",
+                    color: Color.DarkRed,
+                    icon: Icon.Clock,
+                    show: true
+                }
+            )
+        );
+        ClearCollect(
+            colCommandsAdmin,
+            Table(
+                {
+                    key: "new",
+                    name: "New",
+                    tip: "Create a new tracked job record",
+                    color: Color.Black,
+                    icon: Icon.Add,
+                    show: true
+                },
+                {
+                    key: "edit",
+                    name: "Edit",
+                    tip: "Edit the selected job",
+                    color: Color.Black,
+                    icon: Icon.Edit,
+                    show: true
+                },
+                {
+                    key: "view",
+                    name: "View",
+                    tip: "View job data in read only mode",
+                    color: Color.Black,
+                    icon: Icon.View,
+                    show: true
+                },
+                {
+                    key: "save",
+                    name: "Save",
+                    tip: "Save the job record",
+                    color: Color.Black,
+                    icon: Icon.Save,
+                    show: true
+                },
+                {
+                    key: "reload",
+                    name: "  Reload",
+                    tip: "Refresh the data view",
+                    color: Color.Black,
+                    icon: Icon.Reload,
+                    show: true
+                },
+                {
+                    key: "cancel",
+                    name: "Cancel",
+                    tip: "Cancel modifications to a job record",
+                    color: Color.Black,
+                    icon: Icon.Cancel,
+                    show: true
+                }
+            )
+        );
+        Set(
+            varEditMode,
+            false
+        );
+        ClearCollect(
+            colAdminUpdates_Division,
+            ShowColumns(
+                Table(Defaults(Divisions)),
+                "rcon_division",
+                "rcon_divisionnumber",
+                "statecode",
+                "rcon_recordid",
+                "rcon_divisionid"
+            )
+        );
+        Clear(colAdminUpdates_Division);
+        ClearCollect(
+            colAdminUpdates_Location,
+            ShowColumns(
+                Table(Defaults(Locations)),
+                "rcon_name",
+                "rcon_description",
+                "statecode",
+                "rcon_locationid"
+            )
+        );
+        Clear(colAdminUpdates_Location);
+        ClearCollect(
+            colAdminUpdates_ProjectManager,
+            ShowColumns(
+                Table(Defaults(ProjectManagers)),
+                "rcon_name",
+                "rcon_lastname",
+                "rcon_firstname",
+                "rcon_AssignedDivision",
+                "statecode",
+                "rcon_projectmanagerid"
+            )
+        );
+        Clear(colAdminUpdates_ProjectManager);
+        ClearCollect(
+            colAdminUpdates_ReportStatuses,
+            ShowColumns(
+                Table(Defaults(ReportStatuses)),
+                "rcon_name",
+                "rcon_description",
+                "statecode",
+                "rcon_reportstatusid"
+            )
+        );
+        ClearCollect(
+            colCommandsJobStatus,
+            Table(
+                {
+                    key: "edit",
+                    name: "Edit",
+                    tip: "Edit the selected job",
+                    color: Color.Black,
+                    icon: Icon.Edit,
+                    show: true
+                },
+                {
+                    key: "view",
+                    name: "View",
+                    tip: "View job data in read only mode",
+                    color: Color.Black,
+                    icon: Icon.View,
+                    show: true
+                },
+                {
+                    key: "save",
+                    name: "Save",
+                    tip: "Save the job record",
+                    color: Color.Black,
+                    icon: Icon.Save,
+                    show: true
+                },
+                {
+                    key: "delete",
+                    name: "Delete",
+                    tip: "Delete a job record",
+                    color: Color.Black,
+                    icon: Icon.Trash,
+                    show: true
+                },
+                {
+                    key: "reload",
+                    name: "  Reload",
+                    tip: "Refresh the data view",
+                    color: Color.Black,
+                    icon: Icon.Reload,
+                    show: true
+                },
+                {
+                    key: "cancel",
+                    name: "Cancel",
+                    tip: "Cancel modifications to a job record",
+                    color: Color.Black,
+                    icon: Icon.Cancel,
+                    show: true
+                }
+            )
+        );
+        Clear(colAdminUpdates_ReportStatuses)
+    Theme: =OrangeTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

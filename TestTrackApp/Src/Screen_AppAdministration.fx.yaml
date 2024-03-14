@@ -1,0 +1,2155 @@
+"Screen_AppAdministration As screen.'autoLayout_Sidebar_ver1.0'":
+    Fill: =
+    LoadingSpinnerColor: =RGBA(202, 80, 16, 1)
+
+    ConfirmationDialog_AppAdministration As Dialog:
+        Buttons: |-
+            =Table(
+                {
+                    Label: "Yes",
+                    ButtonType: 'Button.ButtonType'.Standard,
+                    HasBorder: false,
+                    Color: Color.Green
+                },
+                {
+                    Label: "No",
+                    ButtonType: 'Button.ButtonType'.Primary,
+                    HasBorder: false,
+                    Color: Color.Red
+                }
+            )
+        DialogHeight: =200
+        Fill: =ConfirmationDialog_AppAdministration.OverlayColor
+        Height: =768
+        OnButtonSelect: |-
+            =Switch(
+                ConfirmationDialog_AppAdministration.SelectedButton.Label,
+                "Yes",
+                Remove(
+                    JobsTracked,
+                    GalleryJobs_JobTracking.Selected
+                ),
+                "No",
+                UpdateContext({DialogVisible: false})
+            );
+            UpdateContext({DialogVisible: false})
+        OnCloseSelect: |-
+            =UpdateContext({DialogVisible: false})
+        SubTitle: ="Are you certain you want to delete this job?"
+        Theme: =AppTheme
+        Title: ="Delete Job?"
+        Visible: =DialogVisible
+        Width: =1366.00
+        X: =0.00
+
+    ScreenContainer_AppAdministration As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =ColorValue(AppTheme.palette.themePrimary)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16.01
+        PaddingTop: =16.01
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        X: =0.00
+        ZIndex: =1
+
+        HeaderContainer_AppAdministration As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =ColorValue(AppTheme.palette.neutralLight)
+            FillPortions: =0
+            Height: =110
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =555.74
+            X: =0.00
+            ZIndex: =2
+
+            Label_AppAdministration As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: ="Administration"
+                Width: =Parent.Width
+                X: =0.00
+                ZIndex: =1
+
+            HeaderLineRectangle_AppAdministration As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =ColorValue(AppTheme.palette.themePrimary)
+                FocusedBorderThickness: =4
+                Height: =1
+                HoverFill: =RGBA(202, 80, 16, 1)
+                PressedFill: =RGBA(202, 80, 16, 1)
+                Width: =Parent.Width
+                X: =0.00
+                ZIndex: =2
+
+            ToolBar_AppAdministration As gallery.galleryHorizontal:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DelayItemLoading: =true
+                FillPortions: =0
+                Height: =60
+                Items: =colCommandsAdmin
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |
+                    =Switch(
+                        TabListTables_AppAdministration.Selected.Value,
+                        "Division",
+                        Switch(
+                            ToolBar_AppAdministration.Selected.key,
+                            "new",
+                            Patch(
+                                Divisions,
+                                Defaults(Divisions),
+                                {
+                                    'Division Number': Max(
+                                        Divisions,
+                                        'Division Number'
+                                    ) + 5,
+                                    Stuff: ""
+                                }
+                            ),
+                            "edit",
+                            Set(
+                                varEditModeDivision,
+                                true
+                            ),
+                            "view",
+                            Set(
+                                varEditModeDivision,
+                                false
+                            ),
+                            "save",
+                            If(
+                                CountRows(colAdminUpdates_Division) > 0,
+                                Patch(
+                                    Divisions,
+                                    colAdminUpdates_Division
+                                );
+                                Notify(
+                                    "Success",
+                                    NotificationType.Success
+                                )
+                            );
+                            Clear(colAdminUpdates_Division),
+                            "reload",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );        
+                            Clear(colAdminUpdates_Division);
+                            Refresh(Divisions),
+                            "cancel",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );        
+                            Clear(colAdminUpdates_Division);
+                            Refresh(Divisions)
+                        ),
+                        "Location",
+                        Switch(
+                            ToolBar_AppAdministration.Selected.key,
+                            "new",
+                            Patch(
+                                Locations,
+                                Defaults(Locations),
+                                {
+                                    Location: "",
+                                    Description: ""
+                                }
+                            ),
+                            "edit",
+                            Set(
+                                varEditModeLocation,
+                                true
+                            ),
+                            "view",
+                            Set(
+                                varEditModeLocation,
+                                false
+                            ),
+                            "save",
+                            If(
+                                CountRows(colAdminUpdates_Location) > 0,
+                                Patch(
+                                    Locations,
+                                    colAdminUpdates_Location
+                                );
+                                Notify(
+                                    "Success",
+                                    NotificationType.Success
+                                )
+                            );
+                            Clear(colAdminUpdates_Location),
+                            "reload",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );        
+                            Clear(colAdminUpdates_Location);
+                            Refresh(Locations),
+                            "cancel",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );        
+                            Clear(colAdminUpdates_Location);
+                            Refresh(Locations)
+                        ),
+                        "Project Manager",
+                        Switch(
+                            ToolBar_AppAdministration.Selected.key,
+                            "new",
+                            Patch(
+                                ProjectManagers,
+                                Defaults(ProjectManagers),
+                                {
+                                    'First Name': "",
+                                    'Last Name': "",
+                                    Name: "",
+                                    'Assigned Division': LookUp(
+                                        Divisions,
+                                        'Division Number' = 10
+                                    )
+                                }
+                            ),
+                            "edit",
+                            Set(
+                                varEditModeProjectManager,
+                                true
+                            ),
+                            "view",
+                            Set(
+                                varEditModeProjectManager,
+                                false
+                            ),
+                            "save",
+                            If(
+                                CountRows(colAdminUpdates_ProjectManager) > 0,
+                                Patch(
+                                    ProjectManagers,
+                                    colAdminUpdates_ProjectManager
+                                );
+                                Notify(
+                                    "Success",
+                                    NotificationType.Success
+                                )
+                            );
+                            Clear(colAdminUpdates_ProjectManager),
+                            "reload",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );
+                            Refresh(ProjectManagers);
+                            Clear(colAdminUpdates_ProjectManager);
+                            "cancel",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );
+                            Refresh(ProjectManagers);
+                            Clear(colAdminUpdates_ProjectManager);
+                        ),
+                        "Job Status",
+                        Switch(
+                            ToolBar_AppAdministration.Selected.key,
+                            "new",
+                            Patch(
+                                ReportStatuses,
+                                Defaults(ReportStatuses),
+                                {
+                                    'Report Status': "",
+                                    Description: ""
+                                }
+                            ),
+                            "edit",
+                            Set(
+                                varEditModeJobStatus,
+                                true
+                            ),
+                            "view",
+                            Set(
+                                varEditModeJobStatus,
+                                false
+                            ),
+                            "save",
+                            If(
+                                CountRows(colAdminUpdates_ReportStatuses) > 0,
+                                Patch(
+                                    ReportStatuses,
+                                    colAdminUpdates_ReportStatuses
+                                );
+                                Notify(
+                                    "Success",
+                                    NotificationType.Success
+                                )
+                            );
+                            Clear(colAdminUpdates_ReportStatuses),
+                            "reload",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );        
+                            Clear(colAdminUpdates_ReportStatuses);
+                            Refresh(ReportStatuses),
+                            "cancel",
+                            Set(
+                                varDataCollectionOn,
+                                false
+                            );        
+                            Clear(colAdminUpdates_ReportStatuses);
+                            Refresh(ReportStatuses)
+                        )
+                    );
+                TemplatePadding: =5.00
+                TemplateSize: =130.00
+                Width: =Parent.Width
+                X: =0.00
+                ZIndex: =3
+
+                ToolbarButton_JobStatus_1 As button:
+                    Align: =Align.Right
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                    Font: =Font.'Segoe UI'
+                    Height: =Parent.TemplateHeight
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =5.00
+                    PaddingTop: =5.00
+                    PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =15
+                    Text: =ThisItem.name
+                    Tooltip: =ThisItem.tip
+                    Width: =130.00
+                    X: =0.00
+                    ZIndex: =1
+
+                ToolbarIcon_JobStatus_1 As icon.Add:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    Color: =ThisItem.color
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =43
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =ThisItem.icon
+                    OnSelect: =ThisItem.icon
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =30.00
+                    X: =26.00
+                    Y: =5
+                    ZIndex: =2
+
+        BottomContainer_AppAdministration As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =ColorValue(AppTheme.palette.themePrimary)
+            Height: =Parent.Height
+            LayoutGap: =16
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2.00
+            PaddingTop: =2.00
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =555.74
+            X: =0.00
+            ZIndex: =3
+
+            LeftNavigation_AppAdministration As LeftNavigation:
+                Fill: =ColorValue(AppTheme.palette.neutralLight)
+                Height: =Parent.Height
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                NavigationItems: =colNavigation
+                Width: =LeftNavigation_AppAdministration.MenuWidth
+                X: =0.00
+
+            MainContainer_AppAdministration As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DropShadow: =DropShadow.Light
+                Fill: =Color.White
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.End
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =555.74
+                X: =0.00
+                ZIndex: =3
+
+                "TabListTables_AppAdministration As 'Tab list'.pcfdataset":
+                    DisplayMode: =DisplayMode.Edit
+                    Font: =Font.'Open Sans'
+                    FontColor: =RGBA(0, 0, 0, 1)
+                    FontSize: =18  
+                    FontWeight: ="Bold"
+                    Height: =70
+                    Items: =["Division", "Location", "Project Manager","Job Status"]
+                    LayoutMinHeight: =55
+                    LayoutMinWidth: =280
+                    Width: =Parent.Width
+                    X: =0.00
+                    Y: =0
+                    ZIndex: =1
+
+                ContainerDivision_AppAdministration As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =Parent.Height - TabListTables_AppAdministration.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Visible: =TabListTables_AppAdministration.Selected.Value = "Division"
+                    Width: =Parent.Width
+                    X: =0.00
+                    ZIndex: =4
+
+                    DivisionHeaderContainer_AppAdministration As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.Light
+                        Fill: =ColorValue(AppTheme.palette.neutralLight)
+                        FillPortions: =0
+                        Height: =40
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =1
+
+                        Label1 As label:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: =""
+                            Width: =20.00
+                            X: =0.00
+                            ZIndex: =1
+
+                        Label2 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Number"
+                            Width: =172.00
+                            X: =0.00
+                            ZIndex: =2
+
+                        Label2_1 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Divison"
+                            Width: =165.00
+                            X: =0.00
+                            ZIndex: =3
+
+                        Label2_2 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Name"
+                            Width: =310.00
+                            X: =0.00
+                            ZIndex: =4
+
+                        Label2_3 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Status"
+                            Width: =165.00
+                            X: =0.00
+                            ZIndex: =5
+
+                    TableRecordsDivision_AppAdministration As gallery.galleryVertical:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        DelayItemLoading: =true
+                        DisplayMode: =If(varEditModeDivision, DisplayMode.Edit, DisplayMode.Disabled)
+                        FillPortions: =0
+                        Height: =Parent.Height - DivisionHeaderContainer_AppAdministration.Height
+                        Items: =Divisions
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
+                        LoadingSpinner: =LoadingSpinner.Data
+                        OnSelect: =Set(varDataCollectionOn, true)
+                        Selectable: =
+                        TemplateSize: =50
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =2
+
+                        txtDivisionNumber As text:
+                            Align: =Align.Center
+                            BorderColor: =ColorValue(AppTheme.palette.black)
+                            Color: =Color.Black
+                            Default: =ThisItem.rcon_divisionnumber
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Format: =TextFormat.Number
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_Division.rcon_divisionid,
+                                    Update(
+                                        colAdminUpdates_Division,
+                                        LookUp(
+                                            colAdminUpdates_Division,
+                                            rcon_divisionid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_Division,
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =160.00
+                            X: =15.00
+                            ZIndex: =1
+
+                        txtDivision As text:
+                            Align: =Align.Center
+                            BorderColor: =ColorValue(AppTheme.palette.black)
+                            Color: =Color.Black
+                            Default: =ThisItem.rcon_division
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_Division.rcon_divisionid,
+                                    Update(
+                                        colAdminUpdates_Division,
+                                        LookUp(
+                                            colAdminUpdates_Division,
+                                            rcon_divisionid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_Division,
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =160.00
+                            X: =184.00
+                            ZIndex: =2
+
+                        txtDivisionName As text:
+                            BorderColor: =ColorValue(AppTheme.palette.black)
+                            Color: =Color.Black
+                            Default: =ThisItem.rcon_recordid
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_Division.rcon_divisionid,
+                                    Update(
+                                        colAdminUpdates_Division,
+                                        LookUp(
+                                            colAdminUpdates_Division,
+                                            rcon_divisionid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_Division,
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =302.00
+                            X: =359.99
+                            ZIndex: =3
+
+                        drpDivisionStatus As dropdown:
+                            BorderColor: =ColorValue(AppTheme.palette.black)
+                            BorderThickness: =1
+                            ChevronBackground: =ColorValue(AppTheme.palette.themePrimary)
+                            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                            ChevronFill: =RGBA(33, 33, 33, 1)
+                            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                            Color: =Color.Black
+                            Default: =
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(212, 212, 212, 1)
+                            Items: =Choices('Status (Divisions)')
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_Division.rcon_divisionid,
+                                    Update(
+                                        colAdminUpdates_Division,
+                                        LookUp(
+                                            colAdminUpdates_Division,
+                                            rcon_divisionid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_Division,
+                                        {
+                                            rcon_divisionid: ThisItem.RecordID,
+                                            rcon_recordid: txtDivisionName.Text,
+                                            rcon_divisionnumber: Value(txtDivisionNumber.Text),
+                                            rcon_division: txtDivision.Text,
+                                            statecode: drpDivisionStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =5
+                            PaddingLeft: =20
+                            PaddingRight: =5
+                            PaddingTop: =5
+                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =RGBA(202, 80, 16, 1)
+                            SelectionFill: =RGBA(202, 80, 16, 1)
+                            Size: =13
+                            Width: =160.00
+                            X: =670.00
+                            ZIndex: =4
+
+                        DivisionDeleteIcon_AppAdministration As icon.Trash:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(202, 80, 16, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Trash
+                            OnSelect: =Remove(Divisions,ThisItem)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =40
+                            X: =858
+                            ZIndex: =5
+
+                        DivisionWarningIcon_AppAdministration As icon.Warning:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(255, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Warning
+                            OnSelect: =Select(Parent)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Visible: =ThisItem.RecordID in colAdminUpdates_Division.rcon_divisionid
+                            Width: =40
+                            X: =911
+                            ZIndex: =6
+
+                ContainerLocation_AppAdministration As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =Parent.Height - TabListTables_AppAdministration.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Visible: =TabListTables_AppAdministration.Selected.Value = "Location"
+                    Width: =Parent.Width
+                    X: =0.00
+                    ZIndex: =5
+
+                    LocationHeaderContainer_AppAdministration As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.Light
+                        Fill: =ColorValue(AppTheme.palette.neutralLight)
+                        FillPortions: =0
+                        Height: =40
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =2
+
+                        Label1_1 As label:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: =""
+                            Width: =20.00
+                            X: =0.00
+                            ZIndex: =1
+
+                        Label2_5 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Location"
+                            Width: =165.00
+                            X: =0.00
+                            ZIndex: =3
+
+                        Label2_6 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Description"
+                            Width: =310.00
+                            X: =0.00
+                            ZIndex: =4
+
+                        Label2_7 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Status"
+                            Width: =165.00
+                            X: =0.00
+                            ZIndex: =5
+
+                    TableRecordsLocation_AppAdministration As gallery.galleryVertical:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        DelayItemLoading: =true
+                        DisplayMode: =If(varEditModeLocation, DisplayMode.Edit, DisplayMode.Disabled)
+                        FillPortions: =0
+                        Height: =Parent.Height - LocationHeaderContainer_AppAdministration.Height
+                        Items: =Locations
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
+                        LoadingSpinner: =LoadingSpinner.Data
+                        OnSelect: =Set(varDataCollectionOn, true)
+                        TemplateSize: =50
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =3
+
+                        txtLocationName As text:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderThickness: =1   
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.Location
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_Location.rcon_locationid,
+                                    Update(
+                                        colAdminUpdates_Location,
+                                        LookUp(
+                                            colAdminUpdates_Location,
+                                            rcon_locationid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_locationid: ThisItem.RecordID,
+                                            rcon_name: txtLocationName.Text,
+                                            rcon_description: txtLocationDescription.Text,
+                                            statecode: drpLocationStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_Location,
+                                        {
+                                            rcon_locationid: ThisItem.RecordID,
+                                            rcon_name: txtLocationName.Text,
+                                            rcon_description: txtLocationDescription.Text,
+                                            statecode: drpLocationStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =160.00
+                            X: =20.00
+                            ZIndex: =2
+
+                        txtLocationDescription As text:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderThickness: =1   
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.rcon_description
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_Location.rcon_locationid,
+                                    Update(
+                                        colAdminUpdates_Location,
+                                        LookUp(
+                                            colAdminUpdates_Location,
+                                            rcon_locationid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_locationid: ThisItem.RecordID,
+                                            rcon_name: txtLocationName.Text,
+                                            rcon_description: txtLocationDescription.Text,
+                                            statecode: drpLocationStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_Location,
+                                        {
+                                            rcon_locationid: ThisItem.RecordID,
+                                            rcon_name: txtLocationName.Text,
+                                            rcon_description: txtLocationDescription.Text,
+                                            statecode: drpLocationStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =302.00
+                            X: =194.00
+                            ZIndex: =3
+
+                        drpLocationStatus As dropdown:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderThickness: =1   
+                            ChevronBackground: =ColorValue(AppTheme.palette.themePrimary)
+                            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                            ChevronFill: =RGBA(33, 33, 33, 1)
+                            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(212, 212, 212, 1)
+                            Items: =Choices('Status (Locations)')
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_Location.rcon_locationid,
+                                    Update(
+                                        colAdminUpdates_Location,
+                                        LookUp(
+                                            colAdminUpdates_Location,
+                                            rcon_locationid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_locationid: ThisItem.RecordID,
+                                            rcon_name: txtLocationName.Text,
+                                            rcon_description: txtLocationDescription.Text,
+                                            statecode: drpLocationStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_Location,
+                                        {
+                                            rcon_locationid: ThisItem.RecordID,
+                                            rcon_name: txtLocationName.Text,
+                                            rcon_description: txtLocationDescription.Text,
+                                            statecode: drpLocationStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =5
+                            PaddingLeft: =20
+                            PaddingRight: =5
+                            PaddingTop: =5
+                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =RGBA(202, 80, 16, 1)
+                            SelectionFill: =RGBA(202, 80, 16, 1)
+                            Size: =13
+                            Width: =160.00
+                            X: =508.00
+                            ZIndex: =4
+
+                        LocationDeleteIcon_AppAdministration As icon.Trash:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(202, 80, 16, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Trash
+                            OnSelect: =Remove(Locations,ThisItem)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =40
+                            X: =692
+                            ZIndex: =5
+
+                        LocationWarningIcon_AppAdministration As icon.Warning:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(255, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Warning
+                            OnSelect: =Select(Parent)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Visible: =ThisItem.RecordID in colAdminUpdates_Location.rcon_locationid
+                            Width: =40
+                            X: =744
+                            ZIndex: =6
+
+                ContainerProjectManager_AppAdministration As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =Parent.Height - TabListTables_AppAdministration.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Visible: =TabListTables_AppAdministration.Selected.Value = "Project Manager"
+                    Width: =Parent.Width
+                    X: =0.00
+                    ZIndex: =6
+
+                    ProjectManagerHeaderContainer_AppAdministration As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.Light
+                        Fill: =ColorValue(AppTheme.palette.neutralLight)
+                        FillPortions: =0
+                        Height: =40
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =1
+
+                        Label1_2 As label:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: =""
+                            Width: =20.00
+                            X: =0.00
+                            ZIndex: =1
+
+                        Label2_8 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Name"
+                            Width: =160.00
+                            X: =0.00
+                            ZIndex: =2
+
+                        Label2_9 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Last Name"
+                            Width: =175.00
+                            X: =0.00
+                            ZIndex: =3
+
+                        Label2_10 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="First Name"
+                            Width: =170.00
+                            X: =0.00
+                            ZIndex: =4
+
+                        Label2_16 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Assigned Division"
+                            Width: =340
+                            X: =0.00
+                            ZIndex: =6
+
+                        Label2_17 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Status"
+                            Width: =165.00
+                            X: =0.00
+                            ZIndex: =7
+
+                    TableRecordsProjectManager_AppAdministration As gallery.galleryVertical:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        DelayItemLoading: =true
+                        DisplayMode: =If(varEditModeProjectManager, DisplayMode.Edit, DisplayMode.Disabled)
+                        FillPortions: =0
+                        Height: =Parent.Height - ProjectManagerHeaderContainer_AppAdministration.Height
+                        Items: =ProjectManagers
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
+                        LoadingSpinner: =LoadingSpinner.Data
+                        OnSelect: =Set(varDataCollectionOn, true)
+                        TemplateSize: =50
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =2
+
+                        txtProjectManagerName As text:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.Name
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    varDataCollectionOn,
+                                    If(
+                                        ThisItem.RecordID in colAdminUpdates_ProjectManager.rcon_projectmanagerid,
+                                        Update(
+                                            colAdminUpdates_ProjectManager,
+                                            LookUp(
+                                                colAdminUpdates_ProjectManager,
+                                                rcon_projectmanagerid = ThisItem.RecordID
+                                            ),
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        ),
+                                        Collect(
+                                            colAdminUpdates_ProjectManager,
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        )
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =160.00
+                            X: =10.00
+                            ZIndex: =1
+
+                        txtProjectManagerLastName As text:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.rcon_lastname
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    varDataCollectionOn,
+                                    If(
+                                        ThisItem.RecordID in colAdminUpdates_ProjectManager.rcon_projectmanagerid,
+                                        Update(
+                                            colAdminUpdates_ProjectManager,
+                                            LookUp(
+                                                colAdminUpdates_ProjectManager,
+                                                rcon_projectmanagerid = ThisItem.RecordID
+                                            ),
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        ),
+                                        Collect(
+                                            colAdminUpdates_ProjectManager,
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        )
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =160.00
+                            X: =184.00
+                            ZIndex: =2
+
+                        txtProjectManagerFirstName As text:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.rcon_firstname
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    varDataCollectionOn,
+                                    If(
+                                        ThisItem.RecordID in colAdminUpdates_ProjectManager.rcon_projectmanagerid,
+                                        Update(
+                                            colAdminUpdates_ProjectManager,
+                                            LookUp(
+                                                colAdminUpdates_ProjectManager,
+                                                rcon_projectmanagerid = ThisItem.RecordID
+                                            ),
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        ),
+                                        Collect(
+                                            colAdminUpdates_ProjectManager,
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        )
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =160.00
+                            X: =358.01
+                            ZIndex: =3
+
+                        drpProjectManagerStatus As dropdown:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderThickness: =1
+                            ChevronBackground: =ColorValue(AppTheme.palette.themePrimary)
+                            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                            ChevronFill: =RGBA(33, 33, 33, 1)
+                            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(212, 212, 212, 1)
+                            Items: =Choices('Status (ProjectManagers)')
+                            OnChange: |-
+                                =If(
+                                    varDataCollectionOn,
+                                    If(
+                                        ThisItem.RecordID in colAdminUpdates_ProjectManager.rcon_projectmanagerid,
+                                        Update(
+                                            colAdminUpdates_ProjectManager,
+                                            LookUp(
+                                                colAdminUpdates_ProjectManager,
+                                                rcon_projectmanagerid = ThisItem.RecordID
+                                            ),
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        ),
+                                        Collect(
+                                            colAdminUpdates_ProjectManager,
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        )
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =5
+                            PaddingLeft: =20
+                            PaddingRight: =5
+                            PaddingTop: =5
+                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =RGBA(202, 80, 16, 1)
+                            SelectionFill: =RGBA(202, 80, 16, 1)
+                            Size: =13
+                            Width: =160.00
+                            X: =868
+                            ZIndex: =4
+
+                        cmbAssignedDivision As combobox:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderThickness: =1
+                            ChevronBackground: =RGBA(255, 255, 255, 1)
+                            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                            ChevronFill: =RGBA(33, 33, 33, 1)
+                            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.'Assigned Division'
+                            DefaultSelectedItems: =ThisItem.'Assigned Division'
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayFields: =["rcon_recordid"]
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(212, 212, 212, 1)
+                            Items: =Choices([@ProjectManagers].'Assigned Division')
+                            OnChange: |-
+                                =If(
+                                    varDataCollectionOn,
+                                    If(
+                                        ThisItem.RecordID in colAdminUpdates_ProjectManager.rcon_projectmanagerid,
+                                        Update(
+                                            colAdminUpdates_ProjectManager,
+                                            LookUp(
+                                                colAdminUpdates_ProjectManager,
+                                                rcon_projectmanagerid = ThisItem.RecordID
+                                            ),
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        ),
+                                        Collect(
+                                            colAdminUpdates_ProjectManager,
+                                            {
+                                                rcon_projectmanagerid: ThisItem.RecordID,
+                                                rcon_name: txtProjectManagerName.Text,
+                                                rcon_lastname: txtProjectManagerLastName.Text,
+                                                rcon_firstname: txtProjectManagerFirstName.Text,
+                                                rcon_AssignedDivision: LookUp(
+                                                    Divisions,
+                                                    RecordID = cmbAssignedDivision.Selected.RecordID
+                                                ),
+                                                statecode: drpProjectManagerStatus.Selected.Value
+                                            }
+                                        )
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =RGBA(202, 80, 16, 1)
+                            SearchFields: =["rcon_recordid"]
+                            SearchItems: =Search(Choices([@ProjectManagers].'Assigned Division'),cmbAssignedDivision.SearchText,"rcon_recordid")
+                            SelectionFill: =RGBA(202, 80, 16, 1)
+                            SelectMultiple: =false
+                            Size: =13
+                            X: =529
+                            ZIndex: =5
+
+                        ProjectManagerDeleteIcon_AppAdministration As icon.Trash:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(202, 80, 16, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Trash
+                            OnSelect: =Remove(ProjectManagers,ThisItem)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =40
+                            X: =1050
+                            ZIndex: =6
+
+                        ProjectManagerWarningIcon_AppAdministration As icon.Warning:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(255, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Warning
+                            OnSelect: =Select(Parent)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Visible: =ThisItem.RecordID in colAdminUpdates_ProjectManager.rcon_projectmanagerid
+                            Width: =40
+                            X: =1097
+                            ZIndex: =7
+
+                ContainerJobStatus_AppAdministration As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Height: =Parent.Height - TabListTables_AppAdministration.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Visible: =TabListTables_AppAdministration.Selected.Value = "Job Status"
+                    Width: =Parent.Width
+                    X: =0.00
+                    ZIndex: =7
+
+                    JobStatusHeaderContainer_AppAdministration As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.Light
+                        Fill: =ColorValue(AppTheme.palette.neutralLight)
+                        FillPortions: =0
+                        Height: =40
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =1
+
+                        Label1_3 As label:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: =""
+                            Width: =20.00
+                            X: =0.00
+                            ZIndex: =1
+
+                        Label2_12 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Name"
+                            Width: =320.00
+                            X: =0.00
+                            ZIndex: =2
+
+                        Label2_13 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Description"
+                            Width: =470.00
+                            X: =0.00
+                            ZIndex: =3
+
+                        Label2_15 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Status"
+                            Width: =165.00
+                            X: =0.00
+                            ZIndex: =5
+
+                    TableRecordsJobStatus_AppAdministration As gallery.galleryVertical:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        DelayItemLoading: =true
+                        DisplayMode: =If(varEditModeJobStatus, DisplayMode.Edit, DisplayMode.Disabled)
+                        FillPortions: =0
+                        Height: =Parent.Height - JobStatusHeaderContainer_AppAdministration.Height
+                        Items: =ReportStatuses
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
+                        LoadingSpinner: =LoadingSpinner.Data
+                        OnSelect: =Set(varDataCollectionOn, true)
+                        TemplateSize: =50
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =2
+
+                        txtReportStatusName As text:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.'Report Status'
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_ReportStatuses.rcon_reportstatusid,
+                                    Update(
+                                        colAdminUpdates_ReportStatuses,
+                                        LookUp(
+                                            colAdminUpdates_ReportStatuses,
+                                            rcon_reportstatusid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_reportstatusid: ThisItem.RecordID,
+                                            rcon_name: txtReportStatusName.Text,
+                                            rcon_description: txtReportStatusDescription.Text,
+                                            statecode: drpReportStatusStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_ReportStatuses,
+                                        {
+                                            rcon_reportstatusid: ThisItem.RecordID,
+                                            rcon_name: txtReportStatusName.Text,
+                                            rcon_description: txtProjectManagerLastName.Text,
+                                            statecode: drpReportStatusStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =320.00
+                            X: =10.00
+                            ZIndex: =1
+
+                        txtReportStatusDescription As text:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =ThisItem.rcon_description
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(255, 255, 255, 1)
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_ReportStatuses.rcon_reportstatusid,
+                                    Update(
+                                        colAdminUpdates_ReportStatuses,
+                                        LookUp(
+                                            colAdminUpdates_ReportStatuses,
+                                            rcon_reportstatusid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_reportstatusid: ThisItem.RecordID,
+                                            rcon_name: txtReportStatusName.Text,
+                                            rcon_description: txtReportStatusDescription.Text,
+                                            statecode: drpReportStatusStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_ReportStatuses,
+                                        {
+                                            rcon_reportstatusid: ThisItem.RecordID,
+                                            rcon_name: txtReportStatusName.Text,
+                                            rcon_description: txtReportStatusDescription.Text,
+                                            statecode: drpReportStatusStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =5.00
+                            PaddingTop: =5.00
+                            PressedBorderColor: =RGBA(202, 80, 16, 1)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(255, 255, 255, 1)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =13
+                            Width: =470.00
+                            X: =343.00
+                            ZIndex: =3
+
+                        drpReportStatusStatus As dropdown:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderThickness: =1
+                            ChevronBackground: =ColorValue(AppTheme.palette.themePrimary)
+                            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                            ChevronFill: =RGBA(33, 33, 33, 1)
+                            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =
+                            DisabledBorderColor: =ColorValue(AppTheme.palette.black)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(212, 212, 212, 1)
+                            Items: =Choices('Status (Divisions)')
+                            OnChange: |-
+                                =If(
+                                    ThisItem.RecordID in colAdminUpdates_ReportStatuses.rcon_reportstatusid,
+                                    Update(
+                                        colAdminUpdates_ReportStatuses,
+                                        LookUp(
+                                            colAdminUpdates_ReportStatuses,
+                                            rcon_reportstatusid = ThisItem.RecordID
+                                        ),
+                                        {
+                                            rcon_reportstatusid: ThisItem.RecordID,
+                                            rcon_name: txtReportStatusName.Text,
+                                            rcon_description: txtReportStatusDescription.Text,
+                                            statecode: drpReportStatusStatus.Selected.Value
+                                        }
+                                    ),
+                                    Collect(
+                                        colAdminUpdates_ReportStatuses,
+                                        {
+                                            rcon_reportstatusid: ThisItem.RecordID,
+                                            rcon_name: txtReportStatusName.Text,
+                                            rcon_description: txtProjectManagerLastName.Text,
+                                            statecode: drpReportStatusStatus.Selected.Value
+                                        }
+                                    )
+                                )
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =5
+                            PaddingLeft: =20
+                            PaddingRight: =5
+                            PaddingTop: =5
+                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =RGBA(202, 80, 16, 1)
+                            SelectionFill: =RGBA(202, 80, 16, 1)
+                            Size: =13
+                            Width: =160.00
+                            X: =826.00
+                            ZIndex: =4
+
+                        JobStatusDeleteIcon_AppAdministration As icon.Trash:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(202, 80, 16, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Trash
+                            OnSelect: =Remove(ReportStatuses,ThisItem)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =40
+                            X: =998
+                            ZIndex: =5
+
+                        JobStatusWarningIcon_AppAdministration As icon.Warning:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            Color: =RGBA(255, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =40
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.Warning
+                            OnSelect: =
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Visible: =ThisItem.RecordID in colAdminUpdates_ReportStatuses.rcon_reportstatusid
+                            Width: =40
+                            X: =1050
+                            ZIndex: =6
+
+    Logo_AppAdministration As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =41
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='UIS-Team-UIS'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Utility Instrumentation Service"
+        Width: =118.01
+        X: =28.00
+        Y: =20
+        ZIndex: =2
+
+    WarningIcon_AppAdministration As icon.Warning:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Warning
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: ='WarningLabel_ AppAdministration'.Visible
+        Width: =40
+        X: =1052
+        Y: =25
+        ZIndex: =4
+
+    "'WarningLabel_ AppAdministration' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =52
+        Size: =13
+        Text: ="You have unsaved data."
+        Visible: |-
+            =Switch(TabListTables_AppAdministration.Selected.Value,
+            "Division",
+            CountRows(colAdminUpdates_Division) <> 0,
+            "Location",
+            CountRows(colAdminUpdates_Location) <> 0,
+            "Project Manager",
+            CountRows(colAdminUpdates_ProjectManager) <> 0,
+            "Job Status",
+            CountRows(colAdminUpdates_ReportStatuses) <> 0
+            )
+        Width: =235
+        X: =1092
+        Y: =19
+        ZIndex: =5
+
