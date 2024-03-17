@@ -55,37 +55,43 @@ App As appinfo:
                     Title: "Job Tracking",
                     Screen: Screen_JobTracking,
                     Image: tracking,
-                    BarColor: Color.Orange
+                    BarColor: Color.Orange,
+                    Visibility: true
                 },
                 {
                     Title: "Form Receipts",
                     Screen: Screen_JobFormReceipt,
                     Image: receive,
-                    BarColor: Color.Orange
+                    BarColor: Color.Orange,
+                    Visibility: true
                 },
                 {
                     Title: "Form Entry",
                     Screen: Screen_JobFormEntry,
                     Image: 'data-entry',
-                    BarColor: Color.Orange
+                    BarColor: Color.Orange,
+                    Visibility: true
                 },
                 {
                     Title: "Job Status",
                     Screen: Screen_JobStatus,
                     Image: status,
-                    BarColor: Color.Orange
+                    BarColor: Color.Orange,
+                    Visibility: true
                 },
                 {
                     Title: "Reporting",
                     Screen: Screen_Reporting,
                     Image: report,
-                    BarColor: Color.Orange
+                    BarColor: Color.Orange,
+                    Visibility: true
                 },
                 {
                     Title: "Admin",
                     Screen: Screen_AppAdministration,
                     Image: admin,
-                    BarColor: Color.Orange
+                    BarColor: Color.Orange,
+                    Visibility: true
                 }
             )
         );
