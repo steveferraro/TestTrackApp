@@ -416,15 +416,6 @@
             X: =0.00
             ZIndex: =3
 
-            LeftNavigation_AppAdministration As LeftNavigation:
-                Fill: =ColorValue(AppTheme.palette.neutralLight)
-                Height: =Parent.Height
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                NavigationItems: =colNavigation
-                Width: =LeftNavigation_AppAdministration.MenuWidth
-                X: =0.00
-
             MainContainer_AppAdministration As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light

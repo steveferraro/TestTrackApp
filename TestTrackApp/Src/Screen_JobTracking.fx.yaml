@@ -226,16 +226,6 @@
             X: =17.78
             ZIndex: =3
 
-            LeftNavigation_JobTracking As LeftNavigation:
-                AlignInContainer: =AlignInContainer.Start
-                Fill: =ColorValue(AppTheme.palette.neutralLight)
-                Height: =Parent.Height
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                NavigationItems: =colNavigation
-                Width: =LeftNavigation_JobTracking.MenuWidth
-                X: =2.22
-
             SidebarContainer_JobTracking As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light

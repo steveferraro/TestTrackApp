@@ -228,16 +228,6 @@
             X: =0.00
             ZIndex: =3
 
-            LeftNavigation_JobFormReceipt As LeftNavigation:
-                AlignInContainer: =AlignInContainer.Start
-                Fill: =ColorValue(AppTheme.palette.neutralLight)
-                Height: =Parent.Height
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                NavigationItems: =colNavigation
-                Width: =LeftNavigation_JobFormReceipt.MenuWidth
-                X: =0.00
-
             SidebarContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light

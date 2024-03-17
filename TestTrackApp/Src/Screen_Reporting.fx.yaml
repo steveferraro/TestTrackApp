@@ -97,15 +97,6 @@
             X: =0.00
             ZIndex: =3
 
-            LeftNavigation_Reporting As LeftNavigation:
-                Fill: =ColorValue(AppTheme.palette.neutralLight)
-                Height: =Parent.Height
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                NavigationItems: =colNavigation
-                Width: =LeftNavigation_Reporting.MenuWidth
-                X: =0.00
-
             MainContainer_Reporting As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
                 Fill: =RGBA(255, 255, 255, 1)
