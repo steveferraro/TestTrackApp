@@ -97,6 +97,11 @@
             X: =0.00
             ZIndex: =3
 
+            LeftNavigation_5 As LeftNavigation:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Width: =LeftNavigation_5.MenuWidth
+
             MainContainer_Reporting As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
                 Fill: =RGBA(255, 255, 255, 1)

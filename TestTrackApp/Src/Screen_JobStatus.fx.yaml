@@ -226,6 +226,11 @@
             X: =0.00
             ZIndex: =3
 
+            LeftNavigation_4 As LeftNavigation:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Width: =LeftNavigation_4.MenuWidth
+
             SidebarContainer_JobStatus As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light

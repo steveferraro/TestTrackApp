@@ -416,6 +416,11 @@
             X: =0.00
             ZIndex: =3
 
+            LeftNavigation_6 As LeftNavigation:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Width: =LeftNavigation_6.MenuWidth
+
             MainContainer_AppAdministration As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
@@ -434,7 +439,7 @@
                 RadiusTopRight: =4
                 Width: =555.74
                 X: =0.00
-                ZIndex: =3
+                ZIndex: =2
 
                 "TabListTables_AppAdministration As 'Tab list'.pcfdataset":
                     DisplayMode: =DisplayMode.Edit

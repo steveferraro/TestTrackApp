@@ -228,6 +228,11 @@
             X: =0.00
             ZIndex: =3
 
+            LeftNavigation_2 As LeftNavigation:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Width: =LeftNavigation_2.MenuWidth
+
             SidebarContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light

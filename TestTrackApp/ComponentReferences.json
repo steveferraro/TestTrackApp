@@ -1,6 +1,16 @@
 [
   {
     "HasLibraryLogicalName": true,
+    "InstanceCount": 6,
+    "LibraryId": "3ad4659a-c825-4fce-aa4a-93a77748709c",
+    "LibraryLogicalName": "cr6b8_testtrackcomponentlibrary_cc74f",
+    "LibraryVersion": "2024-03-17T15:13:21Z",
+    "OriginalComponentDefinitionTemplateId": "7c06a82e27ba4dba918da3eca535631b",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2024-03-17T15:13:24.735+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
     "InstanceCount": 5,
     "LibraryId": "c26d3c79-33a2-4927-bfbf-c3813ba3383b",
     "LibraryLogicalName": "cat_powercatcomponentlibrary_0be3a",
