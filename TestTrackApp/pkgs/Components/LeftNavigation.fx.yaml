@@ -82,6 +82,7 @@ LeftNavigation As CanvasComponent:
         Items: =LeftNavigation.NavigationItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =ThisItem.Screen
         TemplateSize: =57
         Width: =Parent.Width
         Y: =HamburgerStackIcon.Y + HamburgerStackIcon.Height
