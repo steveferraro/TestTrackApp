@@ -100,6 +100,7 @@
             LeftNavigation_5 As LeftNavigation:
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
+                NavigationItems: =colNavigation
                 Width: =LeftNavigation_5.MenuWidth
 
             MainContainer_Reporting As groupContainer.verticalAutoLayoutContainer:

@@ -11446,7 +11446,7 @@
         {
           "Category": "Data",
           "PropertyName": "NavigationItems",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

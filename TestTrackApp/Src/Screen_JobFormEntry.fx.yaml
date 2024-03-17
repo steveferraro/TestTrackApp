@@ -209,6 +209,7 @@
             LeftNavigation_3 As LeftNavigation:
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
+                NavigationItems: =colNavigation
                 Width: =LeftNavigation_3.MenuWidth
 
             SidebarContainer_JobFormEntry As groupContainer.verticalAutoLayoutContainer:

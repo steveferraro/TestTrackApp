@@ -51,49 +51,49 @@ App As appinfo:
         ClearCollect(
             colNavigation,
             Table(
-                {
-                    Title: "Job Tracking",
-                    Screen: Screen_JobTracking,
-                    Image: tracking,
-                    BarColor: Color.Orange,
-                    Visibility: true
-                },
-                {
-                    Title: "Form Receipts",
-                    Screen: Screen_JobFormReceipt,
-                    Image: receive,
-                    BarColor: Color.Orange,
-                    Visibility: true
-                },
-                {
-                    Title: "Form Entry",
-                    Screen: Screen_JobFormEntry,
-                    Image: 'data-entry',
-                    BarColor: Color.Orange,
-                    Visibility: true
-                },
-                {
-                    Title: "Job Status",
-                    Screen: Screen_JobStatus,
-                    Image: status,
-                    BarColor: Color.Orange,
-                    Visibility: true
-                },
-                {
-                    Title: "Reporting",
-                    Screen: Screen_Reporting,
-                    Image: report,
-                    BarColor: Color.Orange,
-                    Visibility: true
-                },
-                {
-                    Title: "Admin",
-                    Screen: Screen_AppAdministration,
-                    Image: admin,
-                    BarColor: Color.Orange,
-                    Visibility: true
-                }
-            )
+            {
+                Title: "Job Tracking",
+                Screen: App.ActiveScreen,
+                Image: tracking,
+                BarColor: Color.Orange,
+                Visability: true        
+            },
+            {
+                Title: "Form Receipts",
+                Screen: App.ActiveScreen,
+                Image: receive,
+                BarColor: Color.Orange,
+                Visability: true               
+            },
+            {
+                Title: "Form Entry",
+                Screen: App.ActiveScreen,
+                Image: 'data-entry',
+                BarColor: Color.Orange,
+                Visability: true               
+            },
+            {
+                Title: "Job Status",
+                Screen: App.ActiveScreen,
+                Image: status,
+                BarColor: Color.Orange,
+                Visability: true               
+            },
+            {
+                Title: "Reporting",
+                Screen: App.ActiveScreen,
+                Image: report,
+                BarColor: Color.Orange,
+                Visability: true       
+            },
+            {
+                Title: "Admin",
+                Screen: App.ActiveScreen,
+                Image: admin,
+                BarColor: Color.Orange,
+                Visability: true               
+            }
+        )
         );
         ClearCollect(
             colCommands,

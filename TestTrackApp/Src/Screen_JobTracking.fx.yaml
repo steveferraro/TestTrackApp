@@ -229,51 +229,7 @@
             LeftNavigation_1 As LeftNavigation:
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
-                NavigationItems: |-
-                    =Table(
-                        {
-                            Title: "Job Tracking",
-                            Screen: Screen_JobTracking,
-                            Image: tracking,
-                            BarColor: Color.Orange,
-                            Visability: true        
-                        },
-                        {
-                            Title: "Form Receipts",
-                            Screen: Screen_JobFormReceipt,
-                            Image: receive,
-                            BarColor: Color.Orange,
-                            Visability: true               
-                        },
-                        {
-                            Title: "Form Entry",
-                            Screen: Screen_JobFormEntry,
-                            Image: 'data-entry',
-                            BarColor: Color.Orange,
-                            Visability: true               
-                        },
-                        {
-                            Title: "Job Status",
-                            Screen: Screen_JobStatus,
-                            Image: status,
-                            BarColor: Color.Orange,
-                            Visability: true               
-                        },
-                        {
-                            Title: "Reporting",
-                            Screen: Screen_Reporting,
-                            Image: report,
-                            BarColor: Color.Orange,
-                            Visability: true       
-                        },
-                        {
-                            Title: "Admin",
-                            Screen: Screen_AppAdministration,
-                            Image: admin,
-                            BarColor: Color.Orange,
-                            Visability: true               
-                        }
-                    )
+                NavigationItems: =colNavigation
                 Width: =LeftNavigation_1.MenuWidth
 
             SidebarContainer_JobTracking As groupContainer.verticalAutoLayoutContainer:
