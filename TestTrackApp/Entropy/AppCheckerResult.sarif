@@ -4514,36 +4514,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varUser"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varUser",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varUser",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.AppThemeJson"
                 }
               ],
