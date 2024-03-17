@@ -231,6 +231,7 @@
             LeftNavigation_2 As LeftNavigation:
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
+                NavigationItems: =colNavigation
                 Width: =LeftNavigation_2.MenuWidth
 
             SidebarContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
