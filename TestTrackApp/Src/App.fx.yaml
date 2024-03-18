@@ -60,6 +60,30 @@ App As appinfo:
                 varUserName in Office365Groups.ListGroupMembers(wAdminID).value.displayName
             )
         );
+        With(
+            {
+                wOhioID: LookUp(
+                    Office365Groups.ListOwnedGroups().value,
+                    displayName = "TestTrack - Ohio"
+                ).id
+            },
+            Set(
+                varOhio,
+                varUserName in Office365Groups.ListGroupMembers(wOhioID).value.displayName
+            )
+        );
+        With(
+            {
+                wMichiganID: LookUp(
+                    Office365Groups.ListOwnedGroups().value,
+                    displayName = "TestTrack - Michigan"
+                ).id
+            },
+            Set(
+                varMichigan,
+                varUserName in Office365Groups.ListGroupMembers(wMichiganID).value.displayName
+            )
+        );
         ClearCollect(
             colNavigation,
             Table(
