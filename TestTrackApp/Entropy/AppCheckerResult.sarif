@@ -4484,36 +4484,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.AppThemeJson"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.AppThemeJson",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AppThemeJson",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.varMichigan"
                 }
               ],
@@ -4544,17 +4514,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varOhio"
+                  "fullyQualifiedName": "App.varEditMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varOhio",
+                  "fullyQualifiedName": "App.varEditMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varOhio",
+                "member": "varEditMode",
                 "module": "App",
                 "type": "App"
               }
@@ -4574,17 +4544,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varEditMode"
+                  "fullyQualifiedName": "App.AppThemeJson"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varEditMode",
+                  "fullyQualifiedName": "App.AppThemeJson",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varEditMode",
+                "member": "AppThemeJson",
                 "module": "App",
                 "type": "App"
               }
