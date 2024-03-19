@@ -4484,17 +4484,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varEditMode"
+                  "fullyQualifiedName": "App.varGroup"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varEditMode",
+                  "fullyQualifiedName": "App.varGroup",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varEditMode",
+                "member": "varGroup",
                 "module": "App",
                 "type": "App"
               }
@@ -4525,6 +4525,36 @@
               },
               "properties": {
                 "member": "AppThemeJson",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varEditMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varEditMode",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varEditMode",
                 "module": "App",
                 "type": "App"
               }

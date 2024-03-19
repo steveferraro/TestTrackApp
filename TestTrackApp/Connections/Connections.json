@@ -17,7 +17,7 @@
     "dependents": [],
     "id": "8407a26e-4feb-42c6-8398-e3a2c7b6445c"
   },
-  "8d19faba-d21b-4da5-b161-5097ce8487bf": {
+  "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": {
     "connectionRef": {
       "displayName": "Office 365 Groups",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365groups/icon.png",
@@ -29,6 +29,6 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "8d19faba-d21b-4da5-b161-5097ce8487bf"
+    "id": "cafc4d6f-91a6-4b43-a3cc-983b2e214aba"
   }
 }
