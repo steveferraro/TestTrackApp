@@ -1548,9 +1548,66 @@
                     RadiusTopRight: =0
                     Size: =13
                     Width: =203
-                    X: =20
-                    Y: =40
+                    X: =24
+                    Y: =108
                     ZIndex: =1
+
+                FilterPaneLabel_JobFormReceipt As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Size: =13
+                    Text: ="Filters"
+                    ZIndex: =2
+
+                ExitFilterPaneIcon_JobFormReceipt As icon.Cancel:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(202, 80, 16, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =39
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Cancel
+                    OnSelect: =Set(varFilterPane, false)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Tooltip: ="Exit the filter pane"
+                    Width: =25
+                    X: =215
+                    Y: =1
+                    ZIndex: =3
+
+                Icon3 As icon.Reset:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(202, 80, 16, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =25
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Reset
+                    OnSelect: =Reset(SearchBox_JobFormReceipt)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =25
+                    X: =62
+                    Y: =6
+                    ZIndex: =4
 
     Logo_JobFormReceipt As image:
         BorderColor: =RGBA(0, 0, 0, 0)
