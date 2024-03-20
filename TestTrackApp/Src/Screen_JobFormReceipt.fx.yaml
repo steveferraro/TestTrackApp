@@ -1,4 +1,5 @@
 "Screen_JobFormReceipt As screen.'autoLayout_Sidebar_ver1.0'":
+    BackgroundImage: =
     Fill: =  
     LoadingSpinnerColor: =RGBA(202, 80, 16, 1)
     OnVisible: |-
@@ -253,34 +254,6 @@
                 X: =0.00
                 ZIndex: =2
 
-                SearchBox_JobFormReceipt As text:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    Default: =
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    HintText: ="Search on Job Number"
-                    HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                    HoverColor: =RGBA(51, 51, 51, 1)
-                    HoverFill: =RGBA(255, 255, 255, 1)
-                    PaddingRight: =5.00
-                    PaddingTop: =5.00
-                    PressedBorderColor: =RGBA(202, 80, 16, 1)
-                    PressedColor: =RGBA(51, 51, 51, 1)
-                    PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Size: =13
-                    Width: =500.00
-                    X: =0.00
-                    ZIndex: =1
-
                 RectangleSpace1_JobFormReceipt As rectangle:
                     BorderColor: =ColorValue(AppTheme.palette.themePrimary)
                     BorderStyle: =BorderStyle.None
@@ -288,7 +261,7 @@
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =ColorValue(AppTheme.palette.themePrimary)
                     FocusedBorderThickness: =4
-                    Height: =14
+                    Height: =28
                     HoverFill: =RGBA(202, 80, 16, 1)
                     LayoutMinHeight: =1
                     PressedFill: =RGBA(202, 80, 16, 1)
@@ -495,7 +468,7 @@
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =ColorValue(AppTheme.palette.themePrimary)
                     FocusedBorderThickness: =4
-                    Height: =14
+                    Height: =28  
                     HoverFill: =RGBA(202, 80, 16, 1)
                     LayoutMinHeight: =1
                     PressedFill: =RGBA(202, 80, 16, 1)
@@ -511,7 +484,7 @@
                     DisplayMode: =If(EntryForm_JobFormReceipt.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
-                    Height: =Parent.Height - SearchBox_JobFormReceipt.Height - RectangleSpace1_JobFormReceipt.Height - RectangleSpace2_JobFormReceipt.Height - GalleryJobs_JobFormReceipt.Height
+                    Height: =Parent.Height - RectangleSpace1_JobFormReceipt.Height - RectangleSpace2_JobFormReceipt.Height - GalleryJobs_JobFormReceipt.Height
                     Items: =Filter(JobsFormReceipts, 'Job Number'.RecordID = GalleryJobs_JobFormReceipt.Selected.RecordID)
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
@@ -1453,6 +1426,50 @@
                             Y: =DataCardKey16.Y
                             ZIndex: =4
 
+            FilterContainer_JobFormReceipt As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varFilterPane
+                ZIndex: =4
+
+                SearchBox_JobFormReceipt As text:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Height: =42
+                    HintText: ="Search on Job Number"
+                    HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                    HoverColor: =RGBA(51, 51, 51, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    PaddingRight: =5.00
+                    PaddingTop: =5.00
+                    PressedBorderColor: =RGBA(202, 80, 16, 1)
+                    PressedColor: =RGBA(51, 51, 51, 1)
+                    PressedFill: =RGBA(255, 255, 255, 1)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =13
+                    Width: =203
+                    X: =20
+                    Y: =40
+                    ZIndex: =1
+
     Logo_JobFormReceipt As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -1532,4 +1549,29 @@
         X: =1302
         Y: =20
         ZIndex: =6
+
+    Icon1 As icon.FilterFlat:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(202, 80, 16, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.FilterFlat
+        OnSelect: |-
+            =Set(
+                varFilterPane,
+                !varFilterPane
+            )
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =40
+        X: =1294
+        Y: =73
+        ZIndex: =7
 
