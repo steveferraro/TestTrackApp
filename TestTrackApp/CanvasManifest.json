@@ -102,7 +102,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 6,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -120,7 +120,7 @@
     "ManualOfflineProfileId": "",
     "Name": "TestTrack",
     "OriginatingVersion": "1.337",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 10,
     "ShowStatusBar": false
   },
   "PublishInfo": {

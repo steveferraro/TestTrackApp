@@ -257,7 +257,7 @@
                 ZIndex: =2
 
                 RectangleSpace1_JobFormReceipt As rectangle:
-                    BorderColor: =ColorValue(AppTheme.palette.themePrimary)
+                    BorderColor: =
                     BorderStyle: =BorderStyle.None
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =ColorValue(AppTheme.palette.neutralLighterAlt)
@@ -326,7 +326,7 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =Self.Size * 1.8
+                        Height: =21
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -336,9 +336,9 @@
                         Text: |-
                             ="Job: " & ThisItem.'Job Number'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =327.00
-                        X: =69
-                        Y: =6   
+                        Width: =265
+                        X: =61
+                        Y: =12
                         ZIndex: =2
 
                     Subtitle1_3 As label:
@@ -346,7 +346,7 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                        Height: =16
+                        Height: =22
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -356,9 +356,9 @@
                         Text: |-
                             ="Customer: " & ThisItem.'Customer Name'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =195.00
-                        X: =69
-                        Y: =27
+                        Width: =265
+                        X: =61
+                        Y: =33
                         ZIndex: =3
 
                     NextArrow1_3 As icon.ChevronRight:
@@ -391,11 +391,10 @@
                     Separator1_3 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Fill: =RGBA(255, 255, 255, 1)
-                        Height: =8
+                        Height: =6
                         OnSelect: =Select(Parent)
-                        Width: =500.00
+                        Width: =Parent.Width
                         X: =0.00
-                        Y: =Parent.TemplateHeight - Self.Height
                         ZIndex: =5
 
                     Rectangle1_3 As rectangle:
@@ -407,6 +406,7 @@
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
                         X: =0.00
+                        Y: =6
                         ZIndex: =6
 
                     Icon5 As icon.FilterFlatFilled:
@@ -457,15 +457,14 @@
                         Text: |-
                             ="Created By: " & ThisItem.'Created By'.'Full Name'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =249
-                        X: =69
-                        Y: =49
+                        Width: =201
+                        X: =61
+                        Y: =55
                         ZIndex: =8
 
                 RectangleSpace2_JobFormReceipt As rectangle:
-                    BorderColor: =ColorValue(AppTheme.palette.themePrimary)
+                    BorderColor: =
                     BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =ColorValue(AppTheme.palette.neutralLighterAlt)
                     FocusedBorderThickness: =4
@@ -505,7 +504,7 @@
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =30
+                        Height: =25
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: =FormRecIcon
@@ -518,8 +517,8 @@
                         RadiusTopRight: =8
                         Tooltip: ="Form Receipt"
                         Width: =48.00
-                        X: =13
-                        Y: =8
+                        X: =9
+                        Y: =23
                         ZIndex: =1
 
                     Title2_1 As label:
@@ -527,7 +526,7 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =Self.Size * 1.8
+                        Height: =23
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -536,9 +535,9 @@
                         Size: =12
                         Text: =ThisItem.'Created On'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =315.00
-                        X: =69
-                        Y: =6   
+                        Width: =211
+                        X: =57
+                        Y: =14
                         ZIndex: =2
 
                     NextArrow2_1 As icon.ChevronRight:
@@ -573,20 +572,20 @@
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =8
                         OnSelect: =Select(Parent)
-                        Width: =500.00
+                        Width: =Parent.Width
                         X: =0.00
-                        Y: =Parent.TemplateHeight - Self.Height
                         ZIndex: =4
 
                     Rectangle2_1 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =52
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
-                        Width: =368.00
+                        Width: =Parent.Width
                         X: =0.00
+                        Y: =8
                         ZIndex: =5
 
                     Title2_2 As label:
@@ -603,12 +602,13 @@
                         Text: |-
                             ="Created By: " & ThisItem.'Created By'.'Full Name'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =237
-                        X: =69
-                        Y: =27
+                        Width: =211
+                        X: =57
+                        Y: =37
                         ZIndex: =6
 
                 Label4 As label:
+                    AlignInContainer: =%AlignInContainer.RESERVED%.SetByContainer
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
@@ -617,11 +617,14 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
                     Size: =13
                     Text: ="Text"
                     ZIndex: =6
 
                 Label5 As label:
+                    AlignInContainer: =%AlignInContainer.RESERVED%.SetByContainer
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
@@ -630,6 +633,8 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
                     Size: =13
                     Text: ="Text"
                     ZIndex: =7
