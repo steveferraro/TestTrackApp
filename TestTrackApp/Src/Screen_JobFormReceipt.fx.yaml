@@ -260,7 +260,7 @@
                     BorderColor: =
                     BorderStyle: =BorderStyle.None
                     DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.neutralLighterAlt)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                     FocusedBorderThickness: =4
                     Height: =35
                     HoverFill: =RGBA(202, 80, 16, 1)
@@ -466,7 +466,7 @@
                     BorderColor: =
                     BorderStyle: =BorderStyle.None
                     DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.neutralLighterAlt)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                     FocusedBorderThickness: =4
                     Height: =35
                     HoverFill: =RGBA(202, 80, 16, 1)
