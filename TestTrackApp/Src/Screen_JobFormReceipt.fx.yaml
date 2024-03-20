@@ -229,6 +229,8 @@
             ZIndex: =3
 
             LeftNavigation_2 As LeftNavigation:
+                Fill: =ColorValue(AppTheme.palette.neutralLight)
+                Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 NavigationItems: =colNavigation
@@ -258,7 +260,7 @@
                     BorderColor: =ColorValue(AppTheme.palette.themePrimary)
                     BorderStyle: =BorderStyle.None
                     DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.themePrimary)
+                    Fill: =ColorValue(AppTheme.palette.neutralLighterAlt)
                     FocusedBorderThickness: =4
                     Height: =35
                     HoverFill: =RGBA(202, 80, 16, 1)
@@ -465,7 +467,7 @@
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
                     DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.themePrimary)
+                    Fill: =ColorValue(AppTheme.palette.neutralLighterAlt)
                     FocusedBorderThickness: =4
                     Height: =35
                     HoverFill: =RGBA(202, 80, 16, 1)
