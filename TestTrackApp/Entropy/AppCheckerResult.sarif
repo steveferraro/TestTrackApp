@@ -3074,19 +3074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.Icon1.TabIndex"
+                  "fullyQualifiedName": "Screen_JobFormReceipt.FilterPaneIcon_JobFormReceipt.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.Icon1.TabIndex",
+                  "fullyQualifiedName": "Screen_JobFormReceipt.FilterPaneIcon_JobFormReceipt.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_JobFormReceipt",
-                "type": "Screen_JobFormReceipt.Icon1"
+                "type": "Screen_JobFormReceipt.FilterPaneIcon_JobFormReceipt"
               }
             }
           ],
@@ -3104,19 +3104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_JobFormReceipt.FilterPaneIcon_JobFormReceipt.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_JobFormReceipt.FilterPaneIcon_JobFormReceipt.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_JobFormReceipt",
-                "type": "Screen_JobFormReceipt.Icon1"
+                "type": "Screen_JobFormReceipt.FilterPaneIcon_JobFormReceipt"
               }
             }
           ],

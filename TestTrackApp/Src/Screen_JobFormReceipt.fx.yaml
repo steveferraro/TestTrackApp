@@ -261,7 +261,7 @@
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =ColorValue(AppTheme.palette.themePrimary)
                     FocusedBorderThickness: =4
-                    Height: =28
+                    Height: =35
                     HoverFill: =RGBA(202, 80, 16, 1)
                     LayoutMinHeight: =1
                     PressedFill: =RGBA(202, 80, 16, 1)
@@ -404,7 +404,7 @@
                         Height: =72
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
-                        Width: =368.00
+                        Width: =Parent.Width
                         X: =0.00
                         ZIndex: =6
 
@@ -468,7 +468,7 @@
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =ColorValue(AppTheme.palette.themePrimary)
                     FocusedBorderThickness: =4
-                    Height: =28  
+                    Height: =35
                     HoverFill: =RGBA(202, 80, 16, 1)
                     LayoutMinHeight: =1
                     PressedFill: =RGBA(202, 80, 16, 1)
@@ -606,6 +606,88 @@
                         X: =69
                         Y: =27
                         ZIndex: =6
+
+                Label4 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Size: =13
+                    Text: ="Text"
+                    ZIndex: =6
+
+                Label5 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Size: =13
+                    Text: ="Text"
+                    ZIndex: =7
+
+                Label8_1 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =13
+                    Text: ="Jobs"
+                    Width: =289
+                    X: =105
+                    Y: =147
+                    ZIndex: =8
+
+                Label8_2 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =13
+                    Text: |-
+                        ="Form Receipts:"
+                    Width: =289
+                    X: =105
+                    Y: =502
+                    ZIndex: =9
+
+                Label8_3 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =13
+                    Text: |-
+                        ="Form Receipts:"
+                    Width: =289
+                    X: =105
+                    Y: =502
+                    ZIndex: =10
 
             MainContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -1550,7 +1632,7 @@
         Y: =20
         ZIndex: =6
 
-    Icon1 As icon.FilterFlat:
+    FilterPaneIcon_JobFormReceipt As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(202, 80, 16, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1561,7 +1643,7 @@
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.FilterFlat
+        Icon: =If(IsBlank(SearchBox_JobFormReceipt.Text), Icon.FilterFlat, Icon.FilterFlatFilled)
         OnSelect: |-
             =Set(
                 varFilterPane,
@@ -1572,6 +1654,44 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =40
         X: =1294
-        Y: =73
+        Y: =79
         ZIndex: =7
+
+    JobsLabel_JobFormReceipt As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =29
+        Size: =13
+        Text: |-
+            ="Jobs:"
+        Width: =289
+        X: =105
+        Y: =147
+        ZIndex: =8
+
+    FormReceiptsLabel_JobFormReceipt As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =29
+        Size: =13
+        Text: |-
+            ="Form Receipts:"
+        Width: =289
+        X: =105
+        Y: =502
+        ZIndex: =9
 
