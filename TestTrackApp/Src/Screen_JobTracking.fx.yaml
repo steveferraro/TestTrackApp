@@ -208,7 +208,6 @@
             DropShadow: =DropShadow.Light
             Fill: =ColorValue(AppTheme.palette.themePrimary)
             Height: =Parent.Height
-            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutGap: =16
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -227,6 +226,7 @@
             ZIndex: =3
 
             LeftNavigation_1 As LeftNavigation:
+                Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 NavigationItems: =colNavigation
@@ -239,7 +239,7 @@
                 FillPortions: =3
                 Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -303,30 +303,15 @@
                     DelayItemLoading: =true
                     DisplayMode: =If(EntryForm_JobTracking.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
+                    FillPortions: =0
                     Height: =Parent.Height - SearchBox_JobTracking.Height - RectangleSpace_JobTracking.Height
                     Items: |-
-                        =If(
-                            IsBlank(SearchBox_JobTracking.Text),
-                            If(
-                                RecordFilterToggle_JobTracking.Value,
-                                Filter(
-                                    JobsTracked,
-                                    User().Email = 'Created By'.'Primary Email'
-                                ),
-                                JobsTracked
-                            ),
-                            Search(
-                                If(
-                                    RecordFilterToggle_JobTracking.Value,
-                                    Filter(
-                                        JobsTracked,
-                                        User().Email = 'Created By'.'Primary Email'
-                                    ),
-                                    JobsTracked
-                                ),
-                                SearchBox_JobTracking.Text,
-                                "rcon_jobnumber"
-                            )
+                        =Filter(
+                            JobsTracked,
+                            StartsWith(
+                                'Job Number',
+                                SearchBox_JobTracking.Text
+                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false))
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
@@ -337,7 +322,7 @@
                     TemplatePadding: =0
                     TemplateSize: =80
                     Transition: =Transition.Pop
-                    Width: =364.56
+                    Width: =Parent.Width
                     X: =0.00
                     ZIndex: =3
 
@@ -433,7 +418,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =20
+                        Height: =21
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -455,8 +440,8 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Tooltip: ="Pin job"
                         Width: =20
-                        X: =317
-                        Y: =26
+                        X: =318
+                        Y: =27
                         ZIndex: =7
 
                     Subtitle1_4 As label:

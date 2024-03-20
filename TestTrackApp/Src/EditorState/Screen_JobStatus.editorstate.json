@@ -11471,7 +11471,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

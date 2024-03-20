@@ -208,7 +208,6 @@
             DropShadow: =DropShadow.Light
             Fill: =ColorValue(AppTheme.palette.themePrimary)
             Height: =Parent.Height
-            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutGap: =16
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -227,6 +226,7 @@
             ZIndex: =3
 
             LeftNavigation_4 As LeftNavigation:
+                Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 NavigationItems: =colNavigation   
@@ -307,34 +307,12 @@
                     FillPortions: =0
                     Height: =Parent.Height - SearchBox_JobStatus.Height - RectangleSpace_JobStatus.Height
                     Items: |
-                        =If(
-                            IsBlank(varSelectedJob),
-                            If(
-                                IsBlank(SearchBox_JobStatus.Text),
-                                If(
-                                    RecordFilterToggle_JobTracking.Value,
-                                    Filter(JobsTracked, User().Email = 'Created By'.'Primary Email'),
-                                    JobsTracked
-                                ),
-                                Search(
-                                    Filter(JobsTracked, User().Email = 'Created By'.'Primary Email'),
-                                    SearchBox_JobStatus.Text,
-                                    "rcon_jobnumber"
-                                )
-                            ),
-                            If(
-                                IsBlank(SearchBox_JobStatus.Text),
-                                If(
-                                    RecordFilterToggle_JobTracking.Value,
-                                    Filter(JobsTracked, 'Job Number' = varSelectedJob),
-                                    Filter(JobsTracked, 'Job Number' = varSelectedJob)
-                                ),
-                                Search(
-                                    Filter(JobsTracked, 'Job Number' = varSelectedJob),
-                                    SearchBox_JobStatus.Text,
-                                    "rcon_jobnumber"
-                                )
-                            )
+                        =Filter(
+                            JobsTracked,
+                            StartsWith(
+                                'Job Number',
+                                SearchBox_JobStatus.Text
+                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank())
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287

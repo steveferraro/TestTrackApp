@@ -210,7 +210,6 @@
             DropShadow: =DropShadow.Light
             Fill: =ColorValue(AppTheme.palette.themePrimary)
             Height: =Parent.Height
-            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutGap: =16
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -305,35 +304,13 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
                     Height: =Parent.Height/1.9
-                    Items: |
-                        =If(
-                            IsBlank(varSelectedJob),
-                            If(
-                                IsBlank(SearchBox_JobFormReceipt.Text),
-                                If(
-                                    RecordFilterToggle_JobTracking.Value,
-                                    Filter(JobsTracked, User().Email = 'Created By'.'Primary Email'),
-                                    JobsTracked
-                                ),
-                                Search(
-                                    Filter(JobsTracked, User().Email = 'Created By'.'Primary Email'),
-                                    SearchBox_JobFormReceipt.Text,
-                                    "rcon_jobnumber"
-                                )
-                            ),
-                            If(
-                                IsBlank(SearchBox_JobFormReceipt.Text),
-                                If(
-                                    RecordFilterToggle_JobTracking.Value,
-                                    Filter(JobsTracked, 'Job Number' = varSelectedJob),
-                                    Filter(JobsTracked, 'Job Number' = varSelectedJob)
-                                ),
-                                Search(
-                                    Filter(JobsTracked, 'Job Number' = varSelectedJob),
-                                    SearchBox_JobFormReceipt.Text,
-                                    "rcon_jobnumber"
-                                )
-                            )
+                    Items: |-
+                        =Filter(
+                            JobsTracked,
+                            StartsWith(
+                                'Job Number',
+                                SearchBox_JobFormReceipt.Text
+                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank())
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
@@ -534,7 +511,7 @@
                     DisplayMode: =If(EntryForm_JobFormReceipt.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
-                    Height: =Parent.Height/2.8
+                    Height: =Parent.Height - SearchBox_JobFormReceipt.Height - RectangleSpace1_JobFormReceipt.Height - RectangleSpace2_JobFormReceipt.Height - GalleryJobs_JobFormReceipt.Height
                     Items: =Filter(JobsFormReceipts, 'Job Number'.RecordID = GalleryJobs_JobFormReceipt.Selected.RecordID)
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
