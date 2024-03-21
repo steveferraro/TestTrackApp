@@ -889,7 +889,7 @@
                             X: =911
                             ZIndex: =6
 
-                        drpDivisionStatus_1 As dropdown:
+                        drpDivisionSecurityGroup As dropdown:
                             BorderColor: =ColorValue(AppTheme.palette.black)
                             BorderThickness: =1
                             ChevronBackground: =ColorValue(AppTheme.palette.themePrimary)
@@ -922,7 +922,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus_1.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     ),
                                     Collect(
@@ -932,7 +933,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus_1.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     )
                                 )
