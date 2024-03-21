@@ -312,7 +312,7 @@
                             StartsWith(
                                 'Job Number',
                                 SearchBox_JobStatus.Text
-                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank())
+                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) && (Division.Division in colAccessibleDivisions.rcon_division)
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
