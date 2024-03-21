@@ -101,11 +101,8 @@ App As appinfo:
             )
         );
         ClearCollect(
-            colAccessibleDivisions,
-            Filter(
-                Divisions,
-                'Security Group' = 20
-            )
+            colAllDivisions,
+            Divisions
         );
         ClearCollect(
             colNavigation,

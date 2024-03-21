@@ -65,8 +65,8 @@
     "DisplayName": "Security Group (Divisions)",
     "Name": "rcon_division_rcon_securitygroup",
     "OptionSetInfoNameMapping": {
-      "0": "TestTrack - Michigan",
-      "1": "TestTrack - Ohio"
+      "10": "TestTrack - Michigan",
+      "20": "TestTrack - Ohio"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": false,
