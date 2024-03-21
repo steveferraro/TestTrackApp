@@ -51,7 +51,7 @@ App As appinfo:
         With(
             {
                 wAdminID: LookUp(
-                    Office365Groups.ListOwnedGroupsV3().value,
+                    Office365Groups.ListGroups().value,
                     displayName = "TestTrack - Administration"
                 ).id
             },
@@ -63,7 +63,7 @@ App As appinfo:
         With(
             {
                 wOhioID: LookUp(
-                    Office365Groups.ListOwnedGroupsV3().value,
+                    Office365Groups.ListGroups().value,
                     displayName = "TestTrack - Ohio"
                 ).id
             },
@@ -75,7 +75,7 @@ App As appinfo:
         With(
             {
                 wMichiganID: LookUp(
-                    Office365Groups.ListOwnedGroupsV3().value,
+                    Office365Groups.ListGroups().value,
                     displayName = "TestTrack - Michigan"
                 ).id
             },
