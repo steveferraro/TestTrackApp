@@ -922,7 +922,7 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            rcon_securitygroup: drpDivisionSecurityGroup,
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
                                             statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     ),
@@ -933,7 +933,7 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            rcon_securitygroup: drpDivisionSecurityGroup,
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
                                             statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     )
