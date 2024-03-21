@@ -37,6 +37,7 @@
       "rcon_projectmanager_AssignedDivision_rcon_divi": "ProjectManagers (rcon_projectmanager_AssignedDivision_rcon_divi)",
       "rcon_projectmanager_Division_rcon_division": "ProjectManagers (rcon_projectmanager_Division_rcon_division)",
       "rcon_recordid": "Name",
+      "rcon_securitygroup": "Security Group",
       "statecode": "Status",
       "statuscode": "Status Reason",
       "timezoneruleversionnumber": "Time Zone Rule Version Number",
@@ -59,6 +60,26 @@
       "c7ca7124-1188-40fa-bec5-d9043ed3f8d4": "Active Divisions",
       "ddd5e016-1c96-45a3-9b2d-1856b5834a91": "Division Advanced Find View"
     }
+  },
+  {
+    "DisplayName": "Security Group (Divisions)",
+    "Name": "rcon_division_rcon_securitygroup",
+    "OptionSetInfoNameMapping": {
+      "0": "TestTrack - Michigan",
+      "1": "TestTrack - Ohio"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rcon_securitygroup",
+        "OptionSetReferenceEntityName": "Divisions"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "rcon_securitygroup",
+    "RelatedEntityName": "Divisions",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Divisions)",
