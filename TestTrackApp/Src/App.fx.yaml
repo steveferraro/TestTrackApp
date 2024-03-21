@@ -92,17 +92,23 @@ App As appinfo:
                     varOhio,
                     false
                 ),
-                20,
+                'Security Group (Divisions)'.'TestTrack - Ohio',
                 IfError(
                     varMichigan,
                     false
                 ),
-                10
+                'Security Group (Divisions)'.'TestTrack - Michigan'
             )
         );
         ClearCollect(
-            colAllDivisions,
-            Divisions
+            colAccessibleDivisions,
+            ShowColumns(
+                Filter(
+                    Divisions,
+                    'Security Group' = varGroup
+                ),
+                "rcon_division"
+            )
         );
         ClearCollect(
             colNavigation,
