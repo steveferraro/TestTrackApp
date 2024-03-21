@@ -647,7 +647,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     ),
                                     Collect(
@@ -657,7 +658,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     )
                                 )
@@ -673,7 +675,7 @@
                             RadiusTopRight: =0
                             Size: =13
                             Width: =160.00
-                            X: =15.00
+                            X: =17
                             ZIndex: =1
 
                         txtDivision As text:
@@ -703,7 +705,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     ),
                                     Collect(
@@ -713,7 +716,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     )
                                 )
@@ -758,7 +762,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     ),
                                     Collect(
@@ -768,7 +773,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     )
                                 )
@@ -820,7 +826,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     ),
                                     Collect(
@@ -830,7 +837,8 @@
                                             rcon_recordid: txtDivisionName.Text,
                                             rcon_divisionnumber: Value(txtDivisionNumber.Text),
                                             rcon_division: txtDivision.Text,
-                                            statecode: drpDivisionStatus.Selected.Value
+                                            rcon_securitygroup: drpDivisionSecurityGroup.Selected.Value,
+                                            statecode: drpDivisionSecurityGroup.Selected.Value
                                         }
                                     )
                                 )
