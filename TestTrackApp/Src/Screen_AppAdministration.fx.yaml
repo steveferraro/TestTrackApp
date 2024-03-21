@@ -595,7 +595,7 @@
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height
                             Size: =13
-                            Text: ="Security Group"
+                            Text: ="Security Group Access"
                             Width: =226
                             X: =0.00
                             ZIndex: =6
