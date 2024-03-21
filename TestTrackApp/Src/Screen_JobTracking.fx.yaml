@@ -310,7 +310,7 @@
                             StartsWith(
                                 'Job Number',
                                 SearchBox_JobTracking.Text
-                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && ((varMichigan || varOhio) && Division.Division in colAccessibleDivisions.rcon_division)
+                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && (varAdmin || (varMichigan || varOhio) && Division.Division in colAccessibleDivisions.rcon_division)
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
