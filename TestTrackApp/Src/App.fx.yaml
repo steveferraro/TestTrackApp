@@ -92,12 +92,19 @@ App As appinfo:
                     varOhio,
                     false
                 ),
-                "Ohio",
+                20,
                 IfError(
                     varMichigan,
                     false
                 ),
-                "Michigan"
+                10
+            )
+        );
+        ClearCollect(
+            colAccessibleDivisions,
+            Filter(
+                Divisions,
+                'Security Group' = varGroup
             )
         );
         ClearCollect(
