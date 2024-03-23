@@ -240,19 +240,34 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
-  "radio": {
+  "pcfDataField": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/radio",
+    "Id": "http://microsoft.com/appmagic/pcfDataField",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "radio",
+    "Name": "pcfDataField",
     "OverridableProperties": {},
-    "Version": "2.3.0"
+    "Version": "1.4.0"
+  },
+  "Radio": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_RadioGroupCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_RadioGroupCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Radio",
+    "Version": "0.0.17"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
