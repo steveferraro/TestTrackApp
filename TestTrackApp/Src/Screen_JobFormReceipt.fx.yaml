@@ -1852,7 +1852,12 @@
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =If(IsBlank(SearchBox_JobFormReceipt.Text) && !MyJobsCheckbox_JobFormReceipt.Checked && !Forms2EnterCheckbox_JobJormReceipt.Checked, Icon.FilterFlat, Icon.FilterFlatFilled)
+        Icon: |-
+            =If(
+                IsBlank(SearchBox_JobFormReceipt.Text) && !MyJobsCheckbox_JobFormReceipt.Checked && !Forms2EnterCheckbox_JobJormReceipt.Checked && ReportStatusRadio_JobFormReceipt.Selected.rcon_name,
+                Icon.FilterFlat,
+                Icon.FilterFlatFilled
+            )
         OnSelect: |-
             =Set(
                 varFilterPane,
