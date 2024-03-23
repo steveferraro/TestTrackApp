@@ -1715,6 +1715,7 @@
                         RadioSelectionFill: =RGBA(202, 80, 16, 1)
                         RadioSize: =20
                         Size: =10
+                        Visible: =varAdmin
                         Width: =228
                         X: =12
                         Y: =468
@@ -1736,6 +1737,7 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =varAdmin
                         Width: =20
                         X: =70
                         Y: =440
@@ -1755,6 +1757,7 @@
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Division"
+                        Visible: =varAdmin
                         Width: =228
                         X: =12
                         Y: =438
@@ -1851,7 +1854,7 @@
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =If(IsBlank(SearchBox_JobFormReceipt.Text) || !MyJobsCheckbox_JobFormReceipt.Checked, Icon.FilterFlat, Icon.FilterFlatFilled)
+        Icon: =If((IsBlank(SearchBox_JobFormReceipt.Text) || (!MyJobsCheckbox_JobFormReceipt.Checked)), Icon.FilterFlat, Icon.FilterFlatFilled)
         OnSelect: |-
             =Set(
                 varFilterPane,
