@@ -1546,7 +1546,9 @@
                     ZIndex: =5
 
                 CheckboxCanvas1 As Checkbox:
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =34
                     Label: ="My Jobs"
                     OnCheck: =false
