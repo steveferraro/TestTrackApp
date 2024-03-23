@@ -1640,6 +1640,7 @@
                         RadioBorderColor: =RGBA(51, 51, 51, 1)
                         RadioSelectionFill: =RGBA(202, 80, 16, 1)
                         RadioSize: =20
+                        Reset: =varReportStatusGroupReset
                         Size: =10
                         Width: =228
                         X: =12
@@ -1658,7 +1659,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Reset(SearchBox_JobFormReceipt)
+                        OnSelect: =Set(varReportStatusGroupReset,!varReportStatusGroupReset)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
