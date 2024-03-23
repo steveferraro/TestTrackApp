@@ -1907,8 +1907,8 @@
         TrueHoverFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         TrueText: ="My Records"
         Width: =176
-        X: =919
-        Y: =25
+        X: =1028
+        Y: =84
         ZIndex: =7
 
     ExitAppIcon_JobTracking As icon.Cancel:
