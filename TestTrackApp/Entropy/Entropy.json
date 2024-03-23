@@ -110,8 +110,8 @@
     "DivisionGroup_JobFormReceipt": 259,
     "DivisionHeaderContainer_AppAdministration": 42,
     "DivisionLabel_JobFormReceipt": 252,
-    "DivisionRadio_JobFormEntry": 254,
-    "DivisionResetIcon_JobFormEntry": 253,
+    "DivisionRadio_JobFormReceipt": 254,
+    "DivisionResetIcon_JobFormReceipt": 253,
     "DivisionWarningIcon_AppAdministration": 56,
     "drpDivisionSecurityGroup": 55,
     "drpDivisionStatus": 54,
@@ -475,7 +475,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/23/2024 20:31:14",
+  "HeaderLastSavedDateTimeUTC": "03/23/2024 20:39:26",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "8407a26e-4feb-42c6-8398-e3a2c7b6445c": "\"/providers/microsoft.powerapps/apis/shared_powerappsforappmakers/connections/0d71065b909f4610966b3d7b1812ad26\"",
@@ -614,8 +614,8 @@
     },
     "DivisionGroup_JobFormReceipt": {
       "DivisionLabel_JobFormReceipt": 1,
-      "DivisionRadio_JobFormEntry": 2,
-      "DivisionResetIcon_JobFormEntry": 0
+      "DivisionRadio_JobFormReceipt": 2,
+      "DivisionResetIcon_JobFormReceipt": 0
     },
     "FilterPaneControlGroup_JobFormReceipt": {
       "ExitFilterPaneIcon_JobFormReceipt": 0,
@@ -757,8 +757,8 @@
     "DivisionGroup_JobFormReceipt": {},
     "DivisionHeaderContainer_AppAdministration": {},
     "DivisionLabel_JobFormReceipt": {},
-    "DivisionRadio_JobFormEntry": {},
-    "DivisionResetIcon_JobFormEntry": {},
+    "DivisionRadio_JobFormReceipt": {},
+    "DivisionResetIcon_JobFormReceipt": {},
     "DivisionWarningIcon_AppAdministration": {},
     "drpDivisionSecurityGroup": {},
     "drpDivisionStatus": {},
@@ -1293,8 +1293,8 @@
     "DivisionGroup_JobFormReceipt": 168,
     "DivisionHeaderContainer_AppAdministration": 365,
     "DivisionLabel_JobFormReceipt": 167,
-    "DivisionRadio_JobFormEntry": 170,
-    "DivisionResetIcon_JobFormEntry": 169,
+    "DivisionRadio_JobFormReceipt": 170,
+    "DivisionResetIcon_JobFormReceipt": 169,
     "DivisionWarningIcon_AppAdministration": 379,
     "drpDivisionSecurityGroup": 378,
     "drpDivisionStatus": 377,

@@ -1495,7 +1495,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Reset(SearchBox_JobFormReceipt)
+                        OnSelect: =Reset(SearchBox_JobFormReceipt);Reset(MyJobsCheckbox_JobFormReceipt);Reset(Forms2EnterCheckbox_JobJormReceipt);Reset(ReportStatusRadio_JobFormReceipt); Reset(DivisionRadio_JobFormReceipt)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -1702,7 +1702,7 @@
                     Y: =-116
                     ZIndex: =15
 
-                    DivisionRadio_JobFormEntry As radio:
+                    DivisionRadio_JobFormReceipt As radio:
                         BorderColor: =ColorValue(AppTheme.palette.themePrimary)
                         BorderThickness: =1
                         Color: =RGBA(51, 51, 51, 1)
@@ -1728,7 +1728,7 @@
                         Y: =468
                         ZIndex: =12
 
-                    DivisionResetIcon_JobFormEntry As icon.Reset:
+                    DivisionResetIcon_JobFormReceipt As icon.Reset:
                         BorderColor: =RGBA(166, 166, 166, 1)
                         Color: =RGBA(202, 80, 16, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
