@@ -1441,8 +1441,8 @@
                 ZIndex: =4
 
                 SearchBox_JobFormReceipt As text:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    BorderThickness: =2
+                    BorderColor: =ColorValue(AppTheme.palette.themePrimary)
+                    BorderStyle: =BorderStyle.Dotted
                     Color: =RGBA(51, 51, 51, 1)
                     Default: =""
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1545,6 +1545,56 @@
                     Y: =54
                     ZIndex: =5
 
+                CheckboxCanvas1 As Checkbox:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =34
+                    Label: ="My Jobs"
+                    OnCheck: =false
+                    OnUncheck: =false
+                    Width: =228
+                    X: =12
+                    Y: =163
+                    ZIndex: =6
+
+                CheckboxCanvas2 As Checkbox:
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =45
+                    Label: ="Jobs with Forms to Enter"
+                    OnCheck: =false
+                    OnUncheck: =false
+                    Width: =228
+                    X: =12
+                    Y: =188
+                    ZIndex: =7
+
+                Radio1 As radio:
+                    BorderColor: =ColorValue(AppTheme.palette.themePrimary)
+                    BorderStyle: =BorderStyle.Dotted
+                    BorderThickness: =1
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Height: =259
+                    HoverColor: =RGBA(51, 51, 51, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Items: =ShowColumns(ReportStatuses,"rcon_name")
+                    LineHeight: =1.5
+                    PaddingBottom: =5
+                    PressedColor: =RGBA(51, 51, 51, 1)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadioBorderColor: =RGBA(51, 51, 51, 1)
+                    RadioSelectionFill: =RGBA(202, 80, 16, 1)
+                    RadioSize: =20
+                    Size: =10
+                    Width: =228
+                    X: =12
+                    Y: =341
+                    ZIndex: =8
+
     Logo_JobFormReceipt As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -1632,7 +1682,7 @@
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =40
+        Height: =30
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1645,9 +1695,9 @@
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =40
-        X: =1294
-        Y: =79
+        Width: =30
+        X: =1302
+        Y: =77
         ZIndex: =7
 
     JobsLabel_JobFormReceipt As label:

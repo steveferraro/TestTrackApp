@@ -1899,7 +1899,6 @@
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         HandleFill: =ColorValue(AppTheme.palette.neutralLight)
-        Height: =33
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         Size: =15
@@ -1907,9 +1906,9 @@
         TrueFill: =ColorValue(AppTheme.palette.themePrimary)
         TrueHoverFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         TrueText: ="My Records"
-        Width: =182
-        X: =1151
-        Y: =82
+        Width: =176
+        X: =919
+        Y: =25
         ZIndex: =7
 
     ExitAppIcon_JobTracking As icon.Cancel:
