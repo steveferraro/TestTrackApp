@@ -1644,6 +1644,7 @@
 
                     ReportStatusRadio_JobFormReceipt As Radio.pcfdataset:
                         BasePaletteColor: =
+                        DefaultSelectedItems: =
                         DisplayMode: =DisplayMode.Edit
                         Height: =238
                         Items: =ShowColumns(ReportStatuses,"rcon_name")
