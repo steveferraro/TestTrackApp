@@ -5114,36 +5114,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varReportStatusGroupReset"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varReportStatusGroupReset",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varReportStatusGroupReset",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.guide"
                 }
               ],
