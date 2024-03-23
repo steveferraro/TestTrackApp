@@ -1513,7 +1513,6 @@
 
                     SearchBox_JobFormReceipt As text:
                         BorderColor: =ColorValue(AppTheme.palette.themePrimary)
-                        BorderStyle: =BorderStyle.Dotted
                         Color: =RGBA(51, 51, 51, 1)
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1623,7 +1622,6 @@
 
                     ReportStatusRadio_JobFormReceipt As radio:
                         BorderColor: =ColorValue(AppTheme.palette.themePrimary)
-                        BorderStyle: =BorderStyle.Dotted
                         BorderThickness: =1
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1696,7 +1694,6 @@
 
                     DivisionRadio_JobFormEntry As radio:
                         BorderColor: =ColorValue(AppTheme.palette.themePrimary)
-                        BorderStyle: =BorderStyle.Dotted
                         BorderThickness: =1
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
