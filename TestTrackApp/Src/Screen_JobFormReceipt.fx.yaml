@@ -1842,7 +1842,7 @@
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: |-
             =If(
-                IsBlank(SearchBox_JobFormReceipt.Text) && !MyJobsCheckbox_JobFormReceipt.Checked && !Forms2EnterCheckbox_JobJormReceipt.Checked && !ReportStatusRadio_JobFormReceipt.Selected.rcon_name && !DivisionRadio_JobFormReceipt.Selected.rcon_division,
+                IsBlank(SearchBox_JobFormReceipt.Text) && !MyJobsCheckbox_JobFormReceipt.Checked && !Forms2EnterCheckbox_JobJormReceipt.Checked && IsBlank(ReportStatusRadio_JobFormReceipt.Selected.rcon_name) && IsBlank(DivisionRadio_JobFormReceipt.Selected.rcon_division),
                 Icon.FilterFlat,
                 Icon.FilterFlatFilled
             )
@@ -1896,4 +1896,19 @@
         X: =105
         Y: =502
         ZIndex: =9
+
+    Label4 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =ReportStatusRadio_JobFormReceipt.Selected.rcon_name
+        X: =972
+        Y: =22
+        ZIndex: =10
 
