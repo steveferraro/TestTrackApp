@@ -1432,12 +1432,13 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 LayoutMinHeight: =100
-                LayoutMinWidth: =250
+                LayoutMinWidth: =275
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 Visible: =varFilterPane
+                Width: =250
                 ZIndex: =4
 
                 FilterPaneControlGroup_JobFormReceipt As group:
@@ -1457,8 +1458,10 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
+                        Height: =38
                         Size: =13
                         Text: ="Filters"
+                        Width: =168
                         ZIndex: =2
 
                     ExitFilterPaneIcon_JobFormReceipt As icon.Cancel:
@@ -1468,7 +1471,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =39
+                        Height: =37
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1478,8 +1481,8 @@
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Tooltip: ="Exit the filter pane"
-                        Width: =25
-                        X: =215
+                        Width: =28
+                        X: =240
                         Y: =1
                         ZIndex: =3
 
@@ -1490,7 +1493,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =20
+                        Height: =19
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1499,8 +1502,8 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =20
-                        X: =62
+                        Width: =22
+                        X: =69
                         Y: =6
                         ZIndex: =4
 
@@ -1535,7 +1538,7 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =10
-                        Width: =228
+                        Width: =256
                         X: =12
                         Y: =68
                         ZIndex: =1
@@ -1555,7 +1558,7 @@
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Job Number"
-                        Width: =228
+                        Width: =256
                         X: =12
                         Y: =38
                         ZIndex: =5
@@ -1576,8 +1579,8 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =20
-                        X: =96
+                        Width: =22
+                        X: =106
                         Y: =40
                         ZIndex: =8
 
@@ -1597,7 +1600,7 @@
                         Label: ="My Jobs"
                         OnCheck: =false
                         OnUncheck: =false
-                        Width: =228
+                        Width: =264
                         X: =4
                         Y: =106
                         ZIndex: =6
@@ -1610,7 +1613,7 @@
                         Label: ="Jobs with Forms to Enter"
                         OnCheck: =false
                         OnUncheck: =false
-                        Width: =228
+                        Width: =264
                         X: =4
                         Y: =131
                         ZIndex: =7
@@ -1637,8 +1640,8 @@
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Report Status"
-                        Width: =228
-                        X: =12
+                        Width: =244
+                        X: =13
                         Y: =163
                         ZIndex: =9
 
@@ -1648,7 +1651,7 @@
                         DisplayMode: =DisplayMode.Edit
                         Height: =238
                         Items: =ShowColumns(ReportStatuses,"rcon_name")
-                        Width: =250
+                        Width: =268
                         X: =0
                         Y: =193
                         ZIndex: =11
@@ -1677,8 +1680,8 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =20
-                        X: =102
+                        Width: =21
+                        X: =109
                         Y: =165
                         ZIndex: =14
 
@@ -1705,8 +1708,8 @@
                         Size: =10
                         Text: ="Division"
                         Visible: =varAdmin
-                        Width: =228
-                        X: =12
+                        Width: =244
+                        X: =13
                         Y: =441
                         ZIndex: =10
 
@@ -1714,7 +1717,7 @@
                         DisplayMode: =DisplayMode.Edit
                         Height: =137
                         Items: =ShowColumns(Divisions,"rcon_division")
-                        Width: =250
+                        Width: =268
                         X: =0
                         Y: =467
                         ZIndex: =12
@@ -1744,8 +1747,8 @@
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =varAdmin
-                        Width: =20
-                        X: =70
+                        Width: =21
+                        X: =75
                         Y: =443
                         ZIndex: =13
 
