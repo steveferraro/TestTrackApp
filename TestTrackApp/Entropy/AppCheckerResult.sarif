@@ -5654,36 +5654,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varDivision"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varDivision",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varDivision",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.guide"
                 }
               ],
