@@ -2296,7 +2296,7 @@
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: |-
             =If(
-                IsBlank(SearchBox_JobFormReceipt.Text) && !MyJobsCheckbox_JobFormReceipt.Checked && !Forms2EnterCheckbox_JobJormReceipt.Checked && IsBlank(ReportStatusRadio_JobFormReceipt.Selected.rcon_name) && IsBlank(DivisionRadio_JobFormReceipt.Selected.rcon_division),
+                IsBlank(SearchBox_JobFormReceipt.Text) && !varMyJobs && !varForms2Enter && IsBlank(varSelectedReportStatus),
                 Icon.FilterFlat,
                 Icon.FilterFlatFilled
             )
