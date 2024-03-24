@@ -1458,7 +1458,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =38
+                        Height: =26
                         Size: =13
                         Text: ="Filters"
                         Width: =168
@@ -1471,7 +1471,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =37
+                        Height: =25
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1493,7 +1493,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =19
+                        Height: =18
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1502,9 +1502,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =22
-                        X: =69
-                        Y: =6
+                        Width: =18
+                        X: =62
+                        Y: =5
                         ZIndex: =4
 
                 SearchBoxGroup_JobFormReceipt As group:
@@ -1538,9 +1538,9 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =10
-                        Width: =256
-                        X: =12
-                        Y: =68
+                        Width: =263
+                        X: =5
+                        Y: =54
                         ZIndex: =1
 
                     SearchBoxLabel_JobFormReceipt As label:
@@ -1554,13 +1554,13 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =30
+                        Height: =24
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Job Number"
-                        Width: =256
-                        X: =12
-                        Y: =38
+                        Width: =263
+                        X: =5
+                        Y: =31
                         ZIndex: =5
 
                     SearchboxResetIcon_JobFormReceipt As icon.Reset:
@@ -1570,7 +1570,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =20
+                        Height: =18
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1579,9 +1579,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =22
-                        X: =106
-                        Y: =40
+                        Width: =18
+                        X: =102
+                        Y: =34
                         ZIndex: =8
 
                 CheckboxGroup_JobFormReceipt As group:
@@ -1601,8 +1601,8 @@
                         OnCheck: =false
                         OnUncheck: =false
                         Width: =264
-                        X: =4
-                        Y: =106
+                        X: =0
+                        Y: =92
                         ZIndex: =6
 
                     Forms2EnterCheckbox_JobJormReceipt As Checkbox:
@@ -1614,8 +1614,8 @@
                         OnCheck: =false
                         OnUncheck: =false
                         Width: =264
-                        X: =4
-                        Y: =131
+                        X: =0
+                        Y: =117
                         ZIndex: =7
 
                 ReportStatusGroup_JobFormReceipt As group:
@@ -1636,12 +1636,12 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =30
+                        Height: =24
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Report Status"
-                        Width: =244
-                        X: =13
+                        Width: =263
+                        X: =4
                         Y: =163
                         ZIndex: =9
 
@@ -1649,11 +1649,11 @@
                         BasePaletteColor: =
                         DefaultSelectedItems: =
                         DisplayMode: =DisplayMode.Edit
-                        Height: =238
+                        Height: =235
                         Items: =ShowColumns(ReportStatuses,"rcon_name")
-                        Width: =268
+                        Width: =275
                         X: =0
-                        Y: =193
+                        Y: =192
                         ZIndex: =11
 
                         "'Report Status1' As pcfDataField.textualColumn":
@@ -1671,7 +1671,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =21
+                        Height: =18
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1680,9 +1680,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =21
-                        X: =109
-                        Y: =165
+                        Width: =19
+                        X: =106
+                        Y: =166
                         ZIndex: =14
 
                 DivisionGroup_JobFormReceipt As group:
@@ -1703,23 +1703,23 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =30
+                        Height: =26
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Division"
                         Visible: =varAdmin
-                        Width: =244
-                        X: =13
-                        Y: =441
+                        Width: =263
+                        X: =4
+                        Y: =434
                         ZIndex: =10
 
                     DivisionRadio_JobFormReceipt As Radio.pcfdataset:
                         DisplayMode: =DisplayMode.Edit
-                        Height: =137
+                        Height: =147
                         Items: =ShowColumns(Divisions,"rcon_division")
-                        Width: =268
+                        Width: =275
                         X: =0
-                        Y: =467
+                        Y: =461
                         ZIndex: =12
 
                         Division1 As pcfDataField.textualColumn:
@@ -1737,7 +1737,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =20
+                        Height: =19
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1747,9 +1747,9 @@
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =varAdmin
-                        Width: =21
-                        X: =75
-                        Y: =443
+                        Width: =18
+                        X: =77
+                        Y: =438
                         ZIndex: =13
 
     Logo_JobFormReceipt As image:
