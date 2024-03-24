@@ -1598,8 +1598,8 @@
                         FontColor: =
                         Height: =25
                         Label: ="My Jobs"
-                        OnCheck: =false
-                        OnUncheck: =false
+                        OnCheck: =Set(varMyJobs,true)
+                        OnUncheck: =Set(varMyJobs,false)
                         Width: =264
                         X: =0
                         Y: =92
@@ -1611,8 +1611,8 @@
                         FontColor: =
                         Height: =25
                         Label: ="Jobs with Forms to Enter"
-                        OnCheck: =false
-                        OnUncheck: =false
+                        OnCheck: =Set(varForms2Enter,true)
+                        OnUncheck: =Set(varForms2Enter,false)
                         Width: =264
                         X: =0
                         Y: =117
@@ -1651,6 +1651,7 @@
                         DisplayMode: =DisplayMode.Edit
                         Height: =235
                         Items: =ShowColumns(ReportStatuses,"rcon_name")
+                        OnChange: =Set(varReportStatus,ReportStatusRadio_JobFormReceipt.Selected.rcon_name)
                         Width: =275
                         X: =0
                         Y: =192
@@ -1717,6 +1718,7 @@
                         DisplayMode: =DisplayMode.Edit
                         Height: =147
                         Items: =ShowColumns(Divisions,"rcon_division")
+                        OnChange: =Set(varDivision,DivisionRadio_JobFormReceipt.Selected.rcon_division)
                         Width: =275
                         X: =0
                         Y: =461
@@ -1859,7 +1861,7 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =30
         X: =1302
-        Y: =77
+        Y: =83
         ZIndex: =7
 
     JobsLabel_JobFormReceipt As label:
