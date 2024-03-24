@@ -1498,7 +1498,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Reset(SearchBox_JobFormReceipt);Reset(MyJobsCheckbox_JobFormReceipt);Reset(Forms2EnterCheckbox_JobJormReceipt);Reset(ReportStatusRadio_JobFormReceipt); Reset(DivisionRadio_JobFormReceipt)
+                        OnSelect: =Reset(SearchBox_JobFormReceipt_1);Set(varSelectedReportStatus, Blank()); Reset(ReportStatusRadio_JobTracking);Set(varSelectedDivision, Blank()); Reset(DivisionRadio_JobFormReceipt_1);Set(varMyJobs,false);Set(varForms2Enter, false)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
