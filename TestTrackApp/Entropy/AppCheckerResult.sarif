@@ -5054,6 +5054,516 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ExitFilterPaneIcon_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ExitFilterPaneIcon_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ExitFilterPaneIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ExitFilterPaneIcon_JobFormReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ExitFilterPaneIcon_JobFormReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ExitFilterPaneIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.FilterPaneResetIcon_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.FilterPaneResetIcon_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.FilterPaneResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.FilterPaneResetIcon_JobFormReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.FilterPaneResetIcon_JobFormReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.FilterPaneResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchboxResetIcon_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchboxResetIcon_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchboxResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchboxResetIcon_JobFormReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchboxResetIcon_JobFormReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchboxResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchBox_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchBox_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.SearchBox_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.MyJobsCheckbox_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.MyJobsCheckbox_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.MyJobsCheckbox_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.Forms2EnterCheckbox_JobJormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.Forms2EnterCheckbox_JobJormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.Forms2EnterCheckbox_JobJormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusResetIcon_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusResetIcon_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusResetIcon_JobFormReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusResetIcon_JobFormReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusRadio_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusRadio_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.ReportStatusRadio_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionResetIcon_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionResetIcon_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionResetIcon_JobFormReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionResetIcon_JobFormReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionResetIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionRadio_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionRadio_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.FilterContainer_JobFormReceipt_1.DivisionRadio_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.AppThemeJson"
                 }
               ],
@@ -5095,6 +5605,36 @@
               },
               "properties": {
                 "member": "varEditMode",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varFilterPane"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varFilterPane",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varFilterPane",
                 "module": "App",
                 "type": "App"
               }
@@ -5486,6 +6026,36 @@
                 "member": "Items",
                 "module": "Screen_JobFormReceipt",
                 "type": "Screen_JobFormReceipt.ScreenContainer_JobFormReceipt.BottomContainer_JobFormReceipt.SidebarContainer_JobFormReceipt.GalleryJobs_JobFormReceipt"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1.Icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1.Icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Icon",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1"
               }
             }
           ],
