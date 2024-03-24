@@ -284,7 +284,7 @@
       "MetaDataIDKey": "",
       "Name": "CheckboxGroup_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3955,7 +3955,7 @@
       "MetaDataIDKey": "",
       "Name": "DivisionGroup_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7273,7 +7273,7 @@
       "MetaDataIDKey": "",
       "Name": "FilterPaneControlGroup_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14941,7 +14941,7 @@
       "MetaDataIDKey": "",
       "Name": "ReportStatusGroup_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16406,7 +16406,7 @@
       "MetaDataIDKey": "",
       "Name": "SearchBoxGroup_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
