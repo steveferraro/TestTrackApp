@@ -8276,6 +8276,14 @@
           "InvariantPropertyName": "Label",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Checked",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -8306,6 +8314,11 @@
           "Category": "Data",
           "PropertyName": "BasePaletteColor",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Checked",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12946,7 +12959,7 @@
         {
           "Category": "Data",
           "PropertyName": "Checked",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -15226,7 +15239,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "DefaultSelectedItems",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DefaultSelectedItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,

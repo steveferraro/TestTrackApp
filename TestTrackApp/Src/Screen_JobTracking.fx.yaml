@@ -1996,7 +1996,7 @@
 
                     MyJobsCheckbox_JobFormReceipt_1 As Checkbox:
                         BasePaletteColor: =
-                        Checked: =false
+                        Checked: =varMyJobs
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         Height: =25
@@ -2010,6 +2010,7 @@
 
                     Forms2EnterCheckbox_JobJormReceipt_1 As Checkbox:
                         BasePaletteColor: =
+                        Checked: =varForms2Enter
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         Height: =25
@@ -2050,11 +2051,11 @@
 
                     ReportStatusRadio_JobFormReceipt_1 As Radio.pcfdataset:
                         BasePaletteColor: =
-                        DefaultSelectedItems: =
+                        DefaultSelectedItems: =colSelectedReportStatusFilter
                         DisplayMode: =DisplayMode.Edit
                         Height: =235
                         Items: =ShowColumns(ReportStatuses,"rcon_name")
-                        OnChange: =Set(varReportStatus,ReportStatusRadio_JobFormReceipt_1.Selected.rcon_name)
+                        OnChange: =ClearCollect(colSelectedReportStatusFilter, ReportStatusRadio_JobFormReceipt_1.SelectedItems)
                         Width: =275
                         X: =0
                         Y: =192
