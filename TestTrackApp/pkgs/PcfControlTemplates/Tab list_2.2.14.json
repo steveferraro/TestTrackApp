@@ -1080,330 +1080,323 @@
       "Type": 2
     },
     {
-      "IsControlSpecific": false,
-      "LoadingOrder": 13,
-      "ModifiedPath": "",
-      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"AM\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2049,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"dddd, MMMM d, yyyy h:mm:ss tt\",\"LongDatePattern\":\"dddd, MMMM d, yyyy\",\"LongTimePattern\":\"h:mm:ss tt\",\"MonthDayPattern\":\"MMMM d\",\"PMDesignator\":\"PM\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"M/d/yyyy\",\"ShortTimePattern\":\"h:mm tt\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM yyyy\",\"AbbreviatedDayNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"ShortestDayNames\":[\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"DayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"AbbreviatedMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Gregorian Calendar\",\"AbbreviatedMonthGenitiveNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthGenitiveNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"$\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":0,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"en-US\",\"formatter\":null,\"languagesByCode\":{\"1033\":\"English (United States)\",\"-1\":\"All Languages\"}}}",
-      "Type": 3
-    },
-    {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1025.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1026.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1027.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1028.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1029.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1030.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1031.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1032.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1033.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1035.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1036.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1037.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1038.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1040.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1041.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1042.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1043.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1044.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1045.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1046.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1048.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1049.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1050.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1051.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1053.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1054.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1055.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1057.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1058.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1060.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1061.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1062.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1063.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1066.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1069.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1081.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1086.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1087.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.1110.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.2052.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.2070.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.2074.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.3076.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.3082.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "/PCFControls/PowerApps_CoreControls_TabList/strings/TabList.3098.json",
       "Type": 5
     },
     {
       "IsControlSpecific": false,
-      "LoadingOrder": 14,
+      "LoadingOrder": 13,
       "ModifiedPath": "",
       "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TabList_Display_Key\":\"Tab list\",\"TabList_Desc_Key\":\"Let users select from a list of items.\",\"TabList_Alignment_Display_Key\":\"Alignment\",\"TabList_Alignment_Desc_Key\":\"Alignment of the component that tabs are laid out. \",\"TabList_Size_Display_Key\":\"Size\",\"TabList_Size_Desc_Key\":\"Select from different size\",\"TabList_AccessibleLabel_Display_Key\":\"Accessibility Label\",\"TabList_AccessibleLabel_Desc_Key\":\"Accessibility Label for TabList \",\"TabList_Items_Display_Key\":\"Items\",\"TabList_Items_Desc_Key\":\"Items: The items to display in the tab list.\",\"TabList_Size_Small\":\"Small\",\"TabList_Size_Medium\":\"Medium\",\"TabList_Size_Large\":\"Large\",\"TabList_Alignment_Vertical\":\"Vertical\",\"TabList_Alignment_Horizontal\":\"Horizontal\",\"Base_Palette_Color\":\"Color palette\",\"Base_Palette_Color_description\":\"Choose a color palette that's different from the theme.\",\"TabList_Font_Size\":\"Font size\",\"TabList_Font_Size_description\":\"You can define font size for the text in Tab list using this property\",\"Font\":\"Font\",\"Font_description\":\"The name of the family of fonts in which text appears\",\"Font_Color\":\"Font color\",\"Font_Color_description\":\"The color of text in the control\",\"Font_Weight\":\"Font weight\",\"Font_Weight_description\":\"The weight of the text in a control\",\"Italic\":\"Italic\",\"Underline\":\"Underline\",\"Strikethrough\":\"Strikethrough\"}}}",
       "Type": 3

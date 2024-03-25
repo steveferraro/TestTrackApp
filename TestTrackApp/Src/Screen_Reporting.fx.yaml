@@ -774,3 +774,15 @@
         Y: =20
         ZIndex: =4
 
+    ButtonCanvas1 As Button:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =18
+        Height: =41
+        OnSelect: |-
+            =Launch("http://rangercon1:8080/Reports/browse")
+        Text: ="More Reporting..."
+        Width: =170
+        X: =927
+        Y: =42
+        ZIndex: =5
+

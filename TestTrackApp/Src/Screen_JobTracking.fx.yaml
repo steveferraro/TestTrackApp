@@ -1392,7 +1392,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["rcon_name"]
-                            SearchItems: =Search(Choices([@JobsTracked].rcon_ReportStatus),DataCardValue53.SearchText,"rcon_name")
+                            SearchItems: =Search(Choices([@JobsTracked].'Report Status'),DataCardValue53.SearchText,"rcon_name")
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             SelectMultiple: =false
                             Size: =13
