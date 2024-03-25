@@ -326,7 +326,7 @@
                         Tooltip: ="Job"
                         Width: =48.00
                         X: =13
-                        Y: =26
+                        Y: =33
                         ZIndex: =1
 
                     Title1 As label:
@@ -346,7 +346,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =249
                         X: =69
-                        Y: =6
+                        Y: =13
                         ZIndex: =2
 
                     Subtitle1 As label:
@@ -366,7 +366,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =249
                         X: =69
-                        Y: =27
+                        Y: =34
                         ZIndex: =3
 
                     Separator1 As rectangle:
@@ -440,7 +440,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =249
                         X: =69
-                        Y: =49
+                        Y: =56
                         ZIndex: =8
 
             MainContainer_JobTracking As groupContainer.verticalAutoLayoutContainer:
