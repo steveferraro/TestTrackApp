@@ -309,7 +309,7 @@
                             JobsTracked,
                             StartsWith(
                                 'Job Number',
-                                SearchBox_JobFormReceipt.Text
+                                SearchBox_JobTracking.Text
                             ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
                             && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
                             && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
@@ -2338,7 +2338,7 @@
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: |-
             =If(
-                IsBlank(SearchBox_JobFormReceipt.Text) && !varMyJobs && !varForms2Enter && IsBlank(varSelectedReportStatus) && IsBlank(varSelectedDivision),
+                IsBlank(SearchBox_JobTracking.Text) && !varMyJobs && !varForms2Enter && IsBlank(varSelectedReportStatus) && IsBlank(varSelectedDivision),
                 Icon.FilterFlat,
                 Icon.FilterFlatFilled
             )
