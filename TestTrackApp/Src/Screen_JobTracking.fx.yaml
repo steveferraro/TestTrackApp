@@ -311,7 +311,10 @@
                             StartsWith(
                                 'Job Number',
                                 SearchBox_JobTracking.Text
-                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && (varAdmin || (varMichigan || varOhio) && Division.Division in (colAccessibleDivisions.rcon_division)) && (varSelectedDivision = Division.Division || varSelectedDivision = Blank())
+                            ) 
+                            && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) 
+                            && (varAdmin || (varMichigan || varOhio) && Division.Division in (colAccessibleDivisions.rcon_division)) 
+                            && (varSelectedDivision = Division.Division)
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
