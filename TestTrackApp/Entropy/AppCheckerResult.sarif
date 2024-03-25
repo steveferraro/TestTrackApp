@@ -584,36 +584,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.SidebarContainer_JobFormEntry.SearchBox_JobFormEntry.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.SidebarContainer_JobFormEntry.SearchBox_JobFormEntry.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.SidebarContainer_JobFormEntry.SearchBox_JobFormEntry"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.SidebarContainer_JobFormEntry.GalleryJobs_JobFormEntry.AccessibleLabel"
                 }
               ],
@@ -2504,36 +2474,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobTracking.RecordFilterToggle_JobTracking.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobTracking.RecordFilterToggle_JobTracking.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_JobTracking",
-                "type": "Screen_JobTracking.RecordFilterToggle_JobTracking"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon__JobTracking.AccessibleLabel"
                 }
               ],
@@ -3878,36 +3818,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.SidebarContainer_JobStatus.SearchBox_JobStatus.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.SidebarContainer_JobStatus.SearchBox_JobStatus.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_JobStatus",
-                "type": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.SidebarContainer_JobStatus.SearchBox_JobStatus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
         },
         {
           "locations": [
