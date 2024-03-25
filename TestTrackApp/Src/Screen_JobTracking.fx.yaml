@@ -312,7 +312,7 @@
                                 SearchBox_JobFormReceipt.Text
                             ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
                             && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
-                            && (ReportStatus.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
+                            && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
                             && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
                         )
                     Layout: =Layout.Vertical
@@ -1354,7 +1354,7 @@
                         BorderColor: =RGBA(166, 166, 166, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="rcon_ReportStatus"
-                        Default: =ThisItem.ReportStatus
+                        Default: =ThisItem.'Report Status'
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_ReportStatus")
                         Fill: =RGBA(0, 0, 0, 0)
@@ -1407,7 +1407,7 @@
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
-                            Items: =Choices([@JobsTracked].rcon_ReportStatus)
+                            Items: =Choices([@JobsTracked].'Report Status')
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5.00
                             PaddingTop: =5.00

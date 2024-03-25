@@ -284,7 +284,10 @@
                             StartsWith(
                                 'Job Number',
                                 SearchBox_JobFormReceipt.Text
-                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) && (Division.Division in colAccessibleDivisions.rcon_division)
+                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
+                            && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
+                            && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
+                            && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
