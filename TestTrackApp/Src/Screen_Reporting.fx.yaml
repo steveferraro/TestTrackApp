@@ -775,11 +775,13 @@
         ZIndex: =4
 
     ButtonCanvas1 As Button:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         FontSize: =18
         Height: =41
         OnSelect: |-
-            =Launch("http://rangercon1:8080/Reports/browse")
+            =Launch("http://rangercon1:8080/Reports/browse/TestTrack%20Reporting")
         Text: ="More Reporting..."
         Width: =170
         X: =927
