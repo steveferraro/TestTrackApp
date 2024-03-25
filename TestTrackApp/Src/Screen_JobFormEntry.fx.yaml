@@ -205,13 +205,13 @@
             X: =0.00
             ZIndex: =3
 
-            LeftNavigation_3 As LeftNavigation:
+            LeftNavigation_JobFormEntry As LeftNavigation:
                 Fill: =ColorValue(AppTheme.palette.neutralLight)
                 Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 NavigationItems: =colNavigation
-                Width: =LeftNavigation_3.MenuWidth
+                Width: =LeftNavigation_JobFormEntry.MenuWidth
 
             SidebarContainer_JobFormEntry As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -1353,7 +1353,7 @@
                             Y: =DataCardKey13.Y
                             ZIndex: =4
 
-            FilterContainer__JobFormReceipt_1 As groupContainer.manualLayoutContainer:
+            FilterContainer__JobFormEntry As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Start
                 DropShadow: =DropShadow.Light
                 Fill: =RGBA(255, 255, 255, 1)
@@ -1369,14 +1369,14 @@
                 Width: =555.74
                 ZIndex: =4
 
-                FilterPaneControlGroup__JobTracking_2 As group:
+                FilterPaneControlGroup__JobFormEntry As group:
                     Height: =5
                     Width: =5
                     X: =40
                     Y: =40
                     ZIndex: =12
 
-                    FilterPaneLabel__JobTracking_2 As label:
+                    FilterPaneLabel__JobFormEntry As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1393,7 +1393,7 @@
                         Width: =Parent.Width
                         ZIndex: =3
 
-                    FilterPaneResetIcon__JobTracking_2 As icon.Reset:
+                    FilterPaneResetIcon__JobFormEntry As icon.Reset:
                         BorderColor: =RGBA(166, 166, 166, 1)
                         Color: =RGBA(202, 80, 16, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1406,7 +1406,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Reset(SearchBox__JobFormEntry);Set(varSelectedReportStatus, Blank()); Reset(ReportStatusRadio_JobTracking_2);Set(varSelectedDivision, Blank()); Reset(DivisionRadio__JobTracking_2);Set(varMyJobs,false);Set(varForms2Enter, false)
+                        OnSelect: =Reset(SearchBox__JobFormEntry);Set(varSelectedReportStatus, Blank()); Reset(ReportStatusRadio_JobFormEntry);Set(varSelectedDivision, Blank()); Reset(DivisionRadio__JobFormEntry);Set(varMyJobs,false);Set(varForms2Enter, false)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -1492,14 +1492,14 @@
                         Y: =76
                         ZIndex: =9
 
-                CheckboxGroup__JobTracking_2 As group:
+                CheckboxGroup__JobFormEntry As group:
                     Height: =5
                     Width: =5
                     X: =40
                     Y: =40
                     ZIndex: =12
 
-                    MyJobsCheckbox__JobTracking_2 As Checkbox:
+                    MyJobsCheckbox__JobFormEntry As Checkbox:
                         BasePaletteColor: =
                         Checked: =varMyJobs
                         DisplayMode: =DisplayMode.Edit
@@ -1513,7 +1513,7 @@
                         Y: =169
                         ZIndex: =7
 
-                    Forms2EnterCheckbox__JobTracking_2 As Checkbox:
+                    Forms2EnterCheckbox__JobFormEntry As Checkbox:
                         BasePaletteColor: =
                         Checked: =varForms2Enter
                         DisplayMode: =DisplayMode.Edit
@@ -1527,7 +1527,7 @@
                         Y: =194
                         ZIndex: =8
 
-                GlobalFilterLabel_JobTracking_2 As label:
+                GlobalFilterLabel_JobFormEntry As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
@@ -1546,7 +1546,7 @@
                     Y: =36
                     ZIndex: =15
 
-                GlobalFilterLabel__JobTracking_2 As label:
+                GlobalFilterLabel__JobFormEntry As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
@@ -1565,14 +1565,14 @@
                     Y: =139
                     ZIndex: =16
 
-                ReportStatusGroup_JobTracking_2 As group:
+                ReportStatusGroup_JobFormEntry As group:
                     Height: =5
                     Width: =5
                     X: =40
                     Y: =40
                     ZIndex: =17
 
-                    ReportStatusRadio_JobTracking_2 As radio:
+                    ReportStatusRadio_JobFormEntry As radio:
                         BorderColor: =RGBA(51, 51, 51, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1587,7 +1587,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Items: =ShowColumns(ReportStatuses,"rcon_name")
                         LineHeight: =1.8
-                        OnChange: =Set(varSelectedReportStatus, ReportStatusRadio_JobTracking_2.Selected.rcon_name)
+                        OnChange: =Set(varSelectedReportStatus, ReportStatusRadio_JobFormEntry.Selected.rcon_name)
                         PaddingBottom: =5
                         PaddingTop: =5
                         PressedColor: =RGBA(51, 51, 51, 1)
@@ -1601,7 +1601,7 @@
                         Y: =254
                         ZIndex: =1
 
-                    ReportStatusLabel__JobTracking_2 As label:
+                    ReportStatusLabel__JobFormEntry As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1621,7 +1621,7 @@
                         Y: =227
                         ZIndex: =10
 
-                    ReportStatusResetIcon__JobTracking_2 As icon.Reset:
+                    ReportStatusResetIcon__JobFormEntry As icon.Reset:
                         BorderColor: =RGBA(166, 166, 166, 1)
                         Color: =RGBA(202, 80, 16, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1633,7 +1633,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Set(varSelectedReportStatus, Blank()); Reset(ReportStatusRadio_JobTracking_2)
+                        OnSelect: =Set(varSelectedReportStatus, Blank()); Reset(ReportStatusRadio_JobFormEntry)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -1642,14 +1642,14 @@
                         Y: =230
                         ZIndex: =13
 
-                DivisionGroup_JobTracking_2 As group:
+                DivisionGroup_JobFormEntry As group:
                     Height: =5
                     Width: =5
                     X: =40
                     Y: =40
                     ZIndex: =17
 
-                    DivisionLabel__JobTracking_2 As label:
+                    DivisionLabel__JobFormEntry As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1670,7 +1670,7 @@
                         Y: =462
                         ZIndex: =11
 
-                    DivisionResetIcon__JobTracking_2 As icon.Reset:
+                    DivisionResetIcon__JobFormEntry As icon.Reset:
                         BorderColor: =RGBA(166, 166, 166, 1)
                         Color: =RGBA(202, 80, 16, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1682,7 +1682,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Set(varSelectedDivision, Blank()); Reset(DivisionRadio__JobTracking_2)
+                        OnSelect: =Set(varSelectedDivision, Blank()); Reset(DivisionRadio__JobFormEntry)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -1692,7 +1692,7 @@
                         Y: =465
                         ZIndex: =12
 
-                    DivisionRadio__JobTracking_2 As radio:
+                    DivisionRadio__JobFormEntry As radio:
                         BorderColor: =RGBA(51, 51, 51, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1707,7 +1707,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Items: =ShowColumns(Divisions,"rcon_division")
                         LineHeight: =1.8
-                        OnChange: =Set(varSelectedDivision,DivisionRadio__JobTracking_2.Selected.rcon_division)
+                        OnChange: =Set(varSelectedDivision,DivisionRadio__JobFormEntry.Selected.rcon_division)
                         PaddingBottom: =5
                         PaddingTop: =5
                         PressedColor: =RGBA(51, 51, 51, 1)
@@ -1871,7 +1871,7 @@
         Y: =20
         ZIndex: =7
 
-    FilterPaneIcon_JobFormReceipt_1 As icon.FilterFlat:
+    FilterPaneIcon_JobFormEntry As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(202, 80, 16, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
