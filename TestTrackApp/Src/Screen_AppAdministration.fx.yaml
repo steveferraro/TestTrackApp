@@ -417,6 +417,8 @@
             ZIndex: =3
 
             LeftNavigation_6 As LeftNavigation:
+                Fill: =ColorValue(AppTheme.palette.neutralLight)
+                Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 NavigationItems: =colNavigation

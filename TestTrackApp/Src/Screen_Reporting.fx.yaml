@@ -98,6 +98,9 @@
             ZIndex: =3
 
             LeftNavigation_5 As LeftNavigation:
+                AlignInContainer: =AlignInContainer.Start
+                Fill: =ColorValue(AppTheme.palette.neutralLight)
+                Height: =Parent.Height
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 NavigationItems: =colNavigation
@@ -231,7 +234,7 @@
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Parent.Height/6.9
+                    TemplateSize: =Parent.Height/6.6
                     Width: =Parent.Width
                     ZIndex: =2
 

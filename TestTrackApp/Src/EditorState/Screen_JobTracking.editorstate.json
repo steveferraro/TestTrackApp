@@ -16706,7 +16706,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "",
