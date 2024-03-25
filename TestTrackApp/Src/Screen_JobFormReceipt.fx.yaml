@@ -1904,7 +1904,7 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =30
         X: =1302
-        Y: =83
+        Y: =84
         ZIndex: =7
 
     JobsLabel_JobFormReceipt As label:
