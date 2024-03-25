@@ -252,48 +252,25 @@
                 X: =97.81
                 ZIndex: =2
 
-                SearchBox_JobTracking As text:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    Default: =""
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    HintText: ="Search on Job Number"
-                    HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                    HoverColor: =RGBA(51, 51, 51, 1)
-                    HoverFill: =RGBA(255, 255, 255, 1)
-                    PaddingRight: =5.00
-                    PaddingTop: =5.00
-                    PressedBorderColor: =RGBA(202, 80, 16, 1)
-                    PressedColor: =RGBA(51, 51, 51, 1)
-                    PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Size: =13
-                    Width: =364.56
-                    X: =0.00
-                    ZIndex: =1
-
-                RectangleSpace_JobTracking As rectangle:
-                    BorderColor: =ColorValue(AppTheme.palette.themePrimary)
+                JobsLabel_JobTracking As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.themePrimary)
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                     FocusedBorderThickness: =4
-                    Height: =35  
-                    HoverFill: =RGBA(202, 80, 16, 1)
-                    LayoutMinHeight: =1
-                    PressedFill: =RGBA(202, 80, 16, 1)
-                    Width: =368.00
-                    X: =0.00
-                    ZIndex: =2
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =13
+                    Text: |-
+                        ="Jobs:"
+                    Width: =365
+                    X: =104
+                    Y: =188
+                    ZIndex: =3
 
                 "GalleryJobs_JobTracking As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -303,13 +280,13 @@
                     DisplayMode: =If(EntryForm_JobTracking.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
-                    Height: =Parent.Height - SearchBox_JobTracking.Height - RectangleSpace_JobTracking.Height
+                    Height: =Parent.Height - JobsLabel_JobTracking.Height
                     Items: |-
                         =Filter(
                             JobsTracked,
                             StartsWith(
                                 'Job Number',
-                                SearchBox_JobTracking.Text
+                                SearchBox__JobTracking.Text
                             ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
                             && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
                             && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
@@ -326,7 +303,7 @@
                     Transition: =Transition.Pop
                     Width: =Parent.Width
                     X: =0.00
-                    ZIndex: =3
+                    ZIndex: =4
 
                     Image1 As image:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -397,9 +374,8 @@
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =8
                         OnSelect: =Select(Parent)
-                        Width: =368.00
+                        Width: =Parent.Width
                         X: =0.00
-                        Y: =Parent.TemplateHeight - Self.Height
                         ZIndex: =5
 
                     Rectangle1 As rectangle:
@@ -411,6 +387,7 @@
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
                         X: =0.00
+                        Y: =8
                         ZIndex: =6
 
                     Icon4 As icon.FilterFlatFilled:
@@ -2305,26 +2282,6 @@
         Y: =20
         ZIndex: =8
 
-    JobsLabel_JobTracking As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =29
-        Size: =13
-        Text: |-
-            ="Jobs:"
-        Width: =365
-        X: =104
-        Y: =188
-        ZIndex: =9
-
     FilterPaneIcon__JobTracking As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(202, 80, 16, 1)
@@ -2338,7 +2295,7 @@
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: |-
             =If(
-                IsBlank(SearchBox_JobTracking.Text) && !varMyJobs && !varForms2Enter && IsBlank(varSelectedReportStatus) && IsBlank(varSelectedDivision),
+                IsBlank(SearchBox__JobTracking.Text) && !varMyJobs && !varForms2Enter && IsBlank(varSelectedReportStatus) && IsBlank(varSelectedDivision),
                 Icon.FilterFlat,
                 Icon.FilterFlatFilled
             )

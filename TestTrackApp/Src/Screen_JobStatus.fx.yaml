@@ -312,8 +312,11 @@
                             JobsTracked,
                             StartsWith(
                                 'Job Number',
-                                SearchBox_JobStatus.Text
-                            ) && ((RecordFilterToggle_JobTracking.Value && 'Created By'.'Primary Email' = User().Email) || (RecordFilterToggle_JobTracking.Value = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) && (Division.Division in colAccessibleDivisions.rcon_division)
+                                SearchBox__JobStatus.Text
+                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
+                            && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
+                            && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
+                            && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
@@ -2024,7 +2027,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Reset(SearchBox__JobFormEntry_1);Set(varSelectedReportStatus, Blank()); Reset(ReportStatusRadio_JobFormEntry_1);Set(varSelectedDivision, Blank()); Reset(DivisionRadio__JobFormEntry_1);Set(varMyJobs,false);Set(varForms2Enter, false)
+                        OnSelect: =Reset(SearchBox__JobStatus);Set(varSelectedReportStatus, Blank()); Reset(ReportStatusRadio_JobFormEntry_1);Set(varSelectedDivision, Blank()); Reset(DivisionRadio__JobFormEntry_1);Set(varMyJobs,false);Set(varForms2Enter, false)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -2040,7 +2043,7 @@
                     Y: =40
                     ZIndex: =12
 
-                    SearchBox__JobFormEntry_1 As text:
+                    SearchBox__JobStatus As text:
                         BorderColor: =ColorValue(AppTheme.palette.neutralQuaternary)
                         Color: =RGBA(51, 51, 51, 1)
                         Default: =""
@@ -2101,7 +2104,7 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Reset
-                        OnSelect: =Reset(SearchBox__JobFormEntry_1)
+                        OnSelect: =Reset(SearchBox__JobStatus)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)

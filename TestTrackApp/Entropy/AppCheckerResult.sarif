@@ -1634,36 +1634,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.SidebarContainer_JobTracking.SearchBox_JobTracking.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.SidebarContainer_JobTracking.SearchBox_JobTracking.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_JobTracking",
-                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.SidebarContainer_JobTracking.SearchBox_JobTracking"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.SidebarContainer_JobTracking.GalleryJobs_JobTracking.AccessibleLabel"
                 }
               ],
@@ -6044,19 +6014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.FilterContainer__JobStatus.SearchBox__JobFormEntry_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.FilterContainer__JobStatus.SearchBox__JobStatus.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.FilterContainer__JobStatus.SearchBox__JobFormEntry_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.FilterContainer__JobStatus.SearchBox__JobStatus.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_JobStatus",
-                "type": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.FilterContainer__JobStatus.SearchBox__JobFormEntry_1"
+                "type": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.FilterContainer__JobStatus.SearchBox__JobStatus"
               }
             }
           ],
@@ -6626,36 +6596,6 @@
                 "member": "Icon",
                 "module": "Screen_JobFormEntry",
                 "type": "Screen_JobFormEntry.FilterPaneIcon_JobFormEntry"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.SidebarContainer_JobStatus.GalleryJobs_JobStatus.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.SidebarContainer_JobStatus.GalleryJobs_JobStatus.Items",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen_JobStatus",
-                "type": "Screen_JobStatus.ScreenContainer_JobStatus.BottomContainer_JobStatus.SidebarContainer_JobStatus.GalleryJobs_JobStatus"
               }
             }
           ],
