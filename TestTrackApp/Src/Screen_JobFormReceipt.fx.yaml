@@ -1459,13 +1459,14 @@
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        Fill: =RGBA(0,0,0,0)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =26
                         Size: =13
-                        Text: ="Filters"
+                        Text: |-
+                            ="Filters:"
                         Width: =Parent.Width
                         ZIndex: =3
 
@@ -1475,7 +1476,7 @@
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
-                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        Fill: =RGBA(0,0,0,0)
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -1534,14 +1535,15 @@
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        Fill: =RGBA(0,0,0,0)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =24
                         PaddingLeft: =0
                         Size: =10
-                        Text: ="Job Number"
+                        Text: |-
+                            ="Job Number:"
                         Width: =247
                         X: =30
                         Y: =73
@@ -1610,13 +1612,14 @@
                     Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    Fill: =RGBA(0,0,0,0)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Bold
                     Height: =24
                     Size: =12
-                    Text: ="Screen Filters"
+                    Text: |-
+                        ="Screen Filters:"
                     Width: =270
                     X: =7
                     Y: =36
@@ -1629,13 +1632,14 @@
                     Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    Fill: =RGBA(0,0,0,0)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Bold
                     Height: =24
                     Size: =12
-                    Text: ="App Wide Filters"
+                    Text: |-
+                        ="App Wide Filters:"
                     Width: =270
                     X: =10
                     Y: =139
@@ -1684,14 +1688,15 @@
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        Fill: =RGBA(0,0,0,0)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =24
                         PaddingLeft: =0
                         Size: =10
-                        Text: ="Report Status"
+                        Text: |-
+                            ="Report Status:"
                         Width: =245
                         X: =35
                         Y: =227
@@ -1732,14 +1737,15 @@
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        Fill: =RGBA(0,0,0,0)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =24
                         PaddingLeft: =0
                         Size: =10
-                        Text: ="Division"
+                        Text: |-
+                            ="Division:"
                         Visible: =varAdmin
                         Width: =249
                         X: =31
