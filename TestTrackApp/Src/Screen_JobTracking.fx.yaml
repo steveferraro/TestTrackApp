@@ -313,6 +313,7 @@
                             ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
                             && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
                             && (ReportStatus.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
+                            && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
@@ -408,7 +409,7 @@
                         Height: =72
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
-                        Width: =368.00
+                        Width: =Parent.Width
                         X: =0.00
                         ZIndex: =6
 
