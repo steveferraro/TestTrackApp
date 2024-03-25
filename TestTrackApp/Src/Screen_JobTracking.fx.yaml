@@ -1845,7 +1845,7 @@
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 Visible: =varFilterPane_JobTracking
-                Width: =
+                Width: =555.74
                 ZIndex: =4
 
                 FilterPaneControlGroup_JobFormReceipt_1 As group:
@@ -1862,6 +1862,7 @@
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
@@ -1871,34 +1872,13 @@
                         Width: =Parent.Width
                         ZIndex: =3
 
-                    ExitFilterPaneIcon_JobFormReceipt_1 As icon.Cancel:
-                        BorderColor: =RGBA(166, 166, 166, 1)
-                        Color: =RGBA(202, 80, 16, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: =25
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Cancel
-                        OnSelect: =Set(varFilterPane, false)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Tooltip: ="Exit the filter pane"
-                        Width: =Parent.Width
-                        X: =240
-                        Y: =1
-                        ZIndex: =4
-
                     FilterPaneResetIcon_JobFormReceipt_1 As icon.Reset:
                         BorderColor: =RGBA(166, 166, 166, 1)
                         Color: =RGBA(202, 80, 16, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
+                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -1909,9 +1889,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =Parent.Width
-                        X: =62
-                        Y: =5
+                        Width: =18  
+                        X: =256
+                        Y: =4
                         ZIndex: =5
 
                 SearchBoxGroup_JobFormReceipt_1 As group:
@@ -1945,8 +1925,9 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =10
-                        Width: =Parent.Width
-                        Y: =54
+                        Width: =247
+                        X: =30
+                        Y: =96
                         ZIndex: =2
 
                     SearchBoxLabel_JobFormReceipt_1 As label:
@@ -1964,8 +1945,9 @@
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Job Number"
-                        Width: =Parent.Width
-                        Y: =31
+                        Width: =247
+                        X: =30
+                        Y: =73
                         ZIndex: =6
 
                     SearchboxResetIcon_JobFormReceipt_1 As icon.Reset:
@@ -1984,9 +1966,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =Parent.Width
-                        X: =95
-                        Y: =34
+                        Width: =16
+                        X: =258
+                        Y: =76
                         ZIndex: =9
 
                 CheckboxGroup_JobFormReceipt_1 As group:
@@ -2005,8 +1987,8 @@
                         Label: ="My Jobs"
                         OnCheck: =Set(varMyJobs,true)
                         OnUncheck: =Set(varMyJobs,false)
-                        Width: =Parent.Width
-                        X: =0
+                        Width: =250
+                        X: =30
                         Y: =169
                         ZIndex: =7
 
@@ -2019,10 +2001,48 @@
                         Label: ="Jobs with Forms to Enter"
                         OnCheck: =Set(varForms2Enter,true)
                         OnUncheck: =Set(varForms2Enter,false)
-                        Width: =Parent.Width
-                        X: =0
+                        Width: =250
+                        X: =30
                         Y: =194
                         ZIndex: =8
+
+                GlobalFilterLabel_JobTracking As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =24
+                    Size: =12
+                    Text: ="Screen Filters"
+                    Width: =270
+                    X: =7
+                    Y: =36
+                    ZIndex: =15
+
+                GlobalFilterLabel_JobTracking_1 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =24
+                    Size: =12
+                    Text: ="App Wide Filters"
+                    Width: =270
+                    X: =10
+                    Y: =139
+                    ZIndex: =16
 
                 ReportStatusGroup_JobTracking As group:
                     Height: =5
@@ -2055,7 +2075,8 @@
                         RadioSelectionFill: =RGBA(202, 80, 16, 1)
                         RadioSize: =20
                         Size: =10
-                        Width: =Parent.Width
+                        Width: =250
+                        X: =30
                         Y: =254
                         ZIndex: =1
 
@@ -2074,8 +2095,9 @@
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Report Status"
-                        Width: =Parent.Width
-                        Y: =226
+                        Width: =245
+                        X: =35
+                        Y: =227
                         ZIndex: =10
 
                     ReportStatusResetIcon_JobFormReceipt_1 As icon.Reset:
@@ -2094,9 +2116,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =Parent.Width
-                        X: =99
-                        Y: =229
+                        Width: =17
+                        X: =258
+                        Y: =230
                         ZIndex: =13
 
                 DivisionGroup_JobTracking As group:
@@ -2117,12 +2139,13 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =26
+                        Height: =24
                         PaddingLeft: =0
                         Size: =10
                         Text: ="Division"
                         Visible: =varAdmin
-                        Width: =Parent.Width
+                        Width: =249
+                        X: =31
                         Y: =462
                         ZIndex: =11
 
@@ -2133,7 +2156,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =19
+                        Height: =18
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -2143,9 +2166,9 @@
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =varAdmin
-                        Width: =Parent.Width
-                        X: =70
-                        Y: =466
+                        Width: =17
+                        X: =258
+                        Y: =465
                         ZIndex: =12
 
                     DivisionRadio_JobFormReceipt_1 As radio:
@@ -2158,7 +2181,7 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =122
+                        Height: =115
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Items: =ShowColumns(Divisions,"rcon_division")
@@ -2172,9 +2195,9 @@
                         RadioSelectionFill: =RGBA(202, 80, 16, 1)
                         RadioSize: =20
                         Size: =10
-                        Width: =Parent.Width
-                        X: =1
-                        Y: =488
+                        Width: =250
+                        X: =30
+                        Y: =495
                         ZIndex: =14
 
     Logo_JobTracking As image:
