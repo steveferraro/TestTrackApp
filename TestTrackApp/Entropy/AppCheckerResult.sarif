@@ -5833,6 +5833,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.SidebarContainer_JobTracking.GalleryJobs_JobTracking.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.SidebarContainer_JobTracking.GalleryJobs_JobTracking.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen_JobTracking",
+                "type": "Screen_JobTracking.ScreenContainer_JobTracking.BottomContainer_JobTracking.SidebarContainer_JobTracking.GalleryJobs_JobTracking"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen_JobTracking.FilterPaneIcon_JobFormReceipt_1.Icon"
                 }
               ],

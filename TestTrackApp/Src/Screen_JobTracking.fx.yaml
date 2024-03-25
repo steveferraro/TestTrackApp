@@ -239,7 +239,6 @@
                 FillPortions: =3
                 Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -249,7 +248,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =364.56
+                Width: =555.74
                 X: =97.81
                 ZIndex: =2
 
@@ -310,11 +309,10 @@
                             JobsTracked,
                             StartsWith(
                                 'Job Number',
-                                SearchBox_JobTracking.Text
-                            ) 
-                            && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) 
-                            && (varAdmin || (varMichigan || varOhio) && Division.Division in (colAccessibleDivisions.rcon_division)) 
-                            && (varSelectedDivision = Division.Division)
+                                SearchBox_JobFormReceipt.Text
+                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
+                            && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
+                            && (ReportStatus.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
