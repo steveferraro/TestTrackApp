@@ -530,7 +530,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
@@ -649,7 +648,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
@@ -767,7 +765,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
@@ -888,7 +885,6 @@
                             DisplayFields: =["rcon_recordid"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1011,7 +1007,6 @@
                             DisplayFields: =["rcon_name"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1133,7 +1128,6 @@
                             DisplayFields: =["rcon_name"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1255,7 +1249,6 @@
                             DisplayFields: =["Value"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1377,7 +1370,6 @@
                             DisplayFields: =["rcon_name"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1499,7 +1491,6 @@
                             DisplayFields: =["Value"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1616,7 +1607,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             Height: =27
                             PaddingLeft: =0
                             PaddingRight: =0.00
@@ -1675,7 +1665,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             Height: =27
                             PaddingLeft: =0
                             PaddingRight: =0.00
@@ -1737,7 +1726,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
