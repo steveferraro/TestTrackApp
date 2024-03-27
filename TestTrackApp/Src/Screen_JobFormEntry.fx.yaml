@@ -392,43 +392,6 @@
                         Y: =8
                         ZIndex: =6
 
-                    Icon7 As icon.FilterFlatFilled:
-                        BorderColor: =RGBA(166, 166, 166, 1)
-                        Color: |-
-                            =If(
-                                ThisItem.'Job Number' = varSelectedJob,
-                                ColorValue(AppTheme.palette.themePrimary)
-                            )
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: =20
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Pin
-                        OnSelect: |-
-                            =If(
-                                varSelectedJob = GalleryJobs_JobFormEntry.Selected.'Job Number',
-                                Set(
-                                    varSelectedJob,
-                                    Blank()
-                                ),
-                                Set(
-                                    varSelectedJob,
-                                    GalleryJobs_JobFormEntry.Selected.'Job Number'
-                                )
-                            )
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Tooltip: ="Pin job"
-                        Width: =20
-                        X: =317
-                        Y: =27
-                        ZIndex: =7
-
                     Subtitle1_6 As label:
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -448,6 +411,36 @@
                         X: =45
                         Y: =54
                         ZIndex: =8
+
+                    Image3_2 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =25
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
+                        OnSelect: |-
+                            =If(
+                                varSelectedJob = GalleryJobs_JobTracking.Selected.'Job Number',
+                                Set(
+                                    varSelectedJob,
+                                    Blank()
+                                ),
+                                Set(
+                                    varSelectedJob,
+                                    GalleryJobs_JobTracking.Selected.'Job Number'
+                                )
+                            )
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =25
+                        X: =318
+                        Y: =33
+                        ZIndex: =9
 
                 EntriesLabel_JobFormEntry As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
