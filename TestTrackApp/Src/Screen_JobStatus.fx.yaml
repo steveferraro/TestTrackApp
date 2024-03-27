@@ -2376,7 +2376,7 @@
 
     ExitAppIcon_JobStatus As icon.Cancel:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(202, 80, 16, 1)
+        Color: =ColorValue(AppTheme.palette.themePrimary)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -2398,7 +2398,7 @@
 
     FilterPaneIcon_JobFormEntry_1 As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(202, 80, 16, 1)
+        Color: =ColorValue(AppTheme.palette.themePrimary)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
