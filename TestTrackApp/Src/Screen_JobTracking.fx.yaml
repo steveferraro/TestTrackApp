@@ -390,39 +390,6 @@
                         Y: =8
                         ZIndex: =6
 
-                    Icon4 As icon.FilterFlatFilled:
-                        BorderColor: =RGBA(166, 166, 166, 1)
-                        Color: =If(ThisItem.'Job Number' = varSelectedJob,ColorValue(AppTheme.palette.themePrimary))
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: =21
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Pin
-                        OnSelect: |-
-                            =If(
-                                varSelectedJob = GalleryJobs_JobTracking.Selected.'Job Number',
-                                Set(
-                                    varSelectedJob,
-                                    Blank()
-                                ),
-                                Set(
-                                    varSelectedJob,
-                                    GalleryJobs_JobTracking.Selected.'Job Number'
-                                )
-                            )
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Tooltip: ="Pin job"
-                        Width: =20
-                        X: =318
-                        Y: =27
-                        ZIndex: =7
-
                     Subtitle1_4 As label:
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -442,6 +409,36 @@
                         X: =69
                         Y: =56
                         ZIndex: =8
+
+                    Image3 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =25
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
+                        OnSelect: |-
+                            =If(
+                                varSelectedJob = GalleryJobs_JobTracking.Selected.'Job Number',
+                                Set(
+                                    varSelectedJob,
+                                    Blank()
+                                ),
+                                Set(
+                                    varSelectedJob,
+                                    GalleryJobs_JobTracking.Selected.'Job Number'
+                                )
+                            )
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =25
+                        X: =318
+                        Y: =33
+                        ZIndex: =9
 
             MainContainer_JobTracking As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -533,7 +530,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
@@ -652,7 +648,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
@@ -770,7 +765,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
@@ -891,7 +885,6 @@
                             DisplayFields: =["rcon_recordid"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1014,7 +1007,6 @@
                             DisplayFields: =["rcon_name"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1136,7 +1128,6 @@
                             DisplayFields: =["rcon_name"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1258,7 +1249,6 @@
                             DisplayFields: =["Value"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1380,7 +1370,6 @@
                             DisplayFields: =["rcon_name"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1502,7 +1491,6 @@
                             DisplayFields: =["Value"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
@@ -1619,7 +1607,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             Height: =27
                             PaddingLeft: =0
                             PaddingRight: =0.00
@@ -1678,7 +1665,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             Height: =27
                             PaddingLeft: =0
                             PaddingRight: =0.00
@@ -1740,7 +1726,6 @@
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Bold
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
