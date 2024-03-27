@@ -451,7 +451,27 @@ App As appinfo:
                 }
             )
         );
-        Clear(colAdminUpdates_ReportStatuses)
+        Clear(colAdminUpdates_ReportStatuses);
+        Set(
+            varMyJobs,
+            false
+        );
+        Set(
+            varForms2Enter,
+            false
+        );
+        Set(
+            varSelectedJob,
+            Blank()
+        );
+        Set(
+            varSelectedDivision,
+            Blank()
+        );
+        Set(
+            varSelectedReportStatus,
+            Blank()
+        )
     Theme: =OrangeTheme
 
     Host As hostControl.DefaultHostControlVariant:
