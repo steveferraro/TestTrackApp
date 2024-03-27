@@ -445,14 +445,14 @@
                         Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
                         OnSelect: |-
                             =If(
-                                varSelectedJob = GalleryJobs_JobTracking.Selected.'Job Number',
+                                varSelectedJob = GalleryJobs_JobFormReceipt.Selected.'Job Number',
                                 Set(
                                     varSelectedJob,
                                     Blank()
                                 ),
                                 Set(
                                     varSelectedJob,
-                                    GalleryJobs_JobTracking.Selected.'Job Number'
+                                    GalleryJobs_JobFormReceipt.Selected.'Job Number'
                                 )
                             )
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
