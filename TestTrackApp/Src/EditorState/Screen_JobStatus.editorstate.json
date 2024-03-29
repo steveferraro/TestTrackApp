@@ -3374,7 +3374,14 @@
         },
         "NavigateFields",
         "Template",
-        "SearchItems",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "SearchItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",
@@ -4117,7 +4124,14 @@
         },
         "NavigateFields",
         "Template",
-        "SearchItems",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "SearchItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",

@@ -781,7 +781,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["Value"]
-                            SearchItems: =[]
+                            SearchItems: =Choices(Technicians,DataCardValue1.SearchText)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             Size: =13
                             Tooltip: =Parent.DisplayName
@@ -1136,7 +1136,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["Value"]
-                            SearchItems: =[]
+                            SearchItems: =Choices('Print for Review Per Timesheets (JobsTracked)',DataCardValue2.SearchText)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             SelectMultiple: =false
                             Size: =13

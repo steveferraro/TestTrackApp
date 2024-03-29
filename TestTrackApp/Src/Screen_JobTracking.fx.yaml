@@ -1261,7 +1261,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["Value"]
-                            SearchItems: =[]
+                            SearchItems: =Choices(Technicians,DataCardValue50.SearchText)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             Size: =13
                             Tooltip: =Parent.DisplayName
@@ -1503,7 +1503,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["Value"]
-                            SearchItems: =[]
+                            SearchItems: =Choices('Report Contains Field Entered Forms (JobsTracked)',DataCardValue59.SearchText)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             SelectMultiple: =false
                             Size: =13
