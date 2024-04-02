@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |-
         =Set(
             AppTheme,
             /* START THEME OBJECT */
@@ -488,6 +488,10 @@ App As appinfo:
             varFilterPane_JobStatus,
             false
         );
+        Set(
+            varReportingPane_Reporting,
+            false
+        )
     Theme: =OrangeTheme
 
     Host As hostControl.DefaultHostControlVariant:

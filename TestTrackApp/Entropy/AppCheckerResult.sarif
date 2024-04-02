@@ -6434,17 +6434,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.AppThemeJson"
+                  "fullyQualifiedName": "App.varEditMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.AppThemeJson",
+                  "fullyQualifiedName": "App.varEditMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AppThemeJson",
+                "member": "varEditMode",
                 "module": "App",
                 "type": "App"
               }
@@ -6464,17 +6464,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varEditMode"
+                  "fullyQualifiedName": "App.AppThemeJson"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varEditMode",
+                  "fullyQualifiedName": "App.AppThemeJson",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varEditMode",
+                "member": "AppThemeJson",
                 "module": "App",
                 "type": "App"
               }
