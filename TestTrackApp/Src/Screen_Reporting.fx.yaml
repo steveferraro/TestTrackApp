@@ -30,12 +30,11 @@
             FillPortions: =0
             Height: =110
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingRight: =0.00
-            PaddingTop: =0.00
+            PaddingTop: =10
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -152,7 +151,7 @@
                         Height: =50
                         Size: =20
                         Text: ="Measure"
-                        Width: =441
+                        Width: =(Parent.Width/5.65) * 2
                         ZIndex: =1
 
                     Label9_1 As label:
@@ -169,7 +168,8 @@
                         Height: =50
                         Size: =20
                         Text: ="WTD"
-                        Width: =198
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label9.Width
                         ZIndex: =2
 
                     Label9_2 As label:
@@ -186,7 +186,8 @@
                         Height: =50
                         Size: =20
                         Text: ="MTD"
-                        Width: =197
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label9.Width + Label9_1.Width
                         ZIndex: =3
 
                     Label9_3 As label:
@@ -203,7 +204,8 @@
                         Height: =50
                         Size: =20
                         Text: ="YTD"
-                        Width: =198
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label9.Width + Label9_1.Width + Label9_2.Width
                         ZIndex: =4
 
                     Label9_4 As label:
@@ -220,7 +222,8 @@
                         Height: =50
                         Size: =20
                         Text: ="OTD"
-                        Width: =198
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label9.Width + Label9_1.Width + Label9_2.Width + Label9_3.Width
                         ZIndex: =5
 
                 StatusGallery_Reporting As gallery.galleryVertical:
@@ -250,7 +253,7 @@
                         OnSelect: =Select(Parent)
                         Size: =20
                         Text: =ThisItem.'!Measure'
-                        Width: =441
+                        Width: =(Parent.Width/5.65) * 2
                         ZIndex: =1
 
                     Label7 As label:
@@ -268,8 +271,8 @@
                         OnSelect: =Select(Parent)
                         Size: =20
                         Text: =If(ThisItem.'!Measure' = "Total Forms to be Entered","N/A",ThisItem.WTD)    
-                        Width: =198
-                        X: =441
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label6.Width
                         ZIndex: =2
 
                     Label7_1 As label:
@@ -287,8 +290,8 @@
                         OnSelect: =Select(Parent)
                         Size: =20
                         Text: =If(ThisItem.'!Measure' = "Total Forms to be Entered","N/A",ThisItem.MTD)    
-                        Width: =204
-                        X: =639
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label6.Width + Label7.Width
                         ZIndex: =3
 
                     Label7_2 As label:
@@ -308,8 +311,8 @@
                         PaddingTop: =0
                         Size: =20
                         Text: =If(ThisItem.'!Measure' = "Total Forms to be Entered","N/A",ThisItem.YTD)    
-                        Width: =200
-                        X: =843
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label6.Width + Label7.Width + Label7_1.Width
                         ZIndex: =4
 
                     Label7_3 As label:
@@ -328,9 +331,36 @@
                         PaddingTop: =0
                         Size: =20
                         Text: =ThisItem.OTD
-                        Width: =199
-                        X: =1043
+                        Width: =(Parent.Width/6.2) * 1
+                        X: =Label6.Width + Label7.Width + Label7_1.Width + Label7_2.Width
                         ZIndex: =5
+
+            ReportPaneContainer_Reporting As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                DropShadow: =DropShadow.Light
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =275
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Visible: =varReportingPane_Reporting
+                Width: =350
+                ZIndex: =3
+
+                LinkCanvas1 As Link:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Text: ="Test Report RC"
+                    URL: |-
+                        ="https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render"
+                    Width: =308
+                    X: =24
+                    Y: =32
+                    ZIndex: =1
 
     Logo_Reporting As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -348,409 +378,9 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Tooltip: ="Utility Instrumentation Service"
         Width: =118.01
-        X: =36.00
-        Y: =42
+        X: =28
+        Y: =20
         ZIndex: =2
-
-    RefreshStatsButton_Reporting As Button:
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        FontSize: =18
-        Height: =41
-        OnSelect: |-
-            =Set(
-                varToday,
-                Today()
-            );
-            Set(
-                varWeekFirstDay,
-                (Today () - Weekday(varToday) + 1)
-            );
-            Set(
-                varWeekLastDay,
-                varToday + (7 - Weekday(varToday) + 1)
-            );
-            Set(
-                varMonthFirstDay,
-                Date(
-                    Year(varToday),
-                    Month(varToday),
-                    1
-                )
-            );
-            Set(
-                varMonthLastDay,
-                Date(
-                    Year(varToday),
-                    Month(varToday) + 1,
-                    01 - 1
-                )
-            );
-            Set(
-                varYearFirstDay,
-                Date(
-                    Year(varToday),
-                    1,
-                    1
-                )
-            );
-            Set(
-                varYearLastDay,
-                Date(
-                    Year(varToday),
-                    12,
-                    31
-                )
-            );
-            ClearCollect(
-                colStats_FormsEntered,
-                AddColumns(
-                    ShowColumns(
-                        JobsFormEntries,
-                        "importsequencenumber"
-                    ),
-                    "!Measure",
-                    "Total Forms Entered",
-                    "WTD",
-                    Sum(
-                        Filter(
-                            JobsFormEntries,
-                            'Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay
-                        ),
-                        'Forms Entered'
-                    ),
-                    "MTD",
-                    Sum(
-                        Filter(
-                            JobsFormEntries,
-                            'Entry Date' >= varMonthFirstDay && 'Entry Date' <= varMonthLastDay
-                        ),
-                        'Forms Entered'
-                    ),
-                    "YTD",
-                    Sum(
-                        Filter(
-                            JobsFormEntries,
-                            'Entry Date' >= varYearFirstDay && 'Entry Date' <= varYearLastDay
-                        ),
-                        'Forms Entered'
-                    ),
-                    "OTD",
-                    Sum(
-                        JobsFormEntries,
-                        'Forms Entered'
-                    )
-                )
-            );
-            ClearCollect(
-                colStats_FormsReceived,
-                AddColumns(
-                    ShowColumns(
-                        JobsFormReceipts,
-                        "importsequencenumber"
-                    ),
-                    "!Measure",
-                    "Total Forms Received",
-                    "WTD",
-                    Sum(
-                        Filter(
-                            JobsFormReceipts,
-                            'Receipt Date' >= varWeekFirstDay && 'Receipt Date' <= varWeekLastDay
-                        ),
-                        'Form Count'
-                    ),
-                    "MTD",
-                    Sum(
-                        Filter(
-                            JobsFormReceipts,
-                            'Receipt Date' >= varMonthFirstDay && 'Receipt Date' <= varMonthLastDay
-                        ),
-                        'Form Count'
-                    ),
-                    "YTD",
-                    Sum(
-                        Filter(
-                            JobsFormReceipts,
-                            'Receipt Date' >= varYearFirstDay && 'Receipt Date' <= varYearLastDay
-                        ),
-                        'Form Count'
-                    ),
-                    "OTD",
-                    Sum(
-                        JobsFormReceipts,
-                        'Form Count'
-                    )
-                )
-            );
-            ClearCollect(
-                colStats_FormsEntryMin,
-                AddColumns(
-                    ShowColumns(
-                        JobsFormEntries,
-                        "importsequencenumber"
-                    ),
-                    "!Measure",
-                    "Total Form Entry Time (Minutes)",
-                    "WTD",
-                    If(
-                        IsBlank(
-                            Sum(
-                                Filter(
-                                    JobsFormEntries,
-                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
-                                ),
-                                'Entry Duration (minutes)'
-                            )
-                        ),
-                        0,
-                        Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
-                            ),
-                            'Entry Duration (minutes)'
-                        )
-                    ),
-                    "MTD",
-                    Sum(
-                        Filter(
-                            JobsFormEntries,
-                            'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
-                        ),
-                        'Entry Duration (minutes)'
-                    ),
-                    "YTD",
-                    Sum(
-                        Filter(
-                            JobsFormEntries,
-                            'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
-                        ),
-                        'Entry Duration (minutes)'
-                    ),
-                    "OTD",
-                    Sum(
-                        JobsFormEntries,
-                        'Entry Duration (minutes)'
-                    )
-                )
-            );
-            ClearCollect(
-                colStats_FormsAveTurnaround,
-                AddColumns(
-                    ShowColumns(
-                        JobsTracked,
-                        "importsequencenumber"
-                    ),
-                    "!Measure",
-                    "Average Form Turnaround (Days)",
-                    "WTD",
-                    Average(
-                        Filter(
-                            JobsTracked,
-                            'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
-                        ),
-                        Turnaround
-                    ),
-                    "MTD",
-                    Average(
-                        Filter(
-                            JobsTracked,
-                            'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
-                        ),
-                        Turnaround
-                    ),
-                    "YTD",
-                    Average(
-                        Filter(
-                            JobsTracked,
-                            'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
-                        ),
-                        Turnaround
-                    ),
-                    "OTD",
-                    Average(
-                        JobsTracked,
-                        Turnaround
-                    )
-                )
-            );
-            ClearCollect(
-                colStats_FormsAveEntryTime,
-                AddColumns(
-                    ShowColumns(
-                        JobsFormEntries,
-                        "importsequencenumber"
-                    ),
-                    "!Measure",
-                    "Average Form Entry Time (Minutes)",
-                    "WTD",
-                    If(
-                        Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
-                            ),
-                            'Forms Entered'
-                        ) = 0,
-                        0,
-                        Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
-                            ),
-                            'Entry Duration (minutes)'
-                        ) / Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
-                            ),
-                            'Forms Entered'
-                        )
-                    ),
-                    "MTD",
-                    If(
-                        Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
-                            ),
-                            'Forms Entered'
-                        ) = 0,
-                        0,
-                        Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
-                            ),
-                            'Entry Duration (minutes)'
-                        ) / Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
-                            ),
-                            'Forms Entered'
-                        )
-                    ),
-                    "YTD",
-                    If(
-                        Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
-                            ),
-                            'Forms Entered'
-                        ) = 0,
-                        0,
-                        Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
-                            ),
-                            'Entry Duration (minutes)'
-                        ) / Sum(
-                            Filter(
-                                JobsFormEntries,
-                                'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
-                            ),
-                            'Forms Entered'
-                        )
-                    ),
-                    "OTD",
-                    If(
-                        Sum(
-                            JobsFormEntries,
-                            'Forms Entered'
-                        ) = 0,
-                        0,
-                        Sum(
-                            JobsFormEntries,
-                            'Entry Duration (minutes)'
-                        ) / Sum(
-                            JobsFormEntries,
-                            'Forms Entered'
-                        )
-                    )
-                )
-            );
-            ClearCollect(
-                colStats_FormsToBeEntered,
-                AddColumns(
-                    ShowColumns(
-                        JobsTracked,
-                        "importsequencenumber"
-                    ),
-                    "!Measure",
-                    "Total Forms to be Entered",
-                    "WTD",
-                    0,
-                    "MTD",
-                    0,
-                    "YTD",
-                    0,
-                    "OTD",
-                    Sum(
-                        JobsTracked,
-                        'Forms To Be Entered'
-                    )
-                )
-            );
-            ClearCollect(
-                colStats_Combined,
-                ShowColumns(
-                    First(colStats_FormsToBeEntered),
-                    "!Measure",
-                    "WTD",
-                    "MTD",
-                    "YTD",
-                    "OTD"
-                ),
-                ShowColumns(
-                    First(colStats_FormsReceived),
-                    "!Measure",
-                    "WTD",
-                    "MTD",
-                    "YTD",
-                    "OTD"
-                ),
-                ShowColumns(
-                    First(colStats_FormsEntered),
-                    "!Measure",
-                    "WTD",
-                    "MTD",
-                    "YTD",
-                    "OTD"
-                ),
-                ShowColumns(
-                    First(colStats_FormsEntryMin),
-                    "!Measure",
-                    "WTD",
-                    "MTD",
-                    "YTD",
-                    "OTD"
-                ),
-                ShowColumns(
-                    First(colStats_FormsAveEntryTime),
-                    "!Measure",
-                    "WTD",
-                    "MTD",
-                    "YTD",
-                    "OTD"
-                ),
-                ShowColumns(
-                    First(colStats_FormsAveTurnaround),
-                    "!Measure",
-                    "WTD",
-                    "MTD",
-                    "YTD",
-                    "OTD"
-                )
-            )
-        Text: ="Refresh Statistics"
-        Width: =168
-        X: =1114
-        Y: =42
-        ZIndex: =3
 
     ExitAppIcon_Reporting As icon.Cancel:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -774,17 +404,460 @@
         Y: =20
         ZIndex: =4
 
-    ButtonCanvas1 As Button:
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        FontSize: =18
-        Height: =41
+    FilterPaneIcon_JobFormEntry_2 As icon.FilterFlat:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =ColorValue(AppTheme.palette.themePrimary)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =30
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: |
+            =Icon.DocumentWithContent
         OnSelect: |-
-            =Launch("http://rangercon1:8080/Reports/browse/TestTrack%20Reporting")
-        Text: ="More Reporting..."
-        Width: =170
-        X: =927
-        Y: =42
-        ZIndex: =5
+            =Set(
+                varReportingPane_Reporting,
+                !varReportingPane_Reporting
+            )
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Reporting"
+        Width: =30
+        X: =1302
+        Y: =81
+        ZIndex: =6
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        RefreshStatsButton_Reporting As Button:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =RGBA(0, 0, 0, 1)
+            FontSize: =18
+            FontWeight: =FontWeight.Normal
+            Height: =20
+            OnSelect: |-
+                =Set(
+                    varToday,
+                    Today()
+                );
+                Set(
+                    varWeekFirstDay,
+                    (Today () - Weekday(varToday) + 1)
+                );
+                Set(
+                    varWeekLastDay,
+                    varToday + (7 - Weekday(varToday) + 1)
+                );
+                Set(
+                    varMonthFirstDay,
+                    Date(
+                        Year(varToday),
+                        Month(varToday),
+                        1
+                    )
+                );
+                Set(
+                    varMonthLastDay,
+                    Date(
+                        Year(varToday),
+                        Month(varToday) + 1,
+                        01 - 1
+                    )
+                );
+                Set(
+                    varYearFirstDay,
+                    Date(
+                        Year(varToday),
+                        1,
+                        1
+                    )
+                );
+                Set(
+                    varYearLastDay,
+                    Date(
+                        Year(varToday),
+                        12,
+                        31
+                    )
+                );
+                ClearCollect(
+                    colStats_FormsEntered,
+                    AddColumns(
+                        ShowColumns(
+                            JobsFormEntries,
+                            "importsequencenumber"
+                        ),
+                        "!Measure",
+                        "Total Forms Entered",
+                        "WTD",
+                        Sum(
+                            Filter(
+                                JobsFormEntries,
+                                'Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay
+                            ),
+                            'Forms Entered'
+                        ),
+                        "MTD",
+                        Sum(
+                            Filter(
+                                JobsFormEntries,
+                                'Entry Date' >= varMonthFirstDay && 'Entry Date' <= varMonthLastDay
+                            ),
+                            'Forms Entered'
+                        ),
+                        "YTD",
+                        Sum(
+                            Filter(
+                                JobsFormEntries,
+                                'Entry Date' >= varYearFirstDay && 'Entry Date' <= varYearLastDay
+                            ),
+                            'Forms Entered'
+                        ),
+                        "OTD",
+                        Sum(
+                            JobsFormEntries,
+                            'Forms Entered'
+                        )
+                    )
+                );
+                ClearCollect(
+                    colStats_FormsReceived,
+                    AddColumns(
+                        ShowColumns(
+                            JobsFormReceipts,
+                            "importsequencenumber"
+                        ),
+                        "!Measure",
+                        "Total Forms Received",
+                        "WTD",
+                        Sum(
+                            Filter(
+                                JobsFormReceipts,
+                                'Receipt Date' >= varWeekFirstDay && 'Receipt Date' <= varWeekLastDay
+                            ),
+                            'Form Count'
+                        ),
+                        "MTD",
+                        Sum(
+                            Filter(
+                                JobsFormReceipts,
+                                'Receipt Date' >= varMonthFirstDay && 'Receipt Date' <= varMonthLastDay
+                            ),
+                            'Form Count'
+                        ),
+                        "YTD",
+                        Sum(
+                            Filter(
+                                JobsFormReceipts,
+                                'Receipt Date' >= varYearFirstDay && 'Receipt Date' <= varYearLastDay
+                            ),
+                            'Form Count'
+                        ),
+                        "OTD",
+                        Sum(
+                            JobsFormReceipts,
+                            'Form Count'
+                        )
+                    )
+                );
+                ClearCollect(
+                    colStats_FormsEntryMin,
+                    AddColumns(
+                        ShowColumns(
+                            JobsFormEntries,
+                            "importsequencenumber"
+                        ),
+                        "!Measure",
+                        "Total Form Entry Time (Minutes)",
+                        "WTD",
+                        If(
+                            IsBlank(
+                                Sum(
+                                    Filter(
+                                        JobsFormEntries,
+                                        'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                    ),
+                                    'Entry Duration (minutes)'
+                                )
+                            ),
+                            0,
+                            Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                ),
+                                'Entry Duration (minutes)'
+                            )
+                        ),
+                        "MTD",
+                        Sum(
+                            Filter(
+                                JobsFormEntries,
+                                'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                            ),
+                            'Entry Duration (minutes)'
+                        ),
+                        "YTD",
+                        Sum(
+                            Filter(
+                                JobsFormEntries,
+                                'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                            ),
+                            'Entry Duration (minutes)'
+                        ),
+                        "OTD",
+                        Sum(
+                            JobsFormEntries,
+                            'Entry Duration (minutes)'
+                        )
+                    )
+                );
+                ClearCollect(
+                    colStats_FormsAveTurnaround,
+                    AddColumns(
+                        ShowColumns(
+                            JobsTracked,
+                            "importsequencenumber"
+                        ),
+                        "!Measure",
+                        "Average Form Turnaround (Days)",
+                        "WTD",
+                        Average(
+                            Filter(
+                                JobsTracked,
+                                'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                            ),
+                            Turnaround
+                        ),
+                        "MTD",
+                        Average(
+                            Filter(
+                                JobsTracked,
+                                'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                            ),
+                            Turnaround
+                        ),
+                        "YTD",
+                        Average(
+                            Filter(
+                                JobsTracked,
+                                'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                            ),
+                            Turnaround
+                        ),
+                        "OTD",
+                        Average(
+                            JobsTracked,
+                            Turnaround
+                        )
+                    )
+                );
+                ClearCollect(
+                    colStats_FormsAveEntryTime,
+                    AddColumns(
+                        ShowColumns(
+                            JobsFormEntries,
+                            "importsequencenumber"
+                        ),
+                        "!Measure",
+                        "Average Form Entry Time (Minutes)",
+                        "WTD",
+                        If(
+                            Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                ),
+                                'Forms Entered'
+                            ) = 0,
+                            0,
+                            Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                ),
+                                'Entry Duration (minutes)'
+                            ) / Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                ),
+                                'Forms Entered'
+                            )
+                        ),
+                        "MTD",
+                        If(
+                            Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                ),
+                                'Forms Entered'
+                            ) = 0,
+                            0,
+                            Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                ),
+                                'Entry Duration (minutes)'
+                            ) / Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                ),
+                                'Forms Entered'
+                            )
+                        ),
+                        "YTD",
+                        If(
+                            Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                ),
+                                'Forms Entered'
+                            ) = 0,
+                            0,
+                            Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                ),
+                                'Entry Duration (minutes)'
+                            ) / Sum(
+                                Filter(
+                                    JobsFormEntries,
+                                    'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                ),
+                                'Forms Entered'
+                            )
+                        ),
+                        "OTD",
+                        If(
+                            Sum(
+                                JobsFormEntries,
+                                'Forms Entered'
+                            ) = 0,
+                            0,
+                            Sum(
+                                JobsFormEntries,
+                                'Entry Duration (minutes)'
+                            ) / Sum(
+                                JobsFormEntries,
+                                'Forms Entered'
+                            )
+                        )
+                    )
+                );
+                ClearCollect(
+                    colStats_FormsToBeEntered,
+                    AddColumns(
+                        ShowColumns(
+                            JobsTracked,
+                            "importsequencenumber"
+                        ),
+                        "!Measure",
+                        "Total Forms to be Entered",
+                        "WTD",
+                        0,
+                        "MTD",
+                        0,
+                        "YTD",
+                        0,
+                        "OTD",
+                        Sum(
+                            JobsTracked,
+                            'Forms To Be Entered'
+                        )
+                    )
+                );
+                ClearCollect(
+                    colStats_Combined,
+                    ShowColumns(
+                        First(colStats_FormsToBeEntered),
+                        "!Measure",
+                        "WTD",
+                        "MTD",
+                        "YTD",
+                        "OTD"
+                    ),
+                    ShowColumns(
+                        First(colStats_FormsReceived),
+                        "!Measure",
+                        "WTD",
+                        "MTD",
+                        "YTD",
+                        "OTD"
+                    ),
+                    ShowColumns(
+                        First(colStats_FormsEntered),
+                        "!Measure",
+                        "WTD",
+                        "MTD",
+                        "YTD",
+                        "OTD"
+                    ),
+                    ShowColumns(
+                        First(colStats_FormsEntryMin),
+                        "!Measure",
+                        "WTD",
+                        "MTD",
+                        "YTD",
+                        "OTD"
+                    ),
+                    ShowColumns(
+                        First(colStats_FormsAveEntryTime),
+                        "!Measure",
+                        "WTD",
+                        "MTD",
+                        "YTD",
+                        "OTD"
+                    ),
+                    ShowColumns(
+                        First(colStats_FormsAveTurnaround),
+                        "!Measure",
+                        "WTD",
+                        "MTD",
+                        "YTD",
+                        "OTD"
+                    )
+                )
+            Text: ="Refresh Statistics"
+            Width: =174
+            X: =84
+            Y: =86
+            ZIndex: =3
+
+        Icon1 As icon.Reload:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =ColorValue(AppTheme.palette.themePrimary)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =20
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Reload
+            OnSelect: =Select(RefreshStatsButton_Reporting)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =20
+            X: =245
+            Y: =86
+            ZIndex: =7
 
