@@ -351,16 +351,90 @@
                 Width: =350
                 ZIndex: =3
 
-                LinkCanvas1 As Link:
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    Text: ="Test Report RC"
-                    URL: |-
-                        ="https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:BreadCrumbsOnly"
-                    Width: =308
-                    X: =24
-                    Y: =32
+                "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+                    BorderColor: =ColorValue(AppTheme.palette.themePrimary)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DelayItemLoading: =true
+                    Items: |-
+                        =Table({Name: "Test Report RC", URL: "https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:HeaderArea = BreadCrumbsOnly"},{Name: "Test Report RC", URL: "https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:HeaderArea = BreadCrumbsOnly"})
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    OnSelect: =Launch(ThisItem.URL)
+                    TemplatePadding: =0
+                    TemplateSize: =60
+                    Width: =350
+                    Y: =35
                     ZIndex: =1
+
+                    Image5 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =40
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: =report
+                        OnSelect: =Select(Parent)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =40
+                        X: =16
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    Title4 As label:
+                        Color: =RGBA(50, 49, 48, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =21
+                        HoverColor: =ColorValue(AppTheme.palette.themePrimary)
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Name
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =270
+                        X: =69
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                        ZIndex: =2
+
+                    Separator11 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =8
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - Self.Height
+                        ZIndex: =4
+
+                ReportPaneLabel__Reporting As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =26
+                    Size: =13
+                    Text: |-
+                        ="Reports:"
+                    Width: =Parent.Width
+                    ZIndex: =2
 
     Logo_Reporting As image:
         BorderColor: =RGBA(0, 0, 0, 0)
