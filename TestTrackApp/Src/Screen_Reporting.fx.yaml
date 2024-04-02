@@ -356,7 +356,7 @@
                     Height: =32
                     Text: ="Test Report RC"
                     URL: |-
-                        ="https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render"
+                        ="https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:BreadCrumbsOnly"
                     Width: =308
                     X: =24
                     Y: =32
