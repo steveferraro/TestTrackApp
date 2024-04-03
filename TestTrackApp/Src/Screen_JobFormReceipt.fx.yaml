@@ -1520,7 +1520,7 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =10
-                        Width: =247
+                        Width: =228
                         X: =30
                         Y: =96
                         ZIndex: =2
@@ -1541,7 +1541,7 @@
                         Size: =10
                         Text: |-
                             ="Job Number:"
-                        Width: =247
+                        Width: =228
                         X: =30
                         Y: =73
                         ZIndex: =6
@@ -1562,8 +1562,8 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =16
-                        X: =258
+                        Width: =15
+                        X: =240
                         Y: =76
                         ZIndex: =9
 
@@ -1583,7 +1583,7 @@
                         Label: ="My Jobs"
                         OnCheck: =Set(varMyJobs,true)
                         OnUncheck: =Set(varMyJobs,false)
-                        Width: =250
+                        Width: =228
                         X: =30
                         Y: =169
                         ZIndex: =7
@@ -1597,7 +1597,7 @@
                         Label: ="Jobs with Forms to Enter"
                         OnCheck: =Set(varForms2Enter,true)
                         OnUncheck: =Set(varForms2Enter,false)
-                        Width: =250
+                        Width: =228
                         X: =30
                         Y: =194
                         ZIndex: =8
@@ -1673,7 +1673,7 @@
                         RadioSelectionFill: =RGBA(202, 80, 16, 1)
                         RadioSize: =20
                         Size: =10
-                        Width: =250
+                        Width: =227
                         X: =30
                         Y: =254
                         ZIndex: =1
@@ -1694,7 +1694,7 @@
                         Size: =10
                         Text: |-
                             ="Report Status:"
-                        Width: =245
+                        Width: =223
                         X: =35
                         Y: =227
                         ZIndex: =10
@@ -1715,8 +1715,8 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =17
-                        X: =258
+                        Width: =15
+                        X: =237
                         Y: =230
                         ZIndex: =13
 
@@ -1744,7 +1744,7 @@
                         Text: |-
                             ="Division:"
                         Visible: =varAdmin
-                        Width: =249
+                        Width: =227
                         X: =31
                         Y: =462
                         ZIndex: =11
@@ -1766,8 +1766,8 @@
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =varAdmin
-                        Width: =17
-                        X: =258
+                        Width: =16
+                        X: =238
                         Y: =465
                         ZIndex: =12
 
@@ -1795,7 +1795,7 @@
                         RadioSelectionFill: =RGBA(202, 80, 16, 1)
                         RadioSize: =20
                         Size: =10
-                        Width: =250
+                        Width: =228
                         X: =30
                         Y: =495
                         ZIndex: =14

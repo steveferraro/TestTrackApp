@@ -146,7 +146,7 @@ App As appinfo:
                     Screen: Screen_Reporting,
                     Image: report,
                     BarColor: Color.Orange,
-                    Visability: true
+                    Visability: varAdmin
                 },
                 {
                     Title: "Admin",
