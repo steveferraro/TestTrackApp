@@ -567,6 +567,7 @@
                         Visible: =ThisItem.IsSelected
                         Width: =368.00
                         X: =0.00
+                        Y: =7
                         ZIndex: =5
 
                     Title2_3 As label:
