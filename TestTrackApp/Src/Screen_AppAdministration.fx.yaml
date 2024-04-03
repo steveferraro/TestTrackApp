@@ -445,6 +445,7 @@
                 ZIndex: =2
 
                 "TabListTables_AppAdministration As 'Tab list'.pcfdataset":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
                     Font: =Font.'Open Sans'
                     FontColor: =RGBA(0, 0, 0, 1)
