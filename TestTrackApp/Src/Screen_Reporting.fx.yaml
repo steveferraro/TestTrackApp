@@ -578,7 +578,11 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                'Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay
+                                ('Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay) && (LookUp(
+                                    JobsTracked,
+                                    'RecordID' = JobsFormEntries[@'Job Number'].RecordID,
+                                    Division
+                                ) in colAccessibleDivisions)
                             ),
                             'Forms Entered'
                         ),
