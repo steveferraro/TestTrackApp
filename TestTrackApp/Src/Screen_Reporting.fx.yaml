@@ -588,6 +588,7 @@
                             Filter(
                                 JobsFormEntries,
                                 ('Entry Date' >= varMonthFirstDay && 'Entry Date' <= varMonthLastDay)
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Forms Entered'
                         ),
@@ -596,6 +597,7 @@
                             Filter(
                                 JobsFormEntries,
                                 ('Entry Date' >= varYearFirstDay && 'Entry Date' <= varYearLastDay)
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Forms Entered'
                         ),
