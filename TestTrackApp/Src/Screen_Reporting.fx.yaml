@@ -578,11 +578,8 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay) && (LookUp(
-                                    JobsTracked,
-                                    'RecordID' = JobsFormEntries[@'Job Number'].RecordID,
-                                    Division
-                                ) in colAccessibleDivisions)
+                                ('Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay) 
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, 'Division'.'Division' in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Forms Entered'
                         ),
@@ -590,7 +587,7 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                'Entry Date' >= varMonthFirstDay && 'Entry Date' <= varMonthLastDay
+                                ('Entry Date' >= varMonthFirstDay && 'Entry Date' <= varMonthLastDay)
                             ),
                             'Forms Entered'
                         ),
@@ -598,7 +595,7 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                'Entry Date' >= varYearFirstDay && 'Entry Date' <= varYearLastDay
+                                ('Entry Date' >= varYearFirstDay && 'Entry Date' <= varYearLastDay)
                             ),
                             'Forms Entered'
                         ),
@@ -622,7 +619,7 @@
                         Sum(
                             Filter(
                                 JobsFormReceipts,
-                                'Receipt Date' >= varWeekFirstDay && 'Receipt Date' <= varWeekLastDay
+                                ('Receipt Date' >= varWeekFirstDay && 'Receipt Date' <= varWeekLastDay)
                             ),
                             'Form Count'
                         ),
@@ -630,7 +627,7 @@
                         Sum(
                             Filter(
                                 JobsFormReceipts,
-                                'Receipt Date' >= varMonthFirstDay && 'Receipt Date' <= varMonthLastDay
+                                ('Receipt Date' >= varMonthFirstDay && 'Receipt Date' <= varMonthLastDay)
                             ),
                             'Form Count'
                         ),
@@ -638,7 +635,7 @@
                         Sum(
                             Filter(
                                 JobsFormReceipts,
-                                'Receipt Date' >= varYearFirstDay && 'Receipt Date' <= varYearLastDay
+                                ('Receipt Date' >= varYearFirstDay && 'Receipt Date' <= varYearLastDay)
                             ),
                             'Form Count'
                         ),
@@ -664,7 +661,7 @@
                                 Sum(
                                     Filter(
                                         JobsFormEntries,
-                                        'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                        ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
                                     ),
                                     'Entry Duration (minutes)'
                                 )
@@ -673,7 +670,7 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
                                 ),
                                 'Entry Duration (minutes)'
                             )
@@ -682,7 +679,7 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
                             ),
                             'Entry Duration (minutes)'
                         ),
@@ -690,7 +687,7 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
                             ),
                             'Entry Duration (minutes)'
                         ),
@@ -714,7 +711,7 @@
                         Average(
                             Filter(
                                 JobsTracked,
-                                'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
                             ),
                             Turnaround
                         ),
@@ -722,7 +719,7 @@
                         Average(
                             Filter(
                                 JobsTracked,
-                                'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
                             ),
                             Turnaround
                         ),
@@ -730,7 +727,7 @@
                         Average(
                             Filter(
                                 JobsTracked,
-                                'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
                             ),
                             Turnaround
                         ),
@@ -755,7 +752,7 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -763,13 +760,13 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
                                 ),
                                 'Forms Entered'
                             )
@@ -779,7 +776,7 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -787,13 +784,13 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay
+                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
                                 ),
                                 'Forms Entered'
                             )
@@ -803,7 +800,7 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -811,13 +808,13 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    'Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay
+                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
                                 ),
                                 'Forms Entered'
                             )
