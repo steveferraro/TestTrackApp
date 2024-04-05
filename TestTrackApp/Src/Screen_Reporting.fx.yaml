@@ -602,8 +602,11 @@
                             'Forms Entered'
                         ),
                         "OTD",
-                        Sum(
-                            JobsFormEntries,
+                 Sum(
+                            Filter(
+                                JobsFormEntries,
+                                ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
+                            ),
                             'Forms Entered'
                         )
                     )
