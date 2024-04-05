@@ -625,6 +625,7 @@
                             Filter(
                                 JobsFormReceipts,
                                 ('Receipt Date' >= varWeekFirstDay && 'Receipt Date' <= varWeekLastDay)
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Form Count'
                         ),
@@ -633,6 +634,7 @@
                             Filter(
                                 JobsFormReceipts,
                                 ('Receipt Date' >= varMonthFirstDay && 'Receipt Date' <= varMonthLastDay)
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Form Count'
                         ),
@@ -641,12 +643,16 @@
                             Filter(
                                 JobsFormReceipts,
                                 ('Receipt Date' >= varYearFirstDay && 'Receipt Date' <= varYearLastDay)
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Form Count'
                         ),
                         "OTD",
                         Sum(
-                            JobsFormReceipts,
+                            Filter(
+                                JobsFormReceipts,
+                                ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
+                            ),
                             'Form Count'
                         )
                     )
