@@ -579,7 +579,7 @@
                             Filter(
                                 JobsFormEntries,
                                 ('Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay) 
-                                && ('Job Number'.'Job Number' in Filter(JobsTracked, 'Division'.'Division' in colAccessibleDivisions.rcon_division).'Job Number')
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Forms Entered'
                         ),
