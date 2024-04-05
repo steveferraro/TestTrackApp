@@ -895,7 +895,8 @@
                         0,
                         "OTD",
                         Sum(
-                            JobsTracked,
+                            Filter(JobsTracked,
+                            Division.Division in colAccessibleDivisions.rcon_division),
                             'Forms To Be Entered'
                         )
                     )
