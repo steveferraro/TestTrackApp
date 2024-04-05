@@ -730,6 +730,7 @@
                             Filter(
                                 JobsTracked,
                                 ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
+                                && (Division.Division in colAccessibleDivisions.rcon_division)
                             ),
                             Turnaround
                         ),
@@ -738,6 +739,7 @@
                             Filter(
                                 JobsTracked,
                                 ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
+                                && (Division.Division in colAccessibleDivisions.rcon_division)                
                             ),
                             Turnaround
                         ),
@@ -746,12 +748,16 @@
                             Filter(
                                 JobsTracked,
                                 ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
+                                && (Division.Division in colAccessibleDivisions.rcon_division)                
                             ),
                             Turnaround
                         ),
                         "OTD",
                         Average(
-                            JobsTracked,
+                            Filter(
+                                JobsTracked,
+                                (Division.Division in colAccessibleDivisions.rcon_division)                
+                            ),
                             Turnaround
                         )
                     )
@@ -771,6 +777,7 @@
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -779,12 +786,14 @@
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Forms Entered'
                             )
@@ -795,6 +804,7 @@
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -803,12 +813,14 @@
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Forms Entered'
                             )
@@ -819,6 +831,7 @@
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -827,12 +840,14 @@
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Forms Entered'
                             )
@@ -840,15 +855,24 @@
                         "OTD",
                         If(
                             Sum(
-                                JobsFormEntries,
+                                Filter(
+                                    JobsFormEntries,
+                                    ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
+                                ),
                                 'Forms Entered'
                             ) = 0,
                             0,
                             Sum(
-                                JobsFormEntries,
+                                Filter(
+                                    JobsFormEntries,
+                                    ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
+                                ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
-                                JobsFormEntries,
+                                Filter(
+                                    JobsFormEntries,
+                                    ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
+                                ),
                                 'Forms Entered'
                             )
                         )
