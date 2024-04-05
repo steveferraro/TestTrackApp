@@ -673,6 +673,7 @@
                                     Filter(
                                         JobsFormEntries,
                                         ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
+                                        && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                     ),
                                     'Entry Duration (minutes)'
                                 )
@@ -682,6 +683,7 @@
                                 Filter(
                                     JobsFormEntries,
                                     ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay)
+                                    && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             )
@@ -691,6 +693,7 @@
                             Filter(
                                 JobsFormEntries,
                                 ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay)
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Entry Duration (minutes)'
                         ),
@@ -699,12 +702,16 @@
                             Filter(
                                 JobsFormEntries,
                                 ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay)
+                                && ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
                             ),
                             'Entry Duration (minutes)'
                         ),
                         "OTD",
-                        Sum(
-                            JobsFormEntries,
+                         Sum(
+                            Filter(
+                                JobsFormEntries,
+                                ('Job Number'.'Job Number' in Filter(JobsTracked, Division.Division in colAccessibleDivisions.rcon_division).'Job Number')
+                            ),
                             'Entry Duration (minutes)'
                         )
                     )
