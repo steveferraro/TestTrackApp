@@ -45,8 +45,8 @@ App As appinfo:
             {RecordFilter: "Current User"}
         );
         Set(
-            varUserName,
-            User().FullName
+            varUserGUID,
+            User().EntraObjectId
         );
         With(
             {
@@ -55,9 +55,16 @@ App As appinfo:
                     displayName = "TestTrack - Administration"
                 ).id
             },
-            Set(
-                varAdmin,
-                varUserName in Office365Groups.ListGroupMembers(wAdminID).value.displayName
+            If(
+                IsBlank(wAdminID),
+                Set(
+                    varAdmin,
+                    false
+                ),
+                Set(
+                    varAdmin,
+                    varUserGUID in Office365Groups.ListGroupMembers(wAdminID).value.id
+                )
             )
         );
         With(
@@ -67,9 +74,16 @@ App As appinfo:
                     displayName = "TestTrack - Ohio"
                 ).id
             },
-            Set(
-                varOhio,
-                varUserName in Office365Groups.ListGroupMembers(wOhioID).value.displayName
+            If(
+                IsBlank(wOhioID),
+                Set(
+                    varOhio,
+                    false
+                ),
+                Set(
+                    varOhio,
+                    varUserGUID in Office365Groups.ListGroupMembers(wOhioID).value.id
+                )
             )
         );
         With(
@@ -79,9 +93,16 @@ App As appinfo:
                     displayName = "TestTrack - Michigan"
                 ).id
             },
-            Set(
-                varMichigan,
-                varUserName in Office365Groups.ListGroupMembers(wMichiganID).value.displayName
+            If(
+                IsBlank(wMichiganID),
+                Set(
+                    varMichigan,
+                    false
+                ),
+                Set(
+                    varMichigan,
+                    varUserGUID in Office365Groups.ListGroupMembers(wMichiganID).value.id
+                )
             )
         );
         Set(
