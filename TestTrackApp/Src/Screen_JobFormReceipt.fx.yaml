@@ -1795,6 +1795,7 @@
                         RadioSelectionFill: =RGBA(202, 80, 16, 1)
                         RadioSize: =20
                         Size: =10
+                        Visible: =varAdmin
                         Width: =228
                         X: =30
                         Y: =495
