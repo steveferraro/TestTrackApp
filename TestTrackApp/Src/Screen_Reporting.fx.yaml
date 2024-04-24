@@ -238,6 +238,7 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =Parent.Height/6.6
+                    Visible: =!varShowProgress
                     Width: =Parent.Width
                     ZIndex: =2
 
@@ -508,6 +509,7 @@
     "CalcProgress As 'Progress Bar'":
         DisplayMode: =DisplayMode.Edit
         Height: =45
+        Indeterminate: =true
         Visible: =varShowProgress
         Width: =450
         X: =499
@@ -529,7 +531,7 @@
             FontSize: =18
             FontWeight: =FontWeight.Normal
             Height: =20
-            OnSelect: |-
+            OnSelect: |+
                 =Set(
                     varShowProgress,
                     true
@@ -1023,7 +1025,8 @@
                 Set(
                     varShowProgress,
                     false
-                )
+                );
+                
             Text: ="Refresh Statistics"
             Width: =174
             X: =84
