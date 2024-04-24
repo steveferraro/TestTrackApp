@@ -479,7 +479,7 @@
         Y: =20
         ZIndex: =4
 
-    FilterPaneIcon_JobFormEntry_2 As icon.FilterFlat:
+    FilterPaneIcon_Reporting As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =ColorValue(AppTheme.palette.themePrimary)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -506,18 +506,21 @@
         Y: =81
         ZIndex: =5
 
-    "CalcProgress As 'Progress Bar'":
+    ProgressSpinner_Reporting As Spinner:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
-        Height: =45
-        Indeterminate: =true
+        FontColor: =
+        Height: =200
+        Label: ="Refreshing Statistics"
+        LabelPosition: ='Spinner.LabelPosition'.Below
+        SpinnerSize: ='Spinner.SpinnerSize'.Huge
         Visible: =varShowProgress
-        Width: =450
-        X: =499
-        Y: =421
+        Width: =200
+        X: =MainContainer_Reporting.Width/2
+        Y: =Parent.Height/2
         ZIndex: =7
 
-    Group1 As group:
+    RefreshGroup_Reporting As group:
         Height: =5
         Width: =5
         X: =40

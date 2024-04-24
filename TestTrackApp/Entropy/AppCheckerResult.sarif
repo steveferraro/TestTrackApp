@@ -6284,19 +6284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_JobFormEntry_2.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_Reporting.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_JobFormEntry_2.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_Reporting.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Reporting",
-                "type": "Screen_Reporting.FilterPaneIcon_JobFormEntry_2"
+                "type": "Screen_Reporting.FilterPaneIcon_Reporting"
               }
             }
           ],
@@ -6314,19 +6314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_JobFormEntry_2.TabIndex"
+                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_Reporting.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_JobFormEntry_2.TabIndex",
+                  "fullyQualifiedName": "Screen_Reporting.FilterPaneIcon_Reporting.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Reporting",
-                "type": "Screen_Reporting.FilterPaneIcon_JobFormEntry_2"
+                "type": "Screen_Reporting.FilterPaneIcon_Reporting"
               }
             }
           ],
@@ -6434,19 +6434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Reporting.CalcProgress.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Reporting.ProgressSpinner_Reporting.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Reporting.CalcProgress.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Reporting.ProgressSpinner_Reporting.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Reporting",
-                "type": "Screen_Reporting.CalcProgress"
+                "type": "Screen_Reporting.ProgressSpinner_Reporting"
               }
             }
           ],

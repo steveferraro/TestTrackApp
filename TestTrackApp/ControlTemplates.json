@@ -240,21 +240,6 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
-  "Progress Bar": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Progress",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_Progress",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Progress Bar",
-    "Version": "1.1.23"
-  },
   "radio": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -296,6 +281,21 @@
     "Name": "screen",
     "OverridableProperties": {},
     "Version": "1.0"
+  },
+  "Spinner": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Spinner",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_Spinner",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Spinner",
+    "Version": "1.0.34"
   },
   "Tab list": {
     "CustomGroupControlTemplateName": "",
