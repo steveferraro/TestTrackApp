@@ -508,7 +508,7 @@
     "CalcProgress As 'Progress Bar'":
         DisplayMode: =DisplayMode.Edit
         Height: =45
-        Visible: =false
+        Visible: =varShowProgress
         Width: =450
         X: =499
         Y: =421
