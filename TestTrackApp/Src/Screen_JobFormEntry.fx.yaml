@@ -638,7 +638,7 @@
                         DataField: ="rcon_JobNumber"
                         Default: =ThisItem.'Job Number'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,"rcon_JobNumber")
+                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_JobNumber)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
@@ -696,7 +696,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["rcon_jobnumber"]
-                            SearchItems: =Search(Choices([@JobsFormEntries].'Job Number'),DataCardValue5.SearchText,"rcon_jobnumber")
+                            SearchItems: =Search(Choices([@JobsFormEntries].'Job Number'),DataCardValue5.SearchText,rcon_jobnumber)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             SelectMultiple: =false
                             Size: =13
@@ -759,7 +759,7 @@
                         DataField: ="rcon_entrydate"
                         Default: =ThisItem.'Entry Date'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,"rcon_entrydate")
+                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_entrydate)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
@@ -966,10 +966,10 @@
                         DataField: ="rcon_comment"
                         Default: =ThisItem.Comment
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,"rcon_comment")
+                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_comment)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@JobsFormEntries], DataSourceInfo.MaxLength, "rcon_comment")
+                        MaxLength: =DataSourceInfo([@JobsFormEntries], DataSourceInfo.MaxLength, rcon_comment)
                         Required: =false
                         Update: =DataCardValue7.Text
                         Width: =430
@@ -1092,7 +1092,7 @@
                                 )
                             )
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,"rcon_entrydurationminutes")
+                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_entrydurationminutes)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
@@ -1209,7 +1209,7 @@
                         DataField: ="rcon_formsentered"
                         Default: =ThisItem.'Forms Entered'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,"rcon_formsentered")
+                        DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_formsentered)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
@@ -1556,7 +1556,7 @@
                         Height: =205
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Items: =ShowColumns(ReportStatuses,"rcon_name")
+                        Items: =ShowColumns(ReportStatuses,rcon_name)
                         LineHeight: =1.8
                         OnChange: =Set(varSelectedReportStatus, ReportStatusRadio_JobFormEntry.Selected.rcon_name)
                         PaddingBottom: =5
@@ -1678,7 +1678,7 @@
                         Height: =115
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Items: =ShowColumns(Divisions,"rcon_division")
+                        Items: =ShowColumns(Divisions,rcon_division)
                         LineHeight: =1.8
                         OnChange: =Set(varSelectedDivision,DivisionRadio__JobFormEntry.Selected.rcon_division)
                         PaddingBottom: =5

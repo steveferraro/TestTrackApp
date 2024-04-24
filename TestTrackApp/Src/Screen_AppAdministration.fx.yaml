@@ -1794,7 +1794,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["rcon_recordid"]
-                            SearchItems: =Search(Choices([@ProjectManagers].'Assigned Division'),cmbAssignedDivision.SearchText,"rcon_recordid")
+                            SearchItems: =Search(Choices([@ProjectManagers].'Assigned Division'),cmbAssignedDivision.SearchText,rcon_recordid)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             SelectMultiple: =false
                             Size: =13

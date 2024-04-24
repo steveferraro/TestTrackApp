@@ -128,7 +128,7 @@ App As appinfo:
                     Divisions,
                     'Security Group' = varGroup
                 ),
-                "rcon_division"
+                rcon_division
             )
         );
         ClearCollect(
@@ -377,11 +377,11 @@ App As appinfo:
             colAdminUpdates_Division,
             ShowColumns(
                 Table(Defaults(Divisions)),
-                "rcon_division",
-                "rcon_divisionnumber",
-                "statecode",
-                "rcon_recordid",
-                "rcon_divisionid"
+                rcon_division,
+                rcon_divisionnumber,
+                statecode,
+                rcon_recordid,
+                rcon_divisionid
             )
         );
         Clear(colAdminUpdates_Division);
@@ -389,10 +389,10 @@ App As appinfo:
             colAdminUpdates_Location,
             ShowColumns(
                 Table(Defaults(Locations)),
-                "rcon_name",
-                "rcon_description",
-                "statecode",
-                "rcon_locationid"
+                rcon_name,
+                rcon_description,
+                statecode,
+                rcon_locationid
             )
         );
         Clear(colAdminUpdates_Location);
@@ -400,12 +400,12 @@ App As appinfo:
             colAdminUpdates_ProjectManager,
             ShowColumns(
                 Table(Defaults(ProjectManagers)),
-                "rcon_name",
-                "rcon_lastname",
-                "rcon_firstname",
-                "rcon_AssignedDivision",
-                "statecode",
-                "rcon_projectmanagerid"
+                rcon_name,
+                rcon_lastname,
+                rcon_firstname,
+                rcon_AssignedDivision,
+                statecode,
+                rcon_projectmanagerid
             )
         );
         Clear(colAdminUpdates_ProjectManager);
@@ -413,10 +413,10 @@ App As appinfo:
             colAdminUpdates_ReportStatuses,
             ShowColumns(
                 Table(Defaults(ReportStatuses)),
-                "rcon_name",
-                "rcon_description",
-                "statecode",
-                "rcon_reportstatusid"
+                rcon_name,
+                rcon_description,
+                statecode,
+                rcon_reportstatusid
             )
         );
         ClearCollect(

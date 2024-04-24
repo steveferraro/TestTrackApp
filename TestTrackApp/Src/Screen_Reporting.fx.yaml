@@ -357,7 +357,7 @@
                     BorderThickness: =2
                     DelayItemLoading: =true
                     Items: |-
-                        =Table({Name: "Test Report RC", URL: "https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:HeaderArea = BreadCrumbsOnly"},{Name: "Test Report RC", URL: "https://rangercon1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:HeaderArea = BreadCrumbsOnly"})
+                        =Table({Name: "Test Report RC", URL: "https://uiser-main-sap1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:HeaderArea = BreadCrumbsOnly"},{Name: "Test Report RC", URL: "https://uiser-main-sap1/ReportServer/Pages/ReportViewer.aspx?%2fTestTrack+Reporting%2fTestReport_UIS&rs:Command=Render&rv:HeaderArea = BreadCrumbsOnly"})
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     OnSelect: =Launch(ThisItem.URL)
@@ -570,11 +570,11 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormEntries,
-                            "importsequencenumber"
+                            importsequencenumber
                         ),
-                        "!Measure",
+                        '!Measure',
                         "Total Forms Entered",
-                        "WTD",
+                        WTD,
                         Sum(
                             Filter(
                                 JobsFormEntries,
@@ -583,7 +583,7 @@
                             ),
                             'Forms Entered'
                         ),
-                        "MTD",
+                        MTD,
                         Sum(
                             Filter(
                                 JobsFormEntries,
@@ -592,7 +592,7 @@
                             ),
                             'Forms Entered'
                         ),
-                        "YTD",
+                        YTD,
                         Sum(
                             Filter(
                                 JobsFormEntries,
@@ -601,7 +601,7 @@
                             ),
                             'Forms Entered'
                         ),
-                        "OTD",
+                        OTD,
                  Sum(
                             Filter(
                                 JobsFormEntries,
@@ -616,11 +616,11 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormReceipts,
-                            "importsequencenumber"
+                            importsequencenumber
                         ),
-                        "!Measure",
+                        '!Measure',
                         "Total Forms Received",
-                        "WTD",
+                        WTD,
                         Sum(
                             Filter(
                                 JobsFormReceipts,
@@ -629,7 +629,7 @@
                             ),
                             'Form Count'
                         ),
-                        "MTD",
+                        MTD,
                         Sum(
                             Filter(
                                 JobsFormReceipts,
@@ -638,7 +638,7 @@
                             ),
                             'Form Count'
                         ),
-                        "YTD",
+                        YTD,
                         Sum(
                             Filter(
                                 JobsFormReceipts,
@@ -647,7 +647,7 @@
                             ),
                             'Form Count'
                         ),
-                        "OTD",
+                        OTD,
                         Sum(
                             Filter(
                                 JobsFormReceipts,
@@ -662,11 +662,11 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormEntries,
-                            "importsequencenumber"
+                            importsequencenumber
                         ),
-                        "!Measure",
+                        '!Measure',
                         "Total Form Entry Time (Minutes)",
-                        "WTD",
+                        WTD,
                         If(
                             IsBlank(
                                 Sum(
@@ -688,7 +688,7 @@
                                 'Entry Duration (minutes)'
                             )
                         ),
-                        "MTD",
+                        MTD,
                         Sum(
                             Filter(
                                 JobsFormEntries,
@@ -697,7 +697,7 @@
                             ),
                             'Entry Duration (minutes)'
                         ),
-                        "YTD",
+                        YTD,
                         Sum(
                             Filter(
                                 JobsFormEntries,
@@ -706,7 +706,7 @@
                             ),
                             'Entry Duration (minutes)'
                         ),
-                        "OTD",
+                        OTD,
                          Sum(
                             Filter(
                                 JobsFormEntries,
@@ -721,11 +721,11 @@
                     AddColumns(
                         ShowColumns(
                             JobsTracked,
-                            "importsequencenumber"
+                            importsequencenumber
                         ),
-                        "!Measure",
+                        '!Measure',
                         "Average Form Turnaround (Days)",
-                        "WTD",
+                        WTD,
                         Average(
                             Filter(
                                 JobsTracked,
@@ -734,7 +734,7 @@
                             ),
                             Turnaround
                         ),
-                        "MTD",
+                        MTD,
                         Average(
                             Filter(
                                 JobsTracked,
@@ -743,7 +743,7 @@
                             ),
                             Turnaround
                         ),
-                        "YTD",
+                        YTD,
                         Average(
                             Filter(
                                 JobsTracked,
@@ -752,7 +752,7 @@
                             ),
                             Turnaround
                         ),
-                        "OTD",
+                        OTD,
                         Average(
                             Filter(
                                 JobsTracked,
@@ -767,11 +767,11 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormEntries,
-                            "importsequencenumber"
+                            importsequencenumber
                         ),
-                        "!Measure",
+                        '!Measure',
                         "Average Form Entry Time (Minutes)",
-                        "WTD",
+                        WTD,
                         If(
                             Sum(
                                 Filter(
@@ -798,7 +798,7 @@
                                 'Forms Entered'
                             )
                         ),
-                        "MTD",
+                        MTD,
                         If(
                             Sum(
                                 Filter(
@@ -825,7 +825,7 @@
                                 'Forms Entered'
                             )
                         ),
-                        "YTD",
+                        YTD,
                         If(
                             Sum(
                                 Filter(
@@ -852,7 +852,7 @@
                                 'Forms Entered'
                             )
                         ),
-                        "OTD",
+                        OTD,
                         If(
                             Sum(
                                 Filter(
@@ -883,17 +883,17 @@
                     AddColumns(
                         ShowColumns(
                             JobsTracked,
-                            "importsequencenumber"
+                            importsequencenumber
                         ),
-                        "!Measure",
+                        '!Measure',
                         "Total Forms to be Entered",
-                        "WTD",
+                        WTD,
                         0,
-                        "MTD",
+                        MTD,
                         0,
-                        "YTD",
+                        YTD,
                         0,
-                        "OTD",
+                        OTD,
                         Sum(
                             Filter(JobsTracked,
                             Division.Division in colAccessibleDivisions.rcon_division),
@@ -905,51 +905,51 @@
                     colStats_Combined,
                     ShowColumns(
                         First(colStats_FormsToBeEntered),
-                        "!Measure",
-                        "WTD",
-                        "MTD",
-                        "YTD",
-                        "OTD"
+                        '!Measure',
+                        WTD,
+                        MTD,
+                        YTD,
+                        OTD
                     ),
                     ShowColumns(
                         First(colStats_FormsReceived),
-                        "!Measure",
-                        "WTD",
-                        "MTD",
-                        "YTD",
-                        "OTD"
+                        '!Measure',
+                        WTD,
+                        MTD,
+                        YTD,
+                        OTD
                     ),
                     ShowColumns(
                         First(colStats_FormsEntered),
-                        "!Measure",
-                        "WTD",
-                        "MTD",
-                        "YTD",
-                        "OTD"
+                        '!Measure',
+                        WTD,
+                        MTD,
+                        YTD,
+                        OTD
                     ),
                     ShowColumns(
                         First(colStats_FormsEntryMin),
-                        "!Measure",
-                        "WTD",
-                        "MTD",
-                        "YTD",
-                        "OTD"
+                        '!Measure',
+                        WTD,
+                        MTD,
+                        YTD,
+                        OTD
                     ),
                     ShowColumns(
                         First(colStats_FormsAveEntryTime),
-                        "!Measure",
-                        "WTD",
-                        "MTD",
-                        "YTD",
-                        "OTD"
+                        '!Measure',
+                        WTD,
+                        MTD,
+                        YTD,
+                        OTD
                     ),
                     ShowColumns(
                         First(colStats_FormsAveTurnaround),
-                        "!Measure",
-                        "WTD",
-                        "MTD",
-                        "YTD",
-                        "OTD"
+                        '!Measure',
+                        WTD,
+                        MTD,
+                        YTD,
+                        OTD
                     )
                 )
             Text: ="Refresh Statistics"

@@ -513,7 +513,7 @@
                         DataField: ="rcon_reviewdate"
                         Default: =ThisItem.rcon_reviewdate
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_reviewdate")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_reviewdate)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -722,7 +722,7 @@
                         DataField: ="rcon_reviewers"
                         Default: =ThisItem.'Technician(s)'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_reviewers")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_reviewers)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -843,7 +843,7 @@
                         DataField: ="rcon_oilsamplessentfortesting"
                         Default: =ThisItem.rcon_oilsamplessentfortesting
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_oilsamplessentfortesting")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_oilsamplessentfortesting)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -960,7 +960,7 @@
                         DataField: ="rcon_oilsamplesreceivedfromtesting"
                         Default: =ThisItem.rcon_oilsamplesreceivedfromtesting
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_oilsamplesreceivedfromtesting")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_oilsamplesreceivedfromtesting)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1077,7 +1077,7 @@
                         DataField: ="rcon_printforreviewpertimesheets"
                         Default: =ThisItem.rcon_printforreviewpertimesheets
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_printforreviewpertimesheets")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_printforreviewpertimesheets)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1199,7 +1199,7 @@
                         DataField: ="rcon_billingdate"
                         Default: =ThisItem.rcon_billingdate
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_billingdate")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_billingdate)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1409,7 +1409,7 @@
                         DataField: ="rcon_reportsentfileddate"
                         Default: =ThisItem.rcon_reportsentfileddate
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_reportsentfileddate")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_reportsentfileddate)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1619,7 +1619,7 @@
                         DataField: ="rcon_reportprintdate"
                         Default: =ThisItem.rcon_reportprintdate
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_reportprintdate")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_reportprintdate)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1829,7 +1829,7 @@
                         DataField: ="rcon_ReportStatus"
                         Default: =ThisItem.'Report Status'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,"rcon_ReportStatus")
+                        DisplayName: =DataSourceInfo([@JobsTracked],DataSourceInfo.DisplayName,rcon_ReportStatus)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1885,7 +1885,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["rcon_name"]
-                            SearchItems: =Search(Choices([@JobsTracked].'Report Status'),DataCardValue11.SearchText,"rcon_name")
+                            SearchItems: =Search(Choices([@JobsTracked].'Report Status'),DataCardValue11.SearchText,rcon_name)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             SelectMultiple: =false
                             Size: =13
@@ -2177,7 +2177,7 @@
                         Height: =205
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Items: =ShowColumns(ReportStatuses,"rcon_name")
+                        Items: =ShowColumns(ReportStatuses,rcon_name)
                         LineHeight: =1.8
                         OnChange: =Set(varSelectedReportStatus, ReportStatusRadio_JobFormEntry_1.Selected.rcon_name)
                         PaddingBottom: =5
@@ -2299,7 +2299,7 @@
                         Height: =115
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Items: =ShowColumns(Divisions,"rcon_division")
+                        Items: =ShowColumns(Divisions,rcon_division)
                         LineHeight: =1.8
                         OnChange: =Set(varSelectedDivision,DivisionRadio__JobFormEntry_1.Selected.rcon_division)
                         PaddingBottom: =5
