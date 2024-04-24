@@ -507,6 +507,7 @@
         ZIndex: =5
 
     "CalcProgress As 'Progress Bar'":
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         Height: =45
         Indeterminate: =true
