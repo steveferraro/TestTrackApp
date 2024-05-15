@@ -1089,7 +1089,7 @@
                         Default: |-
                             =If(
                                 Timer_JobFormEntry.Text = "00:00:00",
-                                0,
+                                ThisItem.'Entry Duration (minutes)',
                                 Round(
                                     Timer_JobFormEntry.Value / 59998,
                                     2
