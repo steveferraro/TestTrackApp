@@ -1087,12 +1087,27 @@
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="rcon_entrydurationminutes"
                         Default: |-
-                            =If(
-                                Timer_JobFormEntry.Text = "00:00:00",
-                                ThisItem.'Entry Duration (minutes)',
-                                Round(
-                                    Timer_JobFormEntry.Value / 59998,
-                                    2
+                            =Switch(
+                                FormMode,
+                                FormMode.New,
+                                0,
+                                FormMode.Edit,
+                                If(
+                                    Timer_JobFormEntry.Text = "00:00:00",
+                                    ThisItem.'Entry Duration (minutes)',
+                                    Round(
+                                        Timer_JobFormEntry.Value / 59998,
+                                        2
+                                    )
+                                ),
+                                FormMode.View,
+                                If(
+                                    Timer_JobFormEntry.Text = "00:00:00",
+                                    ThisItem.'Entry Duration (minutes)',
+                                    Round(
+                                        Timer_JobFormEntry.Value / 59998,
+                                        2
+                                    )
                                 )
                             )
                         DisplayMode: =Parent.DisplayMode
