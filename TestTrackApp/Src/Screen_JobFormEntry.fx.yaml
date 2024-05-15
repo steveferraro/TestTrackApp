@@ -1740,10 +1740,9 @@
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         Start: =startTimer
-        Visible: =false
         Width: =94.00
-        X: =1215.00
-        Y: =25
+        X: =827
+        Y: =24
         ZIndex: =3
 
     ConfirmationDialog_JobFormEntry As Dialog:
