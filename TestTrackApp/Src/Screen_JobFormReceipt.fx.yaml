@@ -119,6 +119,7 @@
                 ZIndex: =2
 
             ToolBar_JobFormReceipt As gallery.galleryHorizontal:
+                '#CopilotOverlayLabel': ="Filtered"
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 FillPortions: =0
@@ -271,6 +272,7 @@
                     ZIndex: =2
 
                 "GalleryJobs_JobFormReceipt As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                    '#CopilotOverlayLabel': ="Filtered"
                     AlignInContainer: =AlignInContainer.SetByContainer
                     Default: =varSelectedJob_JobFormReceipt
                     DelayItemLoading: =true
@@ -477,6 +479,7 @@
                     ZIndex: =4
 
                 "GalleryFormReceipt_JobFormReceipt As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+                    '#CopilotOverlayLabel': ="Filtered"
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(166, 166, 166, 1)
                     Default: =varSelectedReceipt_JobFormReceipt

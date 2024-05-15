@@ -734,7 +734,9 @@
           "InvariantPropertyName": "BorderThickness",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "#CopilotOverlayLabel",
+        "#CopilotOverlayVisible"
       ],
       "GalleryTemplateChildName": "galleryTemplate5",
       "HasDynamicProperties": false,
@@ -879,6 +881,16 @@
         {
           "Category": "Design",
           "PropertyName": "BorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayLabel",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayVisible",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -6485,7 +6497,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelect",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -7709,7 +7721,9 @@
           "InvariantPropertyName": "Visible",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "#CopilotOverlayLabel",
+        "#CopilotOverlayVisible"
       ],
       "DynamicProperties": [
         {
@@ -7900,6 +7914,16 @@
           "Category": "Design",
           "PropertyName": "Visible",
           "RuleProviderType": "User"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayLabel",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayVisible",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultGalleryStyle",

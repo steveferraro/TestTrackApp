@@ -114,6 +114,7 @@
                 ZIndex: =2
 
             ToolBar_AppAdministration As gallery.galleryHorizontal:
+                '#CopilotOverlayLabel': ="Filtered"
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 FillPortions: =0
@@ -604,6 +605,7 @@
                             ZIndex: =6
 
                     TableRecordsDivision_AppAdministration As gallery.galleryVertical:
+                        '#CopilotOverlayLabel': ="Filtered"
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DelayItemLoading: =true
@@ -1071,6 +1073,7 @@
                             ZIndex: =5
 
                     TableRecordsLocation_AppAdministration As gallery.galleryVertical:
+                        '#CopilotOverlayLabel': ="Filtered"
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DelayItemLoading: =true
@@ -1441,6 +1444,7 @@
                             ZIndex: =7
 
                     TableRecordsProjectManager_AppAdministration As gallery.galleryVertical:
+                        '#CopilotOverlayLabel': ="Filtered"
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DelayItemLoading: =true
@@ -1950,6 +1954,7 @@
                             ZIndex: =5
 
                     TableRecordsJobStatus_AppAdministration As gallery.galleryVertical:
+                        '#CopilotOverlayLabel': ="Filtered"
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DelayItemLoading: =true

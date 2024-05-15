@@ -462,7 +462,9 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Visible"
+        "Visible",
+        "#CopilotOverlayLabel",
+        "#CopilotOverlayVisible"
       ],
       "GalleryTemplateChildName": "galleryTemplate2",
       "HasDynamicProperties": false,
@@ -613,6 +615,16 @@
           "Category": "Design",
           "PropertyName": "Visible",
           "RuleProviderType": "User"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayLabel",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayVisible",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultGalleryStyle",

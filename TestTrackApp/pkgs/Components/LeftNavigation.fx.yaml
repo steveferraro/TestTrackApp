@@ -75,6 +75,7 @@ LeftNavigation As CanvasComponent:
         ZIndex: =1
 
     NavigationGallery As gallery.galleryVertical:
+        '#CopilotOverlayLabel': ="Filtered"
         BorderColor: =RGBA(0, 18, 107, 1)
         Default: =LookUp(LeftNavigation.NavigationItems,Screen=App.ActiveScreen)
         DelayItemLoading: =true

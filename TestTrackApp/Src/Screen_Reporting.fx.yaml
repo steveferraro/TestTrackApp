@@ -227,6 +227,7 @@
                         ZIndex: =5
 
                 StatusGallery_Reporting As gallery.galleryVertical:
+                    '#CopilotOverlayLabel': ="Filtered"
                     BorderColor: =RGBA(166, 166, 166, 1)
                     DelayItemLoading: =true
                     FillPortions: =0
@@ -353,6 +354,7 @@
                 ZIndex: =3
 
                 "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+                    '#CopilotOverlayLabel': ="Filtered"
                     BorderColor: =ColorValue(AppTheme.palette.themePrimary)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
@@ -589,7 +591,7 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormEntries,
-                            importsequencenumber
+                            'Import Sequence Number'
                         ),
                         '!Measure',
                         "Total Forms Entered",
@@ -644,7 +646,7 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormReceipts,
-                            importsequencenumber
+                            'Import Sequence Number'
                         ),
                         '!Measure',
                         "Total Forms Received",
@@ -699,7 +701,7 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormEntries,
-                            importsequencenumber
+                            'Import Sequence Number'
                         ),
                         '!Measure',
                         "Total Form Entry Time (Minutes)",
@@ -769,7 +771,7 @@
                     AddColumns(
                         ShowColumns(
                             JobsTracked,
-                            importsequencenumber
+                            'Import Sequence Number'
                         ),
                         '!Measure',
                         "Average Form Turnaround (Days)",
@@ -812,7 +814,7 @@
                     AddColumns(
                         ShowColumns(
                             JobsFormEntries,
-                            importsequencenumber
+                            'Import Sequence Number'
                         ),
                         '!Measure',
                         "Average Form Entry Time (Minutes)",
@@ -955,7 +957,7 @@
                     AddColumns(
                         ShowColumns(
                             JobsTracked,
-                            importsequencenumber
+                            'Import Sequence Number'
                         ),
                         '!Measure',
                         "Total Forms to be Entered",

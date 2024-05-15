@@ -11521,7 +11521,9 @@
           "InvariantPropertyName": "Default",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "#CopilotOverlayLabel",
+        "#CopilotOverlayVisible"
       ],
       "DynamicProperties": [
         {
@@ -11718,6 +11720,16 @@
         {
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayLabel",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayVisible",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -25781,7 +25793,9 @@
           "InvariantPropertyName": "BorderThickness",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "#CopilotOverlayLabel",
+        "#CopilotOverlayVisible"
       ],
       "DynamicProperties": [
         {
@@ -25978,6 +25992,16 @@
         {
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayLabel",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "#CopilotOverlayVisible",
           "RuleProviderType": "Unknown"
         }
       ],
