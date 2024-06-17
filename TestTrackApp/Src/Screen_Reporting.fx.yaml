@@ -530,6 +530,7 @@
         ZIndex: =8
 
         RefreshStatsButton_Reporting As Button:
+            Align: =""
             Appearance: ='ButtonCanvas.Appearance'.Transparent
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
@@ -537,6 +538,10 @@
             FontSize: =18
             FontWeight: =FontWeight.Normal
             Height: =20
+            Icon: =""
+            IconRotation: =0
+            IconStyle: ="Outline"
+            Layout: ="Icon before"
             OnSelect: |+
                 =Set(
                     varShowProgress,
@@ -1034,6 +1039,7 @@
                 );
                 
             Text: ="Refresh Statistics"
+            VerticalAlign: =""
             Width: =174
             X: =84
             Y: =86

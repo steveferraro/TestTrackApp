@@ -233,12 +233,18 @@ Dialog As CanvasComponent:
                     ZIndex: =4
 
                     Button1_1 As Button:
+                        Align: =""
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         Height: =32
+                        Icon: =""
+                        IconRotation: =0
+                        IconStyle: ="Outline"
+                        Layout: ="Icon before"
                         OnSelect: =Dialog.OnButtonSelect()
                         Text: =ThisItem.Label
+                        VerticalAlign: =""
                         Width: =96.00
                         X: =0.00
                         Y: =8

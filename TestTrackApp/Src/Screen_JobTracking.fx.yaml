@@ -1254,7 +1254,6 @@
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
-                            IsSearchable: =false
                             Items: =Choices(Technicians)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5.00
@@ -1263,7 +1262,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["Value"]
-                            SearchItems: =[]
+                            SearchItems: =Choices(Technicians,DataCardValue50.SearchText)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             Size: =13
                             Tooltip: =Parent.DisplayName
@@ -1946,6 +1945,7 @@
 
                     MyJobsCheckbox__JobTracking As Checkbox:
                         BasePaletteColor: =
+                        CheckboxSize: =16
                         Checked: =varMyJobs
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
@@ -1960,6 +1960,7 @@
 
                     Forms2EnterCheckbox__JobTracking As Checkbox:
                         BasePaletteColor: =
+                        CheckboxSize: =16
                         Checked: =varForms2Enter
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =

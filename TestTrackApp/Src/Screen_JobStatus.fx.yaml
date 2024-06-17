@@ -2093,6 +2093,7 @@
 
                     MyJobsCheckbox__JobFormEntry_1 As Checkbox:
                         BasePaletteColor: =
+                        CheckboxSize: =16
                         Checked: =varMyJobs
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
@@ -2107,6 +2108,7 @@
 
                     Forms2EnterCheckbox__JobFormEntry_1 As Checkbox:
                         BasePaletteColor: =
+                        CheckboxSize: =16
                         Checked: =varForms2Enter
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =

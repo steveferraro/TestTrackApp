@@ -40,7 +40,7 @@
     "Name": "PowerApps_CoreControls_ButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Button",
-    "Version": "0.0.29"
+    "Version": "0.0.41"
   },
   "Checkbox": {
     "CustomGroupControlTemplateName": "",
@@ -55,7 +55,7 @@
     "Name": "PowerApps_CoreControls_CheckboxCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Checkbox",
-    "Version": "0.0.21"
+    "Version": "0.0.24"
   },
   "combobox": {
     "CustomGroupControlTemplateName": "",
@@ -111,7 +111,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "form",
     "OverridableProperties": {},
-    "Version": "2.4.1"
+    "Version": "2.4.2"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -295,7 +295,7 @@
     "Name": "PowerApps_CoreControls_Spinner",
     "OverridableProperties": {},
     "TemplateDisplayName": "Spinner",
-    "Version": "1.0.34"
+    "Version": "1.4.1"
   },
   "Tab list": {
     "CustomGroupControlTemplateName": "",
@@ -310,7 +310,7 @@
     "Name": "PowerApps_CoreControls_TabList",
     "OverridableProperties": {},
     "TemplateDisplayName": "Tab list",
-    "Version": "2.2.20"
+    "Version": "2.2.26"
   },
   "text": {
     "CustomGroupControlTemplateName": "",
