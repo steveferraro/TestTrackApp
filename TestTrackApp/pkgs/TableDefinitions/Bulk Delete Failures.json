@@ -3,10 +3,6 @@
   "EntityName": "Bulk Delete Failures",
   "environmentVariableName": "",
   "InstanceUrl": "https://orgc89627b3.crm.dynamics.com/",
-  "LocalReferenceDSJson": {
-    "entitySetName": "bulkdeletefailures",
-    "logicalName": "bulkdeletefailure"
-  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://orgc89627b3.crm.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('bulkdeletefailure')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",
