@@ -24,14 +24,12 @@
         Fill: =ConfirmationDialog_JobTracking.OverlayColor
         Height: =768
         OnButtonSelect: |-
-            =Switch(
-                ConfirmationDialog_JobTracking.SelectedButton.Label,
-                "Yes",
+            =If(
+                Self.SelectedButton.Label = "Yes",
                 Remove(
                     JobsTracked,
                     GalleryJobs_JobTracking.Selected
                 ),
-                "No",
                 UpdateContext({DialogVisible: false})
             );
             UpdateContext({DialogVisible: false})
