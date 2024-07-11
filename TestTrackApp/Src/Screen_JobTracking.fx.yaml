@@ -14,7 +14,7 @@
                 },
                 {
                     Label: "No",
-                    ButtonType: 'Button.ButtonType'.Primary,
+                    ButtonType: 'Button.ButtonType'.Standard,
                     HasBorder: false,
                     Color: Color.Red
                 }

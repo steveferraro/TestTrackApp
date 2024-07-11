@@ -235,6 +235,7 @@ Dialog As CanvasComponent:
                     Button1_1 As Button:
                         Align: =""
                         BasePaletteColor: =
+                        BorderStyle: =""
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         Height: =32

@@ -533,6 +533,7 @@
             Align: =""
             Appearance: ='ButtonCanvas.Appearance'.Transparent
             BasePaletteColor: =
+            BorderStyle: =""
             DisplayMode: =DisplayMode.Edit
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =18
