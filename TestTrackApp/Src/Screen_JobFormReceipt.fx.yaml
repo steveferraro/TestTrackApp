@@ -6,47 +6,6 @@
         =Set(varSelectedJob_JobFormReceipt, First(GalleryJobs_JobFormReceipt.AllItems));
         Set(varSelectedReceipt_JobFormReceipt, First(GalleryFormReceipt_JobFormReceipt.AllItems));
 
-    ConfirmationDialog_JobFormReceipt As Dialog:
-        Buttons: |-
-            =Table(
-                {
-                    Label: "Yes",
-                    ButtonType: 'Button.ButtonType'.Standard,
-                    HasBorder: false,
-                    Color: Color.Green
-                },
-                {
-                    Label: "No",
-                    ButtonType: 'Button.ButtonType'.Primary,
-                    HasBorder: false,
-                    Color: Color.Red
-                }
-            )
-        DialogHeight: =225
-        DialogWidth: =500
-        Fill: =ConfirmationDialog_JobFormReceipt.OverlayColor
-        Height: =768
-        OnButtonSelect: |-
-            =Switch(
-                ConfirmationDialog_JobFormReceipt.SelectedButton.Label,
-                "Yes",
-                Remove(
-                    JobsFormReceipts,
-                    GalleryFormReceipt_JobFormReceipt.Selected
-                ),
-                "No",
-                UpdateContext({DialogVisible: false})
-            );
-            UpdateContext({DialogVisible: false})
-        OnCloseSelect: |-
-            =UpdateContext({DialogVisible: false})
-        SubTitle: ="Are you certain you want to delete this form receipt?"
-        Theme: =AppTheme
-        Title: ="Delete Form Receipt?"
-        Visible: =DialogVisible
-        Width: =1366.00
-        X: =0.00
-
     ScreenContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =ColorValue(AppTheme.palette.themePrimary)

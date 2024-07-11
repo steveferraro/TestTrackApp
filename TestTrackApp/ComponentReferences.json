@@ -11,12 +11,12 @@
   },
   {
     "HasLibraryLogicalName": true,
-    "InstanceCount": 5,
-    "LibraryId": "c26d3c79-33a2-4927-bfbf-c3813ba3383b",
+    "InstanceCount": 1,
+    "LibraryId": "5d18d8fb-0e1d-4811-8b05-21e6c8ec624e",
     "LibraryLogicalName": "cat_powercatcomponentlibrary_0be3a",
-    "LibraryVersion": "2024-03-12T13:00:18Z",
+    "LibraryVersion": "2024-07-11T23:46:47Z",
     "OriginalComponentDefinitionTemplateId": "2e88179d732a402184a767c94eab038b",
     "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
-    "SourceLastTimeSaved": "2024-02-22T23:55:33.316+00:00"
+    "SourceLastTimeSaved": "2024-07-11T23:46:53.518+00:00"
   }
 ]

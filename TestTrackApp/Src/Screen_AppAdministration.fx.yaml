@@ -2,46 +2,6 @@
     Fill: =
     LoadingSpinnerColor: =RGBA(202, 80, 16, 1)
 
-    ConfirmationDialog_AppAdministration As Dialog:
-        Buttons: |-
-            =Table(
-                {
-                    Label: "Yes",
-                    ButtonType: 'Button.ButtonType'.Standard,
-                    HasBorder: false,
-                    Color: Color.Green
-                },
-                {
-                    Label: "No",
-                    ButtonType: 'Button.ButtonType'.Primary,
-                    HasBorder: false,
-                    Color: Color.Red
-                }
-            )
-        DialogHeight: =200
-        Fill: =ConfirmationDialog_AppAdministration.OverlayColor
-        Height: =768
-        OnButtonSelect: |-
-            =Switch(
-                ConfirmationDialog_AppAdministration.SelectedButton.Label,
-                "Yes",
-                Remove(
-                    JobsTracked,
-                    GalleryJobs_JobTracking.Selected
-                ),
-                "No",
-                UpdateContext({DialogVisible: false})
-            );
-            UpdateContext({DialogVisible: false})
-        OnCloseSelect: |-
-            =UpdateContext({DialogVisible: false})
-        SubTitle: ="Are you certain you want to delete this job?"
-        Theme: =AppTheme
-        Title: ="Delete Job?"
-        Visible: =DialogVisible
-        Width: =1366.00
-        X: =0.00
-
     ScreenContainer_AppAdministration As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =ColorValue(AppTheme.palette.themePrimary)

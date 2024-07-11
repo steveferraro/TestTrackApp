@@ -1747,48 +1747,6 @@
         Y: =24
         ZIndex: =3
 
-    ConfirmationDialog_JobFormEntry As Dialog:
-        Buttons: |-
-            =Table(
-                {
-                    Label: "Yes",
-                    ButtonType: 'Button.ButtonType'.Standard,
-                    HasBorder: false,
-                    Color: Color.Green
-                },
-                {
-                    Label: "No",
-                    ButtonType: 'Button.ButtonType'.Primary,
-                    HasBorder: false,
-                    Color: Color.Red
-                }
-            )
-        DialogHeight: =225
-        DialogWidth: =500
-        Fill: =ConfirmationDialog_JobFormEntry.OverlayColor
-        Height: =768
-        OnButtonSelect: |-
-            =Switch(
-                ConfirmationDialog_JobFormEntry.SelectedButton.Label,
-                "Yes",
-                Remove(
-                    JobsFormEntries,
-                    GalleryJobsFormEntry_JobFormEntry.Selected
-                ),
-                "No",
-                UpdateContext({DialogVisible: false})
-            );
-            UpdateContext({DialogVisible: false})
-        OnCloseSelect: |-
-            =UpdateContext({DialogVisible: false})
-        SubTitle: ="Are you certain you want to delete this form entry?"
-        Theme: =AppTheme
-        Title: ="Delete Form Entry?"
-        Visible: =DialogVisible
-        Width: =1366    
-        X: =0.00
-        ZIndex: =4
-
     EntryWarningIcon_JobFormEntry As icon.Warning:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(255, 0, 0, 1)

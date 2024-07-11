@@ -349,7 +349,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "true",
           "InvariantPropertyName": "Visible",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -357,7 +357,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "{Label: \"Ok\", Fill:\"#0086D0\", Color:\"#FFFFFF\"}",
+          "AutoRuleBindingString": "true",
           "InvariantPropertyName": "OnButtonSelect",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -381,7 +381,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "\"Text\"",
           "InvariantPropertyName": "Title",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -394,27 +394,13 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "{\r\n\tpalette: {\r\n\t\tthemePrimary: \"#0078d4\",\r\n\t\tthemeLighterAlt: \"#eff6fc\",\r\n\t\tthemeLighter: \"#deecf9\",\r\n\t\tthemeLight: \"#c7e0f4\",\r\n\t\tthemeTertiary: \"#71afe5\",\r\n\t\tthemeSecondary: \"#2b88d8\",\r\n\t\tthemeDarkAlt: \"#106ebe\",\r\n\t\tthemeDark: \"#005a9e\",\r\n\t\tthemeDarker: \"#004578\",\r\n\t\tneutralLighterAlt: \"#faf9f8\",\r\n\t\tneutralLighter: \"#f3f2f1\",\r\n\t\tneutralLight: \"#edebe9\",\r\n\t\tneutralQuaternaryAlt: \"#e1dfdd\",\r\n\t\tneutralQuaternary: \"#d0d0d0\",\r\n\t\tneutralTertiaryAlt: \"#c8c6c4\",\r\n\t\tneutralTertiary: \"#a19f9d\",\r\n\t\tneutralSecondary: \"#605e5c\",\r\n\t\tneutralPrimaryAlt: \"#3b3a39\",\r\n\t\tneutralPrimary: \"#323130\",\r\n\t\tneutralDark: \"#201f1e\",\r\n\t\tblack: \"#000000\",\r\n\t\twhite: \"#ffffff\"\r\n\t}\r\n}",
-          "InvariantPropertyName": "Theme",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "OverlayColor",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Theme",
+        "OverlayColor",
         "OnReset",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "100",
           "InvariantPropertyName": "DialogWidth",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -422,7 +408,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "100",
           "InvariantPropertyName": "DialogHeight",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -470,7 +456,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "\"Text\"",
           "InvariantPropertyName": "SubTitle",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -511,7 +497,7 @@
         {
           "Category": "Data",
           "PropertyName": "SubTitle",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -536,7 +522,7 @@
         {
           "Category": "Data",
           "PropertyName": "Theme",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -556,7 +542,7 @@
         {
           "Category": "Data",
           "PropertyName": "Buttons",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
