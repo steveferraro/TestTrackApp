@@ -14,47 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ConfirmationDialog_AppAdministration.OnButtonSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ConfirmationDialog_AppAdministration.OnButtonSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 216,
-                  "snippet": {
-                    "text": ";"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnButtonSelect",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ConfirmationDialog_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Record",
-              "Boolean"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_JobFormEntry.ConfirmationDialog_JobFormEntry.OnButtonSelect"
                 }
               ],
@@ -116,6 +75,47 @@
                 "member": "OnButtonSelect",
                 "module": "Screen_JobFormReceipt",
                 "type": "Screen_JobFormReceipt.ConfirmationDialog_JobFormReceipt"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Record",
+              "Boolean"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ConfirmationDialog_AppAdministration.OnButtonSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ConfirmationDialog_AppAdministration.OnButtonSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 216,
+                  "snippet": {
+                    "text": ";"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnButtonSelect",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ConfirmationDialog_AppAdministration"
               }
             }
           ],
@@ -219,306 +219,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.HamburgerStackIcon"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.HamburgerStackIcon"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery.NavigationLabel"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery.NavigationLabel"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery.NavigationImage"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery.NavigationImage"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery.SelectionRectangle"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNavigation",
-                "type": "LeftNavigation.NavigationGallery.SelectionRectangle"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Dialog.DialogRootContainer.MiddleContainer.CenterDialogContainer.DialogHeaderContainer.Label3.FocusedBorderThickness"
                 }
               ],
@@ -542,7 +242,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -572,7 +272,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -602,7 +302,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -632,7 +332,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -662,26 +362,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.HamburgerStackIcon"
               }
             }
           ],
@@ -692,26 +392,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.TabIndex"
+                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.TabIndex",
+                  "fullyQualifiedName": "LeftNavigation.HamburgerStackIcon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.HamburgerStackIcon"
               }
             }
           ],
@@ -722,26 +422,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery"
               }
             }
           ],
@@ -752,26 +452,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.TabIndex"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.TabIndex",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery"
               }
             }
           ],
@@ -782,26 +482,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.TabListTables_AppAdministration.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.TabListTables_AppAdministration.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.TabListTables_AppAdministration"
+                "member": "FocusedBorderThickness",
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery.NavigationLabel"
               }
             }
           ],
@@ -811,7 +511,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "acc-FocusBorderShouldBeVisible",
           "ruleIndex": 1
         },
         {
@@ -819,49 +519,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.TabIndex",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationLabel.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery.NavigationLabel"
               }
             }
           ],
@@ -872,26 +542,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionNumber.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionNumber.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionNumber"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery.NavigationImage"
               }
             }
           ],
@@ -902,176 +572,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivision.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivision.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivision"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionName.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionName.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionStatus.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionStatus.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionStatus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionSecurityGroup.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionSecurityGroup.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionSecurityGroup"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.TabIndex",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.NavigationImage.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery.NavigationImage"
               }
             }
           ],
@@ -1082,26 +602,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery.SelectionRectangle"
               }
             }
           ],
@@ -1112,26 +632,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.TabIndex"
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.TabIndex",
+                  "fullyQualifiedName": "LeftNavigation.NavigationGallery.SelectionRectangle.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration"
+                "module": "LeftNavigation",
+                "type": "LeftNavigation.NavigationGallery.SelectionRectangle"
               }
             }
           ],
@@ -1142,697 +662,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationName.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationName.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationDescription.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationDescription.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationDescription"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.drpLocationStatus.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.drpLocationStatus.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.drpLocationStatus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerName.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerName.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerLastName.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerLastName.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerLastName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerFirstName.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerFirstName.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerFirstName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.cmbAssignedDivision.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.cmbAssignedDivision.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.cmbAssignedDivision"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.drpProjectManagerStatus.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.drpProjectManagerStatus.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.drpProjectManagerStatus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusName.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusName.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusDescription.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusDescription.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusDescription"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.drpReportStatusStatus.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.drpReportStatusStatus.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.drpReportStatusStatus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ExitAppIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_AppAdministration",
-                "type": "Screen_AppAdministration.ExitAppIcon_AppAdministration"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1862,7 +692,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1892,7 +722,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1922,7 +752,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1952,7 +782,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1982,7 +812,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2012,7 +842,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2042,7 +872,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2072,7 +902,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2102,7 +932,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2132,7 +962,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2162,7 +992,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2192,7 +1022,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2222,7 +1052,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2252,7 +1082,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2282,7 +1112,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2312,7 +1142,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2342,7 +1172,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2372,7 +1202,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2402,7 +1232,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2432,7 +1262,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2462,7 +1292,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2492,7 +1322,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2522,7 +1352,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2552,7 +1382,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2582,7 +1412,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2612,7 +1442,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2642,7 +1472,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2672,7 +1502,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2702,7 +1532,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2732,7 +1562,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2762,7 +1592,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2792,7 +1622,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2822,7 +1652,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2852,7 +1682,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2882,7 +1712,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2912,7 +1742,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2942,7 +1772,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2972,7 +1802,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3002,7 +1832,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3032,7 +1862,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3062,7 +1892,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3092,7 +1922,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3122,7 +1952,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3152,7 +1982,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3182,7 +2012,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3212,7 +2042,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3242,7 +2072,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3272,7 +2102,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3302,7 +2132,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3332,7 +2162,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3362,7 +2192,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3392,7 +2222,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3422,7 +2252,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3452,7 +2282,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3482,7 +2312,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3512,7 +2342,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3542,7 +2372,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3572,7 +2402,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3602,7 +2432,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3632,7 +2462,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3662,7 +2492,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3692,7 +2522,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3722,7 +2552,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3752,7 +2582,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3782,7 +2612,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3812,7 +2642,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3842,7 +2672,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3872,7 +2702,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3902,7 +2732,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3932,7 +2762,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3962,7 +2792,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3992,7 +2822,1177 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.HeaderContainer_AppAdministration.ToolBar_AppAdministration.ToolbarIcon_JobStatus_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.TabListTables_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.TabListTables_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.TabListTables_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionNumber.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionNumber.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionNumber"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivision.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivision.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivision"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionName.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionName.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.txtDivisionName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionStatus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionStatus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionSecurityGroup.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionSecurityGroup.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.drpDivisionSecurityGroup"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerDivision_AppAdministration.TableRecordsDivision_AppAdministration.DivisionDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationName.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationName.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationDescription.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationDescription.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.txtLocationDescription"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.drpLocationStatus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.drpLocationStatus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.drpLocationStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerLocation_AppAdministration.TableRecordsLocation_AppAdministration.LocationDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerName.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerName.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerLastName.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerLastName.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerLastName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerFirstName.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerFirstName.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.txtProjectManagerFirstName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.cmbAssignedDivision.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.cmbAssignedDivision.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.cmbAssignedDivision"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.drpProjectManagerStatus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.drpProjectManagerStatus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.drpProjectManagerStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerProjectManager_AppAdministration.TableRecordsProjectManager_AppAdministration.ProjectManagerDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusName.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusName.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusDescription.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusDescription.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.txtReportStatusDescription"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.drpReportStatusStatus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.drpReportStatusStatus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.drpReportStatusStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ScreenContainer_AppAdministration.BottomContainer_AppAdministration.MainContainer_AppAdministration.ContainerJobStatus_AppAdministration.TableRecordsJobStatus_AppAdministration.JobStatusDeleteIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ExitAppIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_AppAdministration.ExitAppIcon_AppAdministration.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_AppAdministration",
+                "type": "Screen_AppAdministration.ExitAppIcon_AppAdministration"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4022,7 +4022,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4052,7 +4052,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4082,7 +4082,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4112,7 +4112,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4142,7 +4142,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4172,7 +4172,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4202,7 +4202,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4232,7 +4232,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4262,7 +4262,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4292,7 +4292,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4322,7 +4322,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4352,7 +4352,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4382,7 +4382,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4412,7 +4412,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4442,7 +4442,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4472,7 +4472,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4502,7 +4502,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4532,7 +4532,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4562,7 +4562,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4592,7 +4592,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4622,7 +4622,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4652,7 +4652,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4682,7 +4682,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4712,7 +4712,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4742,7 +4742,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4772,7 +4772,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4802,7 +4802,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4832,7 +4832,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4862,7 +4862,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4892,7 +4892,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4922,7 +4922,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4952,7 +4952,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4982,7 +4982,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5012,7 +5012,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5042,7 +5042,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5072,7 +5072,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5102,7 +5102,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5132,7 +5132,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5162,7 +5162,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5192,7 +5192,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5222,7 +5222,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5252,7 +5252,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5282,7 +5282,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5312,7 +5312,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5342,7 +5342,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5372,7 +5372,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5402,7 +5402,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5432,7 +5432,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5462,7 +5462,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5492,7 +5492,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5522,7 +5522,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5552,7 +5552,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5582,7 +5582,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5612,7 +5612,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5642,7 +5642,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5672,7 +5672,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5702,7 +5702,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5732,7 +5732,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5762,7 +5762,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5792,7 +5792,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5822,7 +5822,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5852,7 +5852,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5882,7 +5882,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5912,7 +5912,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5942,7 +5942,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5972,7 +5972,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6002,7 +6002,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6032,7 +6032,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6062,7 +6062,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6092,7 +6092,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6122,7 +6122,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6152,7 +6152,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6182,7 +6182,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6212,7 +6212,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6242,7 +6242,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6272,7 +6272,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6302,7 +6302,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6332,7 +6332,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6362,7 +6362,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6392,7 +6392,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6422,7 +6422,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6452,7 +6452,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6482,7 +6482,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6512,7 +6512,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6542,7 +6542,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6572,7 +6572,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6602,7 +6602,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6632,7 +6632,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6662,7 +6662,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6987,40 +6987,6 @@
               }
             },
             {
-              "id": "acc-AccessibleLabelNeeded",
-              "messageStrings": {
-                "issue": {
-                  "text": "Missing accessible label"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Edit the accessible label property to describe the item."
-                ],
-                "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
-              }
-            },
-            {
-              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-              "messageStrings": {
-                "issue": {
-                  "text": "Missing tab stop"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
-                ],
-                "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
-              }
-            },
-            {
               "id": "acc-FocusBorderShouldBeVisible",
               "messageStrings": {
                 "issue": {
@@ -7052,6 +7018,40 @@
                 "level": "Low",
                 "primaryCategory": "accessibility",
                 "whyFix": "When a screen reader reads the elements of a slide, it's important that they appear in the order that a user would see them, instead of the order they were added to the slide."
+              }
+            },
+            {
+              "id": "acc-AccessibleLabelNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing accessible label"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Edit the accessible label property to describe the item."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
+              }
+            },
+            {
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing tab stop"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             },
             {
