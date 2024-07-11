@@ -30,7 +30,7 @@
       "dataverseactionsenabled": true,
       "delaycontrolrendering": true,
       "delayloadscreens": true,
-      "disablebehaviorreturntypecheck": false,
+      "disablebehaviorreturntypecheck": true,
       "disablecdsfileandlargeimage": false,
       "disableruntimepolicies": false,
       "dynamicschema": false,
