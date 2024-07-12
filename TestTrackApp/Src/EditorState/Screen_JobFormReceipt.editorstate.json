@@ -661,7 +661,7 @@
       "MetaDataIDKey": "",
       "Name": "ConfirmationDialog_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -727,7 +727,7 @@
         {
           "Category": "Data",
           "PropertyName": "SubTitle",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
@@ -6965,7 +6965,7 @@
       "MetaDataIDKey": "",
       "Name": "FilterContainer__JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12367,7 +12367,7 @@
       "MetaDataIDKey": "",
       "Name": "LeftNavigation_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12729,7 +12729,7 @@
       "MetaDataIDKey": "%MainContainer.ID%",
       "Name": "MainContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16452,7 +16452,7 @@
       "MetaDataIDKey": "%ScreenContainer.ID%",
       "Name": "ScreenContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18410,7 +18410,7 @@
       "MetaDataIDKey": "%SidebarContainer.ID%",
       "Name": "SidebarContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

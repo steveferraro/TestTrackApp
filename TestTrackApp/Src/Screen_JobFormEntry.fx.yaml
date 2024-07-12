@@ -1742,6 +1742,7 @@
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         Start: =startTimer
+        Visible: =false
         Width: =94.00
         X: =827
         Y: =24
@@ -1852,4 +1853,39 @@
         X: =268
         Y: =20
         ZIndex: =9
+
+    ConfirmationDialog_JobFormEntry As Dialog:
+        Buttons: |-
+            =Table(
+                {
+                    Label: "No",
+                    ButtonType: 'Button.ButtonType'.Standard,
+                    HasBorder: false
+                },
+                {
+                    Label: "Yes",
+                    ButtonType: 'Button.ButtonType'.Primary,
+                    HasBorder: false
+                }
+            )
+        Fill: =ConfirmationDialog_JobFormEntry.OverlayColor
+        Height: =768
+        OnButtonSelect: |-
+            =If(
+                Self.SelectedButton.Label = "Yes",
+                Remove(
+                    JobsTracked,
+                    GalleryJobs_JobTracking.Selected
+                ),
+                UpdateContext({DialogVisible: false})
+            );
+            UpdateContext({DialogVisible: false})
+        OnCloseSelect: |-
+            =UpdateContext({DialogVisible: false})
+        SubTitle: ="Are you sure you want to delete form entry for job " & GalleryJobs_JobTracking.Selected.'Job Number' & "?"
+        Theme: =AppTheme
+        Title: ="Delete Form Entry?"
+        Visible: =DialogVisible
+        Width: =1366
+        ZIndex: =10
 

@@ -6703,36 +6703,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.DialogVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.DialogVisible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DialogVisible",
-                "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_JobFormEntry.FilterPaneIcon_JobFormEntry.Icon"
                 }
               ],
@@ -6823,19 +6793,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.ConfirmationDialog_JobFormReceipt.SubTitle"
+                  "fullyQualifiedName": "Screen_JobFormEntry.ConfirmationDialog_JobFormEntry.SubTitle"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.ConfirmationDialog_JobFormReceipt.SubTitle",
+                  "fullyQualifiedName": "Screen_JobFormEntry.ConfirmationDialog_JobFormEntry.SubTitle",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "SubTitle",
-                "module": "Screen_JobFormReceipt",
-                "type": "Screen_JobFormReceipt.ConfirmationDialog_JobFormReceipt"
+                "module": "Screen_JobFormEntry",
+                "type": "Screen_JobFormEntry.ConfirmationDialog_JobFormEntry"
               }
             }
           ],
