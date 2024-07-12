@@ -511,7 +511,7 @@
         {
           "Category": "Data",
           "PropertyName": "SubTitle",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
