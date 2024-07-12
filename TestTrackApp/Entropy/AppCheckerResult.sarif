@@ -6703,36 +6703,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.DialogVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.DialogVisible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DialogVisible",
-                "module": "Screen_JobFormReceipt",
-                "type": "Screen_JobFormReceipt"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_JobFormEntry.DialogVisible"
                 }
               ],
@@ -6836,6 +6806,36 @@
                 "member": "Icon",
                 "module": "Screen_JobStatus",
                 "type": "Screen_JobStatus.FilterPaneIcon_JobFormEntry_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.ConfirmationDialog_JobFormReceipt.SubTitle"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.ConfirmationDialog_JobFormReceipt.SubTitle",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SubTitle",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.ConfirmationDialog_JobFormReceipt"
               }
             }
           ],

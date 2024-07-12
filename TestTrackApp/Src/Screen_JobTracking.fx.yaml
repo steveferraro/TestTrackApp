@@ -1,5 +1,5 @@
 "Screen_JobTracking As screen.'autoLayout_Sidebar_ver1.0'":
-    Fill: =  
+    Fill: =
     LoadingSpinnerColor: =RGBA(202, 80, 16, 1)
     OnVisible: =Set(varSelectedJob_JobTracking, First(GalleryJobs_JobTracking.AllItems))
 

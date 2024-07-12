@@ -1913,3 +1913,38 @@
         Y: =502
         ZIndex: =9
 
+    ConfirmationDialog_JobFormReceipt As Dialog:
+        Buttons: |-
+            =Table(
+                {
+                    Label: "No",
+                    ButtonType: 'Button.ButtonType'.Standard,
+                    HasBorder: false
+                },
+                {
+                    Label: "Yes",
+                    ButtonType: 'Button.ButtonType'.Primary,
+                    HasBorder: false
+                }
+            )
+        Fill: =ConfirmationDialog_JobFormReceipt.OverlayColor
+        Height: =768
+        OnButtonSelect: |-
+            =If(
+                Self.SelectedButton.Label = "Yes",
+                Remove(
+                    JobsTracked,
+                    GalleryJobs_JobTracking.Selected
+                ),
+                UpdateContext({DialogVisible: false})
+            );
+            UpdateContext({DialogVisible: false})
+        OnCloseSelect: |-
+            =UpdateContext({DialogVisible: false})
+        SubTitle: ="Are you sure you want to delete job " & GalleryJobs_JobTracking.Selected.'Job Number' & ". All associated receipt and entry records will also be deleted."
+        Theme: =AppTheme
+        Title: ="Delete Job?"
+        Visible: =DialogVisible
+        Width: =1366
+        ZIndex: =10
+

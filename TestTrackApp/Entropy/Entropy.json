@@ -1,5 +1,6 @@
 {
   "ComponentIndexes": {
+    "ConfirmationDialog_JobFormReceipt": 7,
     "ConfirmationDialog_JobTracking": 7,
     "Dialog": 7,
     "LeftNavigation": 6
@@ -24,6 +25,7 @@
     "cmbAssignedDivision": 177,
     "Comment_DataCard1": 245,
     "Comment_DataCard1_1": 67,
+    "ConfirmationDialog_JobFormReceipt": 538,
     "ConfirmationDialog_JobTracking": 497,
     "Container19": 14,
     "Container19_1": 27,
@@ -545,7 +547,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/12/2024 12:21:16",
+  "HeaderLastSavedDateTimeUTC": "07/12/2024 12:23:29",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": "\"/providers/microsoft.powerapps/apis/shared_office365groups/connections/395c8f1fa83249df8271786ab2d3039c\""
@@ -780,29 +782,29 @@
     }
   },
   "OrderPcfTemplate": {
-    "Microsoft_CoreControls_Button": 2,
+    "Microsoft_CoreControls_Button": 0,
     "PowerApps_CoreControls_ButtonCanvas": 4,
-    "PowerApps_CoreControls_CheckboxCanvas": 0,
+    "PowerApps_CoreControls_CheckboxCanvas": 1,
     "PowerApps_CoreControls_Spinner": 3,
-    "PowerApps_CoreControls_TabList": 1
+    "PowerApps_CoreControls_TabList": 2
   },
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 4,
-    "combobox": 8,
-    "datepicker": 10,
-    "dropdown": 11,
-    "form": 7,
-    "gallery": 3,
-    "groupContainer": 0,
-    "htmlViewer": 14,
-    "icon": 5,
-    "image": 6,
-    "label": 1,
-    "radio": 12,
-    "rectangle": 2,
-    "text": 9,
-    "timer": 13
+    "button": 6,
+    "combobox": 9,
+    "datepicker": 11,
+    "dropdown": 12,
+    "form": 8,
+    "gallery": 4,
+    "groupContainer": 1,
+    "htmlViewer": 0,
+    "icon": 3,
+    "image": 7,
+    "label": 2,
+    "radio": 13,
+    "rectangle": 5,
+    "text": 10,
+    "timer": 14
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -823,6 +825,7 @@
     "cmbAssignedDivision": {},
     "Comment_DataCard1": {},
     "Comment_DataCard1_1": {},
+    "ConfirmationDialog_JobFormReceipt": {},
     "ConfirmationDialog_JobTracking": {},
     "Container19": {},
     "Container19_1": {},
@@ -1532,6 +1535,7 @@
     "cmbAssignedDivision": 483,
     "Comment_DataCard1": 244,
     "Comment_DataCard1_1": 144,
+    "ConfirmationDialog_JobFormReceipt": 100,
     "ConfirmationDialog_JobTracking": 100,
     "Container19": 512,
     "Container19_1": 525,
@@ -2074,7 +2078,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 3.4709205,
     "ControlCount": {
-      "0b7a79e2a3b84c2eaea969f4c6913ad3": 2,
+      "0b7a79e2a3b84c2eaea969f4c6913ad3": 3,
       "0dc487d999184506927b444aeb6ed7bc": 7,
       "button": 5,
       "combobox": 12,
