@@ -1882,7 +1882,7 @@
             UpdateContext({DialogVisible: false})
         OnCloseSelect: |-
             =UpdateContext({DialogVisible: false})
-        SubTitle: ="Are you sure you want to delete form entry for job " & GalleryJobs_JobTracking.Selected.'Job Number' & "?"
+        SubTitle: ="Are you sure you want to delete form entry for job " & GalleryJobs_JobFormEntry.Selected.'Job Number' & "?"
         Theme: =AppTheme
         Title: ="Delete Form Entry?"
         Visible: =DialogVisible

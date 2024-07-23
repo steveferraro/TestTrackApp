@@ -6703,36 +6703,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ConfirmationDialog_JobFormEntry.SubTitle"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ConfirmationDialog_JobFormEntry.SubTitle",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "SubTitle",
-                "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry.ConfirmationDialog_JobFormEntry"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_JobFormEntry.FilterPaneIcon_JobFormEntry.Icon"
                 }
               ],
@@ -6776,36 +6746,6 @@
                 "member": "Icon",
                 "module": "Screen_JobStatus",
                 "type": "Screen_JobStatus.FilterPaneIcon_JobStatus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_JobStatus.ConfirmationDialog_JobStatus.SubTitle"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobStatus.ConfirmationDialog_JobStatus.SubTitle",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "SubTitle",
-                "module": "Screen_JobStatus",
-                "type": "Screen_JobStatus.ConfirmationDialog_JobStatus"
               }
             }
           ],

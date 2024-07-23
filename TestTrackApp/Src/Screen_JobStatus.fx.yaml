@@ -2418,7 +2418,7 @@
             UpdateContext({DialogVisible: false})
         OnCloseSelect: |-
             =UpdateContext({DialogVisible: false})
-        SubTitle: ="Are you sure you want to delete job " & GalleryJobs_JobTracking.Selected.'Job Number' & ". All associated receipt and entry records will also be deleted."
+        SubTitle: ="Are you sure you want to delete job " & GalleryJobs_JobStatus.Selected.'Job Number' & ". All associated receipt and entry records will also be deleted."
         Theme: =AppTheme
         Title: ="Delete Job?"
         Visible: =DialogVisible
