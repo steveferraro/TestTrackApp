@@ -1412,8 +1412,8 @@
 
                 DocumentListContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
+                    LayoutAlignItems: =LayoutAlignItems.End
                     LayoutDirection: =LayoutDirection.Vertical
-                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -1451,7 +1451,7 @@
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =10
                         TemplateSize: =104
-                        Width: =Parent.Width-13
+                        Width: =Parent.Width-5
                         ZIndex: =2
 
                         Image4 As image:
