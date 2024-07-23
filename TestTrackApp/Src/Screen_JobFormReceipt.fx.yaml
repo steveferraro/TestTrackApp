@@ -1430,7 +1430,7 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                        Height: =Self.Size * 1.8
+                        Height: =25
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -1438,8 +1438,8 @@
                         PaddingTop: =0
                         Text: =ThisItem.'Job Number'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.TemplateWidth - 173
-                        X: =103
+                        Width: =279
+                        X: =61
                         Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
                         ZIndex: =2
 
@@ -1448,7 +1448,7 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                        Height: =Self.Size * 1.8
+                        Height: =24
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -1457,8 +1457,8 @@
                         Size: =12
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Title3.Width
-                        X: =Title3.X
+                        Width: =279
+                        X: =61
                         Y: =Title3.Y + Title3.Height
                         ZIndex: =3
 
