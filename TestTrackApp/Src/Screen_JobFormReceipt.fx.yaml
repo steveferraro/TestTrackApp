@@ -1554,6 +1554,43 @@
                             Width: =5
                             ZIndex: =6
 
+                    Container1 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.End
+                        BorderStyle: =BorderStyle.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =0
+                        Height: =100
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =100
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width - 5
+                        ZIndex: =3
+
+                        Button1 As button:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =RGBA(202, 80, 16, 1)
+                            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
+                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =15
+                            Text: ="Upload..."
+                            ZIndex: =1
+
             FilterContainer__JobFormReceipt As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Start
                 DropShadow: =DropShadow.Light
