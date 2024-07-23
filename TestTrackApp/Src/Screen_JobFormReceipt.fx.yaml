@@ -674,6 +674,7 @@
                                 Text: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
+                                X: =10
                                 Y: =10 + (DataCardValue5_1.Height / 2) - (Self.Height / 2)
                                 ZIndex: =1
 
@@ -795,6 +796,7 @@
                                 Text: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
+                                X: =10
                                 Y: =10 + (DataCardValue7_1.Height / 2) - (Self.Height / 2)
                                 ZIndex: =1
 
@@ -905,13 +907,14 @@
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
-                                Height: =18
+                                Height: =29
                                 PaddingLeft: =0
                                 Size: =13.00
                                 Text: =Parent.DisplayName
                                 Width: =268
                                 Wrap: =false
-                                Y: =21
+                                X: =10
+                                Y: =10
                                 ZIndex: =1
 
                             DateValue2 As datepicker:
@@ -1118,6 +1121,7 @@
                                 Text: =Parent.DisplayName
                                 Width: =268
                                 Wrap: =false
+                                X: =10
                                 Y: =10
                                 ZIndex: =1
 
@@ -1327,6 +1331,7 @@
                                 Text: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
+                                X: =10
                                 Y: =10 + (DataCardValue10.Height / 2) - (Self.Height / 2)
                                 ZIndex: =1
 
@@ -1450,7 +1455,7 @@
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =10
-                        TemplateSize: =104
+                        TemplateSize: =72
                         Width: =Parent.Width-5
                         ZIndex: =2
 
@@ -1473,7 +1478,8 @@
                             RadiusTopLeft: =8
                             RadiusTopRight: =8
                             Width: =45
-                            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                            X: =20
+                            Y: =19
                             ZIndex: =1
 
                         Title3 As label:
@@ -1490,8 +1496,8 @@
                             Text: =ThisItem.'Job Number'
                             VerticalAlign: =VerticalAlign.Top
                             Width: =279
-                            X: =56
-                            Y: =14
+                            X: =76
+                            Y: =4
                             ZIndex: =2
 
                         Subtitle2 As label:
@@ -1509,7 +1515,7 @@
                             Text: =ThisItem.Name
                             VerticalAlign: =VerticalAlign.Top
                             Width: =297
-                            X: =56
+                            X: =76
                             Y: =Title3.Y + Title3.Height
                             ZIndex: =3
 
@@ -1526,7 +1532,8 @@
                             PaddingTop: =16
                             Tooltip: ="View item details"
                             Width: =50
-                            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                            X: =355
+                            Y: =20
                             ZIndex: =4
 
                         Separator10 As rectangle:
@@ -1544,7 +1551,7 @@
                             Height: =Parent.TemplateHeight - Separator10.Height
                             OnSelect: =Select(Parent)
                             Visible: =ThisItem.IsSelected
-                            Width: =1
+                            Width: =5
                             ZIndex: =6
 
             FilterContainer__JobFormReceipt As groupContainer.manualLayoutContainer:
