@@ -1392,7 +1392,7 @@
                     BorderColor: =ColorValue(AppTheme.palette.themePrimary)
                     BorderThickness: =5
                     DelayItemLoading: =true
-                    Items: ='Test Forms'
+                    Items: =Filter('Test Forms','Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number')
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
@@ -1465,6 +1465,7 @@
                     NextArrow1 As icon.ChevronRight:
                         AccessibleLabel: =Self.Tooltip
                         Color: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Height: =50
                         Icon: =Icon.ChevronRight
                         OnSelect: =Select(Parent)
