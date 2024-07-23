@@ -603,6 +603,20 @@
                     Width: =Parent.Width/2  
                     ZIndex: =3
 
+                    RectangleSpace1_JobFormReceipt_1 As rectangle:
+                        BorderColor: =
+                        BorderStyle: =BorderStyle.None
+                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        FocusedBorderThickness: =4
+                        Height: =35
+                        HoverFill: =RGBA(202, 80, 16, 1)
+                        LayoutMinHeight: =1
+                        PressedFill: =RGBA(202, 80, 16, 1)
+                        Width: =EntryForm_JobFormReceipt.Width
+                        X: =0.00
+                        ZIndex: =1
+
                     EntryForm_JobFormReceipt As form:
                         AcceptsFocus: =false
                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -625,7 +639,7 @@
                             ViewForm(EntryForm_JobFormReceipt);
                         Width: =Parent.Width-13
                         X: =0.00
-                        ZIndex: =1
+                        ZIndex: =2
 
                         "'Job Number_DataCard2_1' As typedDataCard.comboBoxEditCard":
                             BorderColor: =RGBA(166, 166, 166, 1)
@@ -660,7 +674,6 @@
                                 Text: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
-                                X: =30.00
                                 Y: =10 + (DataCardValue5_1.Height / 2) - (Self.Height / 2)
                                 ZIndex: =1
 
@@ -696,9 +709,9 @@
                                 SelectMultiple: =false
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey4_1.X + DataCardKey4_1.Width
-                                Y: =10
+                                Width: =219
+                                X: =181
+                                Y: =6
                                 ZIndex: =2
 
                             ErrorMessage5_1 As label:
@@ -782,7 +795,6 @@
                                 Text: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
-                                X: =30.00
                                 Y: =10 + (DataCardValue7_1.Height / 2) - (Self.Height / 2)
                                 ZIndex: =1
 
@@ -798,6 +810,7 @@
                                 DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
+                                Height: =36
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
                                 HoverFill: =RGBA(255, 255, 255, 1)
@@ -814,8 +827,8 @@
                                 RadiusTopRight: =0
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey11_1.X + DataCardKey11_1.Width
+                                Width: =258
+                                X: =142
                                 Y: =10
                                 ZIndex: =2
 
@@ -883,7 +896,6 @@
                             ZIndex: =1
 
                             DataCardKey14 As label:
-                                AutoHeight: =true
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 BorderStyle: =BorderStyle.None
                                 BorderThickness: =2
@@ -893,14 +905,13 @@
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
-                                Height: =34
+                                Height: =18
                                 PaddingLeft: =0
                                 Size: =13.00
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =268
                                 Wrap: =false
-                                X: =33.34
-                                Y: =10 + (DateValue2.Height / 2) + (Self.Height / 2)
+                                Y: =21
                                 ZIndex: =1
 
                             DateValue2 As datepicker:
@@ -926,8 +937,8 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey14.X + DataCardKey14.Width
+                                Width: =(Parent.Width - 60) * .3
+                                X: =296
                                 Y: =10
                                 ZIndex: =2
 
@@ -1093,7 +1104,6 @@
                             ZIndex: =1
 
                             DataCardKey15 As label:
-                                AutoHeight: =true
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 BorderStyle: =BorderStyle.None
                                 BorderThickness: =2
@@ -1103,15 +1113,12 @@
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
-                                Height: =34
-                                Overflow: =Overflow.Scroll
                                 PaddingLeft: =0
                                 Size: =13.00
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =268
                                 Wrap: =false
-                                X: =33.34
-                                Y: =10 + (DateValue6.Height / 2) + (Self.Height / 2)
+                                Y: =10
                                 ZIndex: =1
 
                             DateValue6 As datepicker:
@@ -1137,8 +1144,8 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey15.X + DataCardKey15.Width
+                                Width: =(Parent.Width - 60) * 0.3
+                                X: =296
                                 Y: =10
                                 ZIndex: =2
 
@@ -1320,7 +1327,6 @@
                                 Text: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
-                                X: =33.34
                                 Y: =10 + (DataCardValue10.Height / 2) - (Self.Height / 2)
                                 ZIndex: =1
 
@@ -1352,8 +1358,8 @@
                                 RadiusTopRight: =0
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey16.X + DataCardKey16.Width
+                                Width: =(Parent.Width - 60) * 0.3
+                                X: =291
                                 Y: =10
                                 ZIndex: =2
 
@@ -1407,6 +1413,7 @@
                 DocumentListContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
                     LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -1417,20 +1424,35 @@
                     Width: =Parent.Width/2  
                     ZIndex: =4
 
+                    RectangleSpace1_JobFormReceipt_2 As rectangle:
+                        BorderColor: =
+                        BorderStyle: =BorderStyle.None
+                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        FocusedBorderThickness: =4
+                        Height: =35
+                        HoverFill: =RGBA(202, 80, 16, 1)
+                        LayoutMinHeight: =1
+                        PressedFill: =RGBA(202, 80, 16, 1)
+                        Width: =DocumentList_JobFormReceipt.Width
+                        X: =0.00
+                        ZIndex: =1
+
                     "DocumentList_JobFormReceipt As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorValue(AppTheme.palette.themePrimary)
-                        BorderThickness: =5
                         DelayItemLoading: =true
                         Fill: =RGBA(255, 255, 255, 1)
+                        Height: =72
                         Items: =Filter('Test Forms','Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number')
                         Layout: =Layout.Vertical
-                        LayoutMinHeight: =287
+                        LayoutMinHeight: =
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =10
                         TemplateSize: =104
                         Width: =Parent.Width-13
-                        ZIndex: =1
+                        ZIndex: =2
 
                         Image4 As image:
                             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1469,7 +1491,7 @@
                             VerticalAlign: =VerticalAlign.Top
                             Width: =279
                             X: =56
-                            Y: =35
+                            Y: =14
                             ZIndex: =2
 
                         Subtitle2 As label:
@@ -2084,4 +2106,42 @@
         Visible: =DialogVisible
         Width: =1366
         ZIndex: =10
+
+    JobsLabel_JobFormReceipt_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =13
+        Text: |-
+            ="Job Attributes:"
+        Width: =289
+        X: =491
+        Y: =147
+        ZIndex: =11
+
+    JobsLabel_JobFormReceipt_2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =13
+        Text: |-
+            ="Job Documents:"
+        Width: =289
+        X: =921
+        Y: =147
+        ZIndex: =12
 
