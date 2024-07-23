@@ -391,7 +391,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Comment_DataCard1_1",
       "OptimizeForDevices": "Off",
@@ -861,11 +861,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey11_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1150,11 +1150,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey14",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1439,11 +1439,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey15",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1728,11 +1728,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey16",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2017,11 +2017,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey4_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2322,11 +2322,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2678,11 +2678,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue5_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3024,11 +3024,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue7_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3354,11 +3354,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%DateFieldValue.ID%",
       "Name": "DateValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3694,11 +3694,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%DateFieldValue.ID%",
       "Name": "DateValue6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4856,7 +4856,14 @@
           "NameMapSourceSchema": "?"
         },
         "Fill",
-        "BorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(166, 166, 166, 1)",
+          "InvariantPropertyName": "BorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderStyle",
         "FocusedBorderColor",
         "X",
@@ -4941,6 +4948,14 @@
           "InvariantPropertyName": "SnapToColumns",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -4995,7 +5010,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "vertical",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "EntryForm_JobFormReceipt",
       "OptimizeForDevices": "Off",
@@ -5060,7 +5075,7 @@
         {
           "Category": "Design",
           "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -5075,6 +5090,11 @@
         {
           "Category": "Design",
           "PropertyName": "SnapToColumns",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderThickness",
           "RuleProviderType": "Unknown"
         },
         {
@@ -5162,7 +5182,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage11_1",
       "OptimizeForDevices": "Off",
@@ -5444,7 +5464,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage14",
       "OptimizeForDevices": "Off",
@@ -5726,7 +5746,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage15",
       "OptimizeForDevices": "Off",
@@ -6008,7 +6028,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage16",
       "OptimizeForDevices": "Off",
@@ -6290,7 +6310,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage5_1",
       "OptimizeForDevices": "Off",
@@ -6766,7 +6786,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Field Work Performance Date_DataCard1",
       "OptimizeForDevices": "Off",
@@ -6965,7 +6985,7 @@
       "MetaDataIDKey": "",
       "Name": "FilterContainer__JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7885,7 +7905,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Form Count_DataCard1",
       "OptimizeForDevices": "Off",
@@ -8376,6 +8396,224 @@
         }
       ],
       "StyleName": "",
+      "Type": "ControlInfo"
+    },
+    "Gallery2": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "WrapCount",
+        "TemplateSize",
+        "TemplatePadding",
+        "Layout",
+        "Transition",
+        "DelayItemLoading",
+        "LoadingSpinner",
+        "LoadingSpinnerColor",
+        "DisplayMode",
+        "BorderColor",
+        "DisabledBorderColor",
+        "PressedBorderColor",
+        "HoverBorderColor",
+        "BorderStyle",
+        "FocusedBorderColor",
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "ZIndex"
+      ],
+      "DynamicProperties": [
+        {
+          "ControlPropertyState": "FillPortions",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "FillPortions",
+            "RuleProviderType": "Unknown"
+          },
+          "PropertyName": "FillPortions"
+        },
+        {
+          "ControlPropertyState": "AlignInContainer",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "AlignInContainer",
+            "RuleProviderType": "Unknown"
+          },
+          "PropertyName": "AlignInContainer"
+        },
+        {
+          "ControlPropertyState": "LayoutMinWidth",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "LayoutMinWidth",
+            "RuleProviderType": "Unknown"
+          },
+          "PropertyName": "LayoutMinWidth"
+        },
+        {
+          "ControlPropertyState": "LayoutMinHeight",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "LayoutMinHeight",
+            "RuleProviderType": "Unknown"
+          },
+          "PropertyName": "LayoutMinHeight"
+        }
+      ],
+      "GalleryTemplateChildName": "galleryTemplate6",
+      "HasDynamicProperties": true,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "",
+      "Name": "Gallery2",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 1,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Items",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "WrapCount",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TemplateSize",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TemplatePadding",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Layout",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Transition",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DelayItemLoading",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "defaultGalleryStyle",
       "Type": "ControlInfo"
     },
     "GalleryFormReceipt_JobFormReceipt": {
@@ -9102,6 +9340,34 @@
           "Category": "Behavior",
           "PropertyName": "OnSelect",
           "RuleProviderType": "User"
+        }
+      ],
+      "StyleName": "",
+      "Type": "ControlInfo"
+    },
+    "galleryTemplate6": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "TemplateFill"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": true,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "",
+      "Name": "galleryTemplate6",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 0,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Design",
+          "PropertyName": "TemplateFill",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -10202,7 +10468,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%HourFieldValue.ID%",
       "Name": "HourValue2",
       "OptimizeForDevices": "Off",
@@ -10531,7 +10797,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%HourFieldValue.ID%",
       "Name": "HourValue6",
       "OptimizeForDevices": "Off",
@@ -11505,6 +11771,214 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
+    "Image4": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Image",
+        "ImagePosition",
+        "ImageRotation",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "BorderColor",
+        "DisabledBorderColor",
+        "PressedBorderColor",
+        "HoverBorderColor",
+        "FocusedBorderColor",
+        "BorderStyle",
+        "DisplayMode",
+        "OnSelect",
+        "ZIndex",
+        "BorderThickness",
+        "FocusedBorderThickness",
+        "PaddingTop",
+        "PaddingRight",
+        "PaddingBottom",
+        "PaddingLeft",
+        "TabIndex",
+        "RadiusTopLeft",
+        "RadiusBottomRight",
+        "RadiusTopRight",
+        "RadiusBottomLeft"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "%TemplateBrowseGalleryImage.ID%",
+      "Name": "Image4",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 2,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Image",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ImagePosition",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ImageRotation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingTop",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingBottom",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TabIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusTopLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusBottomRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusTopRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusBottomLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "defaultImageStyle",
+      "Type": "ControlInfo"
+    },
     "Job Number_DataCard2_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
@@ -11572,7 +12046,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Job Number_DataCard2_1",
       "OptimizeForDevices": "Off",
@@ -12367,7 +12841,7 @@
       "MetaDataIDKey": "",
       "Name": "LeftNavigation_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12664,9 +13138,30 @@
         "DisplayMode",
         "ChildTabPriority",
         "LayoutMode",
-        "LayoutDirection",
-        "LayoutAlignItems",
-        "LayoutJustifyContent",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "LayoutDirection",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "LayoutAlignItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "LayoutJustifyContent",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutGap",
         "LayoutOverflowX",
         "LayoutOverflowY",
@@ -12729,7 +13224,7 @@
       "MetaDataIDKey": "%MainContainer.ID%",
       "Name": "MainContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12958,7 +13453,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%MinuteFieldValue.ID%",
       "Name": "MinuteValue2",
       "OptimizeForDevices": "Off",
@@ -13287,7 +13782,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%MinuteFieldValue.ID%",
       "Name": "MinuteValue6",
       "OptimizeForDevices": "Off",
@@ -13655,6 +14150,202 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnCheck",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "",
+      "Type": "ControlInfo"
+    },
+    "NextArrow1": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Icon",
+        "Color",
+        "DisabledColor",
+        "PressedColor",
+        "HoverColor",
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "DisplayMode",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "BorderStyle",
+        "BorderColor",
+        "DisabledBorderColor",
+        "PressedBorderColor",
+        "HoverBorderColor",
+        "FocusedBorderColor",
+        "OnSelect",
+        "ZIndex",
+        "Tooltip",
+        "AccessibleLabel",
+        "PaddingLeft",
+        "PaddingRight",
+        "PaddingTop",
+        "PaddingBottom",
+        "TabIndex"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "%TemplateBrowseGalleryNextIcon.ID%",
+      "Name": "NextArrow1",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 3,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Tooltip",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AccessibleLabel",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Icon",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Color",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingTop",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingBottom",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TabIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -14144,7 +14835,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Receipt Date_DataCard1",
       "OptimizeForDevices": "Off",
@@ -15009,6 +15700,130 @@
         {
           "Category": "Design",
           "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "primary2RectangleStyle",
+      "Type": "ControlInfo"
+    },
+    "Rectangle3": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "BorderColor",
+        "BorderStyle",
+        "FocusedBorderColor",
+        "DisplayMode",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "OnSelect",
+        "ZIndex",
+        "Visible",
+        "BorderThickness",
+        "TabIndex"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "%TemplateBrowseGalleryRectangle1.ID%",
+      "Name": "Rectangle3",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 1,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TabIndex",
           "RuleProviderType": "Unknown"
         },
         {
@@ -17601,6 +18416,124 @@
       "StyleName": "dividerStyle2020",
       "Type": "ControlInfo"
     },
+    "Separator10": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "BorderColor",
+        "BorderStyle",
+        "FocusedBorderColor",
+        "DisplayMode",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "OnSelect",
+        "ZIndex",
+        "BorderThickness",
+        "TabIndex"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
+      "Name": "Separator10",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 6,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderThickness",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TabIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "dividerStyle2020",
+      "Type": "ControlInfo"
+    },
     "Separator3_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
@@ -17792,7 +18725,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%HourMinuteSeparator.ID%",
       "Name": "Separator7",
       "OptimizeForDevices": "Off",
@@ -18074,7 +19007,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%HourMinuteSeparator.ID%",
       "Name": "Separator8",
       "OptimizeForDevices": "Off",
@@ -18410,7 +19343,7 @@
       "MetaDataIDKey": "%SidebarContainer.ID%",
       "Name": "SidebarContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18608,11 +19541,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible11_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18890,11 +19823,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible14",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19172,11 +20105,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible15",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19454,11 +20387,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible16",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19736,11 +20669,11 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "",
+      "LayoutName": "horizontal",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible5_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20468,6 +21401,238 @@
         {
           "Category": "Design",
           "PropertyName": "PressedColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "subtitleLabelStyle_galleryLayouts_ver5",
+      "Type": "ControlInfo"
+    },
+    "Subtitle2": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Live",
+        "Overflow",
+        "Text",
+        "Role",
+        "Color",
+        "DisabledColor",
+        "PressedColor",
+        "HoverColor",
+        "BorderColor",
+        "DisabledBorderColor",
+        "PressedBorderColor",
+        "HoverBorderColor",
+        "BorderStyle",
+        "FocusedBorderColor",
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "Font",
+        "FontWeight",
+        "Align",
+        "VerticalAlign",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "DisplayMode",
+        "OnSelect",
+        "ZIndex",
+        "PaddingTop",
+        "PaddingRight",
+        "PaddingBottom",
+        "PaddingLeft",
+        "TabIndex",
+        "Size"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "%TemplateBrowseGallerySubtitle.ID%",
+      "Name": "Subtitle2",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 5,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Role",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Overflow",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Color",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Font",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FontWeight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Align",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "VerticalAlign",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingTop",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingBottom",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TabIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
         {
@@ -21229,6 +22394,238 @@
         {
           "Category": "Design",
           "PropertyName": "PressedColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingTop",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingBottom",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "TabIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Size",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "titleLabelStyle_galleryLayouts_ver5",
+      "Type": "ControlInfo"
+    },
+    "Title3": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Live",
+        "Overflow",
+        "Text",
+        "Role",
+        "Color",
+        "DisabledColor",
+        "PressedColor",
+        "HoverColor",
+        "BorderColor",
+        "DisabledBorderColor",
+        "PressedBorderColor",
+        "HoverBorderColor",
+        "BorderStyle",
+        "FocusedBorderColor",
+        "Fill",
+        "DisabledFill",
+        "PressedFill",
+        "HoverFill",
+        "Font",
+        "FontWeight",
+        "Align",
+        "VerticalAlign",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "DisplayMode",
+        "OnSelect",
+        "ZIndex",
+        "PaddingTop",
+        "PaddingRight",
+        "PaddingBottom",
+        "PaddingLeft",
+        "TabIndex",
+        "Size"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
+      "Name": "Title3",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 4,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Role",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Overflow",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Color",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverFill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Font",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "FontWeight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Align",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "VerticalAlign",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {

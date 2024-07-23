@@ -1,4 +1,26 @@
 {
+  "31f215cf-8ec7-4654-b8e2-1eb2e060a331": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://rangerconsultingllc.sharepoint.com/sites/UISAdministration": {
+        "dataSources": {
+          "Test Forms": {
+            "tableName": "0183e242-13d0-42cf-8672-309caa9ce6d1"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Test Forms"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "31f215cf-8ec7-4654-b8e2-1eb2e060a331"
+  },
   "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": {
     "connectionRef": {
       "displayName": "Office 365 Groups",
