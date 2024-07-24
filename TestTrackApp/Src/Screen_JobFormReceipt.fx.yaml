@@ -603,7 +603,7 @@
                     Width: =Parent.Width/2  
                     ZIndex: =3
 
-                    RectangleSpace1_JobFormReceipt_1 As rectangle:
+                    JobAttributeSpace_JobFormReceipt As rectangle:
                         BorderColor: =
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
@@ -1429,7 +1429,7 @@
                     Width: =Parent.Width/2  
                     ZIndex: =4
 
-                    RectangleSpace1_JobFormReceipt_2 As rectangle:
+                    JobDocumentsSpace_JobFormReceipt As rectangle:
                         BorderColor: =
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
@@ -1526,7 +1526,41 @@
                             Y: =Parent.TemplateHeight - Self.Height
                             ZIndex: =4
 
-                    Container1 As groupContainer.verticalAutoLayoutContainer:
+                    DataCardValue23 As attachments:
+                        BorderColor: =
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =180
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(212, 212, 212, 1)
+                        IsInDataCard: =true
+                        ItemColor: =RGBA(0, 0, 0, 1)
+                        ItemFill: =RGBA(202, 80, 16, 1)
+                        ItemHoverColor: =RGBA(51, 51, 51, 1)
+                        ItemHoverFill: =RGBA(212, 212, 212, 1)
+                        Items: =
+                        ItemSpacing: =12
+                        NoAttachmentsColor: =RGBA(166, 166, 166, 1)
+                        PaddingBottom: =5
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(202, 80, 16, 1)
+                        Tooltip: =
+                        Width: =Parent.Width - 5
+                        X: =387
+                        Y: =333
+                        ZIndex: =3
+
+                    ButtonContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.End
                         BorderStyle: =BorderStyle.None
                         Fill: =RGBA(255, 255, 255, 1)
@@ -1538,9 +1572,9 @@
                         LayoutMinWidth: =100
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width - 5
-                        ZIndex: =3
+                        ZIndex: =4
 
-                        Button1 As button:
+                        UploadButton_JobFormReceipt As button:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =RGBA(0, 0, 0, 0)
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -2127,7 +2161,7 @@
         Width: =1366
         ZIndex: =10
 
-    JobsLabel_JobFormReceipt_1 As label:
+    JobAttributesLabel_JobFormReceipt As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -2146,7 +2180,7 @@
         Y: =147
         ZIndex: =11
 
-    JobsLabel_JobFormReceipt_2 As label:
+    DocumentsLabel_JobFormReceipt As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
