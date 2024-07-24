@@ -5,6 +5,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "9df8e72d-11b0-406b-a594-9499a2168fe2": {
+          "value": "shared_sharepointonline_1"
+        },
         "workflowDisplayName": {
           "value": "Upload File to SharePoint"
         },
@@ -16,6 +19,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline_1": {
+          "value": "9df8e72d-11b0-406b-a594-9499a2168fe2"
+        },
         "workflowDisplayName": {
           "value": "Upload File to SharePoint"
         },

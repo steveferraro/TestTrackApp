@@ -1594,7 +1594,22 @@
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverColor: =RGBA(255, 255, 255, 1)
                             HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
-                            OnSelect: =
+                            OnSelect: |-
+                                =ForAll(
+                                    FileAttach_JobFormReceipt.Attachments,
+                                    UploadFiletoSharePoint.Run(
+                                        JSON(
+                                            EditFormFileAttach_JobFormReceipt.Updates,
+                                            JSONFormat.IncludeBinaryData
+                                        ),
+                                        {
+                                            file: {
+                                                name: ThisRecord.Name,
+                                                contentBytes: ThisRecord.Value
+                                            }
+                                        }
+                                    )
+                                )
                             PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
