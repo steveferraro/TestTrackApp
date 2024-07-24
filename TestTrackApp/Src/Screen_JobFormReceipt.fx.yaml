@@ -1448,7 +1448,8 @@
                         BorderColor: =ColorValue(AppTheme.palette.themePrimary)
                         DelayItemLoading: =true
                         Fill: =RGBA(255, 255, 255, 1)
-                        Height: =72
+                        FillPortions: =0
+                        Height: =150
                         Items: =Filter('Test Forms','Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number')
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
@@ -1526,7 +1527,7 @@
                             Y: =Parent.TemplateHeight - Self.Height
                             ZIndex: =4
 
-                    DataCardValue23 As attachments:
+                    FileAttach_JobFormReceipt As attachments:
                         BorderColor: =
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1537,7 +1538,7 @@
                         DisplayMode: =
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =180
+                        Height: =90
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(212, 212, 212, 1)
                         IsInDataCard: =true
@@ -1565,7 +1566,7 @@
                         BorderStyle: =BorderStyle.None
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =100
+                        Height: =75
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMinHeight: =100
@@ -1580,6 +1581,12 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: |-
+                                =If(
+                                    CountRows(FileAttach_JobFormReceipt.Attachments) > 0,
+                                    DisplayMode.Edit,
+                                    DisplayMode.Disabled
+                                )
                             Fill: =ColorValue(AppTheme.palette.themePrimary)
                             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                             Font: =Font.'Segoe UI'
@@ -1587,7 +1594,22 @@
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverColor: =RGBA(255, 255, 255, 1)
                             HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
-                            OnSelect: =
+                            OnSelect: |-
+                                =ForAll(
+                                    FileAttach_JobFormReceipt.Attachments,
+                                    UploadFiletoSharePoint.Run(
+                                        JSON(
+                                            EditFormFileAttach_JobFormReceipt.Updates,
+                                            JSONFormat.IncludeBinaryData
+                                        ),
+                                        {
+                                            file: {
+                                                name: ThisRecord.Name,
+                                                contentBytes: ThisRecord.Value
+                                            }
+                                        }
+                                    )
+                                )
                             PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
@@ -1599,6 +1621,132 @@
                             Text: ="Upload..."
                             Y: =0   
                             ZIndex: =1
+
+                    EditFormFileAttach_JobFormReceipt As form:
+                        AlignInContainer: =AlignInContainer.End
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        DataSource: ='Test Forms'
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutMinHeight: =50
+                        LayoutMinWidth: =400
+                        NumberOfColumns: =1
+                        Width: =Parent.Width - 5
+                        ZIndex: =5
+
+                        "'Job Number_DataCard3' As typedDataCard.textualEditCard":
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="JobNumber"
+                            Default: =ThisItem.'Job Number'
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,JobNumber)
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, JobNumber)
+                            Required: =true
+                            Update: =DataCardValue13.Text
+                            Width: =430
+                            X: =0
+                            Y: =0
+                            ZIndex: =6
+
+                            DataCardKey20 As label:
+                                AutoHeight: =true
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                Color: =RGBA(51, 51, 51, 1)
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =0
+                                Size: =13
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue13 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                BorderThickness: =2
+                                Color: =RGBA(51, 51, 51, 1)
+                                Default: =GalleryJobs_JobFormReceipt.Selected.'Job Number'
+                                DelayOutput: =true
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =Parent.DisplayMode
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                                HoverColor: =RGBA(51, 51, 51, 1)
+                                HoverFill: =RGBA(255, 255, 255, 1)
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =5
+                                PressedBorderColor: =RGBA(202, 80, 16, 1)
+                                PressedColor: =RGBA(51, 51, 51, 1)
+                                PressedFill: =RGBA(255, 255, 255, 1)
+                                RadiusBottomLeft: =0
+                                RadiusBottomRight: =0
+                                RadiusTopLeft: =0
+                                RadiusTopRight: =0
+                                Size: =13
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage28 As label:
+                                AutoHeight: =true
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                Color: =RGBA(168, 0, 0, 1)
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledColor: =RGBA(168, 0, 0, 1)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =13
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue13.Y + DataCardValue13.Height
+                                ZIndex: =3
+
+                            StarVisible28 As label:
+                                Align: =Align.Center
+                                BorderColor: =RGBA(0, 0, 0, 0)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =2
+                                Color: =RGBA(51, 51, 51, 1)
+                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Semibold
+                                Height: =DataCardKey20.Height
+                                PaddingLeft: =0
+                                Size: =13
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey20.Y
+                                ZIndex: =4
 
             FilterContainer__JobFormReceipt As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Start

@@ -1,4 +1,48 @@
 {
+  "06de7392-793d-4d58-8e5b-d38bcb8b2390": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9322439d-07be-468c-814d-ef58ad13fef6": {
+          "value": "shared_sharepointonline_1"
+        },
+        "workflowDisplayName": {
+          "value": "Upload File to SharePoint"
+        },
+        "workflowEntityId": {
+          "value": "c9f4472c-013b-ef11-8409-000d3a8c75ce"
+        },
+        "workflowName": {
+          "value": "64f0894c-3d8d-1331-79f2-b59a467ba5f7"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline_1": {
+          "value": "9322439d-07be-468c-814d-ef58ad13fef6"
+        },
+        "workflowDisplayName": {
+          "value": "Upload File to SharePoint"
+        },
+        "workflowEntityId": {
+          "value": "c9f4472c-013b-ef11-8409-000d3a8c75ce"
+        },
+        "workflowName": {
+          "value": "64f0894c-3d8d-1331-79f2-b59a467ba5f7"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UploadFiletoSharePoint"
+    ],
+    "dependencies": {
+      "shared_sharepointonline_1": "9322439d-07be-468c-814d-ef58ad13fef6"
+    },
+    "dependents": [],
+    "id": "06de7392-793d-4d58-8e5b-d38bcb8b2390"
+  },
   "31f215cf-8ec7-4654-b8e2-1eb2e060a331": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -20,6 +64,20 @@
     "dependencies": {},
     "dependents": [],
     "id": "31f215cf-8ec7-4654-b8e2-1eb2e060a331"
+  },
+  "9322439d-07be-468c-814d-ef58ad13fef6": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "06de7392-793d-4d58-8e5b-d38bcb8b2390"
+    ],
+    "id": "9322439d-07be-468c-814d-ef58ad13fef6"
   },
   "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": {
     "connectionRef": {
