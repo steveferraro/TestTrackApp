@@ -1568,6 +1568,7 @@
                         AlignInContainer: =AlignInContainer.End
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DataSource: ='Test Forms'
+                        DefaultMode: =FormMode.New
                         Fill: =RGBA(255, 255, 255, 1)
                         LayoutMinHeight: =50
                         LayoutMinWidth: =400
