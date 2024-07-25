@@ -1453,11 +1453,8 @@
                         Height: =120
                         Items: |-
                             =Filter(
-                                Filter(
-                                    'Test Forms',
-                                    'Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number'
-                                ),
-                                varReset
+                                'Test Forms',
+                                'Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number' And varReset
                             )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
