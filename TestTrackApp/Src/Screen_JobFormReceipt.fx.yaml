@@ -1451,11 +1451,12 @@
 
                     "DocumentList_JobFormReceipt As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        BorderColor: =ColorValue(AppTheme.palette.themePrimary)
+                        BorderColor: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        BorderThickness: =1
                         DelayItemLoading: =true
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =120
+                        Height: =125
                         Items: |-
                             =Filter(
                                 'Test Forms',
@@ -1466,7 +1467,7 @@
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =0
-                        TemplateSize: =35
+                        TemplateSize: =45
                         Width: =Parent.Width-5
                         ZIndex: =2
 
@@ -1477,10 +1478,10 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledFill: =RGBA(0, 0, 0, 0)
                             FocusedBorderThickness: =4
-                            Height: =25
+                            Height: =30
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: =FormRecIcon
+                            Image: =document
                             OnSelect: =Select(Parent)
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
                             PressedFill: =RGBA(0, 0, 0, 0)
@@ -1488,7 +1489,7 @@
                             RadiusBottomRight: =8
                             RadiusTopLeft: =8
                             RadiusTopRight: =8
-                            Width: =45
+                            Width: =40
                             X: =16
                             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                             ZIndex: =1
@@ -1538,7 +1539,7 @@
                             ZIndex: =4
 
                     FileAttach_JobFormReceipt As attachments:
-                        AddAttachmentText: ="Attach file for upload to SharePoint"
+                        AddAttachmentText: ="Attach file(s) for upload to SharePoint"
                         BorderColor: =ColorValue(AppTheme.palette.neutralQuaternary)
                         BorderThickness: =1
                         Color: =RGBA(51, 51, 51, 1)
@@ -1595,11 +1596,11 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,Notes)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =100
+                            Height: =115
                             MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, Notes)
                             Required: =false
                             Update: =DataCardValue12.Text
-                            Width: =424
+                            Width: =425
                             X: =0
                             Y: =1
                             ZIndex: =1
@@ -1635,6 +1636,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayMode: =Parent.DisplayMode
+                                EnableSpellCheck: =true
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 Height: =82
@@ -1642,6 +1644,7 @@
                                 HoverColor: =RGBA(51, 51, 51, 1)
                                 HoverFill: =RGBA(255, 255, 255, 1)
                                 MaxLength: =Parent.MaxLength
+                                Mode: =TextMode.MultiLine
                                 PaddingLeft: =5
                                 PressedBorderColor: =RGBA(202, 80, 16, 1)
                                 PressedColor: =RGBA(51, 51, 51, 1)
@@ -1711,11 +1714,11 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,'Job Number')
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =79
                             MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, 'Job Number')
                             Required: =true
                             Update: =DataCardValue13.Text
-                            Width: =424
+                            Width: =425
                             X: =0
                             Y: =0
                             ZIndex: =6
@@ -1824,7 +1827,7 @@
                         BorderThickness: =2
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =75
+                        Height: =70
                         LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMinHeight: =100
                         LayoutMinWidth: =100
