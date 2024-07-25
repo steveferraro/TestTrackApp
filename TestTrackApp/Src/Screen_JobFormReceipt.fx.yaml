@@ -1438,7 +1438,6 @@
                         FocusedBorderThickness: =4
                         Height: =35
                         HoverFill: =RGBA(202, 80, 16, 1)
-                        LayoutMinHeight: =1
                         PressedFill: =RGBA(202, 80, 16, 1)
                         Width: =DocumentList_JobFormReceipt.Width
                         X: =0.00
@@ -1575,7 +1574,7 @@
                         DefaultMode: =FormMode.New
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =Parent.Height - DocumentList_JobFormReceipt.Height - FileAttach_JobFormReceipt.Height - JobDocumentsSpace_JobFormReceipt.Height
+                        Height: =Parent.Height - DocumentList_JobFormReceipt.Height - FileAttach_JobFormReceipt.Height - JobDocumentsSpace_JobFormReceipt.Height - UploadButton_JobFormReceipt.Height
                         LayoutMinHeight: =50
                         LayoutMinWidth: =400
                         NumberOfColumns: =1
