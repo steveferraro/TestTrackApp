@@ -650,7 +650,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_JobNumber)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =80
                             Required: =true
                             Update: =DataCardValue5_1.Selected
                             Width: =425
@@ -676,7 +676,7 @@
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
                                 X: =10
-                                Y: =10 + (DataCardValue5_1.Height / 2) - (Self.Height / 2)
+                                Y: =34
                                 ZIndex: =1
 
                             DataCardValue5_1 As combobox:
@@ -713,7 +713,7 @@
                                 Tooltip: =Parent.DisplayName
                                 Width: =219
                                 X: =181
-                                Y: =6
+                                Y: =26
                                 ZIndex: =2
 
                             ErrorMessage5_1 As label:
@@ -771,7 +771,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_comment)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =80
                             MaxLength: =DataSourceInfo([@JobsFormEntries], DataSourceInfo.MaxLength, rcon_comment)
                             Required: =false
                             Update: =DataCardValue7_1.Text
@@ -798,7 +798,7 @@
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
                                 X: =10
-                                Y: =10 + (DataCardValue7_1.Height / 2) - (Self.Height / 2)
+                                Y: =22
                                 ZIndex: =1
 
                             DataCardValue7_1 As text:
@@ -832,7 +832,7 @@
                                 Tooltip: =Parent.DisplayName
                                 Width: =258
                                 X: =142
-                                Y: =10
+                                Y: =20
                                 ZIndex: =2
 
                             ErrorMessage11_1 As label:
@@ -890,7 +890,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_receiptdate)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =80
                             Required: =true
                             Update: =If(Not IsBlank(DateValue2.SelectedDate), DateValue2.SelectedDate + Time(Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), 0))
                             Width: =425
@@ -908,14 +908,13 @@
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
-                                Height: =29
                                 PaddingLeft: =0
                                 Size: =13.00
                                 Text: =Parent.DisplayName
                                 Width: =268
                                 Wrap: =false
                                 X: =10
-                                Y: =10
+                                Y: =20
                                 ZIndex: =1
 
                             DateValue2 As datepicker:
@@ -943,7 +942,7 @@
                                 Tooltip: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * .3
                                 X: =296
-                                Y: =10
+                                Y: =20
                                 ZIndex: =2
 
                             HourValue2 As dropdown:
@@ -1099,7 +1098,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_fieldworkperformancedate)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =80
                             Required: =true
                             Update: =If(Not IsBlank(DateValue6.SelectedDate), DateValue6.SelectedDate + Time(Value(HourValue6.Selected.Value), Value(MinuteValue6.Selected.Value), 0))
                             Width: =425
@@ -1123,7 +1122,7 @@
                                 Width: =268
                                 Wrap: =false
                                 X: =10
-                                Y: =10
+                                Y: =20
                                 ZIndex: =1
 
                             DateValue6 As datepicker:
@@ -1151,7 +1150,7 @@
                                 Tooltip: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.3
                                 X: =296
-                                Y: =10
+                                Y: =20
                                 ZIndex: =2
 
                             HourValue6 As dropdown:
@@ -1307,7 +1306,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_formcount)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =80
                             Required: =true
                             Update: =Value(DataCardValue10.Text)
                             Width: =425
@@ -1333,7 +1332,7 @@
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
                                 X: =10
-                                Y: =10 + (DataCardValue10.Height / 2) - (Self.Height / 2)
+                                Y: =24
                                 ZIndex: =1
 
                             DataCardValue10 As text:
@@ -1366,7 +1365,7 @@
                                 Tooltip: =Parent.DisplayName
                                 Width: =(Parent.Width - 60) * 0.3
                                 X: =291
-                                Y: =10
+                                Y: =20
                                 ZIndex: =2
 
                             ErrorMessage16 As label:
@@ -1430,17 +1429,24 @@
                     Width: =Parent.Width/2  
                     ZIndex: =4
 
-                    JobDocumentsSpace_JobFormReceipt As rectangle:
-                        BorderColor: =
+                    DocumentsLabel_JobFormReceipt As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
-                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
                         Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                         FocusedBorderThickness: =4
-                        Height: =35
-                        HoverFill: =RGBA(202, 80, 16, 1)
-                        PressedFill: =RGBA(202, 80, 16, 1)
-                        Width: =DocumentList_JobFormReceipt.Width
-                        X: =0.00
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =13
+                        Text: |-
+                            ="Job Documents:"
+                        Width: =Parent.Width-5
+                        X: =921
+                        Y: =147
                         ZIndex: =1
 
                     "DocumentList_JobFormReceipt As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
@@ -1533,9 +1539,8 @@
 
                     FileAttach_JobFormReceipt As attachments:
                         AddAttachmentText: ="Attach file for upload to SharePoint"
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =5
+                        BorderColor: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        BorderThickness: =1
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1543,7 +1548,7 @@
                         DropTargetBorderStyle: =BorderStyle.Solid
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =130
+                        Height: =140
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(212, 212, 212, 1)
                         IsInDataCard: =true
@@ -1569,12 +1574,13 @@
 
                     EditFormFileAttach_JobFormReceipt As form:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        BorderColor: =RGBA(166, 166, 166, 1)
+                        BorderColor: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        BorderThickness: =1
                         DataSource: ='Test Forms'
                         DefaultMode: =FormMode.New
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =Parent.Height - DocumentList_JobFormReceipt.Height - FileAttach_JobFormReceipt.Height - JobDocumentsSpace_JobFormReceipt.Height - UploadButton_JobFormReceipt.Height
+                        Height: =Parent.Height - DocumentList_JobFormReceipt.Height - FileAttach_JobFormReceipt.Height - DocumentsLabel_JobFormReceipt.Height - ButtonContainer_JobFormReceipt.Height
                         LayoutMinHeight: =50
                         LayoutMinWidth: =400
                         NumberOfColumns: =1
@@ -1593,7 +1599,7 @@
                             MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, Notes)
                             Required: =false
                             Update: =DataCardValue12.Text
-                            Width: =425
+                            Width: =424
                             X: =0
                             Y: =1
                             ZIndex: =1
@@ -1709,7 +1715,7 @@
                             MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, 'Job Number')
                             Required: =true
                             Update: =DataCardValue13.Text
-                            Width: =430
+                            Width: =424
                             X: =0
                             Y: =0
                             ZIndex: =6
@@ -2474,23 +2480,4 @@
         X: =491
         Y: =147
         ZIndex: =11
-
-    DocumentsLabel_JobFormReceipt As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        Size: =13
-        Text: |-
-            ="Job Documents:"
-        Width: =289
-        X: =921
-        Y: =147
-        ZIndex: =12
 
