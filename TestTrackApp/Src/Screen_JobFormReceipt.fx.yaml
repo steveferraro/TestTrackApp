@@ -5,7 +5,7 @@
     OnVisible: |-
         =Set(varSelectedJob_JobFormReceipt, First(GalleryJobs_JobFormReceipt.AllItems));
         Set(varSelectedReceipt_JobFormReceipt, First(GalleryFormReceipt_JobFormReceipt.AllItems)); 
-        Reset(FileAttach_JobFormReceipt)
+        Reset(FileAttach_JobFormReceipt);
 
     ScreenContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -1451,7 +1451,14 @@
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
                         Height: =120
-                        Items: =Filter('Test Forms','Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number')
+                        Items: |-
+                            =Filter(
+                                Filter(
+                                    'Test Forms',
+                                    'Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number'
+                                ),
+                                varReset
+                            )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
                         LayoutMinWidth: =320
@@ -1693,10 +1700,10 @@
                             DataField: ="JobNumber"
                             Default: =ThisItem.'Job Number'
                             DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,JobNumber)
+                            DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,'Job Number')
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =50
-                            MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, JobNumber)
+                            MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, 'Job Number')
                             Required: =true
                             Update: =DataCardValue13.Text
                             Width: =430
