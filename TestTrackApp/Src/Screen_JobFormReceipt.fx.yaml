@@ -1597,7 +1597,7 @@
                             OnSelect: |-
                                 =ForAll(
                                     FileAttach_JobFormReceipt.Attachments,
-                                    UploadFiletoSharePoint.Run(
+                                    UploadFileToSharePoint_TestForms.Run(
                                         JSON(
                                             EditFormFileAttach_JobFormReceipt.Updates,
                                             JSONFormat.IncludeBinaryData

@@ -1,5 +1,5 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="UploadFiletoSharePoint" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="Upload File to SharePoint" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="UploadFileToSharePoint_TestForms" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="UploadFileToSharePoint_TestForms" />
   <grammars>
     <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_file_def_name_def" />
@@ -13,9 +13,9 @@
         <property name="file" typeRef="ManualTriggerInput_file_def" />
         <property name="text" type="string" />
       </object>
-      <string name="ResponseActionOutput_file_uploaded_def" />
+      <string name="ResponseActionOutput_fille_uploaded_def" />
       <object name="ResponseActionOutput">
-        <property name="file_uploaded" type="string" />
+        <property name="fille_uploaded" type="string" />
       </object>
       <object name="Run_responses_default_def" />
     </jsonTypes>

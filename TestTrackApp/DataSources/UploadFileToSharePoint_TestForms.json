@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "0c4a42c8-1296-4993-8aa9-66b010ae27b4",
+    "Name": "UploadFileToSharePoint_TestForms",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "48d880fb-964a-ef11-a317-000d3a99387e"
+  }
+]

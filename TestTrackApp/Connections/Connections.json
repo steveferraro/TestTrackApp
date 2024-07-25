@@ -1,47 +1,41 @@
 {
-  "06de7392-793d-4d58-8e5b-d38bcb8b2390": {
+  "0a0453c6-4472-4492-8685-71330cb94eba": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "9df8e72d-11b0-406b-a594-9499a2168fe2": {
-          "value": "shared_sharepointonline_1"
-        },
         "workflowDisplayName": {
-          "value": "Upload File to SharePoint"
+          "value": "UploadFileToSharePoint_TestForms"
         },
         "workflowEntityId": {
-          "value": "c9f4472c-013b-ef11-8409-000d3a8c75ce"
+          "value": "48d880fb-964a-ef11-a317-000d3a99387e"
         },
         "workflowName": {
-          "value": "64f0894c-3d8d-1331-79f2-b59a467ba5f7"
+          "value": "2bc9520b-3f6e-e37b-1188-3213bbc54e3c"
         }
       },
       "parameterHintsV2": {
-        "shared_sharepointonline_1": {
-          "value": "9df8e72d-11b0-406b-a594-9499a2168fe2"
-        },
         "workflowDisplayName": {
-          "value": "Upload File to SharePoint"
+          "value": "UploadFileToSharePoint_TestForms"
         },
         "workflowEntityId": {
-          "value": "c9f4472c-013b-ef11-8409-000d3a8c75ce"
+          "value": "48d880fb-964a-ef11-a317-000d3a99387e"
         },
         "workflowName": {
-          "value": "64f0894c-3d8d-1331-79f2-b59a467ba5f7"
+          "value": "2bc9520b-3f6e-e37b-1188-3213bbc54e3c"
         }
       }
     },
     "datasets": {},
     "dataSources": [
-      "UploadFiletoSharePoint"
+      "UploadFileToSharePoint_TestForms"
     ],
     "dependencies": {
-      "shared_sharepointonline_1": "9df8e72d-11b0-406b-a594-9499a2168fe2"
+      "shared_sharepointonline": "c4566a44-6e8b-4ef2-8223-e086e729a896"
     },
     "dependents": [],
-    "id": "06de7392-793d-4d58-8e5b-d38bcb8b2390"
+    "id": "0a0453c6-4472-4492-8685-71330cb94eba"
   },
   "31f215cf-8ec7-4654-b8e2-1eb2e060a331": {
     "connectionRef": {
@@ -65,7 +59,7 @@
     "dependents": [],
     "id": "31f215cf-8ec7-4654-b8e2-1eb2e060a331"
   },
-  "9df8e72d-11b0-406b-a594-9499a2168fe2": {
+  "c4566a44-6e8b-4ef2-8223-e086e729a896": {
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
@@ -75,9 +69,9 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "06de7392-793d-4d58-8e5b-d38bcb8b2390"
+      "0a0453c6-4472-4492-8685-71330cb94eba"
     ],
-    "id": "9df8e72d-11b0-406b-a594-9499a2168fe2"
+    "id": "c4566a44-6e8b-4ef2-8223-e086e729a896"
   },
   "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": {
     "connectionRef": {
