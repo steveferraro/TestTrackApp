@@ -1463,7 +1463,7 @@
                                 'Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number' And 'Receipt Timestamp' = Text(
                                     GalleryFormReceipt_JobFormReceipt.Selected.'Created On',
                                     DateTimeFormat.ShortDateTime
-                                )
+                                ) And varReset
                             )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287

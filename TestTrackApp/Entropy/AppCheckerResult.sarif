@@ -6734,36 +6734,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varReset"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varReset",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varReset",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.guide"
                 }
               ],
