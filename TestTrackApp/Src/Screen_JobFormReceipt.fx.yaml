@@ -1460,7 +1460,10 @@
                         Items: |-
                             =Filter(
                                 'Test Forms',
-                                'Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number' And varReset
+                                'Job Number' = GalleryJobs_JobFormReceipt.Selected.'Job Number' And 'Receipt Timestamp' = Text(
+                                    GalleryFormReceipt_JobFormReceipt.Selected.'Created On',
+                                    DateTimeFormat.ShortDateTime
+                                )
                             )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
