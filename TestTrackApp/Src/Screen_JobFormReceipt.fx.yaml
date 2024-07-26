@@ -1456,7 +1456,7 @@
                         DelayItemLoading: =true
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =125
+                        Height: =Parent.Height - FileAttach_JobFormReceipt.Height - DocumentsLabel_JobFormReceipt.Height - ButtonContainer_JobFormReceipt.Height - EditFormFileAttach_JobFormReceipt.Height
                         Items: |-
                             =Filter(
                                 'Test Forms',
@@ -1584,7 +1584,7 @@
                         DefaultMode: =FormMode.New
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =Parent.Height - DocumentList_JobFormReceipt.Height - FileAttach_JobFormReceipt.Height - DocumentsLabel_JobFormReceipt.Height - ButtonContainer_JobFormReceipt.Height
+                        Height: =
                         LayoutMinHeight: =50
                         LayoutMinWidth: =400
                         NumberOfColumns: =1
