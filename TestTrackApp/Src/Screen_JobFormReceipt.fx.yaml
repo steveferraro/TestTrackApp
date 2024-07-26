@@ -1843,7 +1843,7 @@
                             DisabledFill: =RGBA(244, 244, 244, 1)
                             DisplayMode: |-
                                 =If(
-                                    CountRows(FileAttach_JobFormReceipt.Attachments) > 0,
+                                    CountRows(FileAttach_JobFormReceipt.Attachments) > 0 And Not IsBlank(GalleryFormReceipt_JobFormReceipt.Selected.'Job Number'),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 )
