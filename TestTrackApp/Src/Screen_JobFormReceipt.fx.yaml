@@ -366,7 +366,7 @@
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =72
+                        Height: =Parent.TemplateHeight
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
@@ -1470,7 +1470,7 @@
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =0
-                        TemplateSize: =45
+                        TemplateSize: =72
                         Width: =Parent.Width-5
                         ZIndex: =2
 
@@ -1519,15 +1519,11 @@
                             AccessibleLabel: =Self.Tooltip
                             Color: =ColorValue(AppTheme.palette.themePrimary)
                             FocusedBorderThickness: =4
-                            Height: =50
-                            Icon: =Icon.ChevronRight
+                            Height: =25
+                            Icon: =Icon.Edit
                             OnSelect: =Select(Parent)
-                            PaddingBottom: =16
-                            PaddingLeft: =16
-                            PaddingRight: =16
-                            PaddingTop: =16
-                            Tooltip: ="View item details"
-                            Width: =50
+                            Tooltip: ="Manage document properties."
+                            Width: =25
                             X: =Parent.TemplateWidth - Self.Width - 12
                             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                             ZIndex: =3
@@ -1540,6 +1536,19 @@
                             Width: =Parent.TemplateWidth
                             Y: =Parent.TemplateHeight - Self.Height
                             ZIndex: =4
+
+                        NextArrow1_4 As icon.ChevronRight:
+                            AccessibleLabel: =Self.Tooltip
+                            Color: =ColorValue(AppTheme.palette.themePrimary)
+                            FocusedBorderThickness: =4
+                            Height: =25
+                            Icon: =Icon.Trash
+                            OnSelect: =Select(Parent)
+                            Tooltip: ="Delete document."
+                            Width: =25
+                            X: =343
+                            Y: =24
+                            ZIndex: =5
 
                     FileAttach_JobFormReceipt As attachments:
                         AddAttachmentText: ="Attach file(s) for upload to SharePoint"
