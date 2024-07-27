@@ -1543,7 +1543,9 @@
                             FocusedBorderThickness: =4
                             Height: =25
                             Icon: =Icon.Trash
-                            OnSelect: =Select(Parent)
+                            OnSelect: |-
+                                =DeleteFileFromSharePoint_TestForms.Run(ThisItem.ID);
+                                Reset(DocumentList_JobFormReceipt)
                             Tooltip: ="Delete document."
                             Width: =25
                             X: =343

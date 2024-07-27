@@ -53,7 +53,8 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "0a0453c6-4472-4492-8685-71330cb94eba"
+      "0a0453c6-4472-4492-8685-71330cb94eba",
+      "d34bc282-8172-4d19-a924-ec75897692ab"
     ],
     "id": "1bd79d5d-1aea-46d1-a842-787d42f922e1"
   },
@@ -92,5 +93,49 @@
     "dependencies": {},
     "dependents": [],
     "id": "cafc4d6f-91a6-4b43-a3cc-983b2e214aba"
+  },
+  "d34bc282-8172-4d19-a924-ec75897692ab": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "1bd79d5d-1aea-46d1-a842-787d42f922e1": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowDisplayName": {
+          "value": "DeleteFileFromSharePoint_TestForms"
+        },
+        "workflowEntityId": {
+          "value": "f4297761-a64b-ef11-a317-000d3a99387e"
+        },
+        "workflowName": {
+          "value": "6aec492b-136b-9fde-1136-eb791cbdfcf9"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "1bd79d5d-1aea-46d1-a842-787d42f922e1"
+        },
+        "workflowDisplayName": {
+          "value": "DeleteFileFromSharePoint_TestForms"
+        },
+        "workflowEntityId": {
+          "value": "f4297761-a64b-ef11-a317-000d3a99387e"
+        },
+        "workflowName": {
+          "value": "6aec492b-136b-9fde-1136-eb791cbdfcf9"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "DeleteFileFromSharePoint_TestForms"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "1bd79d5d-1aea-46d1-a842-787d42f922e1"
+    },
+    "dependents": [],
+    "id": "d34bc282-8172-4d19-a924-ec75897692ab"
   }
 }
