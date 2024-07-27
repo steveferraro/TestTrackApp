@@ -1544,7 +1544,7 @@
                             Height: =25
                             Icon: =Icon.Trash
                             OnSelect: |-
-                                =DeleteFileFromSharePoint_TestForms.Run(ThisItem.ID);
+                                =DeleteFileFromSharePoint_TestForms.Run(DocumentList_JobFormReceipt.Selected.ID);
                                 Reset(DocumentList_JobFormReceipt)
                             Tooltip: ="Delete document."
                             Width: =25
