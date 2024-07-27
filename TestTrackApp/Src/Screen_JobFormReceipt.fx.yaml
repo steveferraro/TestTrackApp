@@ -1446,6 +1446,8 @@
                                 ) And varReset
                             )
                         Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =0
                         TemplateSize: =104
@@ -1505,7 +1507,7 @@
                             PaddingRight: =0
                             PaddingTop: =0
                             Size: =12
-                            Text: =ThisItem.'Job Number'
+                            Text: =ThisItem.Name
                             VerticalAlign: =VerticalAlign.Top
                             Width: =204
                             X: =97
@@ -1515,6 +1517,7 @@
                         NextArrow1 As icon.ChevronRight:
                             AccessibleLabel: =Self.Tooltip
                             Color: =ColorValue(AppTheme.palette.themePrimary)
+                            FocusedBorderThickness: =4
                             Height: =25
                             Icon: =Icon.Edit
                             OnSelect: =Select(Parent)
