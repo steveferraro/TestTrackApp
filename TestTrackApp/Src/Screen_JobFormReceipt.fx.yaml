@@ -1909,6 +1909,7 @@
                                         }
                                     )
                                 );
+                                Refresh('Test Forms');
                                 Reset(FileAttach_JobFormReceipt);
                                 Reset(DocumentList_JobFormReceipt)
                             PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
@@ -1935,7 +1936,9 @@
                             HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Icon: =Icon.Reload
-                            OnSelect: =Set(varReset,false);Set(varReset,true)
+                            OnSelect: |-
+                                =Refresh('Test Forms');
+                                Set(varReset,false);Set(varReset,true)
                             PaddingLeft: =10
                             PaddingRight: =10
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
