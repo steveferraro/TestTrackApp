@@ -6824,19 +6824,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard2'.DataCardValue17.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard3'.DataCardValue20.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard2'.DataCardValue17.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard3'.DataCardValue20.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_JobFormReceipt",
-                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard2'.DataCardValue17"
+                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard3'.DataCardValue20"
               }
             }
           ],
