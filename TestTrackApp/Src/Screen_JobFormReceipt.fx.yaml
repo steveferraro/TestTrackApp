@@ -1539,7 +1539,7 @@
                             FocusedBorderThickness: =4
                             Height: =25
                             Icon: =Icon.Edit
-                            OnSelect: =Select(Parent)
+                            OnSelect: =Set(varDocumentPropVisible, true)
                             Tooltip: ="Manage document properties."
                             Visible: =ThisItem.IsSelected
                             Width: =25
@@ -2556,6 +2556,7 @@
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
+        Visible: =false
         Width: =App.Width
         X: =
         ZIndex: =13
@@ -3062,6 +3063,9 @@
             DocumentPropertiesSaveButton_JobFormReceipt As Button:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
+                OnSelect: |-
+                    =SubmitForm(DocumentPropertiesEditForm_JobFormReceipt);
+                    Set(varDocumentPropVisible, false)
                 Text: ="Save"
                 Width: =96
                 X: =378
@@ -3072,6 +3076,7 @@
                 Appearance: ='ButtonCanvas.Appearance'.Secondary
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
+                OnSelect: =Set(varDocumentPropVisible, false)
                 Text: ="Cancel"
                 Width: =96
                 X: =260
