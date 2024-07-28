@@ -2578,6 +2578,7 @@
                 BorderColor: =RGBA(166, 166, 166, 1)
                 DataSource: ='Test Forms'
                 Height: =420
+                Item: =DocumentList_JobFormReceipt.Selected
                 NumberOfColumns: =1
                 Width: =500
                 Y: =44
