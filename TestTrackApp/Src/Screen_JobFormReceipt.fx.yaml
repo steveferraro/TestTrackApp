@@ -239,7 +239,7 @@
                     DisplayMode: =If(EntryForm_JobFormReceipt.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
-                    Height: =Parent.Height/1.9
+                    Height: =320
                     Items: |-
                         =Filter(
                             JobsTracked,
@@ -255,6 +255,7 @@
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
+                    OnSelect: =First(GalleryFormReceipt_JobFormReceipt.AllItems)
                     TemplateFill: =If(ThisItem.IsSelected, ColorValue(AppTheme.palette.neutralLight), ColorValue(AppTheme.palette.white))
                     TemplatePadding: =0
                     TemplateSize: =80
@@ -440,7 +441,6 @@
                     '#CopilotOverlayLabel': ="Filtered"
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(166, 166, 166, 1)
-                    Default: =varSelectedReceipt_JobFormReceipt
                     DelayItemLoading: =true
                     DisplayMode: =If(EntryForm_JobFormReceipt.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
