@@ -2538,14 +2538,14 @@
 
     Spinner_JobFormReceipt As Spinner:
         DisplayMode: =DisplayMode.Edit
-        Height: =DocumentList_JobFormReceipt.Height/2    
+        Height: =DocumentList_JobFormReceipt.Height/3
         Label: =varSpinnerText
         LabelPosition: ='Spinner.LabelPosition'.Below
         SpinnerSize: ='Spinner.SpinnerSize'.Huge
         Visible: =varUploadSpinner
         Width: =DocumentList_JobFormReceipt.Width
         X: =LeftNavigation_JobFormReceipt.Width + SidebarContainer_JobFormReceipt.Width + EntryFormContainer_JobFormReceipt.Width + 54
-        Y: =DocumentList_JobFormReceipt.Height
+        Y: =DocumentList_JobFormReceipt.Height + 70
         ZIndex: =12
 
     DocumentPropertiesOverlay_JobFormReceipt As groupContainer.manualLayoutContainer:
