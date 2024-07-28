@@ -1574,7 +1574,10 @@
                             Height: =25
                             Icon: =Icon.Trash
                             OnSelect: |-
-                                =DeleteFileFromSharePoint_TestForms.Run(DocumentList_JobFormReceipt.Selected.ID);
+                                =Set(varSpinnerText,"Removing Document...");
+                                Set(varUploadSpinner,true);
+                                DeleteFileFromSharePoint_TestForms.Run(DocumentList_JobFormReceipt.Selected.ID);
+                                Set(varUploadSpinner, false);
                                 Refresh('Test Forms');
                                 Reset(DocumentList_JobFormReceipt)
                             Tooltip: ="Delete document."
@@ -1898,7 +1901,8 @@
                             HoverColor: =RGBA(255, 255, 255, 1)
                             HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
                             OnSelect: |-
-                                =Set(varUploadSpinner,true);
+                                =Set(varSpinnerText,"Uploading Document...");
+                                Set(varUploadSpinner,true);
                                 ForAll(
                                     FileAttach_JobFormReceipt.Attachments,
                                     UploadFileToSharePoint_TestForms.Run(
@@ -2532,7 +2536,7 @@
         Y: =147
         ZIndex: =11
 
-    UploadSpinner_JobFormReceipt As Spinner:
+    Spinner_JobFormReceipt As Spinner:
         DisplayMode: =DisplayMode.Edit
         Height: =DocumentList_JobFormReceipt.Height
         Label: ="Uploading..."
