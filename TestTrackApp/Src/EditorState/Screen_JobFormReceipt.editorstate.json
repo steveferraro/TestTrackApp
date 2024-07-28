@@ -24828,7 +24828,7 @@
         {
           "Category": "Data",
           "PropertyName": "Label",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

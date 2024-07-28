@@ -2539,7 +2539,7 @@
     Spinner_JobFormReceipt As Spinner:
         DisplayMode: =DisplayMode.Edit
         Height: =DocumentList_JobFormReceipt.Height
-        Label: ="Uploading..."
+        Label: =varSpinnerText
         LabelPosition: ='Spinner.LabelPosition'.Below
         SpinnerSize: ='Spinner.SpinnerSize'.Huge
         Visible: =varUploadSpinner
