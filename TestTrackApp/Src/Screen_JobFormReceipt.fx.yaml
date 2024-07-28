@@ -1895,7 +1895,7 @@
                             HoverColor: =RGBA(255, 255, 255, 1)
                             HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
                             OnSelect: |-
-                                =UpdateContext({varUploadSpinner: true});
+                                =Set(varUploadSpinner,true);
                                 ForAll(
                                     FileAttach_JobFormReceipt.Attachments,
                                     UploadFileToSharePoint_TestForms.Run(
@@ -1911,7 +1911,7 @@
                                         }
                                     )
                                 );
-                                UpdateContext({varUpSpinner: false});
+                                Set(varUploadSpinner,false);
                                 Refresh('Test Forms');
                                 Reset(FileAttach_JobFormReceipt);
                                 Reset(DocumentList_JobFormReceipt)
