@@ -6734,6 +6734,186 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Job Number_DataCard4'.DataCardValue15.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Job Number_DataCard4'.DataCardValue15.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Job Number_DataCard4'.DataCardValue15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.Notes_DataCard1.DataCardValue16.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.Notes_DataCard1.DataCardValue16.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.Notes_DataCard1.DataCardValue16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard2'.DataCardValue17.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard2'.DataCardValue17.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.'Receipt Timestamp_DataCard2'.DataCardValue17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.Description_DataCard1.DataCardValue18.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.Description_DataCard1.DataCardValue18.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.Description_DataCard1.DataCardValue18"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesSaveButton_JobFormReceipt.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesSaveButton_JobFormReceipt.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesSaveButton_JobFormReceipt"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesCancelButton_JobFormReceipt.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesCancelButton_JobFormReceipt.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesCancelButton_JobFormReceipt"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.AppThemeJson"
                 }
               ],
