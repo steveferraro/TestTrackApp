@@ -1468,7 +1468,7 @@
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =0
-                        TemplateSize: =104
+                        TemplateSize: =80
                         Width: =Parent.Width-5
                         Y: =Parent.Y
                         ZIndex: =2
@@ -1493,7 +1493,7 @@
                             RadiusTopRight: =8
                             Width: =40
                             X: =36
-                            Y: =37
+                            Y: =27
                             ZIndex: =1
 
                         Title3 As label:
@@ -1530,7 +1530,7 @@
                             VerticalAlign: =VerticalAlign.Top
                             Width: =204
                             X: =97
-                            Y: =53
+                            Y: =43
                             ZIndex: =3
 
                         NextArrow1 As icon.ChevronRight:
@@ -1564,7 +1564,7 @@
                             Visible: =ThisItem.IsSelected
                             Width: =4
                             X: =20
-                            Y: =27
+                            Y: =17
                             ZIndex: =6
 
                         NextArrow1_4 As icon.ChevronRight:
@@ -2538,14 +2538,14 @@
 
     Spinner_JobFormReceipt As Spinner:
         DisplayMode: =DisplayMode.Edit
-        Height: =DocumentList_JobFormReceipt.Height
+        Height: =DocumentList_JobFormReceipt.Height/2    
         Label: =varSpinnerText
         LabelPosition: ='Spinner.LabelPosition'.Below
         SpinnerSize: ='Spinner.SpinnerSize'.Huge
         Visible: =varUploadSpinner
         Width: =DocumentList_JobFormReceipt.Width
         X: =LeftNavigation_JobFormReceipt.Width + SidebarContainer_JobFormReceipt.Width + EntryFormContainer_JobFormReceipt.Width + 54
-        Y: =170
+        Y: =DocumentList_JobFormReceipt.Height
         ZIndex: =12
 
     DocumentPropertiesOverlay_JobFormReceipt As groupContainer.manualLayoutContainer:
@@ -2626,12 +2626,12 @@
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
-                        Default: =DisplayMode.Disabled
+                        Default: =Parent.Default
                         DelayOutput: =true
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayMode: =Parent.DisplayMode
+                        DisplayMode: =DisplayMode.Disabled
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
