@@ -1507,7 +1507,7 @@
                             PaddingLeft: =0
                             PaddingRight: =0
                             PaddingTop: =0
-                            Text: =ThisItem.ID
+                            Text: =ThisItem.Name
                             VerticalAlign: =VerticalAlign.Top
                             Width: =198
                             X: =100
@@ -1526,7 +1526,7 @@
                             PaddingRight: =0
                             PaddingTop: =0
                             Size: =12
-                            Text: =ThisItem.Name
+                            Text: =ThisItem.'Receipt Timestamp'
                             VerticalAlign: =VerticalAlign.Top
                             Width: =204
                             X: =97
