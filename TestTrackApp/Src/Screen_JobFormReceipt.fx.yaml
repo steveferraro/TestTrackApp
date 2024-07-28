@@ -370,8 +370,6 @@
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
-                        X: =0.00
-                        Y: =6
                         ZIndex: =6
 
                     Subtitle1_5 As label:
@@ -1472,6 +1470,7 @@
                         TemplatePadding: =0
                         TemplateSize: =104
                         Width: =Parent.Width-5
+                        Y: =Parent.Y
                         ZIndex: =2
 
                         Image4 As image:
@@ -1896,7 +1895,8 @@
                             HoverColor: =RGBA(255, 255, 255, 1)
                             HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
                             OnSelect: |-
-                                =ForAll(
+                                =UpdateContext({varUploadSpinner: true});
+                                ForAll(
                                     FileAttach_JobFormReceipt.Attachments,
                                     UploadFileToSharePoint_TestForms.Run(
                                         JSON(
@@ -1911,6 +1911,7 @@
                                         }
                                     )
                                 );
+                                UpdateContext({varUpSpinner: false});
                                 Refresh('Test Forms');
                                 Reset(FileAttach_JobFormReceipt);
                                 Reset(DocumentList_JobFormReceipt)
@@ -2527,4 +2528,16 @@
         X: =491
         Y: =147
         ZIndex: =11
+
+    UploadSpinner_JobFormReceipt As Spinner:
+        DisplayMode: =DisplayMode.Edit
+        Height: =DocumentList_JobFormReceipt.Height
+        Label: ="Uploading..."
+        LabelPosition: ='Spinner.LabelPosition'.Below
+        SpinnerSize: ='Spinner.SpinnerSize'.Huge
+        Visible: =varUploadSpinner
+        Width: =DocumentList_JobFormReceipt.Width
+        X: =LeftNavigation_JobFormReceipt.Width + SidebarContainer_JobFormReceipt.Width + EntryFormContainer_JobFormReceipt.Width + 54
+        Y: =170
+        ZIndex: =12
 
