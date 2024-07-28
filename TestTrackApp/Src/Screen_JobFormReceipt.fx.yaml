@@ -1541,6 +1541,7 @@
                             Icon: =Icon.Edit
                             OnSelect: =Select(Parent)
                             Tooltip: ="Manage document properties."
+                            Visible: =ThisItem.IsSelected
                             Width: =25
                             X: =Parent.TemplateWidth - Self.Width - 12
                             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
@@ -1574,8 +1575,10 @@
                             Icon: =Icon.Trash
                             OnSelect: |-
                                 =DeleteFileFromSharePoint_TestForms.Run(DocumentList_JobFormReceipt.Selected.ID);
+                                Refresh('Test Forms');
                                 Reset(DocumentList_JobFormReceipt)
-                            Tooltip: ="Manage document properties."
+                            Tooltip: ="Delete document."
+                            Visible: =ThisItem.IsSelected
                             Width: =25
                             X: =338
                             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
