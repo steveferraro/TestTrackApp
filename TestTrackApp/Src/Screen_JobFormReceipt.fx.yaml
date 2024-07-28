@@ -2556,7 +2556,7 @@
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Visible: =false
+        Visible: =varDocumentPropVisible
         Width: =App.Width
         X: =
         ZIndex: =13
