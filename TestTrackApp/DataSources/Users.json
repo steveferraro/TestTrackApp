@@ -1664,6 +1664,7 @@
       "queue_primary_user": "Queues (queue_primary_user)",
       "queueid": "Default Queue",
       "queuemembership_association": "Queues (queuemembership_association)",
+      "rcon_jobsformreceipt_AssignedTo_systemuser": "JobsFormReceipts (rcon_jobsformreceipt_AssignedTo_systemuser)",
       "salutation": "Salutation",
       "sample_donation_systemuser_createdby": "Donations (sample_donation_systemuser_createdby)",
       "sample_donation_systemuser_createdonbehalfby": "Donations (sample_donation_systemuser_createdonbehalfby)",

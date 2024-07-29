@@ -21,6 +21,7 @@
       "owningbusinessunit": "Owning Business Unit",
       "owningteam": "Owning Team",
       "owninguser": "Owning User",
+      "rcon_AssignedTo": "Assigned To",
       "rcon_comment": "Comment",
       "rcon_fieldworkperformancedate": "Field Work Performance Date",
       "rcon_formcount": "Form Count",
