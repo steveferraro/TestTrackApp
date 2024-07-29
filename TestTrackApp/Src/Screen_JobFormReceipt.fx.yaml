@@ -1643,10 +1643,10 @@
                             DataField: ="ReceiptTimestamp"
                             Default: =ThisItem.'Receipt Timestamp'
                             DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,ReceiptTimestamp)
+                            DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,'Receipt Timestamp')
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =50
-                            MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, ReceiptTimestamp)
+                            MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, 'Receipt Timestamp')
                             Required: =true
                             Update: =DataCardValue14.Text
                             Width: =425
@@ -2590,10 +2590,10 @@
                     DataField: ="ReceiptTimestamp"
                     Default: =ThisItem.'Receipt Timestamp'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,ReceiptTimestamp)
+                    DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,'Receipt Timestamp')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, ReceiptTimestamp)
+                    MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, 'Receipt Timestamp')
                     Required: =true
                     Update: =DataCardValue20.Text
                     Width: =500
@@ -2699,16 +2699,134 @@
                         Y: =DataCardKey27.Y
                         ZIndex: =4
 
+                User_DataCard1 As typedDataCard.comboBoxEditCard:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="User"
+                    Default: =ThisItem.User
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,User)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue12.Selected
+                    Width: =500
+                    X: =0
+                    Y: =4
+                    ZIndex: =1
+
+                    DataCardKey19 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =34
+                        PaddingLeft: =0
+                        Size: =13
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue12 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                        ChevronFill: =RGBA(33, 33, 33, 1)
+                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                        Color: =RGBA(51, 51, 51, 1)
+                        DefaultSelectedItems: =Parent.Default
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayFields: =["DisplayName","Email","Picture"]
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Segoe UI'
+                        HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(212, 212, 212, 1)
+                        Items: =Choices([@'Test Forms'].User)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(202, 80, 16, 1)
+                        SearchFields: =["DisplayName"]
+                        SearchItems: =Choices('Test Forms'.User,DataCardValue12.SearchText)
+                        SelectionFill: =RGBA(202, 80, 16, 1)
+                        SelectMultiple: =false
+                        Size: =13
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey19.Y + DataCardKey19.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage27 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue12.Y + DataCardValue12.Height
+                        ZIndex: =3
+
+                    StarVisible27 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKey19.Height
+                        PaddingLeft: =0
+                        Size: =13
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey19.Y
+                        ZIndex: =4
+
                 "'Job Number_DataCard4' As typedDataCard.textualEditCard":
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="JobNumber"
                     Default: =ThisItem.'Job Number'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,JobNumber)
+                    DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,'Job Number')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, JobNumber)
+                    MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, 'Job Number')
                     Required: =true
                     Update: =DataCardValue15.Text
                     Width: =500
@@ -2820,10 +2938,10 @@
                     DataField: ="OData__ExtendedDescription"
                     Default: =ThisItem.Description
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,OData__ExtendedDescription)
+                    DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,Description)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, OData__ExtendedDescription)
+                    MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, Description)
                     Required: =false
                     Update: =DataCardValue18.Text
                     Width: =500

@@ -37,7 +37,9 @@
       "OData__DisplayName": "Sensitivity",
       "OData__ExtendedDescription": "Description",
       "ReceiptTimestamp": "Receipt Timestamp",
-      "Title": "Title"
+      "Title": "Title",
+      "User": "User",
+      "User#Claims": "User Claims"
     },
     "DatasetName": "https://rangerconsultingllc.sharepoint.com/sites/UISAdministration",
     "EncodeDataset": true,
