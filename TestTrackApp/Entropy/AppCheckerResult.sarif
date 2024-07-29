@@ -6944,36 +6944,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.User_DataCard1.DataCardValue12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.User_DataCard1.DataCardValue12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_JobFormReceipt",
-                "type": "Screen_JobFormReceipt.DocumentPropertiesOverlay_JobFormReceipt.DocumentPropertiesContainer_JobFormReceipt.DocumentPropertiesEditForm_JobFormReceipt.User_DataCard1.DataCardValue12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.AppThemeJson"
                 }
               ],
