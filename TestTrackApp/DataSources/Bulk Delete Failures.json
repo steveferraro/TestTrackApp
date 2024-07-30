@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "bulkdeletefailure",
+    "MaxGetRowsCount": 2000,
     "Name": "Bulk Delete Failures",
     "NativeCDSDataSourceInfoNameMapping": {
       "_regardingobjectid_value": "Name",
