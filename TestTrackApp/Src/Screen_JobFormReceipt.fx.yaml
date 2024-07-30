@@ -262,7 +262,7 @@
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
-                    OnSelect: =GalleryFormReceipt_JobFormReceipt.
+                    OnSelect: =
                     TemplateFill: =If(ThisItem.IsSelected, ColorValue(AppTheme.palette.neutralLight), ColorValue(AppTheme.palette.white))
                     TemplatePadding: =0
                     TemplateSize: =80
