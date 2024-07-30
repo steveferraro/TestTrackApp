@@ -249,7 +249,7 @@
                     Height: =30
                     Size: =13
                     Text: |-
-                        ="Jobs:"
+                        ="Assigned Form Receipts:"
                     Width: =Parent.Width
                     ZIndex: =1
 
@@ -655,7 +655,7 @@
                         Height: =30
                         Size: =13
                         Text: |-
-                            ="Job Attributes:"
+                            ="Form Entry Attributes:"
                         Width: =Parent.Width
                         X: =491
                         Y: =147
@@ -1399,7 +1399,7 @@
                         Height: =30
                         Size: =13
                         Text: |-
-                            ="Job Documents:"
+                            ="Receipt Documents:"
                         Width: =Parent.Width
                         X: =921
                         Y: =147

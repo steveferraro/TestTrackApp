@@ -638,7 +638,7 @@
                         Height: =30
                         Size: =13
                         Text: |-
-                            ="Job Attributes:"
+                            ="Form Receipt Attributes:"
                         Width: =Parent.Width-14
                         X: =491
                         Y: =147
@@ -1572,7 +1572,7 @@
                         Height: =30
                         Size: =13
                         Text: |-
-                            ="Job Documents:"
+                            ="Form Receipt Documents:"
                         Width: =Parent.Width-5
                         X: =921
                         Y: =147
