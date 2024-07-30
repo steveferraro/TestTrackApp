@@ -1378,7 +1378,12 @@
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Image: =document
-                            OnSelect: =Select(Parent)
+                            OnSelect: |-
+                                =Launch(
+                                    ThisItem.'Link to item',
+                                    Blank(),
+                                    LaunchTarget.New
+                                )
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
                             PressedFill: =RGBA(0, 0, 0, 0)
                             RadiusBottomLeft: =8
@@ -1430,6 +1435,7 @@
                         NextArrow3 As icon.ChevronRight:
                             AccessibleLabel: =Self.Tooltip
                             Color: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
                             Height: =50
                             Icon: =Icon.ChevronRight
                             OnSelect: =Select(Parent)
@@ -1438,6 +1444,7 @@
                             PaddingRight: =16
                             PaddingTop: =16
                             Tooltip: ="View item details"
+                            Visible: =false
                             Width: =50
                             X: =Parent.TemplateWidth - Self.Width - 12
                             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)

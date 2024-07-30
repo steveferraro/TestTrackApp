@@ -217,19 +217,25 @@
                 X: =0.00
                 ZIndex: =2
 
-                RectangleSpace1_JobFormReceipt As rectangle:
-                    BorderColor: =
+                JobsLabel_JobFormReceipt As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
-                    DisabledFill: =RGBA(166, 166, 166, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                     FocusedBorderThickness: =4
-                    Height: =35
-                    HoverFill: =RGBA(202, 80, 16, 1)
-                    LayoutMinHeight: =1
-                    PressedFill: =RGBA(202, 80, 16, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =30
+                    Size: =13
+                    Text: |-
+                        ="Jobs:"
                     Width: =Parent.Width
-                    X: =0.00
-                    ZIndex: =2
+                    X: =105
+                    Y: =147
+                    ZIndex: =1
 
                 "GalleryJobs_JobFormReceipt As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                     '#CopilotOverlayLabel': ="Filtered"
@@ -261,7 +267,7 @@
                     TemplateSize: =80
                     Width: =Parent.Width
                     X: =0.00
-                    ZIndex: =3
+                    ZIndex: =2
 
                     Image1_3 As image:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -423,18 +429,33 @@
                         Y: =33
                         ZIndex: =9
 
-                RectangleSpace2_JobFormReceipt As rectangle:
-                    BorderColor: =
-                    BorderStyle: =BorderStyle.None
-                    DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
-                    FocusedBorderThickness: =4
-                    Height: =35
-                    HoverFill: =RGBA(202, 80, 16, 1)
-                    LayoutMinHeight: =1
-                    PressedFill: =RGBA(202, 80, 16, 1)
+                Separator3_2 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =10
+                    OnSelect: =    
                     Width: =Parent.Width
                     X: =0.00
+                    ZIndex: =3
+
+                FormReceiptsLabel_JobFormReceipt As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =31
+                    Size: =13
+                    Text: |-
+                        ="Form Receipts:"
+                    Width: =Parent.Width
+                    X: =105
+                    Y: =502
                     ZIndex: =4
 
                 "GalleryFormReceipt_JobFormReceipt As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
@@ -445,7 +466,7 @@
                     DisplayMode: =If(EntryForm_JobFormReceipt.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
-                    Height: =Parent.Height - RectangleSpace1_JobFormReceipt.Height - RectangleSpace2_JobFormReceipt.Height - GalleryJobs_JobFormReceipt.Height
+                    Height: =Parent.Height - JobsLabel_JobFormReceipt.Height - FormReceiptsLabel_JobFormReceipt.Height - GalleryJobs_JobFormReceipt.Height
                     Items: =Filter(JobsFormReceipts, 'Job Number'.RecordID = GalleryJobs_JobFormReceipt.Selected.RecordID)
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
@@ -602,18 +623,24 @@
                     Width: =Parent.Width/2  
                     ZIndex: =3
 
-                    JobAttributeSpace_JobFormReceipt As rectangle:
-                        BorderColor: =
+                    JobAttributesLabel_JobFormReceipt As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
-                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
                         Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                         FocusedBorderThickness: =4
-                        Height: =35
-                        HoverFill: =RGBA(202, 80, 16, 1)
-                        LayoutMinHeight: =1
-                        PressedFill: =RGBA(202, 80, 16, 1)
-                        Width: =EntryForm_JobFormReceipt.Width
-                        X: =0.00
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =13
+                        Text: |-
+                            ="Job Attributes:"
+                        Width: =Parent.Width-14
+                        X: =491
+                        Y: =147
                         ZIndex: =1
 
                     EntryForm_JobFormReceipt As form:
@@ -2547,44 +2574,6 @@
         Y: =84
         ZIndex: =7
 
-    JobsLabel_JobFormReceipt As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        Size: =13
-        Text: |-
-            ="Jobs:"
-        Width: =289
-        X: =105
-        Y: =147
-        ZIndex: =8
-
-    FormReceiptsLabel_JobFormReceipt As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =31
-        Size: =13
-        Text: |-
-            ="Form Receipts:"
-        Width: =278
-        X: =105
-        Y: =502
-        ZIndex: =9
-
     ConfirmationDialog_JobFormReceipt As Dialog:
         Buttons: |-
             =Table(
@@ -2619,25 +2608,6 @@
         Visible: =DialogVisible
         Width: =1366
         ZIndex: =10
-
-    JobAttributesLabel_JobFormReceipt As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        Size: =13
-        Text: |-
-            ="Job Attributes:"
-        Width: =289
-        X: =491
-        Y: =147
-        ZIndex: =11
 
     Spinner_JobFormReceipt As Spinner:
         DisplayMode: =DisplayMode.Edit
