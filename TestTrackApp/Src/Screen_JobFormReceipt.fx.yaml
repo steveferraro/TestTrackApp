@@ -648,10 +648,10 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_AssignedTo)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =87
                             Required: =true
                             Update: =DataCardValue12.Selected
-                            Width: =417
+                            Width: =415
                             X: =0
                             Y: =0
                             ZIndex: =1
@@ -666,7 +666,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingLeft: =0
                                 Size: =13
@@ -674,7 +674,6 @@
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
                                 X: =30
-                                Y: =10 + (DataCardValue12.Height / 2) - (Self.Height / 2)
                                 ZIndex: =1
 
                             DataCardValue12 As combobox:
@@ -691,7 +690,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["fullname"]
-                                DisplayMode: =Parent.DisplayMode
+                                DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -707,9 +706,9 @@
                                 SelectMultiple: =false
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey15.X + DataCardKey15.Width
-                                Y: =10
+                                Width: =374
+                                X: =30
+                                Y: =35
                                 ZIndex: =2
 
                             ErrorMessage15 As label:
@@ -766,10 +765,10 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_JobNumber)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =87
                             Required: =true
                             Update: =DataCardValue10.Selected
-                            Width: =417
+                            Width: =415
                             X: =0
                             Y: =1
                             ZIndex: =1
@@ -784,7 +783,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingLeft: =0
                                 Size: =13
@@ -809,7 +808,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["rcon_jobnumber"]
-                                DisplayMode: =Parent.DisplayMode
+                                DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -825,9 +824,9 @@
                                 SelectMultiple: =false
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey14.X + DataCardKey14.Width
-                                Y: =10
+                                Width: =374
+                                X: =30
+                                Y: =50
                                 ZIndex: =2
 
                             ErrorMessage14 As label:
@@ -884,7 +883,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_receiptdate)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =87
                             Required: =true
                             Update: =If(Not IsBlank(DateValue6.SelectedDate), DateTime(Year(DateValue6.SelectedDate), Month(DateValue6.SelectedDate), Day(DateValue6.SelectedDate), Value(HourValue6.Selected.Value), Value(MinuteValue6.Selected.Value), 0))
                             Width: =417
@@ -902,7 +901,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingLeft: =0
                                 Size: =13
@@ -910,7 +909,7 @@
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
                                 X: =30
-                                Y: =16
+                                Y: =7
                                 ZIndex: =1
 
                             DateValue6 As datepicker:
@@ -921,9 +920,10 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayMode: =Parent.DisplayMode
+                                DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 EndYear: =Year(Today())+100
                                 Font: =Font.'Segoe UI'
+                                Height: =41
                                 HoverDateFill: =RGBA(200, 200, 200, 1)
                                 IconBackground: =RGBA(202, 80, 16, 1)
                                 IsEditable: =true
@@ -933,9 +933,9 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey26.X + DataCardKey26.Width
-                                Y: =10
+                                Width: =374
+                                X: =30
+                                Y: =46
                                 ZIndex: =2
 
                             HourValue6 As dropdown:
@@ -1090,7 +1090,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_formcount)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =87
                             Required: =true
                             Update: =Value(DataCardValue19.Text)
                             Width: =417
@@ -1108,7 +1108,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingLeft: =0
                                 Size: =13
@@ -1116,7 +1116,7 @@
                                 Width: =(Parent.Width - 60) * 0.4
                                 Wrap: =false
                                 X: =30
-                                Y: =10 + (DataCardValue19.Height / 2) - (Self.Height / 2)
+                                Y: =5
                                 ZIndex: =1
 
                             DataCardValue19 As text:
@@ -1128,7 +1128,7 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayMode: =Parent.DisplayMode
+                                DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 Format: =TextFormat.Number
@@ -1145,9 +1145,9 @@
                                 RadiusTopRight: =0
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey24.X + DataCardKey24.Width
-                                Y: =10
+                                Width: =374
+                                X: =30
+                                Y: =46
                                 ZIndex: =2
 
                             ErrorMessage33 As label:
@@ -1204,7 +1204,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_fieldworkperformancedate)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Height: =87
                             Required: =true
                             Update: =If(Not IsBlank(DateValue2.SelectedDate), DateTime(Year(DateValue2.SelectedDate), Month(DateValue2.SelectedDate), Day(DateValue2.SelectedDate), Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), 0))
                             Width: =417
@@ -1213,7 +1213,6 @@
                             ZIndex: =1
 
                             DataCardKey19 As label:
-                                AutoHeight: =true
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 BorderStyle: =BorderStyle.None
                                 BorderThickness: =2
@@ -1222,15 +1221,14 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
-                                Height: =34
+                                FontWeight: =FontWeight.Bold
+                                Height: =50
                                 PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =374
                                 Wrap: =false
                                 X: =30
-                                Y: =16
                                 ZIndex: =1
 
                             DateValue2 As datepicker:
@@ -1241,7 +1239,7 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayMode: =Parent.DisplayMode
+                                DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 EndYear: =Year(Today())+100
                                 Font: =Font.'Segoe UI'
                                 HoverDateFill: =RGBA(200, 200, 200, 1)
@@ -1253,9 +1251,9 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey19.X + DataCardKey19.Width
-                                Y: =10
+                                Width: =374
+                                X: =30
+                                Y: =47
                                 ZIndex: =2
 
                             HourValue2 As dropdown:
@@ -1410,7 +1408,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@JobsFormReceipts],DataSourceInfo.DisplayName,rcon_comment)
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =186
+                            Height: =125
                             MaxLength: =DataSourceInfo([@JobsFormReceipts], DataSourceInfo.MaxLength, rcon_comment)
                             Required: =false
                             Update: =DataCardValue17.Text
@@ -1449,10 +1447,10 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayMode: =Parent.DisplayMode
+                                DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
-                                Height: =94
+                                Height: =61
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
                                 HoverFill: =RGBA(255, 255, 255, 1)
@@ -1467,9 +1465,9 @@
                                 RadiusTopRight: =0
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.6
-                                X: =DataCardKey16.X + DataCardKey16.Width
-                                Y: =10
+                                Width: =374
+                                X: =30  
+                                Y: =55
                                 ZIndex: =2
 
                             ErrorMessage16 As label:
