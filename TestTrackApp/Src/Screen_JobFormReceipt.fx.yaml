@@ -2122,7 +2122,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =26
+                        Height: =30
                         Size: =13
                         Text: |-
                             ="Filters:"

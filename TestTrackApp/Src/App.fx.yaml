@@ -48,6 +48,10 @@ App As appinfo:
             varUserGUID,
             User().EntraObjectId
         );
+        Set(
+            varUserFullName,
+            User().FullName
+        );
         With(
             {
                 wAdminID: LookUp(
