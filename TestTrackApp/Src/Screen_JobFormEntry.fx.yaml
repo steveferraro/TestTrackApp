@@ -888,17 +888,17 @@
                                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                                 Color: =RGBA(51, 51, 51, 1)
-                                DefaultSelectedItems: =Parent.Default
+                                DefaultSelectedItems: =Filter(Choices([@JobsFormReceipts].'Job Number'),'Job Number' = GalleryFormReceipts_JobFormEntry.Selected.'Job Number'.'Job Number')
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayFields: =[""]
+                                DisplayFields: =["rcon_name"]
                                 DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
                                 HoverFill: =RGBA(212, 212, 212, 1)
-                                Items: =Choices([@JobsFormEntries].'Job Number')
+                                Items: =Choices([@JobsFormReceipts].'Job Number')
                                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                                 PaddingRight: =5.00
                                 PaddingTop: =5.00
@@ -906,7 +906,7 @@
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(202, 80, 16, 1)
                                 SearchFields: =["rcon_name"]
-                                SearchItems: =Search(Choices([@JobsFormEntries].'Job Number'),DataCardValue5.SearchText,rcon_name)
+                                SearchItems: =Search(Choices([@JobsFormReceipts].'Job Number'),DataCardValue5.SearchText,rcon_name)
                                 SelectionFill: =RGBA(202, 80, 16, 1)
                                 SelectMultiple: =false
                                 Size: =13
@@ -1676,7 +1676,7 @@
                         Height: =30
                         Size: =13
                         Text: |-
-                            ="Receipt Documents:"
+                            ="Receipt Form Documents:"
                         Width: =Parent.Width
                         X: =921
                         Y: =147
