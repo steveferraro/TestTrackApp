@@ -470,7 +470,7 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
                     Height: =320
-                    Items: =JobsFormReceipts
+                    Items: =Filter(JobsFormReceipts, User().FullName = 'Assigned To'.'Full Name')
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
