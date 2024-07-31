@@ -486,7 +486,7 @@ App As appinfo:
             false
         );
         Set(
-            varSelectedJob,
+            varSelectedJobb,
             Blank()
         );
         Set(
