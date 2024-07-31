@@ -310,8 +310,10 @@
                         ZIndex: =1
 
                     Title1_2 As label:
+                        BorderThickness: =2
                         Color: =RGBA(50, 49, 48, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =21
@@ -330,8 +332,10 @@
                         ZIndex: =2
 
                     Subtitle1_2 As label:
+                        BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =20
@@ -379,6 +383,7 @@
                     Separator1_2 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderThickness: =4
                         Height: =8
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
@@ -389,6 +394,7 @@
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
                         Height: =72
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
@@ -398,8 +404,10 @@
                         ZIndex: =6
 
                     Subtitle1_6 As label:
+                        BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =23
@@ -430,14 +438,14 @@
                         Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
                         OnSelect: |-
                             =If(
-                                varSelectedJob = GalleryJobs_JobFormEntry.Selected.'Job Number',
+                                varSelectedJob = GalleryJobs_JobFormEntry.Selected.rcon_jobnumber,
                                 Set(
                                     varSelectedJob,
                                     Blank()
                                 ),
                                 Set(
                                     varSelectedJob,
-                                    GalleryJobs_JobFormEntry.Selected.'Job Number'
+                                    GalleryJobs_JobFormEntry.Selected.rcon_jobnumber
                                 )
                             )
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -450,6 +458,7 @@
                 Separator3_3 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     Fill: =ColorValue(AppTheme.palette.themePrimary)
+                    FocusedBorderThickness: =4
                     Height: =15
                     OnSelect: =
                     Width: =Parent.Width
@@ -520,8 +529,10 @@
                         ZIndex: =1
 
                     Title2 As label:
+                        BorderThickness: =2
                         Color: =RGBA(50, 49, 48, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =22
@@ -568,6 +579,7 @@
                     Separator3 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderThickness: =4
                         Height: =8
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
@@ -578,6 +590,7 @@
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
                         Height: =50
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
@@ -587,8 +600,10 @@
                         ZIndex: =5
 
                     Title2_3 As label:
+                        BorderThickness: =2
                         Color: =RGBA(50, 49, 48, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Height: =18
                         OnSelect: =Select(Parent)
@@ -1446,8 +1461,10 @@
                             ZIndex: =1
 
                         Title5 As label:
+                            BorderThickness: =2
                             Color: =RGBA(50, 49, 48, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                             Height: =Self.Size * 1.8
@@ -1464,8 +1481,10 @@
                             ZIndex: =2
 
                         Subtitle3 As label:
+                            BorderThickness: =2
                             Color: =RGBA(51, 51, 51, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                             Height: =Self.Size * 1.8
@@ -1503,6 +1522,7 @@
                         Separator12 As rectangle:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             Fill: =RGBA(255, 255, 255, 1)
+                            FocusedBorderThickness: =4
                             Height: =8
                             OnSelect: =Select(Parent)
                             Width: =Parent.TemplateWidth
@@ -1512,6 +1532,7 @@
                         Rectangle4 As rectangle:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            FocusedBorderThickness: =4
                             Height: =42
                             OnSelect: =Select(Parent)
                             Visible: =ThisItem.IsSelected

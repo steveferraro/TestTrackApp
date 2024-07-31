@@ -295,8 +295,10 @@
                         ZIndex: =1
 
                     Title1_3 As label:
+                        BorderThickness: =2
                         Color: =RGBA(50, 49, 48, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =21
@@ -315,8 +317,10 @@
                         ZIndex: =2
 
                     Subtitle1_3 As label:
+                        BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =22
@@ -364,6 +368,7 @@
                     Separator1_3 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderThickness: =4
                         Height: =6
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
@@ -374,6 +379,7 @@
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
                         Height: =Parent.TemplateHeight
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
@@ -381,8 +387,10 @@
                         ZIndex: =6
 
                     Subtitle1_5 As label:
+                        BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =23
@@ -413,14 +421,14 @@
                         Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
                         OnSelect: |-
                             =If(
-                                varSelectedJob = GalleryJobs_JobFormReceipt.Selected.'Job Number',
+                                varSelectedJob = GalleryJobs_JobFormReceipt.Selected.rcon_jobnumber,
                                 Set(
                                     varSelectedJob,
                                     Blank()
                                 ),
                                 Set(
                                     varSelectedJob,
-                                    GalleryJobs_JobFormReceipt.Selected.'Job Number'
+                                    GalleryJobs_JobFormReceipt.Selected.rcon_jobnumber
                                 )
                             )
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -433,6 +441,7 @@
                 Separator3_2 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     Fill: =ColorValue(AppTheme.palette.themePrimary)
+                    FocusedBorderThickness: =4
                     Height: =15
                     OnSelect: =    
                     Width: =Parent.Width
@@ -505,8 +514,10 @@
                         ZIndex: =1
 
                     Title2_1 As label:
+                        BorderThickness: =2
                         Color: =RGBA(50, 49, 48, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =23
@@ -553,6 +564,7 @@
                     Separator3_1 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderThickness: =4
                         Height: =8
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
@@ -563,6 +575,7 @@
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
                         Height: =52
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
@@ -572,8 +585,10 @@
                         ZIndex: =5
 
                     Title2_2 As label:
+                        BorderThickness: =2
                         Color: =RGBA(50, 49, 48, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Height: =23
                         OnSelect: =Select(Parent)
@@ -835,19 +850,19 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayFields: =["rcon_jobnumber"]
+                                DisplayFields: =["rcon_name"]
                                 DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
                                 HoverFill: =RGBA(212, 212, 212, 1)
-                                Items: =Choices([@JobsFormReceipts].rcon_JobNumber)
+                                Items: =Choices([@JobsFormReceipts].'Job Number')
                                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                                 PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(202, 80, 16, 1)
-                                SearchFields: =["rcon_jobnumber"]
-                                SearchItems: =Search(Choices([@JobsFormReceipts].rcon_JobNumber),DataCardValue10.SearchText,rcon_jobnumber)
+                                SearchFields: =["rcon_name"]
+                                SearchItems: =Search(Choices([@JobsFormReceipts].'Job Number'),DataCardValue10.SearchText,rcon_name)
                                 SelectionFill: =RGBA(202, 80, 16, 1)
                                 SelectMultiple: =false
                                 Size: =13
@@ -1628,8 +1643,10 @@
                             ZIndex: =1
 
                         Title3 As label:
+                            BorderThickness: =2
                             Color: =RGBA(50, 49, 48, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                             Height: =25
@@ -1646,8 +1663,10 @@
                             ZIndex: =2
 
                         Subtitle2 As label:
+                            BorderThickness: =2
                             Color: =RGBA(51, 51, 51, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                             Height: =21
@@ -1681,6 +1700,7 @@
                         Separator10 As rectangle:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             Fill: =RGBA(255, 255, 255, 1)
+                            FocusedBorderThickness: =4
                             Height: =8
                             OnSelect: =Select(Parent)
                             Width: =Parent.TemplateWidth
@@ -1690,6 +1710,7 @@
                         Rectangle3 As rectangle:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             Fill: =ColorFade(ColorValue(AppTheme.palette.themePrimary), -0%)
+                            FocusedBorderThickness: =4
                             Height: =42
                             OnSelect: =Select(Parent)
                             Visible: =ThisItem.IsSelected
@@ -1925,7 +1946,7 @@
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
                                 Color: =RGBA(51, 51, 51, 1)
-                                Default: =GalleryJobs_JobFormReceipt.Selected.'Job Number'
+                                Default: =GalleryJobs_JobFormReceipt.Selected.rcon_jobnumber
                                 DelayOutput: =true
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
