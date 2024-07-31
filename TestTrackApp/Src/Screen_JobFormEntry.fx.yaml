@@ -1553,7 +1553,7 @@
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =0
-                        TemplateSize: =200
+                        TemplateSize: =HtmlText2.Height + Subtitle1_3.Height + Title5.Height + 5
                         Width: =Parent.Width
                         ZIndex: =2
 
@@ -1669,13 +1669,14 @@
                             ZIndex: =6
 
                         HtmlText2 As htmlViewer:
-                            Height: =117
+                            AutoHeight: =true
+                            Height: =139
                             HtmlText: |-
                                 ="<b><font color=blue>Notes: </font></b><br>" & ThisItem.Notes & "</br>"
                             OnSelect: =Select(Parent)
                             Width: =293
                             X: =104
-                            Y: =75
+                            Y: =53
                             ZIndex: =7
 
             FilterContainer__JobFormEntry As groupContainer.manualLayoutContainer:
