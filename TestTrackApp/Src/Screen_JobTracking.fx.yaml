@@ -430,6 +430,7 @@
                     BorderColor: =
                     DataSource: =JobsTracked
                     DefaultMode: =FormMode.View
+                    Height: =Parent.Height   
                     Item: =GalleryJobs_JobTracking.Selected
                     NumberOfColumns: =2
                     OnFailure: =Notify("Record was not saved. ", NotificationType.Error, 10000)
