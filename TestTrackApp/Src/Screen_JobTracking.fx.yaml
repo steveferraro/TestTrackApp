@@ -574,8 +574,8 @@
                         Height: =40
                         Required: =false
                         Width: =424
-                        X: =1
-                        Y: =0
+                        X: =0
+                        Y: =5
                         ZIndex: =1
 
                         DataCardKey56 As label:
@@ -632,8 +632,8 @@
                         Height: =40
                         Required: =false
                         Width: =424
-                        X: =0
-                        Y: =1
+                        X: =1
+                        Y: =5
                         ZIndex: =1
 
                         DataCardKey55 As label:
@@ -692,7 +692,7 @@
                         Update: =DataCardValue59.Selected.Value
                         Width: =424
                         X: =1
-                        Y: =1
+                        Y: =4
                         ZIndex: =1
 
                         DataCardKey63 As label:
@@ -814,7 +814,7 @@
                         Update: =DataCardValue53.Selected
                         Width: =424
                         X: =0
-                        Y: =2
+                        Y: =4
                         ZIndex: =1
 
                         DataCardKey57 As label:
@@ -935,7 +935,7 @@
                         Update: =DataCardValue50.SelectedItems.Value
                         Width: =424
                         X: =1
-                        Y: =2
+                        Y: =3
                         ZIndex: =1
 
                         DataCardKey54 As label:
@@ -1176,7 +1176,7 @@
                         Update: =DataCardValue48.Selected
                         Width: =424
                         X: =1
-                        Y: =3
+                        Y: =1
                         ZIndex: =1
 
                         DataCardKey52 As label:
@@ -1296,8 +1296,8 @@
                         Required: =true
                         Update: =DataCardValue47.Selected
                         Width: =424
-                        X: =0
-                        Y: =4
+                        X: =1
+                        Y: =2
                         ZIndex: =1
 
                         DataCardKey51 As label:
@@ -1418,8 +1418,8 @@
                         Required: =false
                         Update: =DataCardValue46.Text
                         Width: =424
-                        X: =1
-                        Y: =4
+                        X: =0
+                        Y: =1
                         ZIndex: =1
 
                         DataCardKey50 As label:
@@ -1536,7 +1536,7 @@
                         Update: =DataCardValue45.Text
                         Width: =424
                         X: =0
-                        Y: =5
+                        Y: =2
                         ZIndex: =1
 
                         DataCardKey49 As label:
@@ -1654,7 +1654,7 @@
                         Update: =DataCardValue44.Text
                         Width: =424
                         X: =1
-                        Y: =5
+                        Y: =0
                         ZIndex: =1
 
                         DataCardKey48 As label:
