@@ -604,7 +604,7 @@
                         PaddingTop: =0.00
                         Size: =12
                         Text: |-
-                            ="Created By: " & ThisItem.'Created By'.'Full Name'
+                            ="Receipt ID: " & ThisItem.'Receipt ID'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =211
                         X: =57
@@ -853,7 +853,7 @@
                                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                                 Color: =RGBA(51, 51, 51, 1)
                                 Default: =GalleryJobs_JobFormReceipt.Selected
-                                DefaultSelectedItems: =If(FormMode.New,[GalleryJobs_JobFormReceipt.Selected.'Job Number'],[Parent.Default])
+                                DefaultSelectedItems: =[ThisItem.'Job Number']
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
