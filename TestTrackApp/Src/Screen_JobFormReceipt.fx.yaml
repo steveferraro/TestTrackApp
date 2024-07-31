@@ -1688,9 +1688,9 @@
 
                         Separator10 As rectangle:
                             BorderColor: =RGBA(0, 0, 0, 0)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
                             FocusedBorderThickness: =4
-                            Height: =8
+                            Height: =2
                             OnSelect: =Select(Parent)
                             Width: =Parent.TemplateWidth
                             Y: =Parent.TemplateHeight - Self.Height

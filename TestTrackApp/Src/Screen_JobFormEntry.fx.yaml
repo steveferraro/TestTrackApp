@@ -401,7 +401,7 @@
                         Height: =72
                         OnSelect: |-
                             =Select(Parent);
-                            Reset(Gallery2)
+                            Reset(GalleryDocumentList_JobFormEntry)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
                         X: =0.00
@@ -569,7 +569,7 @@
                         Height: =80
                         OnSelect: |-
                             =Select(Parent);
-                            Reset(Gallery2)
+                            Reset(GalleryDocumentList_JobFormEntry)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
                         X: =0.00
@@ -1662,7 +1662,7 @@
                     RadiusTopRight: =4
                     ZIndex: =3
 
-                    DocumentsLabel_JobFormReceipt_1 As label:
+                    DocumentsLabel_JobFormEntry As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1682,7 +1682,7 @@
                         Y: =147
                         ZIndex: =1
 
-                    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                    "GalleryDocumentList_JobFormEntry As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                         AlignInContainer: =AlignInContainer.Start
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DelayItemLoading: =true
@@ -1692,7 +1692,7 @@
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =0
-                        TemplateSize: =HtmlText2.Height + Subtitle1_3.Height + Title5.Height + 5
+                        TemplateSize: =HtmlText2.Height + Subtitle1_3.Height + Title5.Height + 10
                         Width: =Parent.Width
                         ZIndex: =2
 
@@ -1703,7 +1703,7 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledFill: =RGBA(0, 0, 0, 0)
                             FocusedBorderThickness: =4
-                            Height: =40
+                            Height: =25
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Image: =document
@@ -1719,9 +1719,9 @@
                             RadiusBottomRight: =8
                             RadiusTopLeft: =8
                             RadiusTopRight: =8
-                            Width: =30
-                            X: =36
-                            Y: =6
+                            Width: =25
+                            X: =50
+                            Y: =28
                             ZIndex: =1
 
                         Title5 As label:
@@ -1785,26 +1785,16 @@
                             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                             ZIndex: =4
 
-                        Separator12 As rectangle:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Fill: =RGBA(255, 255, 255, 1)
-                            FocusedBorderThickness: =4
-                            Height: =8
-                            OnSelect: =Select(Parent)
-                            Width: =Parent.TemplateWidth
-                            Y: =Parent.TemplateHeight - Self.Height
-                            ZIndex: =5
-
                         Rectangle4 As rectangle:
                             BorderColor: =RGBA(0, 0, 0, 0)
-                            Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            Fill: =ColorFade(ColorValue(AppTheme.palette.themePrimary), -0%)
                             FocusedBorderThickness: =4
                             Height: =36
                             OnSelect: =Select(Parent)
                             Visible: =ThisItem.IsSelected
                             Width: =4
-                            X: =20
-                            Y: =8
+                            X: =24
+                            Y: =20
                             ZIndex: =6
 
                         HtmlText2 As htmlViewer:
@@ -1817,6 +1807,16 @@
                             X: =104
                             Y: =53
                             ZIndex: =7
+
+                        Separator1_5 As rectangle:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                            FocusedBorderThickness: =4
+                            Height: =2
+                            OnSelect: =Select(Parent)
+                            Width: =Parent.Width
+                            Y: =181.2
+                            ZIndex: =8
 
             FilterContainer__JobFormEntry As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Start

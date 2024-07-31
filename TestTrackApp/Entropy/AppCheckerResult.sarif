@@ -1574,19 +1574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2"
+                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry"
               }
             }
           ],
@@ -1604,19 +1604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.TabIndex"
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.TabIndex",
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2"
+                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry"
               }
             }
           ],
@@ -1634,19 +1634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.Image6.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.Image6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.Image6.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.Image6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.Image6"
+                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.Image6"
               }
             }
           ],
@@ -1664,19 +1664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.Image6.TabIndex"
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.Image6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.Image6.TabIndex",
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.Image6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.Image6"
+                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.Image6"
               }
             }
           ],
@@ -7723,19 +7723,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.TemplateSize"
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.TemplateSize"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2.TemplateSize",
+                  "fullyQualifiedName": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry.TemplateSize",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TemplateSize",
                 "module": "Screen_JobFormEntry",
-                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.Gallery2"
+                "type": "Screen_JobFormEntry.ScreenContainer_JobFormEntry.BottomContainer_JobFormEntry.MainContainer_JobFormEntry.DocumentListContainer_JobFormEntry.GalleryDocumentList_JobFormEntry"
               }
             }
           ],
