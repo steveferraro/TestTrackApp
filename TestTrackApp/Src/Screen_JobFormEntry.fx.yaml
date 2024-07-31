@@ -398,7 +398,9 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
                         Height: =72
-                        OnSelect: =Select(Parent)
+                        OnSelect: |-
+                            =Select(Parent);
+                            Reset(Gallery2)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
                         X: =0.00
