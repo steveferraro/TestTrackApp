@@ -2515,44 +2515,6 @@
         Y: =20
         ZIndex: =2
 
-    ReceiptWarningIcon_JobFormReceipt As icon.Warning:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =40
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Warning
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =EntryForm_JobFormReceipt.Unsaved
-        Width: =40
-        X: =1012
-        Y: =22
-        ZIndex: =4
-
-    "'ReceiptWarningLabel_ JobFormReceipt' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Size: =13
-        Text: ="You have unsaved data."
-        Visible: =EntryForm_JobFormReceipt.Unsaved
-        Width: =235
-        X: =1052
-        Y: =22
-        ZIndex: =5
-
     ExitAppIcon_JobFormReceipt As icon.Cancel:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =ColorValue(AppTheme.palette.themePrimary)

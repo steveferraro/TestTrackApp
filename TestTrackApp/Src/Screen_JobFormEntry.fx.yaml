@@ -2090,45 +2090,6 @@
         Y: =24
         ZIndex: =3
 
-    EntryWarningIcon_JobFormEntry As icon.Warning:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =40
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Warning
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =EntryForm_JobFormEntry.Unsaved
-        Width: =40
-        X: =1012
-        Y: =21
-        ZIndex: =5
-
-    "'EntryWarningLabel_ JobFormEntry' As label":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =52
-        Size: =13
-        Text: ="You have unsaved data."
-        Visible: =EntryForm_JobFormEntry.Unsaved
-        Width: =235
-        X: =1052
-        Y: =14
-        ZIndex: =6
-
     ExitAppIcon_JobFormEntry As icon.Cancel:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =ColorValue(AppTheme.palette.themePrimary)
