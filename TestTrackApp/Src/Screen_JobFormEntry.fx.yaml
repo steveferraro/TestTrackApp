@@ -1686,13 +1686,15 @@
                         AlignInContainer: =AlignInContainer.Start
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DelayItemLoading: =true
+                        FillPortions: =0
+                        Height: =Parent.Height/2
                         Items: =Filter('Test Forms', 'Receipt ID' = GalleryFormReceipts_JobFormEntry.Selected.'Receipt ID')
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =0
-                        TemplateSize: =HtmlText2.Height + Subtitle1_3.Height + Title5.Height + 10
+                        TemplateSize: =75
                         Width: =Parent.Width
                         ZIndex: =2
 
@@ -1742,7 +1744,7 @@
                             VerticalAlign: =VerticalAlign.Top
                             Width: =Parent.TemplateWidth - 173
                             X: =103
-                            Y: =7
+                            Y: =17
                             ZIndex: =2
 
                         Subtitle3 As label:
@@ -1764,7 +1766,7 @@
                             VerticalAlign: =VerticalAlign.Top
                             Width: =Title5.Width
                             X: =Title5.X
-                            Y: =32
+                            Y: =42
                             ZIndex: =3
 
                         NextArrow3 As icon.ChevronRight:
@@ -1796,27 +1798,6 @@
                             X: =24
                             Y: =20
                             ZIndex: =6
-
-                        HtmlText2 As htmlViewer:
-                            AutoHeight: =true
-                            Height: =139
-                            HtmlText: |-
-                                ="<b><font color=blue>Notes: </font></b><br>" & ThisItem.Notes & "</br>"
-                            OnSelect: =Select(Parent)
-                            Width: =293
-                            X: =104
-                            Y: =53
-                            ZIndex: =7
-
-                        Separator1_5 As rectangle:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
-                            FocusedBorderThickness: =4
-                            Height: =2
-                            OnSelect: =Select(Parent)
-                            Width: =Parent.Width
-                            Y: =181.2
-                            ZIndex: =8
 
             FilterContainer__JobFormEntry As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Start
