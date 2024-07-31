@@ -989,7 +989,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
-                                FontWeight: =FontWeight.Semibold
+                                FontWeight: =FontWeight.Bold
                                 Height: =34
                                 PaddingLeft: =0
                                 Size: =13
