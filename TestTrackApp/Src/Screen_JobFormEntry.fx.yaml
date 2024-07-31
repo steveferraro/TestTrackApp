@@ -635,7 +635,7 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     FillPortions: =0
                     Height: =Parent.Height - GalleryJobs_JobFormEntry.Height - JobsLabel_JobFormEntry.Height - EntriesLabel_JobFormEntry.Height
-                    Items: =Filter(JobsFormEntries, 'Job Number'.'Job Number' = GalleryFormReceipts_JobFormEntry.Selected.'Job Number'.'Job Number')
+                    Items: =Filter(JobsFormEntries, And('Job Number'.'Job Number' = GalleryFormReceipts_JobFormEntry.Selected.'Job Number'.'Job Number','Receipt ID'.'Receipt ID' = GalleryFormReceipts_JobFormEntry.Selected.'Receipt ID'))
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
