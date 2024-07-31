@@ -1628,7 +1628,7 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledFill: =RGBA(0, 0, 0, 0)
                             FocusedBorderThickness: =4
-                            Height: =50
+                            Height: =25
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Image: =document
@@ -1645,9 +1645,10 @@
                             RadiusBottomRight: =8
                             RadiusTopLeft: =8
                             RadiusTopRight: =8
-                            Width: =35
-                            X: =36
-                            Y: =15
+                            Tooltip: ="Click to open document"
+                            Width: =25
+                            X: =50
+                            Y: =28
                             ZIndex: =1
 
                         Title3 As label:
