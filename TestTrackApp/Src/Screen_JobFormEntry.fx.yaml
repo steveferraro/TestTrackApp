@@ -893,7 +893,7 @@
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["rcon_name"]
-                                DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
+                                DisplayMode: =DisplayMode.Disabled
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -1009,12 +1009,12 @@
                                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                                 Color: =RGBA(51, 51, 51, 1)
-                                DefaultSelectedItems: =Filter(Choices([@JobsFormReceipts].'Job Number'),'Job Number' = GalleryFormReceipts_JobFormEntry.Selected.'Job Number'.'Job Number')
+                                DefaultSelectedItems: =Filter(Choices([@JobsFormEntries].rcon_ReceiptID),'Receipt ID' = GalleryFormReceipts_JobFormEntry.Selected.'Receipt ID')
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                 DisplayFields: =["rcon_name"]
-                                DisplayMode: =Parent.DisplayMode
+                                DisplayMode: =DisplayMode.Disabled
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
