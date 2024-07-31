@@ -288,6 +288,7 @@
                         ZIndex: =1
 
                     Title1 As label:
+                        BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         Color: =RGBA(50, 49, 48, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -310,6 +311,7 @@
                         ZIndex: =2
 
                     Subtitle1 As label:
+                        BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -355,6 +357,7 @@
                         ZIndex: =6
 
                     Subtitle1_4 As label:
+                        BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
