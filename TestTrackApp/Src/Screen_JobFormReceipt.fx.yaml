@@ -1628,11 +1628,16 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledFill: =RGBA(0, 0, 0, 0)
                             FocusedBorderThickness: =4
-                            Height: =30
+                            Height: =40
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Image: =document
-                            OnSelect: =Select(Parent)
+                            OnSelect: |-
+                                =Launch(
+                                    ThisItem.'Link to item',
+                                    Blank(),
+                                    LaunchTarget.New
+                                )
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
                             PressedFill: =RGBA(0, 0, 0, 0)
                             RadiusBottomLeft: =8
@@ -1757,7 +1762,7 @@
                         ZIndex: =3
 
                     EditFormFileAttach_JobFormReceipt As form:
-                        AlignInContainer: =AlignInContainer.SetByContainer
+                        AlignInContainer: =AlignInContainer.End
                         BorderColor: =ColorValue(AppTheme.palette.neutralQuaternary)
                         BorderThickness: =1
                         DataSource: ='Test Forms'
