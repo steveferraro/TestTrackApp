@@ -36,6 +36,7 @@
       "rcon_jobformentryid": "RecordID",
       "rcon_JobNumber": "Job Number",
       "rcon_name": "Name",
+      "rcon_ReceiptNumber": "Receipt ID",
       "statecode": "Status",
       "statuscode": "Status Reason",
       "timezoneruleversionnumber": "Time Zone Rule Version Number",
