@@ -196,7 +196,7 @@
             SidebarContainer_JobTracking As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =ColorValue(AppTheme.palette.themePrimary)
-                FillPortions: =3
+                FillPortions: =0
                 Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
@@ -208,7 +208,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =555.74
+                Width: =380
                 X: =97.81
                 ZIndex: =2
 
@@ -414,6 +414,8 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingRight: =0.00
                 PaddingTop: =0.00
@@ -432,6 +434,8 @@
                     DefaultMode: =FormMode.View
                     Height: =Parent.Height   
                     Item: =GalleryJobs_JobTracking.Selected
+                    LayoutMinHeight: =250
+                    LayoutMinWidth: =400
                     NumberOfColumns: =2
                     OnFailure: =Notify("Record was not saved. ", NotificationType.Error, 10000)
                     OnReset: |-
@@ -456,7 +460,7 @@
                         MaxLength: =DataSourceInfo([@JobsTracked], DataSourceInfo.MaxLength, rcon_name)
                         Required: =true
                         Update: =DataCardValue6.Text
-                        Width: =425
+                        Width: =424
                         X: =0
                         Y: =0
                         ZIndex: =1
@@ -569,7 +573,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =40
                         Required: =false
-                        Width: =425
+                        Width: =424
                         X: =1
                         Y: =0
                         ZIndex: =1
@@ -627,7 +631,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =40
                         Required: =false
-                        Width: =425
+                        Width: =424
                         X: =0
                         Y: =1
                         ZIndex: =1
@@ -686,7 +690,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue59.Selected.Value
-                        Width: =425
+                        Width: =424
                         X: =1
                         Y: =1
                         ZIndex: =1
@@ -808,7 +812,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue53.Selected
-                        Width: =425
+                        Width: =424
                         X: =0
                         Y: =2
                         ZIndex: =1
@@ -929,7 +933,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue50.SelectedItems.Value
-                        Width: =425
+                        Width: =424
                         X: =1
                         Y: =2
                         ZIndex: =1
@@ -1049,7 +1053,7 @@
                         Height: =50
                         Required: =true
                         Update: =DataCardValue49.Selected
-                        Width: =425
+                        Width: =424
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -1170,7 +1174,7 @@
                         Height: =50
                         Required: =true
                         Update: =DataCardValue48.Selected
-                        Width: =425
+                        Width: =424
                         X: =1
                         Y: =3
                         ZIndex: =1
@@ -1291,7 +1295,7 @@
                         Height: =50
                         Required: =true
                         Update: =DataCardValue47.Selected
-                        Width: =425
+                        Width: =424
                         X: =0
                         Y: =4
                         ZIndex: =1
@@ -1413,7 +1417,7 @@
                         Height: =60
                         Required: =false
                         Update: =DataCardValue46.Text
-                        Width: =425
+                        Width: =424
                         X: =1
                         Y: =4
                         ZIndex: =1
@@ -1530,7 +1534,7 @@
                         MaxLength: =DataSourceInfo([@JobsTracked], DataSourceInfo.MaxLength, rcon_worklocation)
                         Required: =false
                         Update: =DataCardValue45.Text
-                        Width: =425
+                        Width: =424
                         X: =0
                         Y: =5
                         ZIndex: =1
@@ -1648,7 +1652,7 @@
                         MaxLength: =DataSourceInfo([@JobsTracked], DataSourceInfo.MaxLength, rcon_customername)
                         Required: =false
                         Update: =DataCardValue44.Text
-                        Width: =425
+                        Width: =424
                         X: =1
                         Y: =5
                         ZIndex: =1

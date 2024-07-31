@@ -197,7 +197,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
                 Fill: =ColorValue(AppTheme.palette.themePrimary)
-                FillPortions: =3
+                FillPortions: =0
                 Height: =Parent.Height
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
@@ -211,7 +211,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =555.74
+                Width: =380
                 X: =0.00
                 ZIndex: =2
 
@@ -490,7 +490,7 @@
                         Height: =50
                         Required: =false
                         Update: =If(Not IsBlank(DateValue1.SelectedDate), DateValue1.SelectedDate + Time(Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), 0))
-                        Width: =430
+                        Width: =424
                         X: =0
                         Y: =0
                         ZIndex: =1
@@ -699,7 +699,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue1.SelectedItems.Value
-                        Width: =430
+                        Width: =424
                         X: =1
                         Y: =0
                         ZIndex: =1
@@ -820,7 +820,7 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue3.Text)
-                        Width: =430
+                        Width: =424
                         X: =0
                         Y: =1
                         ZIndex: =1
@@ -937,7 +937,7 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue4.Text)
-                        Width: =430
+                        Width: =424
                         X: =1
                         Y: =1
                         ZIndex: =1
@@ -1054,7 +1054,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue2.Selected.Value
-                        Width: =430
+                        Width: =424
                         X: =0
                         Y: =2
                         ZIndex: =1
@@ -1176,7 +1176,7 @@
                         Height: =50
                         Required: =false
                         Update: =If(Not IsBlank(DateValue3.SelectedDate), DateValue3.SelectedDate + Time(Value(HourValue3.Selected.Value), Value(MinuteValue3.Selected.Value), 0))
-                        Width: =430
+                        Width: =424
                         X: =1
                         Y: =2
                         ZIndex: =1
@@ -1386,7 +1386,7 @@
                         Height: =50
                         Required: =false
                         Update: =If(Not IsBlank(DateValue4.SelectedDate), DateValue4.SelectedDate + Time(Value(HourValue4.Selected.Value), Value(MinuteValue4.Selected.Value), 0))
-                        Width: =430
+                        Width: =424
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -1596,7 +1596,7 @@
                         Height: =50
                         Required: =false
                         Update: =If(Not IsBlank(DateValue5.SelectedDate), DateValue5.SelectedDate + Time(Value(HourValue5.Selected.Value), Value(MinuteValue5.Selected.Value), 0))
-                        Width: =430
+                        Width: =424
                         X: =1
                         Y: =3
                         ZIndex: =1
@@ -1806,7 +1806,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue11.Selected
-                        Width: =430
+                        Width: =424
                         X: =0
                         Y: =4
                         ZIndex: =1

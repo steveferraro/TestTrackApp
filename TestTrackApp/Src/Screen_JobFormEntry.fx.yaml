@@ -219,7 +219,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DropShadow: =DropShadow.Light
                 Fill: =ColorValue(AppTheme.palette.themePrimary)
-                FillPortions: =3
+                FillPortions: =0
                 Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
@@ -231,7 +231,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =555.74
+                Width: =380
                 X: =0.00
                 ZIndex: =2
 
@@ -754,7 +754,7 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayFields: =ThisItem.'Job Number'
+                                DisplayFields: =[""]
                                 DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
