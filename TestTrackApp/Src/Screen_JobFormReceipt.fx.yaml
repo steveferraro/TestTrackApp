@@ -702,7 +702,7 @@
                             Update: =DataCardValue12.Selected
                             Width: =415
                             X: =0
-                            Y: =0
+                            Y: =1
                             ZIndex: =1
 
                             DataCardKey15 As label:
@@ -819,7 +819,7 @@
                             Update: =DataCardValue10.Selected
                             Width: =415
                             X: =0
-                            Y: =1
+                            Y: =0
                             ZIndex: =1
 
                             DataCardKey14 As label:
