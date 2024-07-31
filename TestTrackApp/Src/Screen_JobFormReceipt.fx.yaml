@@ -1893,10 +1893,10 @@
                             DataField: ="ReceiptID"
                             Default: =ThisItem.'Receipt ID'
                             DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,ReceiptID)
+                            DisplayName: =DataSourceInfo([@'Test Forms'],DataSourceInfo.DisplayName,'Receipt ID')
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =50
-                            MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, ReceiptID)
+                            MaxLength: =DataSourceInfo([@'Test Forms'], DataSourceInfo.MaxLength, 'Receipt ID')
                             Required: =true
                             Update: =DataCardValue23.Text
                             Width: =419

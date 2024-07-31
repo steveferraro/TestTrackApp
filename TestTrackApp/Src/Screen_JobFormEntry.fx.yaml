@@ -282,6 +282,7 @@
                     TemplateFill: =If(ThisItem.IsSelected, ColorValue(AppTheme.palette.neutralLight), ColorValue(AppTheme.palette.white))
                     TemplatePadding: =0
                     TemplateSize: =80
+                    Visible: =false
                     Width: =Parent.Width
                     X: =0.00
                     ZIndex: =2
@@ -460,6 +461,213 @@
                         Y: =33
                         ZIndex: =9
 
+                "GalleryJobs_JobFormEntry_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                    '#CopilotOverlayLabel': ="Filtered"
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    Default: =varSelectedJob_JobFormEntry
+                    DelayItemLoading: =true
+                    DisplayMode: =If(EntryForm_JobFormEntry.DisplayMode <> DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FillPortions: =0
+                    Height: =320
+                    Items: |-
+                        =Filter(
+                            JobsTracked,
+                            StartsWith(
+                                'Job Number',
+                                SearchBox__JobFormEntry.Text
+                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJobb || varSelectedJobb = Blank()) 
+                            && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
+                            && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
+                            && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
+                        )
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    OnSelect: =First(GalleryJobs_JobFormEntry_1.AllItems)
+                    TemplateFill: =If(ThisItem.IsSelected, ColorValue(AppTheme.palette.neutralLight), ColorValue(AppTheme.palette.white))
+                    TemplatePadding: =0
+                    TemplateSize: =80
+                    Width: =Parent.Width
+                    X: =0.00
+                    ZIndex: =3
+
+                    Image1_4 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =25
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: =JobIcon
+                        OnSelect: =Select(Parent)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Tooltip: ="Job"
+                        Width: =48.00
+                        Y: =34
+                        ZIndex: =1
+
+                    Title1_4 As label:
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(50, 49, 48, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =21
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Size: =12
+                        Text: |-
+                            ="Job: " & ThisItem.'Job Number'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =235
+                        X: =45
+                        Y: =11
+                        ZIndex: =2
+
+                    Subtitle1_8 As label:
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =20
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Size: =12.00
+                        Text: |-
+                            ="Customer: " & ThisItem.'Customer Name'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =235
+                        X: =45
+                        Y: =32
+                        ZIndex: =3
+
+                    NextArrow1_5 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        Color: =RGBA(166, 166, 166, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =50
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.ChevronRight
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =16
+                        PaddingLeft: =16
+                        PaddingRight: =16.01
+                        PaddingTop: =16.01
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Tooltip: ="View item details"
+                        Width: =50.01
+                        X: =329.99
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                        ZIndex: =4
+
+                    Separator1_4 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderThickness: =4
+                        Height: =8
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.Width
+                        X: =0.00
+                        Y: =80
+                        ZIndex: =5
+
+                    Rectangle1_4 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =80
+                        OnSelect: |-
+                            =Select(Parent);
+                            Reset(Gallery2)
+                        Visible: =ThisItem.IsSelected
+                        Width: =Parent.Width
+                        X: =0.00
+                        ZIndex: =6
+
+                    Subtitle1_9 As label:
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =23
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Size: =12.00
+                        Text: |-
+                            ="Created By: " & ThisItem.'Created By'.'Full Name'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =235
+                        X: =45
+                        Y: =54
+                        ZIndex: =8
+
+                    Image3_4 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =25
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: =If(ThisItem.'Job Number' = varSelectedJobb,PinFilled,PinHollow)
+                        OnSelect: |-
+                            =If(
+                                varSelectedJobb = GalleryJobs_JobFormEntry_1.Selected.'Job Number',
+                                Set(
+                                    varSelectedJobb,
+                                    Blank()
+                                ),
+                                Set(
+                                    varSelectedJobb,
+                                    GalleryJobs_JobFormEntry_1.Selected.'Job Number'
+                                )
+                            )
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =25
+                        X: =318
+                        Y: =33
+                        ZIndex: =9
+
                 Separator3_3 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     Fill: =ColorValue(AppTheme.palette.themePrimary)
@@ -468,7 +676,7 @@
                     OnSelect: =
                     Width: =Parent.Width
                     X: =0.00
-                    ZIndex: =3
+                    ZIndex: =4
 
                 EntriesLabel_JobFormEntry As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -486,7 +694,7 @@
                     Text: |-
                         ="Form Entries:"
                     Width: =Parent.Width
-                    ZIndex: =4
+                    ZIndex: =5
 
                 "GalleryJobsFormEntry_JobFormEntry As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
                     '#CopilotOverlayLabel': ="Filtered"
@@ -508,7 +716,7 @@
                     TemplateSize: =60
                     Width: =Parent.Width
                     X: =0.00
-                    ZIndex: =5
+                    ZIndex: =6
 
                     Image2 As image:
                         BorderColor: =RGBA(0, 0, 0, 0)
