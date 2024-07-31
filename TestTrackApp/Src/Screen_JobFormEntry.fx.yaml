@@ -706,10 +706,10 @@
                         "'Receipt ID_DataCard1' As typedDataCard.comboBoxEditCard":
                             BorderColor: =RGBA(166, 166, 166, 1)
                             BorderStyle: =BorderStyle.Solid
-                            DataField: ="rcon_ReceiptNumber"
+                            DataField: ="rcon_ReceiptID"
                             Default: =ThisItem.'Receipt ID'
                             DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_ReceiptNumber)
+                            DisplayName: =DataSourceInfo([@JobsFormEntries],DataSourceInfo.DisplayName,rcon_ReceiptID)
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =50
                             Required: =true
@@ -759,13 +759,13 @@
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 HoverColor: =RGBA(51, 51, 51, 1)
                                 HoverFill: =RGBA(212, 212, 212, 1)
-                                Items: =Choices([@JobsFormEntries].rcon_ReceiptNumber)
+                                Items: =Choices([@JobsFormEntries].rcon_ReceiptID)
                                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                                 PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(202, 80, 16, 1)
                                 SearchFields: =["rcon_name"]
-                                SearchItems: =Search(Choices([@JobsFormEntries].rcon_ReceiptNumber),DataCardValue21.SearchText,rcon_name)
+                                SearchItems: =Search(Choices([@JobsFormEntries].rcon_ReceiptID),DataCardValue21.SearchText,rcon_name)
                                 SelectionFill: =RGBA(202, 80, 16, 1)
                                 SelectMultiple: =false
                                 Size: =13
@@ -832,7 +832,7 @@
                             Height: =50
                             Required: =true
                             Update: =DataCardValue5.Selected
-                            Width: =860
+                            Width: =424
                             X: =0
                             Y: =0
                             ZIndex: =1

@@ -852,6 +852,7 @@
                                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                                 Color: =RGBA(51, 51, 51, 1)
+                                Default: =GalleryJobs_JobFormReceipt.Selected
                                 DefaultSelectedItems: =Parent.Default
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)

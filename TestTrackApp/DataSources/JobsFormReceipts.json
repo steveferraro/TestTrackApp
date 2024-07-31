@@ -25,7 +25,7 @@
       "rcon_comment": "Comment",
       "rcon_fieldworkperformancedate": "Field Work Performance Date",
       "rcon_formcount": "Form Count",
-      "rcon_jobformentry_ReceiptNumber_rcon_jobsformreceipt": "JobsFormEntries",
+      "rcon_jobformentry_ReceiptID_rcon_jobsformreceipt": "JobsFormEntries",
       "rcon_JobNumber": "Job Number",
       "rcon_jobsformreceipt_AsyncOperations": "System Jobs",
       "rcon_jobsformreceipt_BulkDeleteFailures": "Bulk Delete Failures",
