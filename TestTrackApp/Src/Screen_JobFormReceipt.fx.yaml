@@ -1628,10 +1628,11 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledFill: =RGBA(0, 0, 0, 0)
                             FocusedBorderThickness: =4
-                            Height: =40
+                            Height: =50
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             Image: =document
+                            ImagePosition: =ImagePosition.Fill
                             OnSelect: |-
                                 =Launch(
                                     ThisItem.'Link to item',
@@ -1639,14 +1640,14 @@
                                     LaunchTarget.New
                                 )
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedFill: =RGBA(0, 0, 0, 0)
+                            PressedFill: =ColorValue(AppTheme.palette.themeLight)
                             RadiusBottomLeft: =8
                             RadiusBottomRight: =8
                             RadiusTopLeft: =8
                             RadiusTopRight: =8
-                            Width: =40
+                            Width: =35
                             X: =36
-                            Y: =20
+                            Y: =15
                             ZIndex: =1
 
                         Title3 As label:
