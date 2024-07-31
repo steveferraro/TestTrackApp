@@ -863,7 +863,7 @@
 
                             DataCardValue21 As combobox:
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                                ChevronBackground: =RGBA(255, 255, 255, 1)
+                                ChevronBackground: =ColorValue(AppTheme.palette.themePrimary)
                                 ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
                                 ChevronDisabledFill: =RGBA(166, 166, 166, 1)
                                 ChevronFill: =RGBA(33, 33, 33, 1)
@@ -891,9 +891,9 @@
                                 SelectMultiple: =false
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =Parent.Width - 60
+                                Width: =370
                                 X: =30
-                                Y: =DataCardKey28.Y + DataCardKey28.Height + 5
+                                Y: =42
                                 ZIndex: =2
 
                             ErrorMessage37 As label:
@@ -991,7 +991,8 @@
                                 EndYear: =Year(Today())+100
                                 Font: =Font.'Segoe UI'
                                 HoverDateFill: =RGBA(200, 200, 200, 1)
-                                IconBackground: =RGBA(202, 80, 16, 1)
+                                IconBackground: =ColorValue(AppTheme.palette.themePrimary)
+                                IconFill: =
                                 InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Today(), Self.Format, Self.Language))
                                 IsEditable: =true
                                 PaddingBottom: =0
@@ -1000,7 +1001,7 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =382
+                                Width: =370
                                 X: =29
                                 Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                                 ZIndex: =2
