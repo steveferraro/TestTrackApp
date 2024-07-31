@@ -253,7 +253,7 @@
                             StartsWith(
                                 'Job Number',
                                 SearchBox__JobFormReceipt.Text
-                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
+                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJobb || varSelectedJobb = Blank()) 
                             && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
                             && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
                             && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
@@ -418,17 +418,17 @@
                         Height: =25
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
+                        Image: =If(ThisItem.'Job Number' = varSelectedJobb,PinFilled,PinHollow)
                         OnSelect: |-
                             =If(
-                                varSelectedJob = GalleryJobs_JobFormReceipt.Selected.rcon_jobnumber,
+                                varSelectedJobb = GalleryJobs_JobFormReceipt.Selected.'Job Number',
                                 Set(
-                                    varSelectedJob,
+                                    varSelectedJobb,
                                     Blank()
                                 ),
                                 Set(
-                                    varSelectedJob,
-                                    GalleryJobs_JobFormReceipt.Selected.rcon_jobnumber
+                                    varSelectedJobb,
+                                    GalleryJobs_JobFormReceipt.Selected.'Job Number'
                                 )
                             )
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -1946,7 +1946,7 @@
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 BorderThickness: =2
                                 Color: =RGBA(51, 51, 51, 1)
-                                Default: =GalleryJobs_JobFormReceipt.Selected.rcon_jobnumber
+                                Default: =GalleryJobs_JobFormReceipt.Selected.'Job Number'
                                 DelayOutput: =true
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)

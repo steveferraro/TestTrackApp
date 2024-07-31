@@ -269,7 +269,7 @@
                             StartsWith(
                                 'Job Number',
                                 SearchBox__JobFormEntry.Text
-                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
+                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJobb || varSelectedJobb = Blank()) 
                             && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
                             && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
                             && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
@@ -435,17 +435,17 @@
                         Height: =25
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
+                        Image: =If(ThisItem.'Job Number' = varSelectedJobb,PinFilled,PinHollow)
                         OnSelect: |-
                             =If(
-                                varSelectedJob = GalleryJobs_JobFormEntry.Selected.rcon_jobnumber,
+                                varSelectedJobb = GalleryJobs_JobFormEntry.Selected.'Job Number',
                                 Set(
-                                    varSelectedJob,
+                                    varSelectedJobb,
                                     Blank()
                                 ),
                                 Set(
-                                    varSelectedJob,
-                                    GalleryJobs_JobFormEntry.Selected.rcon_jobnumber
+                                    varSelectedJobb,
+                                    GalleryJobs_JobFormEntry.Selected.'Job Number'
                                 )
                             )
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -749,7 +749,7 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayFields: =["rcon_jobnumber"]
+                                DisplayFields: =ThisItem.'Job Number'
                                 DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
@@ -762,8 +762,8 @@
                                 PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(202, 80, 16, 1)
-                                SearchFields: =["rcon_jobnumber"]
-                                SearchItems: =Search(Choices([@JobsFormEntries].'Job Number'),DataCardValue5.SearchText,rcon_jobnumber)
+                                SearchFields: =["rcon_name"]
+                                SearchItems: =Search(Choices([@JobsFormEntries].'Job Number'),DataCardValue5.SearchText,rcon_name)
                                 SelectionFill: =RGBA(202, 80, 16, 1)
                                 SelectMultiple: =false
                                 Size: =13

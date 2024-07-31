@@ -608,10 +608,10 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Entry Date' >= varWeekFirstDay && 'Entry Date' <= varWeekLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Forms Entered'
                         ),
@@ -619,10 +619,10 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Entry Date' >= varMonthFirstDay && 'Entry Date' <= varMonthLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Entry Date' >= varMonthFirstDay && 'Entry Date' <= varMonthLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Forms Entered'
                         ),
@@ -630,10 +630,10 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Entry Date' >= varYearFirstDay && 'Entry Date' <= varYearLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Entry Date' >= varYearFirstDay && 'Entry Date' <= varYearLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Forms Entered'
                         ),
@@ -641,10 +641,10 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Job Number'.rcon_jobnumber in Filter(
+                                ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Forms Entered'
                         )
@@ -663,10 +663,10 @@
                         Sum(
                             Filter(
                                 JobsFormReceipts,
-                                ('Receipt Date' >= varWeekFirstDay && 'Receipt Date' <= varWeekLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Receipt Date' >= varWeekFirstDay && 'Receipt Date' <= varWeekLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Form Count'
                         ),
@@ -674,10 +674,10 @@
                         Sum(
                             Filter(
                                 JobsFormReceipts,
-                                ('Receipt Date' >= varMonthFirstDay && 'Receipt Date' <= varMonthLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Receipt Date' >= varMonthFirstDay && 'Receipt Date' <= varMonthLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Form Count'
                         ),
@@ -685,10 +685,10 @@
                         Sum(
                             Filter(
                                 JobsFormReceipts,
-                                ('Receipt Date' >= varYearFirstDay && 'Receipt Date' <= varYearLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Receipt Date' >= varYearFirstDay && 'Receipt Date' <= varYearLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Form Count'
                         ),
@@ -696,10 +696,10 @@
                         Sum(
                             Filter(
                                 JobsFormReceipts,
-                                ('Job Number'.rcon_jobnumber in Filter(
+                                ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Form Count'
                         )
@@ -720,10 +720,10 @@
                                 Sum(
                                     Filter(
                                         JobsFormEntries,
-                                        ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                        ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.'Job Number' in Filter(
                                             JobsTracked,
                                             Division.Division in colAccessibleDivisions.rcon_division
-                                        ).rcon_jobnumber)
+                                        ).'Job Number')
                                     ),
                                     'Entry Duration (minutes)'
                                 )
@@ -732,10 +732,10 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             )
@@ -744,10 +744,10 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Entry Duration (minutes)'
                         ),
@@ -755,10 +755,10 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Entry Duration (minutes)'
                         ),
@@ -766,10 +766,10 @@
                         Sum(
                             Filter(
                                 JobsFormEntries,
-                                ('Job Number'.rcon_jobnumber in Filter(
+                                ('Job Number'.'Job Number' in Filter(
                                     JobsTracked,
                                     Division.Division in colAccessibleDivisions.rcon_division
-                                ).rcon_jobnumber)
+                                ).'Job Number')
                             ),
                             'Entry Duration (minutes)'
                         )
@@ -832,10 +832,10 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -843,19 +843,19 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varWeekFirstDay && 'Created On' <= varWeekLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             )
@@ -865,10 +865,10 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -876,19 +876,19 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varMonthFirstDay && 'Created On' <= varMonthLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             )
@@ -898,10 +898,10 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -909,19 +909,19 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Created On' >= varYearFirstDay && 'Created On' <= varYearLastDay) && ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             )
@@ -931,10 +931,10 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             ) = 0,
@@ -942,19 +942,19 @@
                             Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Entry Duration (minutes)'
                             ) / Sum(
                                 Filter(
                                     JobsFormEntries,
-                                    ('Job Number'.rcon_jobnumber in Filter(
+                                    ('Job Number'.'Job Number' in Filter(
                                         JobsTracked,
                                         Division.Division in colAccessibleDivisions.rcon_division
-                                    ).rcon_jobnumber)
+                                    ).'Job Number')
                                 ),
                                 'Forms Entered'
                             )
@@ -1041,6 +1041,8 @@
                     varShowProgress,
                     false
                 );
+                
+                
                 
             Text: ="Refresh Statistics"
             VerticalAlign: =""

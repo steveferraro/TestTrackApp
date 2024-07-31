@@ -248,7 +248,7 @@
                             StartsWith(
                                 'Job Number',
                                 SearchBox__JobStatus.Text
-                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJob || varSelectedJob = Blank()) 
+                            ) && ((varMyJobs && 'Created By'.'Primary Email' = User().Email) || (varMyJobs = false)) && ('Job Number' = varSelectedJobb || varSelectedJobb = Blank()) 
                             && ((Division.Division in colAccessibleDivisions.rcon_division) && (Division.Division = varSelectedDivision || varSelectedDivision = Blank()))
                             && ('Report Status'.'Report Status' = varSelectedReportStatus || varSelectedReportStatus = Blank())
                             && ((varForms2Enter && 'Forms To Be Entered' <> 0) || (varForms2Enter = false))
@@ -414,17 +414,17 @@
                         Height: =25
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =If(ThisItem.'Job Number' = varSelectedJob,PinFilled,PinHollow)
+                        Image: =If(ThisItem.'Job Number' = varSelectedJobb,PinFilled,PinHollow)
                         OnSelect: |-
                             =If(
-                                varSelectedJob = GalleryJobs_JobStatus.Selected.rcon_jobnumber,
+                                varSelectedJobb = GalleryJobs_JobStatus.Selected.'Job Number',
                                 Set(
                                     varSelectedJob,
                                     Blank()
                                 ),
                                 Set(
                                     varSelectedJob,
-                                    GalleryJobs_JobStatus.Selected.rcon_jobnumber
+                                    GalleryJobs_JobStatus.Selected.'Job Number'
                                 )
                             )
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
