@@ -1721,7 +1721,7 @@
                             RadiusTopRight: =8
                             Width: =30
                             X: =36
-                            Y: =15
+                            Y: =6
                             ZIndex: =1
 
                         Title5 As label:
@@ -1799,12 +1799,12 @@
                             BorderColor: =RGBA(0, 0, 0, 0)
                             Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             FocusedBorderThickness: =4
-                            Height: =42
+                            Height: =36
                             OnSelect: =Select(Parent)
                             Visible: =ThisItem.IsSelected
                             Width: =4
                             X: =20
-                            Y: =7
+                            Y: =8
                             ZIndex: =6
 
                         HtmlText2 As htmlViewer:
