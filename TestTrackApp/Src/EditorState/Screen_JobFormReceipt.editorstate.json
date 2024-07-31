@@ -1268,7 +1268,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnButtonSelect",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Behavior",
