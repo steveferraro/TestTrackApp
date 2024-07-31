@@ -36,6 +36,7 @@
       "OData__ColorTag": "Color Tag",
       "OData__DisplayName": "Sensitivity",
       "OData__ExtendedDescription": "Description",
+      "ReceiptID": "Receipt ID",
       "ReceiptTimestamp": "Receipt Timestamp",
       "Title": "Title",
       "User": "User",

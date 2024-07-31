@@ -7124,6 +7124,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.ScreenContainer_JobFormReceipt.BottomContainer_JobFormReceipt.MainContainer_JobFormReceipt.DocumentListContainer_JobFormReceipt.EditFormFileAttach_JobFormReceipt.'Receipt ID_DataCard2'.DataCardValue23.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_JobFormReceipt.ScreenContainer_JobFormReceipt.BottomContainer_JobFormReceipt.MainContainer_JobFormReceipt.DocumentListContainer_JobFormReceipt.EditFormFileAttach_JobFormReceipt.'Receipt ID_DataCard2'.DataCardValue23.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_JobFormReceipt",
+                "type": "Screen_JobFormReceipt.ScreenContainer_JobFormReceipt.BottomContainer_JobFormReceipt.MainContainer_JobFormReceipt.DocumentListContainer_JobFormReceipt.EditFormFileAttach_JobFormReceipt.'Receipt ID_DataCard2'.DataCardValue23"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.AppThemeJson"
                 }
               ],
