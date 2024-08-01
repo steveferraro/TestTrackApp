@@ -3658,24 +3658,20 @@
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =30
+        Height: =18
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Reload
+        Icon: =Icon.Reset
         OnSelect: |-
             =Refresh('Test Forms');
             Set(varReset,false);Set(varReset,true)
-        PaddingBottom: =5
-        PaddingLeft: =3
-        PaddingRight: =3
-        PaddingTop: =5
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Tooltip: ="Refresh Document List"
-        Width: =30
-        X: =App.Width - 50
-        Y: =143
+        Tooltip: ="Refresh document list"
+        Width: =18
+        X: =If(varFilterPane_JobFormReceipt,App.Width -330  , App.Width - 50)
+        Y: =151
         ZIndex: =8
 
