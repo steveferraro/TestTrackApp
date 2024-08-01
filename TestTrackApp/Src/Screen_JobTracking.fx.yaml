@@ -349,12 +349,11 @@
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =69
+                        Height: =77
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
                         X: =0.00
-                        Y: =8
                         ZIndex: =6
 
                     Subtitle1_4 As label:
