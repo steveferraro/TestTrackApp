@@ -516,10 +516,6 @@ App As appinfo:
         Set(
             varReportingPane_Reporting,
             false
-        );
-        Set(
-            varUploadNotify,
-            true
         )
     Theme: =OrangeTheme
 
