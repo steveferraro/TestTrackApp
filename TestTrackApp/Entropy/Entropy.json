@@ -652,16 +652,16 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/01/2024 19:09:19",
+  "HeaderLastSavedDateTimeUTC": "08/01/2024 19:14:01",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0a0453c6-4472-4492-8685-71330cb94eba": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/2bc9520b3f6ee37b11883213bbc54e3c-e8efb8f65595ca9d\"",
     "1bd79d5d-1aea-46d1-a842-787d42f922e1": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/188be9addfdb4eb5a3aa7e79d9342295\"",
     "31f215cf-8ec7-4654-b8e2-1eb2e060a331": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/188be9addfdb4eb5a3aa7e79d9342295\"",
-    "4cac233c-9334-47f4-b00e-b3ca604d14ff": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/fd07c858e3511dc28c187907543059a0-e8efb8f65595ca9d\"",
+    "4cac233c-9334-47f4-b00e-b3ca604d14ff": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/FD07C858E3511DC28C187907543059A0-E8EFB8F65595CA9D\"",
     "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": "\"/providers/microsoft.powerapps/apis/shared_office365groups/connections/395c8f1fa83249df8271786ab2d3039c\"",
-    "cb0f2503-e00d-400e-a0cf-6db40553fa87": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-d2f262f8-0371-4641-9aa5-b05ae194903e\"",
-    "d34bc282-8172-4d19-a924-ec75897692ab": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/6aec492b136b9fde1136eb791cbdfcf9-e8efb8f65595ca9d\""
+    "d34bc282-8172-4d19-a924-ec75897692ab": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/6aec492b136b9fde1136eb791cbdfcf9-e8efb8f65595ca9d\"",
+    "e48b70cf-b42d-418f-8dd9-14b23a09b18c": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-d2f262f8-0371-4641-9aa5-b05ae194903e\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
