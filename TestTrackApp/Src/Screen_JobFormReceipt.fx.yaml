@@ -3675,7 +3675,7 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Tooltip: ="Refresh Document List"
         Width: =30
-        X: =1317
-        Y: =144
+        X: =App.Width - 50
+        Y: =143
         ZIndex: =8
 

@@ -1810,7 +1810,7 @@
       "MetaDataIDKey": "",
       "Name": "ConfirmationDialog_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14070,7 +14070,7 @@
       "MetaDataIDKey": "",
       "Name": "DocumentPropertiesOverlay_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21022,7 +21022,7 @@
       "MetaDataIDKey": "",
       "Name": "FilterContainer__JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27886,7 +27886,7 @@
       "MetaDataIDKey": "",
       "Name": "LeftNavigation_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -28283,7 +28283,7 @@
       "MetaDataIDKey": "%MainContainer.ID%",
       "Name": "MainContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -31828,8 +31828,22 @@
         "PressedFill",
         "HoverFill",
         "DisplayMode",
-        "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "1317",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -31981,7 +31995,7 @@
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -35400,7 +35414,7 @@
       "MetaDataIDKey": "%SidebarContainer.ID%",
       "Name": "SidebarContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
