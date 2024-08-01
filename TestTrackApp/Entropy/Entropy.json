@@ -21,7 +21,6 @@
     "ButtonContainer_JobFormReceipt": 283,
     "ButtonsGallery_2": 23,
     "CenterDialogContainer": 17,
-    "Checkbox1": 284,
     "CheckboxGroup__JobFormEntry": 136,
     "CheckboxGroup__JobFormEntry_1": 494,
     "CheckboxGroup__JobFormReceipt": 172,
@@ -647,12 +646,13 @@
     "txtReportStatusDescription": 387,
     "txtReportStatusName": 386,
     "UploadButton_JobFormReceipt": 285,
+    "UploadNotifyCheckbox_JobFormReceipt": 284,
     "Work Location_DataCard2": 567
   },
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/01/2024 16:31:19",
+  "HeaderLastSavedDateTimeUTC": "08/01/2024 17:00:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0a0453c6-4472-4492-8685-71330cb94eba": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/2bc9520b3f6ee37b11883213bbc54e3c-e8efb8f65595ca9d\"",
@@ -939,7 +939,6 @@
     "ButtonContainer_JobFormReceipt": {},
     "ButtonsGallery_2": {},
     "CenterDialogContainer": {},
-    "Checkbox1": {},
     "CheckboxGroup__JobFormEntry": {},
     "CheckboxGroup__JobFormEntry_1": {},
     "CheckboxGroup__JobFormReceipt": {},
@@ -1565,6 +1564,7 @@
     "txtReportStatusDescription": {},
     "txtReportStatusName": {},
     "UploadButton_JobFormReceipt": {},
+    "UploadNotifyCheckbox_JobFormReceipt": {},
     "Work Location_DataCard2": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
@@ -1797,7 +1797,6 @@
     "ButtonContainer_JobFormReceipt": 222,
     "ButtonsGallery_2": 619,
     "CenterDialogContainer": 613,
-    "Checkbox1": 223,
     "CheckboxGroup__JobFormEntry": 378,
     "CheckboxGroup__JobFormEntry_1": 486,
     "CheckboxGroup__JobFormReceipt": 236,
@@ -2423,6 +2422,7 @@
     "txtReportStatusDescription": 602,
     "txtReportStatusName": 601,
     "UploadButton_JobFormReceipt": 224,
+    "UploadNotifyCheckbox_JobFormReceipt": 223,
     "Work Location_DataCard2": 65
   },
   "ResourcesJsonIndices": {

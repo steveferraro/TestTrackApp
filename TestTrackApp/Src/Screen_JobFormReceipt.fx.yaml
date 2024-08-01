@@ -2562,8 +2562,14 @@
                             HoverColor: =RGBA(255, 255, 255, 1)
                             HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
                             OnSelect: |-
-                                =Set(varSpinnerText,"Uploading Document...");
-                                Set(varUploadSpinner,true);
+                                =Set(
+                                    varSpinnerText,
+                                    "Uploading Document..."
+                                );
+                                Set(
+                                    varUploadSpinner,
+                                    true
+                                );
                                 ForAll(
                                     FileAttach_JobFormReceipt.Attachments,
                                     UploadFileToSharePoint_TestForms.Run(
@@ -2579,7 +2585,18 @@
                                         }
                                     )
                                 );
-                                Set(varUploadSpinner,false);
+                                If(
+                                    UploadNotifyCheckbox_JobFormReceipt.Value,
+                                    SendUserNotification.Run(
+                                        GalleryFormReceipt_JobFormReceipt.Selected.'Assigned To'.'Primary Email',
+                                        "TestTrack: Test form notification",
+                                        "A new document was added to form receipt assigned to you."
+                                    )
+                                );
+                                Set(
+                                    varUploadSpinner,
+                                    false
+                                );
                                 Refresh('Test Forms');
                                 Reset(FileAttach_JobFormReceipt);
                                 Reset(DocumentList_JobFormReceipt)
@@ -2596,7 +2613,7 @@
                             Y: =0   
                             ZIndex: =1
 
-                        Checkbox1 As checkbox:
+                        UploadNotifyCheckbox_JobFormReceipt As checkbox:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             BorderStyle: =BorderStyle.None
                             BorderThickness: =2
