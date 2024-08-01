@@ -80,6 +80,50 @@
     "dependents": [],
     "id": "31f215cf-8ec7-4654-b8e2-1eb2e060a331"
   },
+  "4cac233c-9334-47f4-b00e-b3ca604d14ff": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "de367cab-5903-4236-8a4a-7a17001f0b8b": {
+          "value": "shared_office365"
+        },
+        "workflowDisplayName": {
+          "value": "SendUserNotification"
+        },
+        "workflowEntityId": {
+          "value": "029cde78-1150-ef11-a317-000d3a99387e"
+        },
+        "workflowName": {
+          "value": "fd07c858-e351-1dc2-8c18-7907543059a0"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "de367cab-5903-4236-8a4a-7a17001f0b8b"
+        },
+        "workflowDisplayName": {
+          "value": "SendUserNotification"
+        },
+        "workflowEntityId": {
+          "value": "029cde78-1150-ef11-a317-000d3a99387e"
+        },
+        "workflowName": {
+          "value": "fd07c858-e351-1dc2-8c18-7907543059a0"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SendUserNotification"
+    ],
+    "dependencies": {
+      "shared_office365": "de367cab-5903-4236-8a4a-7a17001f0b8b"
+    },
+    "dependents": [],
+    "id": "4cac233c-9334-47f4-b00e-b3ca604d14ff"
+  },
   "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": {
     "connectionRef": {
       "displayName": "Office 365 Groups",
@@ -137,5 +181,19 @@
     },
     "dependents": [],
     "id": "d34bc282-8172-4d19-a924-ec75897692ab"
+  },
+  "de367cab-5903-4236-8a4a-7a17001f0b8b": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "4cac233c-9334-47f4-b00e-b3ca604d14ff"
+    ],
+    "id": "de367cab-5903-4236-8a4a-7a17001f0b8b"
   }
 }
