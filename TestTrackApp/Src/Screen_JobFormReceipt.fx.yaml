@@ -2528,7 +2528,7 @@
                                 ZIndex: =4
 
                     ButtonContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.SetByContainer
+                        AlignInContainer: =AlignInContainer.End
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         Fill: =RGBA(255, 255, 255, 1)
@@ -2536,36 +2536,12 @@
                         Height: =70
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutGap: =10
-                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
                         LayoutMinHeight: =100
                         LayoutMinWidth: =100
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width - 5
                         ZIndex: =7
-
-                        RefreshIcon_JobFormReceipt As icon.Reload:
-                            BorderColor: =RGBA(166, 166, 166, 1)
-                            Color: =RGBA(202, 80, 16, 1)
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledColor: =RGBA(220, 220, 220, 1)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            FocusedBorderThickness: =4
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Icon: =Icon.Reload
-                            OnSelect: |-
-                                =Refresh('Test Forms');
-                                Set(varReset,false);Set(varReset,true)
-                            PaddingBottom: =15
-                            PaddingLeft: =10
-                            PaddingRight: =10
-                            PaddingTop: =15
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            Width: =Parent.Width/3
-                            ZIndex: =1
 
                         UploadButton_JobFormReceipt As button:
                             BorderColor: =RGBA(0, 0, 0, 0)
@@ -2616,28 +2592,31 @@
                             RadiusTopRight: =0
                             Size: =15
                             Text: ="Upload..."
-                            Width: =Parent.Width/3
+                            Width: =Parent.Width/4  
                             Y: =0   
-                            ZIndex: =2
+                            ZIndex: =1
 
-                        NotificationToggle_JobFormReceipt As toggleSwitch:
+                        Checkbox1 As checkbox:
                             BorderColor: =RGBA(0, 0, 0, 0)
                             BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
+                            CheckmarkFill: =ColorValue(AppTheme.palette.themePrimary)   
                             Color: =RGBA(51, 51, 51, 1)
+                            Default: =true
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            FalseFill: =RGBA(102, 102, 102, 1)
-                            FalseHoverFill: =RGBA(33, 33, 33, 1)
-                            FalseText: ="Notify Off"
+                            DisabledColor: =RGBA(166, 166, 166, 1)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            HandleFill: =RGBA(255, 255, 255, 1)
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(0, 0, 0, 0)
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(0, 0, 0, 0)
                             Size: =13
-                            TrueFill: =RGBA(202, 80, 16, 1)
-                            TrueHoverFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                            TrueText: ="Notify On"
-                            Width: =Parent.Width-RefreshIcon_JobFormReceipt.Width - UploadButton_JobFormReceipt.Width
+                            Text: ="Notify"
+                            Width: =100
                             ZIndex: =3
 
             FilterContainer__JobFormReceipt As groupContainer.manualLayoutContainer:
@@ -3057,7 +3036,7 @@
         Width: =25
         X: =1302
         Y: =20
-        ZIndex: =6
+        ZIndex: =3
 
     FilterPaneIcon_JobFormReceipt As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -3087,7 +3066,7 @@
         Width: =30
         X: =1302
         Y: =84
-        ZIndex: =7
+        ZIndex: =4
 
     ConfirmationDialog_JobFormReceipt As Dialog:
         Buttons: |-
@@ -3122,7 +3101,7 @@
         Title: ="Delete Receipt?"
         Visible: =DialogVisible
         Width: =1366
-        ZIndex: =10
+        ZIndex: =5
 
     Spinner_JobFormReceipt As Spinner:
         DisplayMode: =DisplayMode.Edit
@@ -3134,7 +3113,7 @@
         Width: =DocumentList_JobFormReceipt.Width
         X: =LeftNavigation_JobFormReceipt.Width + SidebarContainer_JobFormReceipt.Width + EntryFormContainer_JobFormReceipt.Width + 54
         Y: =DocumentList_JobFormReceipt.Height + 70
-        ZIndex: =12
+        ZIndex: =6
 
     DocumentPropertiesOverlay_JobFormReceipt As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -3147,7 +3126,7 @@
         Visible: =varDocumentPropVisible
         Width: =App.Width
         X: =
-        ZIndex: =13
+        ZIndex: =7
 
         DocumentPropertiesContainer_JobFormReceipt As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
@@ -3671,4 +3650,32 @@
                 X: =260
                 Y: =480
                 ZIndex: =4
+
+    RefreshIcon_JobFormReceipt As icon.Reload:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(202, 80, 16, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =30
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =Refresh('Test Forms');
+            Set(varReset,false);Set(varReset,true)
+        PaddingBottom: =5
+        PaddingLeft: =3
+        PaddingRight: =3
+        PaddingTop: =5
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Refresh Document List"
+        Width: =30
+        X: =1317
+        Y: =144
+        ZIndex: =8
 
