@@ -3070,7 +3070,7 @@
             UpdateContext({DialogVisible: false})
         OnCloseSelect: |-
             =UpdateContext({DialogVisible: false})
-        SubTitle: ="Are you sure you want to delete the form receipt for job " & GalleryJobs_JobFormReceipt.Selected.'Job Number' & "?"   
+        SubTitle: ="Are you sure you want to delete the form receipt " & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & " for job " & GalleryJobs_JobFormReceipt.Selected.'Job Number' & "?"   
         Theme: =AppTheme
         Title: ="Delete Receipt?"
         Visible: =DialogVisible
