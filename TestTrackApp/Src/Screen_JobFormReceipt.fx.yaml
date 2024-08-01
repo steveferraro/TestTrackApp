@@ -624,10 +624,12 @@
                         HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Mail
-                        OnSelect: =SendUserNotification.Run("steveferraro@outlook.com","Test","Test")
+                        OnSelect: |-
+                            =SendUserNotification.Run("steveferraro@outlook.com","TestTrack: Test form notification","A new document was added to form receipt assigned to you.")
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Tooltip: ="Send notification to assigned user."
                         Width: =25
                         X: =320
                         Y: =31
