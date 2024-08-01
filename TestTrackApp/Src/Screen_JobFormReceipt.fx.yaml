@@ -6,7 +6,6 @@
         =Set(varSelectedJob_JobFormReceipt, First(GalleryJobs_JobFormReceipt.AllItems));
         Set(varSelectedReceipt_JobFormReceipt, First(GalleryFormReceipt_JobFormReceipt.AllItems)); 
         Reset(FileAttach_JobFormReceipt);
-        Set(varUploadNotify, true)
 
     ScreenContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
