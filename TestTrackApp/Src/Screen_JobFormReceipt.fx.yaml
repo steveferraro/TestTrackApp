@@ -2590,7 +2590,7 @@
                                     SendUserNotification.Run(
                                         GalleryFormReceipt_JobFormReceipt.Selected.'Assigned To'.'Primary Email',
                                         "TestTrack: Test Form Notification",
-                                        "A new document was added to form receipt " & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & " which has been assigned to you.  Please use the following link to access the documents: <br> <br> <a href=""""https://apps.powerapps.com/play/e/ed6a0c40-92bc-e10a-8601-fce0c3004008/a/b6c7b278-6a55-42aa-b99c-dab4ebbf4570?tenantId=b76a6dcd-ad94-45ef-a45a-d54470a5c77c&amp;hint=33e90dc0-cccc-488b-84ac-155bf44b395e&amp;sourcetime=1722538249159"""">TestTrack</a>&nbsp;</p>"
+                                        "A new document was added to form receipt " & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & " which has been assigned to you.  Please use the following link to access the documents: <br> <br> <a href=https://apps.powerapps.com/play/e/ed6a0c40-92bc-e10a-8601-fce0c3004008/a/b6c7b278-6a55-42aa-b99c-dab4ebbf4570?tenantId=b76a6dcd-ad94-45ef-a45a-d54470a5c77c&amp;hint=33e90dc0-cccc-488b-84ac-155bf44b395e&amp;sourcetime=1722538249159>TestTrack</a>&nbsp;</p>"
                                     )
                                 );
                                 Set(
