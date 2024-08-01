@@ -2383,7 +2383,7 @@
                 Self.SelectedButton.Label = "Yes",
                 Remove(
                     JobsTracked,
-                    GalleryJobs_JobTracking.Selected
+                    GalleryJobs_JobStatus.Selected
                 ),
                 UpdateContext({DialogVisible: false})
             );
