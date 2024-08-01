@@ -1687,7 +1687,7 @@
                         BorderColor: =RGBA(166, 166, 166, 1)
                         DelayItemLoading: =true
                         FillPortions: =0
-                        Height: =Parent.Height/2
+                        Height: =(Parent.Height/2) - DocumentsNotesLabel_JobFormEntry.Height
                         Items: =Filter('Test Forms', 'Receipt ID' = GalleryFormReceipts_JobFormEntry.Selected.'Receipt ID')
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
@@ -1800,7 +1800,26 @@
                             Y: =20
                             ZIndex: =6
 
-                    Label4 As label:
+                    DocumentsNotesLabel_JobFormEntry As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =13
+                        Text: ="Selected Document's Note"
+                        Width: =Parent.Width
+                        X: =921
+                        Y: =147
+                        ZIndex: =3
+
+                    DocumentNote_JobFormEntry As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1813,7 +1832,7 @@
                         Size: =13
                         Text: =GalleryDocumentList_JobFormEntry.Selected.Notes
                         Width: =Parent.Width
-                        ZIndex: =3
+                        ZIndex: =4
 
             FilterContainer__JobFormEntry As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Start
