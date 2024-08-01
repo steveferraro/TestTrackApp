@@ -616,8 +616,9 @@
                         BorderColor: =RGBA(166, 166, 166, 1)
                         Color: =RGBA(202, 80, 16, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
+                        DisplayMode: =If(ThisItem.IsSelected,DisplayMode.Edit,DisplayMode.Disabled)
                         FocusedBorderThickness: =4
                         Height: =25
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -625,7 +626,11 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Mail
                         OnSelect: |-
-                            =SendUserNotification.Run(ThisItem.'Assigned To'.'Primary Email',"TestTrack: Test form notification","A new document was added to form receipt assigned to you.")
+                            =SendUserNotification.Run(
+                                GalleryFormReceipt_JobFormReceipt.Selected.'Assigned To'.'Primary Email',
+                                "TestTrack: Test Form Notification",
+                                "Greetings, <br> <br> New documents have been added to form receipt " & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & " which has been assigned to you.  Please use the following link to access the documents: <br> <br> <a href=https://apps.powerapps.com/play/e/ed6a0c40-92bc-e10a-8601-fce0c3004008/a/b6c7b278-6a55-42aa-b99c-dab4ebbf4570?tenantId=b76a6dcd-ad94-45ef-a45a-d54470a5c77c&amp;hint=33e90dc0-cccc-488b-84ac-155bf44b395e&amp;sourcetime=1722538249159>TestTrack</a>&nbsp;</p>"
+                            )
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -2248,7 +2253,6 @@
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =15
                             Text: ="Upload..."
                             Width: =Parent.Width/4  
                             Y: =0   

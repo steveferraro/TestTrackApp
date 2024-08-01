@@ -86,7 +86,7 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "e48b70cf-b42d-418f-8dd9-14b23a09b18c": {
+        "af813782-78c5-4c0a-822a-bdfcfca4ee11": {
           "value": "shared_office365"
         },
         "workflowDisplayName": {
@@ -101,7 +101,7 @@
       },
       "parameterHintsV2": {
         "shared_office365": {
-          "value": "e48b70cf-b42d-418f-8dd9-14b23a09b18c"
+          "value": "af813782-78c5-4c0a-822a-bdfcfca4ee11"
         },
         "workflowDisplayName": {
           "value": "SendUserNotification"
@@ -119,10 +119,24 @@
       "SendUserNotification"
     ],
     "dependencies": {
-      "shared_office365": "e48b70cf-b42d-418f-8dd9-14b23a09b18c"
+      "shared_office365": "af813782-78c5-4c0a-822a-bdfcfca4ee11"
     },
     "dependents": [],
     "id": "4cac233c-9334-47f4-b00e-b3ca604d14ff"
+  },
+  "af813782-78c5-4c0a-822a-bdfcfca4ee11": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "4cac233c-9334-47f4-b00e-b3ca604d14ff"
+    ],
+    "id": "af813782-78c5-4c0a-822a-bdfcfca4ee11"
   },
   "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": {
     "connectionRef": {
@@ -181,19 +195,5 @@
     },
     "dependents": [],
     "id": "d34bc282-8172-4d19-a924-ec75897692ab"
-  },
-  "e48b70cf-b42d-418f-8dd9-14b23a09b18c": {
-    "connectionRef": {
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "4cac233c-9334-47f4-b00e-b3ca604d14ff"
-    ],
-    "id": "e48b70cf-b42d-418f-8dd9-14b23a09b18c"
   }
 }
