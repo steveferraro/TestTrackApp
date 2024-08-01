@@ -2589,8 +2589,8 @@
                                     UploadNotifyCheckbox_JobFormReceipt.Value,
                                     SendUserNotification.Run(
                                         GalleryFormReceipt_JobFormReceipt.Selected.'Assigned To'.'Primary Email',
-                                        "TestTrack: Test form notification",
-                                        "A new document was added to form receipt assigned to you."
+                                        "TestTrack: Test Form Notification",
+                                        "A new document was added to form receipt " & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & "which has been assigned to you.  Please use the following link to access the documents" & Char(13) & Char(13) & "https://apps.powerapps.com/play/e/ed6a0c40-92bc-e10a-8601-fce0c3004008/a/b6c7b278-6a55-42aa-b99c-dab4ebbf4570?tenantId=b76a6dcd-ad94-45ef-a45a-d54470a5c77c&hint=33e90dc0-cccc-488b-84ac-155bf44b395e&sourcetime=1722538249159"
                                     )
                                 );
                                 Set(

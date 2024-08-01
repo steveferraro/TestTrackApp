@@ -86,7 +86,7 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "b05af869-c1ca-4a98-bb76-4f1f9eca8c03": {
+        "cb0f2503-e00d-400e-a0cf-6db40553fa87": {
           "value": "shared_office365"
         },
         "workflowDisplayName": {
@@ -101,7 +101,7 @@
       },
       "parameterHintsV2": {
         "shared_office365": {
-          "value": "b05af869-c1ca-4a98-bb76-4f1f9eca8c03"
+          "value": "cb0f2503-e00d-400e-a0cf-6db40553fa87"
         },
         "workflowDisplayName": {
           "value": "SendUserNotification"
@@ -119,24 +119,10 @@
       "SendUserNotification"
     ],
     "dependencies": {
-      "shared_office365": "b05af869-c1ca-4a98-bb76-4f1f9eca8c03"
+      "shared_office365": "cb0f2503-e00d-400e-a0cf-6db40553fa87"
     },
     "dependents": [],
     "id": "4cac233c-9334-47f4-b00e-b3ca604d14ff"
-  },
-  "b05af869-c1ca-4a98-bb76-4f1f9eca8c03": {
-    "connectionRef": {
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "4cac233c-9334-47f4-b00e-b3ca604d14ff"
-    ],
-    "id": "b05af869-c1ca-4a98-bb76-4f1f9eca8c03"
   },
   "cafc4d6f-91a6-4b43-a3cc-983b2e214aba": {
     "connectionRef": {
@@ -151,6 +137,20 @@
     "dependencies": {},
     "dependents": [],
     "id": "cafc4d6f-91a6-4b43-a3cc-983b2e214aba"
+  },
+  "cb0f2503-e00d-400e-a0cf-6db40553fa87": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "4cac233c-9334-47f4-b00e-b3ca604d14ff"
+    ],
+    "id": "cb0f2503-e00d-400e-a0cf-6db40553fa87"
   },
   "d34bc282-8172-4d19-a924-ec75897692ab": {
     "connectionRef": {
