@@ -1827,7 +1827,7 @@
                         FontWeight: =FontWeight.Bold
                         Height: =30
                         Size: =13
-                        Text: ="Selected Document's Note"
+                        Text: ="Selected Document Note"
                         Width: =Parent.Width
                         X: =921
                         Y: =147
