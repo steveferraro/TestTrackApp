@@ -440,7 +440,8 @@
                     FontWeight: =FontWeight.Bold
                     Height: =29
                     Size: =13
-                    Text: ="Job Attributes"
+                    Text: |-
+                        ="Job Attributes:"
                     Width: =Parent.Width
                     ZIndex: =1
 

@@ -226,6 +226,7 @@
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Bold
+                    Height: =29
                     Size: =13
                     Text: |-
                         ="Jobs:"
@@ -457,6 +458,24 @@
                 X: =0.00
                 ZIndex: =3
 
+                Label5 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =13
+                    Text: |-
+                        ="Job Attributes:"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
                 EntryForm_JobStatus As form:
                     AcceptsFocus: =false
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -477,7 +496,7 @@
                         ViewForm(EntryForm_JobStatus);
                     Width: =Parent.Width    
                     X: =0.00
-                    ZIndex: =1
+                    ZIndex: =2
 
                     "'Review Date_DataCard1' As typedDataCard.dateTimeEditCard":
                         BorderColor: =RGBA(166, 166, 166, 1)
