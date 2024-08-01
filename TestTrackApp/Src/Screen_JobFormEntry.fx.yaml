@@ -1800,6 +1800,20 @@
                             Y: =20
                             ZIndex: =6
 
+                        Separator As rectangle:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledFill: =RGBA(166, 166, 166, 1)
+                            Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                            FocusedBorderThickness: =4
+                            Height: =2
+                            HoverFill: =RGBA(202, 80, 16, 1)
+                            PressedFill: =RGBA(202, 80, 16, 1)
+                            Width: =Parent.Width
+                            Y: =74
+                            ZIndex: =7
+
                     DocumentsNotesLabel_JobFormEntry As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
