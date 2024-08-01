@@ -2167,6 +2167,116 @@
                         Y: =333
                         ZIndex: =5
 
+                    ButtonContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.End
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =0
+                        Height: =70
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =100
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width - 5
+                        ZIndex: =6
+
+                        UploadButton_JobFormReceipt As button:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: |-
+                                =If(
+                                    CountRows(FileAttach_JobFormReceipt.Attachments) > 0 And Not IsBlank(GalleryFormReceipt_JobFormReceipt.Selected.'Job Number'),
+                                    DisplayMode.Edit,
+                                    DisplayMode.Disabled
+                                )
+                            Fill: =ColorValue(AppTheme.palette.themePrimary)
+                            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
+                            OnSelect: |-
+                                =Set(
+                                    varSpinnerText,
+                                    "Uploading Document..."
+                                );
+                                Set(
+                                    varUploadSpinner,
+                                    true
+                                );
+                                ForAll(
+                                    FileAttach_JobFormReceipt.Attachments,
+                                    UploadFileToSharePoint_TestForms.Run(
+                                        JSON(
+                                            EditFormFileAttach_JobFormReceipt.Updates,
+                                            JSONFormat.IncludeBinaryData
+                                        ),
+                                        {
+                                            file: {
+                                                name: ThisRecord.Name,
+                                                contentBytes: ThisRecord.Value
+                                            }
+                                        }
+                                    )
+                                );
+                                If(
+                                    UploadNotifyCheckbox_JobFormReceipt.Value,
+                                    SendUserNotification.Run(
+                                        GalleryFormReceipt_JobFormReceipt.Selected.'Assigned To'.'Primary Email',
+                                        "TestTrack: Test Form Notification",
+                                        "Greetings, <br> <br> New documents have been added to form receipt " & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & " which has been assigned to you.  Please use the following link to access the documents: <br> <br> <a href=https://apps.powerapps.com/play/e/ed6a0c40-92bc-e10a-8601-fce0c3004008/a/b6c7b278-6a55-42aa-b99c-dab4ebbf4570?tenantId=b76a6dcd-ad94-45ef-a45a-d54470a5c77c&amp;hint=33e90dc0-cccc-488b-84ac-155bf44b395e&amp;sourcetime=1722538249159>TestTrack</a>&nbsp;</p>"
+                                    )
+                                );
+                                
+                                Set(
+                                    varUploadSpinner,
+                                    false
+                                );
+                                Refresh('Test Forms');
+                                Reset(FileAttach_JobFormReceipt);
+                                Reset(DocumentList_JobFormReceipt)
+                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =15
+                            Text: ="Upload..."
+                            Width: =Parent.Width/4  
+                            Y: =0   
+                            ZIndex: =1
+
+                        UploadNotifyCheckbox_JobFormReceipt As checkbox:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
+                            CheckmarkFill: =ColorValue(AppTheme.palette.themePrimary)   
+                            Color: =RGBA(51, 51, 51, 1)
+                            Default: =varUploadNotify
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =RGBA(51, 51, 51, 1)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =RGBA(51, 51, 51, 1)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Size: =13
+                            Text: ="Notify"
+                            Width: =100
+                            ZIndex: =3
+
                     EditFormFileAttach_JobFormReceipt As form:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =ColorValue(AppTheme.palette.neutralQuaternary)
@@ -2180,7 +2290,7 @@
                         NumberOfColumns: =1
                         Visible: =false
                         Width: =Parent.Width -5 
-                        ZIndex: =6
+                        ZIndex: =7
 
                         "'Receipt Timestamp_DataCard1' As typedDataCard.textualEditCard":
                             BorderColor: =RGBA(166, 166, 166, 1)
@@ -2526,116 +2636,6 @@
                                 Wrap: =false
                                 Y: =DataCardKey20.Y
                                 ZIndex: =4
-
-                    ButtonContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.End
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Fill: =RGBA(255, 255, 255, 1)
-                        FillPortions: =0
-                        Height: =70
-                        LayoutAlignItems: =LayoutAlignItems.Center
-                        LayoutGap: =10
-                        LayoutJustifyContent: =LayoutJustifyContent.Center
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =100
-                        LayoutMode: =LayoutMode.Auto
-                        Width: =Parent.Width - 5
-                        ZIndex: =7
-
-                        UploadButton_JobFormReceipt As button:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: |-
-                                =If(
-                                    CountRows(FileAttach_JobFormReceipt.Attachments) > 0 And Not IsBlank(GalleryFormReceipt_JobFormReceipt.Selected.'Job Number'),
-                                    DisplayMode.Edit,
-                                    DisplayMode.Disabled
-                                )
-                            Fill: =ColorValue(AppTheme.palette.themePrimary)
-                            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverColor: =RGBA(255, 255, 255, 1)
-                            HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
-                            OnSelect: |-
-                                =Set(
-                                    varSpinnerText,
-                                    "Uploading Document..."
-                                );
-                                Set(
-                                    varUploadSpinner,
-                                    true
-                                );
-                                ForAll(
-                                    FileAttach_JobFormReceipt.Attachments,
-                                    UploadFileToSharePoint_TestForms.Run(
-                                        JSON(
-                                            EditFormFileAttach_JobFormReceipt.Updates,
-                                            JSONFormat.IncludeBinaryData
-                                        ),
-                                        {
-                                            file: {
-                                                name: ThisRecord.Name,
-                                                contentBytes: ThisRecord.Value
-                                            }
-                                        }
-                                    )
-                                );
-                                If(
-                                    UploadNotifyCheckbox_JobFormReceipt.Value,
-                                    SendUserNotification.Run(
-                                        GalleryFormReceipt_JobFormReceipt.Selected.'Assigned To'.'Primary Email',
-                                        "TestTrack: Test Form Notification",
-                                        "Greetings, <br> <br> New documents have been added to form receipt " & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & " which has been assigned to you.  Please use the following link to access the documents: <br> <br> <a href=https://apps.powerapps.com/play/e/ed6a0c40-92bc-e10a-8601-fce0c3004008/a/b6c7b278-6a55-42aa-b99c-dab4ebbf4570?tenantId=b76a6dcd-ad94-45ef-a45a-d54470a5c77c&amp;hint=33e90dc0-cccc-488b-84ac-155bf44b395e&amp;sourcetime=1722538249159>TestTrack</a>&nbsp;</p>"
-                                    )
-                                );
-                                
-                                Set(
-                                    varUploadSpinner,
-                                    false
-                                );
-                                Refresh('Test Forms');
-                                Reset(FileAttach_JobFormReceipt);
-                                Reset(DocumentList_JobFormReceipt)
-                            PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
-                            PressedColor: =RGBA(255, 255, 255, 1)
-                            PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =15
-                            Text: ="Upload..."
-                            Width: =Parent.Width/4  
-                            Y: =0   
-                            ZIndex: =1
-
-                        UploadNotifyCheckbox_JobFormReceipt As checkbox:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            BorderThickness: =2
-                            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
-                            CheckmarkFill: =ColorValue(AppTheme.palette.themePrimary)   
-                            Color: =RGBA(51, 51, 51, 1)
-                            Default: =varUploadNotify
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            FocusedBorderThickness: =4
-                            Font: =Font.'Segoe UI'
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverColor: =RGBA(51, 51, 51, 1)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedColor: =RGBA(51, 51, 51, 1)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            Size: =13
-                            Text: ="Notify"
-                            Width: =100
-                            ZIndex: =3
 
             FilterContainer__JobFormReceipt As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.Start
@@ -3123,14 +3123,14 @@
 
     Spinner_JobFormReceipt As Spinner:
         DisplayMode: =DisplayMode.Edit
-        Height: =DocumentList_JobFormReceipt.Height
+        Height: =108
         Label: =varSpinnerText
         LabelPosition: ='Spinner.LabelPosition'.Below
         SpinnerSize: ='Spinner.SpinnerSize'.Huge
         Visible: =varUploadSpinner
         Width: =DocumentList_JobFormReceipt.Width
         X: =928
-        Y: =169
+        Y: =342
         ZIndex: =6
 
     DocumentPropertiesOverlay_JobFormReceipt As groupContainer.manualLayoutContainer:
