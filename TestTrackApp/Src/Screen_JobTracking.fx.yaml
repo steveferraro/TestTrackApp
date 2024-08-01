@@ -270,7 +270,7 @@
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =25
+                        Height: =23
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: =JobIcon
@@ -307,7 +307,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =249
                         X: =69
-                        Y: =13
+                        Y: =8
                         ZIndex: =2
 
                     Subtitle1 As label:
@@ -330,7 +330,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =249
                         X: =69
-                        Y: =34
+                        Y: =30
                         ZIndex: =3
 
                     Separator1 As rectangle:
@@ -376,7 +376,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =249
                         X: =69
-                        Y: =56
+                        Y: =52
                         ZIndex: =8
 
                     Image3 As image:
