@@ -489,7 +489,7 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateFill: =If(ThisItem.IsSelected, ColorValue(AppTheme.palette.neutralLight), ColorValue(AppTheme.palette.white))
                     TemplatePadding: =0
-                    TemplateSize: =60
+                    TemplateSize: =85
                     Width: =Parent.Width
                     X: =0.00
                     ZIndex: =5
@@ -575,6 +575,7 @@
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
                         X: =0.00
+                        Y: =77
                         ZIndex: =4
 
                     Rectangle2_1 As rectangle:
@@ -582,12 +583,11 @@
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =52
+                        Height: =77
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
                         X: =0.00
-                        Y: =8
                         ZIndex: =5
 
                     Title2_2 As label:
