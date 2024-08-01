@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |-
+    OnStart: |
         =Set(
             AppTheme,
             /* START THEME OBJECT */
@@ -373,10 +373,6 @@ App As appinfo:
                 }
             )
         );
-        Set(
-            varEditMode,
-            false
-        );
         ClearCollect(
             colAdminUpdates_Division,
             ShowColumns(
@@ -478,6 +474,10 @@ App As appinfo:
         );
         Clear(colAdminUpdates_ReportStatuses);
         Set(
+            varEditMode,
+            false
+        );
+        Set(
             varMyJobs,
             false
         );
@@ -516,6 +516,10 @@ App As appinfo:
         Set(
             varReportingPane_Reporting,
             false
+        );
+        Set(
+            varUploadNotify,
+            true
         )
     Theme: =OrangeTheme
 
