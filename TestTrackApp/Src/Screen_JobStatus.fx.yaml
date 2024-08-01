@@ -308,7 +308,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =227
                         X: =53
-                        Y: =14
+                        Y: =10
                         ZIndex: =2
 
                     Subtitle1_1 As label:
@@ -331,7 +331,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =195.00
                         X: =53
-                        Y: =35
+                        Y: =31
                         ZIndex: =3
 
                     NextArrow1_1 As icon.ChevronRight:
@@ -369,6 +369,7 @@
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
                         X: =0.00
+                        Y: =72
                         ZIndex: =5
 
                     Rectangle1_1 As rectangle:
@@ -404,7 +405,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =227
                         X: =53
-                        Y: =60
+                        Y: =50
                         ZIndex: =8
 
                     Image3_3 As image:

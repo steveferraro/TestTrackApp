@@ -257,7 +257,7 @@
                     OnSelect: =
                     TemplateFill: =If(ThisItem.IsSelected, ColorValue(AppTheme.palette.neutralLight), ColorValue(AppTheme.palette.white))
                     TemplatePadding: =0
-                    TemplateSize: =80
+                    TemplateSize: =85
                     Transition: =Transition.Pop
                     Width: =Parent.Width
                     X: =0.00
@@ -295,7 +295,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =21
+                        Height: =20
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -341,6 +341,7 @@
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
                         X: =0.00
+                        Y: =77
                         ZIndex: =5
 
                     Rectangle1 As rectangle:
@@ -348,7 +349,7 @@
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =72
+                        Height: =69
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
                         Width: =Parent.Width
