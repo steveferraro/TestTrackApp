@@ -629,7 +629,7 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Tooltip: ="Send notification to assigned user."
+                        Tooltip: ="Re-send notification to assigned user."
                         Width: =25
                         X: =320
                         Y: =31
