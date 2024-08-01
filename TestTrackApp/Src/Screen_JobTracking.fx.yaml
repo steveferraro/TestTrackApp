@@ -427,6 +427,23 @@
                 X: =480.16
                 ZIndex: =3
 
+                Label4 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =ColorValue(AppTheme.palette.neutralQuaternary)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =13
+                    Text: ="Job Attributes"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
                 EntryForm_JobTracking As form:
                     AcceptsFocus: =false
                     BorderColor: =
@@ -446,7 +463,7 @@
                         ViewForm(EntryForm_JobTracking);
                     Width: =850.28
                     X: =0.00
-                    ZIndex: =1
+                    ZIndex: =2
 
                     "'Job Number_DataCard1' As typedDataCard.textualEditCard":
                         BorderColor: =RGBA(166, 166, 166, 1)
