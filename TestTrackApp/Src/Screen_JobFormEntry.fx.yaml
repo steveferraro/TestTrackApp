@@ -642,7 +642,7 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateFill: =If(ThisItem.IsSelected, ColorValue(AppTheme.palette.neutralLight), ColorValue(AppTheme.palette.white))
                     TemplatePadding: =0
-                    TemplateSize: =60
+                    TemplateSize: =80  
                     Width: =Parent.Width
                     X: =0.00
                     ZIndex: =6
@@ -667,7 +667,7 @@
                         RadiusTopRight: =8
                         Tooltip: ="Form Entry"
                         Width: =48.00
-                        Y: =16
+                        Y: =26
                         ZIndex: =1
 
                     Title2 As label:
@@ -685,7 +685,7 @@
                         PaddingRight: =0.00
                         PaddingTop: =0.00
                         Size: =12
-                        Text: =ThisItem.'Created On'
+                        Text: =ThisItem.'Entry ID'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =229
                         X: =51
@@ -727,6 +727,7 @@
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
                         X: =0.00
+                        Y: =72
                         ZIndex: =4
 
                     Rectangle2 As rectangle:
@@ -734,10 +735,10 @@
                         BorderThickness: =1
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =50
+                        Height: =73
                         OnSelect: =Select(Parent)
                         Visible: =ThisItem.IsSelected
-                        Width: =368.00
+                        Width: =Parent.Width
                         X: =0.00
                         Y: =7
                         ZIndex: =5
@@ -2335,15 +2336,15 @@
             =If(
                 Self.SelectedButton.Label = "Yes",
                 Remove(
-                    JobsTracked,
-                    GalleryJobs_JobTracking.Selected
+                    JobsFormEntries,
+                    GalleryJobsFormEntry_JobFormEntry.Selected
                 ),
                 UpdateContext({DialogVisible: false})
             );
             UpdateContext({DialogVisible: false})
         OnCloseSelect: |-
             =UpdateContext({DialogVisible: false})
-        SubTitle: ="Are you sure you want to delete form entry for job " & GalleryJobs_JobFormEntry.Selected.'Job Number' & "?"
+        SubTitle: ="Are you sure you want to delete form entry " & GalleryJobsFormEntry_JobFormEntry.Selected.'Entry ID' & " for job " & GalleryJobs_JobFormEntry.Selected.'Job Number' & "?"
         Theme: =AppTheme
         Title: ="Delete Form Entry?"
         Visible: =DialogVisible
