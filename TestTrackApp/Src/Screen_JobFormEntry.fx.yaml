@@ -1829,8 +1829,13 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Height: =(Parent.Height/2) - DocumentsLabel_JobFormEntry.Height
+                        PaddingBottom: =20
+                        PaddingLeft: =20
+                        PaddingRight: =20
+                        PaddingTop: =20
                         Size: =13
                         Text: =GalleryDocumentList_JobFormEntry.Selected.Notes
+                        VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
                         ZIndex: =4
 
