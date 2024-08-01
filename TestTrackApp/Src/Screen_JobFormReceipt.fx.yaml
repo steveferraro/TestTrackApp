@@ -1967,7 +1967,7 @@
                         DelayItemLoading: =true
                         Fill: =RGBA(255, 255, 255, 1)
                         FillPortions: =0
-                        Height: =Parent.Height - FileAttach_JobFormReceipt.Height - DocumentsLabel_JobFormReceipt.Height - ButtonContainer_JobFormReceipt.Height - EditFormFileAttach_JobFormReceipt.Height
+                        Height: =Parent.Height - FileAttach_JobFormReceipt.Height - DocumentsLabel_JobFormReceipt.Height - ButtonContainer_JobFormReceipt.Height - EditFormFileAttach_JobFormReceipt.Height - AttachmentLabel_JobFormReceipt.Height
                         Items: |-
                             =Filter(
                                 'Test Forms',
@@ -2102,8 +2102,7 @@
                         FontWeight: =FontWeight.Bold
                         Height: =30
                         Size: =13
-                        Text: |-
-                            ="Form Receipt Documents:"
+                        Text: ="Files to Upload"
                         Width: =Parent.Width-5
                         X: =921
                         Y: =147
