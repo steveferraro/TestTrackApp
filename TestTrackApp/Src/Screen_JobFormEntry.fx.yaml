@@ -2363,3 +2363,30 @@
         Width: =1366
         ZIndex: =10
 
+    UserImage_JobFormEntry As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =User().Image
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50  
+        RadiusTopRight: =50
+        Tooltip: |-
+            ="Logged in user: " & Char(13) & 
+            "   Name: " & User().FullName & Char(13) & 
+            "   Email: " & User().Email & Char(13) & 
+            "   Group: " & Switch(true,varAdmin,"Administration",varOhio,"Ohio",varMichigan,"Michigan")
+        Width: =40
+        X: =1298
+        Y: =21
+        ZIndex: =11
+
