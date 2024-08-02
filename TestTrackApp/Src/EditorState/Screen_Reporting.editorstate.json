@@ -339,7 +339,7 @@
       "MetaDataIDKey": "",
       "Name": "ExitAppIcon_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -553,7 +553,7 @@
       "MetaDataIDKey": "",
       "Name": "FilterPaneIcon_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1470,7 +1470,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5644,7 +5644,7 @@
       "MetaDataIDKey": "",
       "Name": "LeftNavigation_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5771,7 +5771,7 @@
       "MetaDataIDKey": "",
       "Name": "Logo_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6034,7 +6034,7 @@
       "MetaDataIDKey": "",
       "Name": "MainContainer_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6249,7 +6249,7 @@
       "MetaDataIDKey": "",
       "Name": "ProgressSpinner_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6452,7 +6452,7 @@
       "MetaDataIDKey": "",
       "Name": "RefreshStatsButton_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6677,7 +6677,7 @@
       "MetaDataIDKey": "",
       "Name": "ReportPaneContainer_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8388,7 +8388,7 @@
       "MetaDataIDKey": "",
       "Name": "UserImage_Reporting",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

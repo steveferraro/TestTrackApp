@@ -109,6 +109,25 @@ App As appinfo:
                 )
             )
         );
+        With(
+            {
+                wDataEntry: LookUp(
+                    Office365Groups.ListOwnedGroupsV3().value,
+                    displayName = "TestTrack - Data Entry"
+                ).id
+            },
+            If(
+                IsBlank(wDataEntry),
+                Set(
+                    varDataEntry,
+                    false
+                ),
+                Set(
+                    varDataEntry,
+                    varUserGUID in Office365Groups.ListGroupMembers(wDataEntry).value.id
+                )
+            )
+        );
         Set(
             varGroup,
             Switch(
