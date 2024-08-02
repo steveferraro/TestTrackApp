@@ -2294,8 +2294,8 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Tooltip: ="Exit the application"
         Width: =25
-        X: =1302
-        Y: =20
+        X: =1256
+        Y: =22
         ZIndex: =7
 
     FilterPaneIcon_JobFormEntry As icon.FilterFlat:

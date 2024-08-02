@@ -2284,6 +2284,6 @@
             "   Group: " & Switch(true,varAdmin,"Administration",varOhio,"Ohio",varMichigan,"Michigan")
         Width: =40
         X: =1298
-        Y: =22
+        Y: =21
         ZIndex: =12
 
