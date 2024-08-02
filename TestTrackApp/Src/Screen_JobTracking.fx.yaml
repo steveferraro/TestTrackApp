@@ -2191,8 +2191,8 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Tooltip: ="Exit the application"
         Width: =25
-        X: =1302
-        Y: =20
+        X: =1256
+        Y: =22
         ZIndex: =8
 
     FilterPaneIcon__JobTracking As icon.FilterFlat:
@@ -2259,4 +2259,30 @@
         Visible: =DialogVisible
         Width: =1366
         ZIndex: =11
+
+    Image7 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =User().Image
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50  
+        RadiusTopRight: =50
+        Tooltip: |-
+            ="Name: " & User().FullName & Char(13) & 
+            "Email: " & User().Email & Char(13) & 
+            "Group: " & Switch(true,varAdmin,"Administration",varOhio,"Ohio",varMichigan,"Michigan")
+        Width: =40
+        X: =1298
+        Y: =22
+        ZIndex: =12
 
