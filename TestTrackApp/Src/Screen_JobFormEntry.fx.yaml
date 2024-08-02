@@ -788,7 +788,6 @@
                 EntryFormContainer_JobFormEntry As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.Light
                     Fill: =Color.White
-                    FillPortions: =0
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
