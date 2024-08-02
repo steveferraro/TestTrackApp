@@ -2278,9 +2278,10 @@
         RadiusTopLeft: =50  
         RadiusTopRight: =50
         Tooltip: |-
-            ="Name: " & User().FullName & Char(13) & 
-            "Email: " & User().Email & Char(13) & 
-            "Group: " & Switch(true,varAdmin,"Administration",varOhio,"Ohio",varMichigan,"Michigan")
+            ="Logged in user: " & Char(13) & 
+            "   Name: " & User().FullName & Char(13) & 
+            "   Email: " & User().Email & Char(13) & 
+            "   Group: " & Switch(true,varAdmin,"Administration",varOhio,"Ohio",varMichigan,"Michigan")
         Width: =40
         X: =1298
         Y: =22
