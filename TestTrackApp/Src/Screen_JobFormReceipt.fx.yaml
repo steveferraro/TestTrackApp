@@ -661,7 +661,7 @@
                 ZIndex: =3
 
                 EntryFormContainer_JobFormReceipt As groupContainer.verticalAutoLayoutContainer:
-                    DropShadow: =DropShadow.Regular
+                    DropShadow: =DropShadow.Light
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
@@ -749,10 +749,10 @@
                                 PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =Parent.Width - 60
                                 Wrap: =false
                                 X: =30
-                                Y: =5
+                                Y: =10
                                 ZIndex: =1
 
                             DataCardValue10 As combobox:
@@ -785,9 +785,9 @@
                                 SelectMultiple: =false
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =370
+                                Width: =Parent.Width - 60
                                 X: =30
-                                Y: =50
+                                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                                 ZIndex: =2
 
                             ErrorMessage14 As label:
@@ -867,9 +867,10 @@
                                 PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =Parent.Width - 60
                                 Wrap: =false
                                 X: =30
+                                Y: =10
                                 ZIndex: =1
 
                             DataCardValue12 As combobox:
@@ -902,9 +903,9 @@
                                 SelectMultiple: =false
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =370
+                                Width: =Parent.Width - 60
                                 X: =30
-                                Y: =35
+                                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
                                 ZIndex: =2
 
                             ErrorMessage15 As label:
@@ -984,10 +985,10 @@
                                 PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =Parent.Width - 60
                                 Wrap: =false
                                 X: =30
-                                Y: =7
+                                Y: =10
                                 ZIndex: =1
 
                             DateValue6 As datepicker:
@@ -1011,9 +1012,9 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =370
+                                Width: =(Parent.Width - 60) / 2
                                 X: =30
-                                Y: =46
+                                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
                                 ZIndex: =2
 
                             HourValue6 As dropdown:
@@ -1047,9 +1048,9 @@
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
                                 Visible: =false
-                                Width: =DateValue6.Width / 2 - 5
-                                X: =DateValue6.X
-                                Y: =10
+                                Width: =DateValue6.Width / 2 - 10
+                                X: =DateValue6.X + DateValue6.Width + 10
+                                Y: =DateValue6.Y
                                 ZIndex: =3
 
                             Separator8 As label:
@@ -1191,10 +1192,10 @@
                                 PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =Parent.Width - 60
                                 Wrap: =false
                                 X: =30
-                                Y: =5
+                                Y: =10
                                 ZIndex: =1
 
                             DataCardValue19 As text:
@@ -1223,9 +1224,9 @@
                                 RadiusTopRight: =0
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =370
+                                Width: =Parent.Width - 60
                                 X: =30
-                                Y: =46
+                                Y: =DataCardKey24.Y + DataCardKey24.Height + 5
                                 ZIndex: =2
 
                             ErrorMessage33 As label:
@@ -1304,9 +1305,10 @@
                                 PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
-                                Width: =374
+                                Width: =Parent.Width - 60
                                 Wrap: =false
                                 X: =30
+                                Y: =10
                                 ZIndex: =1
 
                             DateValue2 As datepicker:
@@ -1329,9 +1331,9 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =370
+                                Width: =(Parent.Width - 60) / 2
                                 X: =30
-                                Y: =47
+                                Y: =DataCardKey19.Y + DataCardKey19.Height + 5
                                 ZIndex: =2
 
                             HourValue2 As dropdown:
@@ -1365,9 +1367,9 @@
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
                                 Visible: =false
-                                Width: =DateValue2.Width / 2 - 5
-                                X: =DateValue2.X
-                                Y: =10
+                                Width: =DateValue2.Width / 2 - 10
+                                X: =DateValue2.X + DateValue2.Width + 10
+                                Y: =DateValue2.Y
                                 ZIndex: =3
 
                             Separator7 As label:
@@ -1510,10 +1512,10 @@
                                 PaddingLeft: =0
                                 Size: =13
                                 Text: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) * 0.4
+                                Width: =Parent.Width - 60
                                 Wrap: =false
                                 X: =30
-                                Y: =10 + (DataCardValue17.Height / 2) - (Self.Height / 2)
+                                Y: =10
                                 ZIndex: =1
 
                             DataCardValue17 As text:
@@ -1543,9 +1545,9 @@
                                 RadiusTopRight: =0
                                 Size: =13
                                 Tooltip: =Parent.DisplayName
-                                Width: =370
-                                X: =30  
-                                Y: =55
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
                                 ZIndex: =2
 
                             ErrorMessage16 As label:
