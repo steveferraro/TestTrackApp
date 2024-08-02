@@ -1002,7 +1002,6 @@
                                 DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                                 EndYear: =Year(Today())+100
                                 Font: =Font.'Segoe UI'
-                                Height: =41
                                 HoverDateFill: =RGBA(200, 200, 200, 1)
                                 IconBackground: =RGBA(202, 80, 16, 1)
                                 IsEditable: =true
@@ -1012,9 +1011,9 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) / 2
-                                X: =30
-                                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                                Width: =353
+                                X: =32
+                                Y: =44
                                 ZIndex: =2
 
                             HourValue6 As dropdown:
@@ -1331,9 +1330,9 @@
                                 Size: =13
                                 StartYear: =1899
                                 Tooltip: =Parent.DisplayName
-                                Width: =(Parent.Width - 60) / 2
-                                X: =30
-                                Y: =DataCardKey19.Y + DataCardKey19.Height + 5
+                                Width: =353
+                                X: =36
+                                Y: =50
                                 ZIndex: =2
 
                             HourValue2 As dropdown:

@@ -10786,7 +10786,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -10818,7 +10825,7 @@
       "MetaDataIDKey": "%DateFieldValue.ID%",
       "Name": "DateValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11158,7 +11165,7 @@
       "MetaDataIDKey": "%DateFieldValue.ID%",
       "Name": "DateValue6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24054,7 +24061,7 @@
       "MetaDataIDKey": "%HourFieldValue.ID%",
       "Name": "HourValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24383,7 +24390,7 @@
       "MetaDataIDKey": "%HourFieldValue.ID%",
       "Name": "HourValue6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -28221,7 +28228,7 @@
       "MetaDataIDKey": "%MinuteFieldValue.ID%",
       "Name": "MinuteValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -28550,7 +28557,7 @@
       "MetaDataIDKey": "%MinuteFieldValue.ID%",
       "Name": "MinuteValue6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -34505,7 +34512,7 @@
       "MetaDataIDKey": "%HourMinuteSeparator.ID%",
       "Name": "Separator7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -34787,7 +34794,7 @@
       "MetaDataIDKey": "%HourMinuteSeparator.ID%",
       "Name": "Separator8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
