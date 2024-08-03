@@ -213,6 +213,7 @@
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
                 NavigationItems: =colNavigation
+                Visible: =Not(varDataEntry)
                 Width: =LeftNavigation_JobFormEntry.MenuWidth
 
             SidebarContainer_JobFormEntry As groupContainer.verticalAutoLayoutContainer:
