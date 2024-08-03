@@ -2,7 +2,7 @@
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
     "FlowNameId": "ac41c68e-771c-4ba5-85f6-d3b34781aaf4",
-    "Name": "DeleteFileFromSharePoint_TestForms",
+    "Name": "DeleteFileFromSharePointByItem_TestForms",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": "f4297761-a64b-ef11-a317-000d3a99387e"

@@ -2063,7 +2063,7 @@
                             Y: =27
                             ZIndex: =2
 
-                        NextArrow1 As icon.ChevronRight:
+                        ManageProperties_JobFormReceipt As icon.ChevronRight:
                             AccessibleLabel: =Self.Tooltip
                             Color: =ColorValue(AppTheme.palette.themePrimary)
                             FocusedBorderThickness: =4
@@ -2099,7 +2099,7 @@
                             Y: =17
                             ZIndex: =6
 
-                        NextArrow1_4 As icon.ChevronRight:
+                        DeleteDocument_JobFormReceipt As icon.ChevronRight:
                             AccessibleLabel: =Self.Tooltip
                             Color: =ColorValue(AppTheme.palette.themePrimary)
                             FocusedBorderThickness: =4
@@ -2108,7 +2108,7 @@
                             OnSelect: |-
                                 =Set(varSpinnerText,"Removing Document...");
                                 Set(varUploadSpinner,true);
-                                DeleteFileFromSharePoint_TestForms.Run(DocumentList_JobFormReceipt.Selected.ID);
+                                DeleteFileFromSharePointByItem_TestForms.Run(DocumentList_JobFormReceipt.Selected.ID);
                                 Set(varUploadSpinner, false);
                                 Refresh('Test Forms');
                                 Reset(DocumentList_JobFormReceipt)

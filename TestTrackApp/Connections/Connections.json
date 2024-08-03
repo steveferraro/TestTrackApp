@@ -53,8 +53,7 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "0a0453c6-4472-4492-8685-71330cb94eba",
-      "d34bc282-8172-4d19-a924-ec75897692ab"
+      "0a0453c6-4472-4492-8685-71330cb94eba"
     ],
     "id": "1bd79d5d-1aea-46d1-a842-787d42f922e1"
   },
@@ -158,11 +157,11 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "1bd79d5d-1aea-46d1-a842-787d42f922e1": {
+        "dc022f98-cf2a-4bbf-82f2-50abcc90645e": {
           "value": "shared_sharepointonline"
         },
         "workflowDisplayName": {
-          "value": "DeleteFileFromSharePoint_TestForms"
+          "value": "DeleteFileFromSharePointByItem_TestForms"
         },
         "workflowEntityId": {
           "value": "f4297761-a64b-ef11-a317-000d3a99387e"
@@ -173,10 +172,10 @@
       },
       "parameterHintsV2": {
         "shared_sharepointonline": {
-          "value": "1bd79d5d-1aea-46d1-a842-787d42f922e1"
+          "value": "dc022f98-cf2a-4bbf-82f2-50abcc90645e"
         },
         "workflowDisplayName": {
-          "value": "DeleteFileFromSharePoint_TestForms"
+          "value": "DeleteFileFromSharePointByItem_TestForms"
         },
         "workflowEntityId": {
           "value": "f4297761-a64b-ef11-a317-000d3a99387e"
@@ -188,12 +187,26 @@
     },
     "datasets": {},
     "dataSources": [
-      "DeleteFileFromSharePoint_TestForms"
+      "DeleteFileFromSharePointByItem_TestForms"
     ],
     "dependencies": {
-      "shared_sharepointonline": "1bd79d5d-1aea-46d1-a842-787d42f922e1"
+      "shared_sharepointonline": "dc022f98-cf2a-4bbf-82f2-50abcc90645e"
     },
     "dependents": [],
     "id": "d34bc282-8172-4d19-a924-ec75897692ab"
+  },
+  "dc022f98-cf2a-4bbf-82f2-50abcc90645e": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "d34bc282-8172-4d19-a924-ec75897692ab"
+    ],
+    "id": "dc022f98-cf2a-4bbf-82f2-50abcc90645e"
   }
 }
