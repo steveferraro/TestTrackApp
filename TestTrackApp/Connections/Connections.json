@@ -1,4 +1,18 @@
 {
+  "08bc9a68-bf1b-4b5c-86ac-cbe6001d4ebf": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "d34bc282-8172-4d19-a924-ec75897692ab"
+    ],
+    "id": "08bc9a68-bf1b-4b5c-86ac-cbe6001d4ebf"
+  },
   "0a0453c6-4472-4492-8685-71330cb94eba": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -157,9 +171,6 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "dc022f98-cf2a-4bbf-82f2-50abcc90645e": {
-          "value": "shared_sharepointonline"
-        },
         "workflowDisplayName": {
           "value": "DeleteFileFromSharePointByItem_TestForms"
         },
@@ -171,9 +182,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "dc022f98-cf2a-4bbf-82f2-50abcc90645e"
-        },
         "workflowDisplayName": {
           "value": "DeleteFileFromSharePointByItem_TestForms"
         },
@@ -190,23 +198,9 @@
       "DeleteFileFromSharePointByItem_TestForms"
     ],
     "dependencies": {
-      "shared_sharepointonline": "dc022f98-cf2a-4bbf-82f2-50abcc90645e"
+      "shared_sharepointonline": "08bc9a68-bf1b-4b5c-86ac-cbe6001d4ebf"
     },
     "dependents": [],
     "id": "d34bc282-8172-4d19-a924-ec75897692ab"
-  },
-  "dc022f98-cf2a-4bbf-82f2-50abcc90645e": {
-    "connectionRef": {
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "d34bc282-8172-4d19-a924-ec75897692ab"
-    ],
-    "id": "dc022f98-cf2a-4bbf-82f2-50abcc90645e"
   }
 }
