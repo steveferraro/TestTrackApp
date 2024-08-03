@@ -550,8 +550,9 @@ App As appinfo:
             },
             If(
                 IsBlank(wDataEntry),
-                Screen_JobFormEntry,
-                Screen_JobTracking
+                Screen_JobTracking,
+                Screen_JobFormEntry
+                
             )
         )
     Theme: =OrangeTheme
