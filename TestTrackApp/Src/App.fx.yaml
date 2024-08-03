@@ -540,6 +540,20 @@ App As appinfo:
             varUploadNotify,
             true
         )
+    StartScreen: |-
+        =With(
+            {
+                wDataEntry: LookUp(
+                    Office365Groups.ListOwnedGroupsV3().value,
+                    displayName = "TestTrack - Data Entry"
+                ).id
+            },
+            If(
+                IsBlank(wDataEntry),
+                Screen_JobFormEntry,
+                Screen_JobTracking
+            )
+        )
     Theme: =OrangeTheme
 
     Host As hostControl.DefaultHostControlVariant:
