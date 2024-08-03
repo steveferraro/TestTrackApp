@@ -3113,6 +3113,7 @@
                 Remove(
                     JobsFormReceipts,
                     GalleryFormReceipt_JobFormReceipt.Selected
+                    
                 ),
                 UpdateContext({DialogVisible: false})
             );
