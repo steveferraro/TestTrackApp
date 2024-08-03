@@ -2248,8 +2248,8 @@
                     JobsTracked,
                     GalleryJobs_JobTracking.Selected
                 );
-                DeleteFileFromSharepointByJobNumber_TestForms.Run(GalleryJobs_JobTracking.Selected.'Job Number'),
-                UpdateContext({DialogVisible: false})
+                UpdateContext({DialogVisible: false});
+                DeleteFileFromSharepointByJobNumber_TestForms.Run(GalleryJobs_JobTracking.Selected.'Job Number')
             );
             UpdateContext({DialogVisible: false})
         OnCloseSelect: |-
