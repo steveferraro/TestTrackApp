@@ -2324,6 +2324,7 @@
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =Not(varDataEntry)
         Width: =30
         X: =1302
         Y: =84
