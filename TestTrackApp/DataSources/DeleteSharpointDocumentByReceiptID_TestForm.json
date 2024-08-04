@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "322890ca-7eb2-d2b9-0a59-1983d39e5111",
+    "Name": "DeleteSharpointDocumentByReceiptID_TestForm",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "d0febd83-8352-ef11-a317-000d3a99387e"
+  }
+]
