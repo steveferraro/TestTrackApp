@@ -3115,6 +3115,7 @@
                     GalleryFormReceipt_JobFormReceipt.Selected
                     
                 ),
+                DeleteFileFromSharepointByJobNumber_TestForms.Run("'" & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & "'");
                 UpdateContext({DialogVisible: false})
             );
             UpdateContext({DialogVisible: false})
