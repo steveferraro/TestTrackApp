@@ -2301,7 +2301,7 @@
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(202, 80, 16, 1), -10%)
-        OnSelect: =DeleteFileFromSharepointByJobNumber_TestForms.Run("A1B2C3")
+        OnSelect: =DeleteFileFromSharepointByJobNumber_TestForms.Run(Text(GalleryJobs_JobTracking.Selected.'Job Number'))
         PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(202, 80, 16, 1), -30%)

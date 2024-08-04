@@ -63,9 +63,6 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "d7dfe5d4-e61e-4d15-86db-7c30e9df8cec": {
-          "value": "shared_sharepointonline"
-        },
         "workflowDisplayName": {
           "value": "DeleteFileFromSharepointByJobNumber_TestForms"
         },
@@ -77,9 +74,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "d7dfe5d4-e61e-4d15-86db-7c30e9df8cec"
-        },
         "workflowDisplayName": {
           "value": "DeleteFileFromSharepointByJobNumber_TestForms"
         },
