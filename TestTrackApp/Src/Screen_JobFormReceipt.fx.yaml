@@ -3114,7 +3114,6 @@
                     JobsFormReceipts,
                     GalleryFormReceipt_JobFormReceipt.Selected
                 ),
-                
             DeleteSharpointDocumentByReceiptID_TestForm.Run("'" & GalleryFormReceipt_JobFormReceipt.Selected.'Receipt ID' & "'");
             UpdateContext({DialogVisible: false})
             );
