@@ -3654,6 +3654,7 @@
                 ZIndex: =2
 
             DocumentPropertiesSaveButton_JobFormReceipt As Button:
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 OnSelect: |-
@@ -3662,11 +3663,12 @@
                 Text: ="Save"
                 Width: =96
                 X: =378
-                Y: =483
+                Y: =480
                 ZIndex: =3
 
             DocumentPropertiesCancelButton_JobFormReceipt As Button:
-                Appearance: ='ButtonCanvas.Appearance'.Secondary
+                Appearance: ='ButtonCanvas.Appearance'.Primary
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 OnSelect: =Set(varDocumentPropVisible, false)
