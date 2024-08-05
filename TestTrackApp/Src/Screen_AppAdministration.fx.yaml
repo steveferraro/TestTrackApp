@@ -2201,7 +2201,7 @@
             ="Logged in user: " & Char(13) & 
             "   Name: " & User().FullName & Char(13) & 
             "   Email: " & User().Email & Char(13) & 
-            "   Group: " & Switch(true,varAdmin,"Administration",varOhio,"Ohio",varMichigan,"Michigan") &
+            "   Group: " & Switch(true,varAdmin,"Administration",varOhio,"Ohio",varMichigan,"Michigan") & Char(13) &
             "   Data Entry Mode: " & If(varDataEntry, "Active", "Inactive")
         Width: =40
         X: =1298
