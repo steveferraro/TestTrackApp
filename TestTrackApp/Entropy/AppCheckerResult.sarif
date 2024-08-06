@@ -7694,6 +7694,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.document"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.document",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "document",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.guide"
                 }
               ],

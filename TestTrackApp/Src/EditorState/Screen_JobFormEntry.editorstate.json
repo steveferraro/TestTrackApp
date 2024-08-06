@@ -14726,7 +14726,14 @@
     "Image6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Image",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "document",
+          "InvariantPropertyName": "Image",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ImagePosition",
         "ImageRotation",
         {
@@ -14818,7 +14825,7 @@
         {
           "Category": "Data",
           "PropertyName": "Image",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
