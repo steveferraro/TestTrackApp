@@ -2303,7 +2303,7 @@
                         LayoutMinWidth: =400
                         NumberOfColumns: =1
                         Visible: =false
-                        Width: =Parent.Width -5 
+                        Width: =0
                         ZIndex: =7
 
                         "'Receipt Timestamp_DataCard1' As typedDataCard.textualEditCard":

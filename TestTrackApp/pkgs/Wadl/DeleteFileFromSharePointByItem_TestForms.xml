@@ -2,9 +2,9 @@
   <doc title="DeleteFileFromSharePointByItem_TestForms" />
   <grammars>
     <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
-      <number name="ManualTriggerInput_number_def" />
+      <string name="ManualTriggerInput_text_def" />
       <object name="ManualTriggerInput">
-        <property name="number" type="number" />
+        <property name="text" type="string" />
       </object>
       <string name="ResponseActionOutput_file_deleted_def" />
       <object name="ResponseActionOutput">
@@ -23,8 +23,8 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
-            <param style="plain" name="number" path="/number" type="xs:double" required="true">
-              <doc title="ItemID" />
+            <param style="plain" name="text" path="/text" type="xs:string" required="true">
+              <doc title="Input" />
             </param>
           </representation>
         </request>
