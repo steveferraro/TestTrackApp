@@ -518,7 +518,9 @@
         Height: =200
         Label: ="Refreshing Statistics"
         LabelPosition: ='Spinner.LabelPosition'.Below
+        SpinnerColor: =
         SpinnerSize: ='Spinner.SpinnerSize'.Huge
+        TrackColor: =
         Visible: =varShowProgress
         Width: =200
         X: =MainContainer_Reporting.Width/2
@@ -564,6 +566,7 @@
             Align: =""
             Appearance: ='ButtonCanvas.Appearance'.Transparent
             BasePaletteColor: =
+            BorderColor: =
             BorderStyle: =""
             DisplayMode: =DisplayMode.Edit
             FontColor: =RGBA(0, 0, 0, 1)

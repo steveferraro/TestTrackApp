@@ -207,10 +207,12 @@ Dialog As CanvasComponent:
                     ZIndex: =4
 
                     Button1_1 As Button:
+                        BasePaletteColor: =
                         BorderColor: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, ColorValue(Dialog.Theme.palette.themePrimary), ColorValue(Dialog.Theme.palette.neutralSecondary))
                         BorderStyle: =If(ThisItem.ButtonType = 'Spinner.Appearance'.Primary, BorderStyle.None,BorderStyle.Solid)
                         BorderThickness: =If(ThisItem.HasBorder, 1, 0)
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =32
                         OnSelect: =Dialog.OnButtonSelect()
                         PaddingBottom: =0

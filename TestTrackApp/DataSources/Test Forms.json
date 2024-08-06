@@ -17,7 +17,7 @@
       "{ModerationStatus}": "Content approval status",
       "{Name}": "Name",
       "{Path}": "Folder path",
-      "{Thumbnail}": "Thumbnail",
+      "{Thumbnail}": "Thumbnail ({Thumbnail})",
       "{TriggerWindowEndToken}": "Trigger Window End Token",
       "{TriggerWindowStartToken}": "Trigger Window Start Token",
       "{VersionNumber}": "Version number",
@@ -38,6 +38,7 @@
       "OData__ExtendedDescription": "Description",
       "ReceiptID": "Receipt ID",
       "ReceiptTimestamp": "Receipt Timestamp",
+      "Thumbnail": "Thumbnail",
       "Title": "Title",
       "User": "User",
       "User#Claims": "User Claims"

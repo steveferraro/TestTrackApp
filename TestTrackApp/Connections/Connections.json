@@ -50,7 +50,9 @@
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {},
-    "dataSources": [],
+    "dataSources": [
+      "Test Forms"
+    ],
     "dependencies": {},
     "dependents": [
       "0a0453c6-4472-4492-8685-71330cb94eba"

@@ -2019,10 +2019,18 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledFill: =RGBA(0, 0, 0, 0)
                             FocusedBorderThickness: =4
-                            Height: =25
+                            Height: =40
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
-                            Image: =document
+                            Image: |-
+                                =$"https://static2.sharepointonline.com/files/fabric/assets/item-types/24/{Coalesce(
+                                    LookUp(
+                                        fxFileIconsList,
+                                        Key = Last(Split(ThisItem.'File name with extension',".")).Value,
+                                        Value
+                                    ),
+                                    "genericfile"
+                                )}.svg"
                             ImagePosition: =ImagePosition.Fill
                             OnSelect: |-
                                 =Launch(
@@ -2037,9 +2045,9 @@
                             RadiusTopLeft: =8
                             RadiusTopRight: =8
                             Tooltip: ="Click to open document"
-                            Width: =25
+                            Width: =40
                             X: =50
-                            Y: =28
+                            Y: =20
                             ZIndex: =1
 
                         Title3 As label:
@@ -2289,6 +2297,7 @@
                         DataSource: ='Test Forms'
                         DefaultMode: =FormMode.New
                         Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =0
                         Height: =
                         LayoutMinHeight: =50
                         LayoutMinWidth: =400
@@ -3128,11 +3137,15 @@
         ZIndex: =5
 
     Spinner_JobFormReceipt As Spinner:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =108
         Label: =varSpinnerText
         LabelPosition: ='Spinner.LabelPosition'.Below
+        SpinnerColor: =
         SpinnerSize: ='Spinner.SpinnerSize'.Huge
+        TrackColor: =
         Visible: =varUploadSpinner
         Width: =DocumentList_JobFormReceipt.Width
         X: =928
@@ -3655,7 +3668,9 @@
 
             DocumentPropertiesSaveButton_JobFormReceipt As Button:
                 BasePaletteColor: =
+                BorderColor: =
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =32
                 OnSelect: |-
                     =SubmitForm(DocumentPropertiesEditForm_JobFormReceipt);
@@ -3669,7 +3684,9 @@
             DocumentPropertiesCancelButton_JobFormReceipt As Button:
                 Appearance: ='ButtonCanvas.Appearance'.Primary
                 BasePaletteColor: =
+                BorderColor: =
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =32
                 OnSelect: =Set(varDocumentPropVisible, false)
                 Text: ="Cancel"
