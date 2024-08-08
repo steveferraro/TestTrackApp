@@ -4222,7 +4222,7 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "IsSearchable",
           "IsLockable": true,
@@ -4254,7 +4254,14 @@
         },
         "NavigateFields",
         "Template",
-        "SearchItems",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "SearchItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",
