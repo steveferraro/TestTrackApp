@@ -186,6 +186,25 @@
     "Type": "OptionSetInfo"
   },
   {
+    "DisplayName": "Technician(s) (JobsTracked)",
+    "Name": "rcon_jobstracked_rcon_technicians",
+    "OptionSetInfoNameMapping": {
+      "1": "S. Ferraro"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rcon_technicians",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "rcon_technicians",
+    "RelatedEntityName": "JobsTracked",
+    "Type": "OptionSetInfo"
+  },
+  {
     "DisplayName": "Status (JobsTracked)",
     "Name": "rcon_jobstracked_statecode",
     "OptionSetInfoNameMapping": {
