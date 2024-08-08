@@ -810,7 +810,14 @@
         "Overflow",
         "Role",
         "Color",
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedColor",
         "HoverColor",
         "BorderColor",
@@ -18230,7 +18237,7 @@
       "MetaDataIDKey": "",
       "Name": "Report Contains Field Entered Forms_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18378,7 +18385,7 @@
       "MetaDataIDKey": "",
       "Name": "ReportStatus_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24334,8 +24341,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DataCardValue22.SelectedItems.Value",
           "InvariantPropertyName": "Update",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -24360,7 +24367,7 @@
       "MetaDataIDKey": "",
       "Name": "Technician(s)_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25641,7 +25648,7 @@
       "MetaDataIDKey": "",
       "Name": "Total Forms Entered_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25776,7 +25783,7 @@
       "MetaDataIDKey": "",
       "Name": "Total Forms Received_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
