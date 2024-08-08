@@ -189,7 +189,9 @@
     "DisplayName": "Technician(s) (JobsTracked)",
     "Name": "rcon_jobstracked_rcon_technicians",
     "OptionSetInfoNameMapping": {
-      "1": "S. Ferraro"
+      "1": "S. Ferraro",
+      "2": "G. Benn",
+      "3": "S. Crane"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": false,
@@ -257,10 +259,6 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "rcon_reviewers",
-        "OptionSetReferenceEntityName": "JobsTracked"
-      },
-      "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "rcon_technicians",
         "OptionSetReferenceEntityName": "JobsTracked"
       }
     },
