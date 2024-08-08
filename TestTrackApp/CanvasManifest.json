@@ -117,13 +117,13 @@
     "Id": "257622cc-a29d-4125-910d-9b3f5e6f00b2",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "TestTrackExp",
+    "Name": "TestTrack",
     "OriginatingVersion": "1.337",
     "ParserErrorCount": 1,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "TestTrackExp",
+    "AppName": "TestTrack",
     "BackgroundColor": "rgba(255, 140, 0, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "",

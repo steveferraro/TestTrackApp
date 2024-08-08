@@ -1307,7 +1307,8 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: =DataCardValue50.SelectedItems.Value
+                        Update: |-
+                            =Coalesce(DataCardValue50.Selected, {Value:DataCardValue50.SearchText})
                         Width: =424
                         X: =1
                         Y: =3
