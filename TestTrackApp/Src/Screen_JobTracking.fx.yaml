@@ -1420,6 +1420,7 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledColor: =RGBA(220, 220, 220, 1)
                             DisabledFill: =RGBA(0, 0, 0, 0)
+                            DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             FocusedBorderThickness: =4
                             Height: =30
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
