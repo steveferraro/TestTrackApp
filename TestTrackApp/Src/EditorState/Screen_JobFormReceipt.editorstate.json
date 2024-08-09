@@ -275,7 +275,7 @@
       "MetaDataIDKey": "",
       "Name": "AttachmentLabel_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -953,7 +953,7 @@
       "MetaDataIDKey": "",
       "Name": "ButtonContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11533,7 +11533,7 @@
       "MetaDataIDKey": "",
       "Name": "DeleteDocument_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12935,7 +12935,7 @@
       "MetaDataIDKey": "",
       "Name": "DocumentList_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14442,7 +14442,7 @@
       "MetaDataIDKey": "",
       "Name": "DocumentsLabel_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14795,7 +14795,7 @@
       "MetaDataIDKey": "",
       "Name": "EditFormFileAttach_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20665,7 +20665,7 @@
       "MetaDataIDKey": "",
       "Name": "FileAttach_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21075,7 +21075,7 @@
       "MetaDataIDKey": "",
       "Name": "FilterContainer__JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27953,7 +27953,7 @@
       "MetaDataIDKey": "",
       "Name": "LeftNavigation_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -28350,7 +28350,7 @@
       "MetaDataIDKey": "%MainContainer.ID%",
       "Name": "MainContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -28613,7 +28613,7 @@
       "MetaDataIDKey": "%TemplateBrowseGalleryNextIcon.ID%",
       "Name": "ManageProperties_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -35190,7 +35190,7 @@
       "MetaDataIDKey": "%SidebarContainer.ID%",
       "Name": "SidebarContainer_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -42834,7 +42834,7 @@
       "MetaDataIDKey": "",
       "Name": "UploadButton_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -43165,7 +43165,7 @@
       "MetaDataIDKey": "",
       "Name": "UploadNotifyCheckbox_JobFormReceipt",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
