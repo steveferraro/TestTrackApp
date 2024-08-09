@@ -1359,7 +1359,7 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
                             SearchFields: =["Value"]
-                            SearchItems: =Search(Filter(Choices(Technicians),varReset),DataCardValue22.SearchText,Value)
+                            SearchItems: =Choices(Technicians,DataCardValue22.SearchText)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             Size: =13
                             Tooltip: =Parent.DisplayName
