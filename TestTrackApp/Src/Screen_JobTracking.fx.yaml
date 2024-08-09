@@ -1336,7 +1336,7 @@
 
                         DataCardValue22 As combobox:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            ChevronBackground: =RGBA(255, 255, 255, 1)
+                            ChevronBackground: =ColorValue(AppTheme.palette.themePrimary)
                             ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
                             ChevronDisabledFill: =RGBA(166, 166, 166, 1)
                             ChevronFill: =RGBA(33, 33, 33, 1)
@@ -1347,22 +1347,24 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayFields: =["Value"]
                             DisplayMode: =If(Parent.DisplayMode = DisplayMode.View, DisplayMode.Disabled, DisplayMode.Edit)
                             Font: =Font.'Segoe UI'
                             HoverBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
-                            IsSearchable: =false
                             Items: =Choices(Technicians)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PressedBorderColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(202, 80, 16, 1)
+                            SearchFields: =["Value"]
+                            SearchItems: =Choices(Technicians,DataCardValue22.SearchText)
                             SelectionFill: =RGBA(202, 80, 16, 1)
                             Size: =13
                             Tooltip: =Parent.DisplayName
-                            X: =28
-                            Y: =DataCardKey29.Y + DataCardKey29.Height + 5
+                            X: =25
+                            Y: =52
                             ZIndex: =2
 
                         ErrorMessage25 As label:
