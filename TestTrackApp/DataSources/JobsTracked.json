@@ -251,6 +251,7 @@
     "Name": "rcon_technicians",
     "OptionSetInfoNameMapping": {
       "1": "A. Sherwood",
+      "100000000": "G. Walls",
       "2": "B. Clark",
       "3": "B. Moody"
     },
@@ -259,6 +260,10 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "rcon_reviewers",
+        "OptionSetReferenceEntityName": "JobsTracked"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "rcon_technicians",
         "OptionSetReferenceEntityName": "JobsTracked"
       }
     },

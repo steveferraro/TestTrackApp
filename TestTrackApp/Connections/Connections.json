@@ -213,6 +213,64 @@
     "dependents": [],
     "id": "4cac233c-9334-47f4-b00e-b3ca604d14ff"
   },
+  "5accf0d6-793c-4edf-9d0b-8567f4184423": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1705/1.0.1705.3833/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "728e13a0-2d73-4845-8bc9-0145a6f51f0d"
+    ],
+    "id": "5accf0d6-793c-4edf-9d0b-8567f4184423"
+  },
+  "728e13a0-2d73-4845-8bc9-0145a6f51f0d": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "5accf0d6-793c-4edf-9d0b-8567f4184423": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowDisplayName": {
+          "value": "CreateChoice_Technicians"
+        },
+        "workflowEntityId": {
+          "value": "24197f29-5056-ef11-a317-6045bdfe1fc7"
+        },
+        "workflowName": {
+          "value": "70bb5efa-1d76-63d4-444e-39640acabf71"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "5accf0d6-793c-4edf-9d0b-8567f4184423"
+        },
+        "workflowDisplayName": {
+          "value": "CreateChoice_Technicians"
+        },
+        "workflowEntityId": {
+          "value": "24197f29-5056-ef11-a317-6045bdfe1fc7"
+        },
+        "workflowName": {
+          "value": "70bb5efa-1d76-63d4-444e-39640acabf71"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "CreateChoice_Technicians"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "5accf0d6-793c-4edf-9d0b-8567f4184423"
+    },
+    "dependents": [],
+    "id": "728e13a0-2d73-4845-8bc9-0145a6f51f0d"
+  },
   "af813782-78c5-4c0a-822a-bdfcfca4ee11": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",

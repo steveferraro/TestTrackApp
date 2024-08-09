@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "46a421f3-8498-434f-9cba-7fb16ea8e3ed",
+    "Name": "CreateChoice_Technicians",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "24197f29-5056-ef11-a317-6045bdfe1fc7"
+  }
+]
